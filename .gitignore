@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local build logs
+*.log
+build_scores.log
+
+# Internal working notes (kept locally, not part of the public repo)
+AGENTS.md
+项目资源清单.md
+素材学习笔记.md
+计分口径改造设计草案.md
+酥悠沫站点设计拆解.md
+雷达图设计方案.md
+数据补齐清单.md
+新增模型操作手册.md
+data/数据源与采集说明.md
+
+# Historical backups and archives
+backup_*/
+data/archive/
+
+# Empty legacy source (no current NVIDIA-only evidence)
+data/raw_nvidia.csv
+
+# One-off historical script (kept locally for provenance)
+scripts/append_hy3_tb21.py
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.opencode/

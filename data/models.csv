@@ -1,0 +1,34 @@
+﻿模型,公司,开源,数据日期,备注
+Claude-Fable-5.1,,否,,
+Claude-Opus-5.5,,否,,
+Claude-Sonnet-5.5,,否,,
+DeepSeek-V4-Pro,,是,,
+DeepSeek-V4.1-Flash,,是,2026-09-10,0910 版；同代新版 DeepSeek-V4.1-Flash-1017（2026-10-17）已单列一册
+DeepSeek-V4.1-Flash-1017,,是,2026-10-17,552B MoE（输入激活 8B / 输出激活 16B；384 路由专家 + 1 共享，每 token 6 个）· 上下文 1M tokens（max_tokens ≥256K）· fp8 权值 / fp4 专家 · MIT 开源；reasoning_effort 1–100 连续可调 · API 名 deepseek-flash；2026-10-20 补入 AA 第三方 8 项（HLE / CritPt / SciCode / TB4.0 / LCR / MMMU-Pro / Automation / Omni）；2026-10-21 补入 LiveBench 2.0 七套件（Research→内容创作、Design→图片与制图、Coding/Browser/Long Agentic/Reasoning/Data Analysis）与「AI产品狙击手」Q1 强约束指令遵循（10/10），**8 维全部有实测证据、不再依赖推理值**
+Dots-3-Note-Preview,,是,,
+Doubao-Seed-2.1-Pro,,否,,
+ERNIE-5.1,,否,,
+GLM-5.3,,是,,
+GLM-5.3 Flash,,是,,
+GLM-5v-Turbo,,否,,
+GPT-6-Astra,,否,,
+GPT-6-Luna,,否,,
+GPT-6-Sol,,否,,
+Hunyuan-Hy3,,是,,
+Hy4 preview,,是,,
+Kimi-K2.6,,是,,
+Kimi-K2.7-Code,,是,,
+Kimi-K3,,是,,
+MiniMax-M3,,是,,
+Nemotron-3-Ultra,,是,,
+Qwen3.8-27B,,是,,
+Qwen3.8-Max,,是,,
+Space-Bunny,匿名（OpenRouter stealth/space-bunny-alpha）,未确认,2026-09-23,匿名 stealth 预览模型，无公开可核 benchmark；AA / LiveBench / LMArena 均未收录。8 维暂无证据。
+Step-5-Preview,,是,,
+GLM-5.1,智谱,是,2026-04-07,GLM-5 系列上一代（AA 页为 Reasoning 档；200K 上下文）
+GLM-5.2,智谱,是,2026-06-16,GLM-5 中间代（max 档；1M 上下文；2026-07 SuperCLUE 总榜第 12）
+MiniMax-M3.1-Flash,MiniMax,未确认,2026-10-19,MiniMax M3 系列 Flash 版（1M 上下文、图像输入）；官方称 10-23 起开放权重，AA 页当前仍记闭源 → 开源状态待确认
+MiMo-V2.6-Pro,小米集团,是,2026-09-21,小米 MiMo 旗舰（1M 上下文）；同族 V2.6 Flash 曾被评测者标注「疑似接入错模型」，本条证据取自 V2.6 Pro 专属页
+Gemini 4 Argon,Google,否,2026-09-30,Google 最新旗舰（AA 记 2026-09-30；Antigravity 渠道 10-13 上线）；1M 上下文；纯文本输出；AA 有 HLE / CritPt / SciCode / TB4.0 / LCR / Automation / Omni，缺 GPQA / MMMU-Pro / IFBench / TB2.1 / τ²；LiveBench 2.0 七套件 69.9-95.1；Design Arena 1315 Elo；AI产品狙击手 Q1 10/10
+Gemini 3.8 Flash,Google,否,2026-09-02,Google 主力（2026-09-02）；1M 上下文；纯文本输出；AA 有 GPQA / HLE / CritPt / SciCode / TB4.0 / TB2.1 / LCR / MMMU-Pro / Automation / Omni；TB4.0 19.7 与 TB2.1 87.6 差距大（同族只取 TB4.0）；LiveBench 2.0 七套件；Design Arena 1301 Elo；Q1 10/10
+Gemini 3.5 Flash-Lite,Google,否,2026-07-21,Google 轻量（2026-07-21）；1M 上下文；纯文本输出；AA 有 GPQA / HLE / CritPt / SciCode / TB4.0 / TB2.1 / LCR / MMMU-Pro / Automation / Omni；TB4.0 1.0 与 TB2.1 53.6 差距大（同族只取 TB4.0）；无 LiveBench 2.0 / Design Arena / Q1，指令遵循与内容创作待定

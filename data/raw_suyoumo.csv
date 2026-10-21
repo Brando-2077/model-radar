@@ -1,0 +1,6 @@
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+Dots-3-Note-Preview,小红书,酥悠沫-官方,IFEval,93.9,0-100,2026-08-14,https://news.qq.com/rain/a/20260814A0CXZ700
+Dots-3-Note-Preview,小红书,酥悠沫-官方,IFBench,80.4,0-100,2026-08-14,https://news.qq.com/rain/a/20260814A0CXZ700
+Step-5-Preview,阶跃星辰,酥悠沫-官方,GDPval-AA v2,1571,Elo,2026-09-20,https://stepfun.com/
+ERNIE-5.1,百度,酥悠沫,TextArena,1468,Elo,2026-05-09,https://text-arena.com
+Doubao-Seed-2.1-Pro,字节跳动,酥悠沫-官方,AA-LCR,70.0,0-100,2026-06-30,https://hunyuan.tencent.com
