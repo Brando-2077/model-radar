@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use Model Radar or its compiled data, please cite this project."
+title: "Model Radar (模型雷达图)"
+abstract: >-
+  A scenario-based model comparison tool that normalizes public benchmark
+  evidence into eight capability dimensions, scores evidence within benchmark
+  families as pool-relative percentiles, and deliberately leaves missing
+  dimensions blank rather than treating them as zero.
+authors:
+  - name: "HanGu007"
+version: 0.21.0
+date-released: 2026-10-21
+url: "https://github.com/HanGu007/model-radar"
+repository-code: "https://github.com/HanGu007/model-radar"
+license: MIT
+keywords:
+  - large language models
+  - model comparison
+  - benchmark
+  - data visualization
+  - radar chart
+  - open data

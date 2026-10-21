@@ -1,0 +1,16 @@
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+Claude-Fable-5.1,Anthropic,Design-Arena,Website-Elo,1314,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Claude-Opus-5.5,Anthropic,Design-Arena,Website-Elo,1336,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Claude-Sonnet-5.5,Anthropic,Design-Arena,Website-Elo,1328,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+DeepSeek-V4-Pro,DeepSeek,Design-Arena,Website-Elo,1236,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+GLM-5.3,智谱,Design-Arena,Website-Elo,1297,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+GLM-5.3 Flash,智谱,Design-Arena,Website-Elo,1273,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+GLM-5v-Turbo,智谱,Design-Arena,Website-Elo,1231,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Hunyuan-Hy3,腾讯,Design-Arena,Website-Elo,1183,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Kimi-K2.6,月之暗面,Design-Arena,Website-Elo,1269,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Kimi-K2.7-Code,月之暗面,Design-Arena,Website-Elo,1265,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Kimi-K3,月之暗面,Design-Arena,Website-Elo,1335,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+MiniMax-M3,MiniMax,Design-Arena,Website-Elo,1258,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Qwen3.8-Max,阿里,Design-Arena,Website-Elo,1276,Elo,2026-10-15,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Gemini 4 Argon,Google,Design-Arena,Website-Elo,1315,Elo,2026-10-21,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）
+Gemini 3.8 Flash,Google,Design-Arena,Website-Elo,1301,Elo,2026-10-21,https://openrouter.ai/rankings#benchmarks（Design Arena models-website，经 OpenRouter 公开接口转发）

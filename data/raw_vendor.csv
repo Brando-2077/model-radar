@@ -1,0 +1,64 @@
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+GLM-5.3,智谱,Z.ai官方,DeepSWE v1.1,66.9,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,NL2Repo,58.0,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,FrontierSWE,78.1,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,SWE-Marathon v1.1,42.5,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,ProgramBench,19.0,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,PostTrainBench,39.8,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,Terminal Bench 2.1,88.2,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,Terminal Bench 3.0,28.3,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,Toolathlon Verified,73.0,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,ALE-CLI,28.5,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+GLM-5.3,智谱,Z.ai官方,HLE w/ Tools,62.5,0-100,2026-08-14,https://z.ai/blog/glm-5.3
+dots-3-note-preview,小红书,dots官方,Claw-Eval,73.4,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（个人助理 Agent 任务）
+dots-3-note-preview,小红书,dots官方,WildClawBench,61.7,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（长程复杂 Agent 任务）
+dots-3-note-preview,小红书,dots官方,Terminal-Bench 2.1,75.1,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（CLI 终端 agentic 操作）
+dots-3-note-preview,小红书,dots官方,VibeLifeBench,28.1,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（真实生活场景主动型长程任务）
+dots-3-note-preview,小红书,dots官方,VibeSearchBench,25.7,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（主动型多轮深度研究任务）
+dots-3-note-preview,小红书,dots官方,BrowseComp,83.3,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（深度浏览搜索）
+dots-3-note-preview,小红书,dots官方,SWE-bench-pro,61.0,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（扩展版多编程语言）
+dots-3-note-preview,小红书,dots官方,NL2repo,49.8,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（自然语言生成完整代码仓库）
+dots-3-note-preview,小红书,dots官方,ARC-AGI-2,81.4,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（静态抽象推理）
+dots-3-note-preview,小红书,dots官方,ARC-AGI-3,32.1,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（从环境学习的超长程任务）
+dots-3-note-preview,小红书,dots官方,WorldVQA,42.7,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（视觉概念）
+dots-3-note-preview,小红书,dots官方,Charxiv-RQ,83.1,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（文档&图表理解）
+dots-3-note-preview,小红书,dots官方,PerceptionBench,53.4,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（视觉感知）
+dots-3-note-preview,小红书,dots官方,SimpleVQA,72.5,0-100,2026-10-07,https://github.com/studio-dots-ai/dots3-note-prev（官方 README 评测结果图）（视觉概念问答）
+Hy4 preview,腾讯,腾讯官方,GPQA Diamond,92.3,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,HLE w/o tools,43.4,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,CritPt,16.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,SWE-Bench Multilingual,82.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,SWE-Bench Pro,65.7,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,DeepSWE,64.3,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,NL2Repo,58.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,ProgramBench,17.5,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,PostTrainBench,35.6,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,SWE-Marathon,31.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,Terminal Bench 2.1,85.4,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,Toolathlon Verified,74.1,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,APEX-Agents,37.1,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,SkillsBench,62.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,HLE w/ Tools,55.4,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,MCP Atlas,83.7,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+Hy4 preview,腾讯,腾讯官方,WideResearch,83.9,0-100,2026-08-28,https://hunyuan.tencent.com/research/hy4-preview
+GLM-5v-Turbo,智谱,Z.ai官方,Design2Code,94.8,0-100,2026-04-29,https://arxiv.org/abs/2604.26752（GLM-5V-Turbo 技术报告）
+GLM-5v-Turbo,智谱,Z.ai官方,CC-Bench-V2 Repo Exploration,72.2,0-100,2026-04-29,https://arxiv.org/abs/2604.26752（GLM-5V-Turbo 技术报告）
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,HLE w/o tools,42.6,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,Terminal-Bench 4.0,42.3,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,DeepSWE v1.1,77.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,ProgramBench,29.1,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,NL2Repo-Bench,68.2,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,Automation-Bench v1.0.6,60.5,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,Agents' Last Exam,35.4,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,Apex Bench v1.1,72.1,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,Chartography (w/tools),83.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,BabyVision (w/tools),92.5,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,DeepSeek官方,ZeroBench-main (w/tools),51.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,DeepSWE v1.1,74.2,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,ProgramBench,20.3,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,NL2Repo-Bench,65.4,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Agents' Last Exam,31.8,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Apex Bench v1.1,64.6,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Chartography (w/tools),78.9,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,BabyVision (w/tools),89.6,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,ZeroBench-main (w/tools),49.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

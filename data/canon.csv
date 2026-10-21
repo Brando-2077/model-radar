@@ -1,0 +1,93 @@
+﻿榜单名,统一名,备注
+Claude Fable 5.1,Claude-Fable-5.1,
+Claude Fable 5.1 (max with fallback),Claude-Fable-5.1,带 fallback 的榜单档位，按产品线合并
+Claude Fable 5.1 (max),Claude-Fable-5.1,
+Claude Fable 5.1 Max Effort,Claude-Fable-5.1,
+Claude Opus 5.5 (max),Claude-Opus-5.5,
+Claude Opus 5.5 Max Effort,Claude-Opus-5.5,
+Claude Sonnet 5.5 (max with fallback),Claude-Sonnet-5.5,
+Claude Sonnet 5.5 (xhigh),Claude-Sonnet-5.5,LiveBench 为 max 档、LMArena 仅 xhigh 档，按产品线合并
+Claude Sonnet 5.5 Max Effort,Claude-Sonnet-5.5,
+DeepSeek V4 Pro,DeepSeek-V4-Pro,
+DeepSeek V4 Pro 0813,DeepSeek-V4-Pro,
+DeepSeek V4 Pro 0813 (max),DeepSeek-V4-Pro,
+DeepSeek V4.1 Flash (max),DeepSeek-V4.1-Flash,
+DeepSeek V4.1 Flash Max Effort,DeepSeek-V4.1-Flash,
+DeepSeek-V4-Pro(max),DeepSeek-V4-Pro,
+DeepSeek-V4-Pro-0813(max),DeepSeek-V4-Pro,
+DeepSeek-V4.1-Flash(max),DeepSeek-V4.1-Flash,
+Doubao-Seed-2.1-Pro (preview),Doubao-Seed-2.1-Pro,preview 与正式版按产品线合并为一个条目
+Doubao-Seed-2.1-Pro(high),Doubao-Seed-2.1-Pro,
+Doubao-Seed-2.1-pro(high),Doubao-Seed-2.1-Pro,同上
+ERNIE 5.1(max),ERNIE-5.1,
+GLM-5.3,GLM-5.3,
+GLM-5.3 (max),GLM-5.3,
+GLM-5.3 Flash,GLM-5.3 Flash,
+GLM-5.3(max),GLM-5.3,
+GLM-5.3-Flash,GLM-5.3 Flash,
+GLM-5.3-Flash(max),GLM-5.3 Flash,
+GPT-6 Astra (max),GPT-6-Astra,
+GPT-6 Astra Max Effort,GPT-6-Astra,
+GPT-6 Luna,GPT-6-Luna,
+GPT-6 Luna (max),GPT-6-Luna,
+GPT-6 Luna Max Effort,GPT-6-Luna,
+GPT-6 Sol,GPT-6-Sol,
+GPT-6 Sol (max),GPT-6-Sol,
+GPT-6 Sol Max Effort,GPT-6-Sol,
+Hy3,Hunyuan-Hy3,腾讯混元 Hy3 的榜单简写
+Hy3(high),Hunyuan-Hy3,同上，推理档位不同
+Kimi K3,Kimi-K3,同上
+Kimi K3 (max),Kimi-K3,
+Kimi-K3(max),Kimi-K3,
+MiniMax M3,MiniMax-M3,榜单写法与账本写法大小写/连字符不同
+Minimax M3,MiniMax-M3,
+Nemotron 3 Ultra (550B A55B),Nemotron-3-Ultra,
+Nemotron 3 Ultra 550B A55B,Nemotron-3-Ultra,
+Qwen 3.8 Max,Qwen3.8-Max,
+Qwen3.8 Max,Qwen3.8-Max,
+Qwen3.8 Max (0902),Qwen3.8-Max,
+Qwen3.8-Max(xhigh),Qwen3.8-Max,
+Qwen3.8-Max-0902(max),Qwen3.8-Max,
+dots-3-note-preview,Dots-3-Note-Preview,
+DeepSeek V4.1 Flash-1017,DeepSeek-V4.1-Flash-1017,官方版本串（HF / api-docs）
+DeepSeek-V4.1-Flash-1017,DeepSeek-V4.1-Flash-1017,身份行（统一名即官方名）
+HY3-Preview(think_high),Hunyuan-Hy3,SuperCLUE Writing 榜的 Hy3 preview（think_high）；对应项目 Hunyuan-Hy3
+Kimi-K2.6-Thinking,Kimi-K2.6,SuperCLUE Writing 榜的 Thinking 档；同一模型
+claude-fable-5.1,Claude-Fable-5.1,LiveBench 2.0 官方表模型键
+claude-opus-5.5,Claude-Opus-5.5,LiveBench 2.0 官方表模型键
+claude-sonnet-5.5,Claude-Sonnet-5.5,LiveBench 2.0 官方表模型键
+deepseek-v4.1-flash,DeepSeek-V4.1-Flash,LiveBench 2.0 官方表模型键
+deepseek-v4.1-flash-1017,DeepSeek-V4.1-Flash-1017,LiveBench 2.0 官方表模型键
+glm-5.3,GLM-5.3,LiveBench 2.0 官方表模型键
+glm-5.3-flash,GLM-5.3 Flash,LiveBench 2.0 官方表模型键
+gpt-6-astra,GPT-6-Astra,LiveBench 2.0 官方表模型键
+gpt-6-luna,GPT-6-Luna,LiveBench 2.0 官方表模型键
+gpt-6-sol,GPT-6-Sol,LiveBench 2.0 官方表模型键
+kimi-k3,Kimi-K3,LiveBench 2.0 官方表模型键
+minimax-m3,MiniMax-M3,LiveBench 2.0 官方表模型键
+qwen3.8-27b,Qwen3.8-27B,LiveBench 2.0 官方表模型键
+qwen3.8-max,Qwen3.8-Max,LiveBench 2.0 官方表模型键
+step-5-preview,Step-5-Preview,LiveBench 2.0 官方表模型键
+DeepSeek V4.1 Flash 1017（DSH 标准模式）,DeepSeek-V4.1-Flash-1017,AI产品狙击手 榜名 → 项目统一名
+DeepSeek V4.1 Flash 正式版（Pi）,DeepSeek-V4.1-Flash,AI产品狙击手 榜名 → 项目统一名
+Deepseek V4 Pro,DeepSeek-V4-Pro,AI产品狙击手 榜名 → 项目统一名
+Qwen3.8 Max 0902（Pi）,Qwen3.8-Max,AI产品狙击手 榜名 → 项目统一名
+GPT-6 Sol（Pi）,GPT-6-Sol,AI产品狙击手 榜名 → 项目统一名
+GPT-6 Astra,GPT-6-Astra,AI产品狙击手 榜名 → 项目统一名
+Fable 5.1,Claude-Fable-5.1,AI产品狙击手 榜名 → 项目统一名
+Claude Sonnet 5.5（OpenRouter）,Claude-Sonnet-5.5,AI产品狙击手 榜名 → 项目统一名
+GLM 5.3 Flash（Pi）,GLM-5.3 Flash,AI产品狙击手 榜名 → 项目统一名
+Doubao-Seed-2.1-pro 260915（Pi）,Doubao-Seed-2.1-Pro,AI产品狙击手 榜名 → 项目统一名
+腾讯混元Hy4-Preview,Hy4 preview,AI产品狙击手 榜名 → 项目统一名
+Minimax M3 API,MiniMax-M3,AI产品狙击手 榜名 → 项目统一名
+GLM-5.2(max),GLM-5.2,SuperCLUE 总榜 / 长上下文 / Terminal 的 max 档写法
+MiMo V2.6 Pro（Pi）,MiMo-V2.6-Pro,AI产品狙击手 榜名
+MiniMax M3.1 Flash（MiniMax Code）,MiniMax-M3.1-Flash,AI产品狙击手 榜名
+Gemini 4 Argon (High),Gemini 4 Argon,AA 显示名
+Gemini 3.8 Flash (High),Gemini 3.8 Flash,AA 显示名
+gemini-4-argon,Gemini 4 Argon,LiveBench 2.0 官方表模型键
+gemini-3.8-flash,Gemini 3.8 Flash,LiveBench 2.0 官方表模型键
+gemini-3.5-flash-lite,Gemini 3.5 Flash-Lite,LiveBench 2.0 官方表模型键（当前表未收录）
+Gemini 4 Argon（Antigravity）,Gemini 4 Argon,AI产品狙击手 榜名
+Gemini 3.8 Flash（DSH）,Gemini 3.8 Flash,AI产品狙击手 榜名
+Gemini 3.5 Flash Lite,Gemini 3.5 Flash-Lite,榜名连字符缺失时的统一写法

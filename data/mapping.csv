@@ -1,0 +1,116 @@
+﻿来源,类别,维度,族,备注
+LiveBench,Agentic Coding,Agent与工具调用,LB·Agentic Coding,LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,Coding,代码,LB·Coding,LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,Data Analysis,推理与知识,LB·Data Analysis,LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,IF (Instruction Following),指令遵循,LB·IF (Instruction Following),LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,Language,内容创作,LB·Language,LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,Mathematics,推理与知识,LB·Mathematics,LiveBench 官方 table_2026_06_25.csv（类内均值）
+LiveBench,Reasoning,推理与知识,LB·Reasoning,LiveBench 官方 table_2026_06_25.csv（类内均值）
+SuperCLUE,SWE-Agent总榜-通过率,代码,SC·SWE-Agent总榜-通过率,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,Terminal总榜-总分,Agent与工具调用,SC·Terminal总榜-总分,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-幻觉控制,可靠性与低幻觉,SC·总排行榜-幻觉控制,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-数学推理,推理与知识,SC·总排行榜-数学推理,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-智能体任务规划,Agent与工具调用,SC·总排行榜-智能体任务规划,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-智能体编程,代码,SC·总排行榜-智能体编程,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-科学推理,推理与知识,SC·总排行榜-科学推理,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,总排行榜-精确指令遵循,指令遵循,SC·总排行榜-精确指令遵循,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,长上下文1M-总分,长文本,SC·长上下文1M-总分,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+SuperCLUE,长上下文256K-总分,长文本,SC·长上下文256K-总分,SuperCLUE 官网数据 xlsx（2026-07 补测 / 2026-09）
+LMArena,Coding,代码,Arena-Coding,arena.ai 服务端渲染页（总榜 Elo 经每日镜像核验）
+LMArena,Creative Writing,内容创作,Arena-Creative,分类榜（现仅 Vision/WebDev 可取，本类目为留档）
+LMArena,Hard Prompts,推理与知识,Arena-Hard,arena.ai 服务端渲染页（总榜 Elo 经每日镜像核验）
+LMArena,Instruction Following,指令遵循,Arena-IF,arena.ai 服务端渲染页（总榜 Elo 经每日镜像核验）
+LMArena,Math,推理与知识,Arena-Math,arena.ai 服务端渲染页（总榜 Elo 经每日镜像核验）
+LMArena,Vision-Elo,图片与制图,Vision-Elo,Vision Arena 人评 Elo：图片理解
+LMArena,WebDev-Elo,图片与制图,WebDev-Elo,WebDev Arena 人评 Elo：前端美化/复刻
+AIWB,英文写作盲评,内容创作,AIWB写作盲评,第三方英文写作盲评（Bradley–Terry 盲评，0-100 且 50=平均模型 → 按「指数」做池内 min-max 60~100）；仅英文口径，与 LiveBench Language 并列
+Artificial-Analysis,AA-LCR,长文本,AA-LCR,AA 单模型官方页一手抓取
+Artificial-Analysis,AA-Omniscience Index,可靠性与低幻觉,AA-Omni指数,AA 单模型官方页一手抓取
+Artificial-Analysis,AutomationBench-AA,Agent与工具调用,AutomationBench,AA 单模型官方页一手抓取
+Artificial-Analysis,CritPt,推理与知识,CritPt,AA 单模型官方页一手抓取
+Artificial-Analysis,GPQA,推理与知识,GPQA-Diamond,AA 单模型官方页一手抓取
+Artificial-Analysis,HLE,推理与知识,HLE,AA 单模型官方页一手抓取
+Artificial-Analysis,IFBench,指令遵循,IFBench,AA 单模型官方页一手抓取
+Artificial-Analysis,MMMU-Pro,图片与制图,MMMU-Pro,2026-10-06 新维度落地，此前留档的多模态分激活
+Artificial-Analysis,SciCode,代码,SciCode,AA 单模型官方页一手抓取
+Artificial-Analysis,Terminal-Bench 2.1,Agent与工具调用,TB2.1,同族回退版本：该模型若已有 TB4.0 则本行不计入维度
+Artificial-Analysis,τ²-bench,Agent与工具调用,tau2-bench,AA 字段 tau2：工具调用/多轮用户交互的 agent 基准（2026-10-17 补采；AA 另有 tauBanking/APEX-Agents/EnterpriseOps-Gym 等同族 agent 基准，为避免单一来源在 Agent 维占比过高，暂不入账）
+Artificial-Analysis,Terminal-Bench 4.0,Agent与工具调用,TB4.0,同族优先版本（有则不计 TB2.1）
+NVIDIA官方,MMLU Pro,推理与知识,MMLU Pro,厂商官方模型卡（Nemotron 3.5 Lightning 评测表，含 Gemma-4-26B-A4B / Nemotron-3-Super 对比列）
+NVIDIA官方,IFBench-loose,指令遵循,IFBench-loose,厂商官方模型卡；AA 的 IFBench 为严格口径，此行是 loose 变体，仅用于 AA 未覆盖的模型
+NVIDIA官方,SWE-bench Verified,代码,SWE-bench Verified,厂商官方模型卡（harness 级独立榜单）
+NVIDIA官方,BrowseComp,Agent与工具调用,BrowseComp,厂商官方模型卡（浏览型深度检索 agent）
+Design-Arena,Website-Elo,图片与制图,DesignArena-Elo,= Design Arena·models-website。同源 uicomponent/dataviz/svg 会使前端侧证据数远超图片理解侧（本维=图片理解+细节+前端复刻三项合并），codecategories / agents-* 分属代码与 Agent 能力，均有意不入账
+Z.ai官方,ALE-CLI,Agent与工具调用,ALE-CLI,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,CC-Bench-V2 Repo Exploration,代码,CC-Bench-V2,GLM-5V-Turbo 技术报告（厂商自报内部基座基准，0-100 直用）
+Z.ai官方,Design2Code,图片与制图,Design2Code,GLM-5V-Turbo 技术报告：设计稿/截图 → 可运行代码（前端复刻口径）
+Z.ai官方,DeepSWE v1.1,代码,DeepSWE,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,FrontierSWE,代码,FrontierSWE,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,HLE w/ Tools,Agent与工具调用,HLE-w/tools,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,NL2Repo,代码,NL2Repo,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,PostTrainBench,代码,PostTrainBench,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,ProgramBench,代码,ProgramBench,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,SWE-Marathon v1.1,代码,SWE-Marathon,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,Terminal Bench 2.1,Agent与工具调用,TB2.1,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,Terminal Bench 3.0,Agent与工具调用,TB3.0,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+Z.ai官方,Toolathlon Verified,Agent与工具调用,Toolathlon,厂商官方渠道：只收自家型号、跳过独立榜单已覆盖的同族基准
+dots官方,ARC-AGI-2,推理与知识,ARC-AGI-2,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,ARC-AGI-3,推理与知识,ARC-AGI-3,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,BrowseComp,Agent与工具调用,BrowseComp,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,Charxiv-RQ,图片与制图,Charxiv-RQ,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,Claw-Eval,Agent与工具调用,Claw-Eval,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,NL2repo,代码,NL2Repo,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,PerceptionBench,图片与制图,PerceptionBench,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,SWE-bench-pro,代码,SWE-bench Pro,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,SimpleVQA,图片与制图,SimpleVQA,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,Terminal-Bench 2.1,Agent与工具调用,TB2.1,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,VibeLifeBench,Agent与工具调用,VibeLifeBench,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,VibeSearchBench,Agent与工具调用,VibeSearchBench,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,WildClawBench,Agent与工具调用,WildClawBench,厂商官方渠道（GitHub README 评测图），同口径
+dots官方,WorldVQA,图片与制图,WorldVQA,厂商官方渠道（GitHub README 评测图），同口径
+腾讯官方,APEX-Agents,Agent与工具调用,APEX-Agents,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,CritPt,推理与知识,CritPt,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,DeepSWE,代码,DeepSWE,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,GPQA Diamond,推理与知识,GPQA-Diamond,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,HLE w/ Tools,Agent与工具调用,HLE-w/tools,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,HLE w/o tools,推理与知识,HLE,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,MCP Atlas,Agent与工具调用,MCP Atlas,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,NL2Repo,代码,NL2Repo,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,PostTrainBench,代码,PostTrainBench,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,ProgramBench,代码,ProgramBench,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,SWE-Bench Multilingual,代码,SWE-bench Multilingual,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,SWE-Bench Pro,代码,SWE-bench Pro,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,SWE-Marathon,代码,SWE-Marathon,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,SkillsBench,Agent与工具调用,SkillsBench,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,Terminal Bench 2.1,Agent与工具调用,TB2.1,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,Toolathlon Verified,Agent与工具调用,Toolathlon,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+腾讯官方,WideResearch,Agent与工具调用,WideResearch,厂商官方渠道（Hy4 preview 发布页 benchmark appendix）
+Artificial-Analysis,AA-Index,,,有意不映射：综合指数：避免跨维重复计权，仅留档 raw
+LMArena,Arena-Overall,,,有意不映射：总分榜：避免跨维重复计权，仅留档 raw
+SuperCLUE,总排行榜-总分,,,有意不映射：总分榜：避免跨维重复计权，仅留档 raw
+Artificial-Analysis,AA-Omniscience Hallucination Rate,,,有意不映射：越低越好型指标，直接映射会反转语义；其结论已由 AA-Omniscience Index 覆盖
+DeepSeek官方,HLE w/o tools,推理与知识,HLE,DeepSeek-V4.1-Flash-1017 HF 模型卡同表（† 44.0 为纯文本子集，取主值）
+DeepSeek官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,HF 模型卡注明 Claude Code harness
+DeepSeek官方,DeepSWE v1.1,代码,DeepSWE,HF 模型卡注明 Mini-SWE-V2 harness、Pass@1
+DeepSeek官方,ProgramBench,代码,ProgramBench,厂商官方同表
+DeepSeek官方,NL2Repo-Bench,代码,NL2Repo,厂商官方同表
+DeepSeek官方,Automation-Bench v1.0.6,Agent与工具调用,AutomationBench,厂商官方同表
+DeepSeek官方,Agents' Last Exam,Agent与工具调用,Agents' Last Exam,厂商官方同表
+DeepSeek官方,Apex Bench v1.1,Agent与工具调用,Apex Bench v1.1,厂商官方同表；SUYOUUMO 也归入 General Agent
+DeepSeek官方,Chartography (w/tools),图片与制图,Chartography,图表理解（w/tools 口径）
+DeepSeek官方,BabyVision (w/tools),图片与制图,BabyVision,视觉细节（w/tools 口径）
+DeepSeek官方,ZeroBench-main (w/tools),图片与制图,ZeroBench,视觉推理（w/tools 口径）
+酥悠沫,TextArena,内容创作,TextArena,酥悠沫转录 text-arena.com 人评 Elo；本池 4 个模型有该基准，Elo 做池内 min-max 60~100
+酥悠沫-官方,IFEval,指令遵循,IFEval,酥悠沫转录厂商自报表（news.qq.com/dots3-note 发布对比表）
+酥悠沫-官方,IFBench,指令遵循,IFBench,同上
+酥悠沫-官方,GDPval-AA v2,内容创作,GDPval-AA v2,酥悠沫转录厂商自报的 GDPval-AA v2 Elo；专业文档/产出类评分，归内容创作
+酥悠沫-官方,AA-LCR,长文本,AA-LCR,酥悠沫转录腾讯混元 3 发布页对比表（AA-LCR 口径同 AA）
+SuperCLUE,Writing总榜-总分,内容创作,SC·Writing总榜-总分,SuperCLUE 官网 2026年5月 Writing xlsx（中文原生创意写作：内容质量/风格/创意/主流题材/约束创作）；与 AIWB 英文写作盲评分族
+LiveBench-2.0,Long Agentic,Agent与工具调用,LB2·Long Agentic,LiveBench 2.0 官方表 data/20261014/table.csv（release 2026-10-14；长时程多轮工程任务）
+LiveBench-2.0,Browser,Agent与工具调用,LB2·Browser,同上（真实浏览器多步任务通过率）
+LiveBench-2.0,Coding,代码,LB2·Coding,同上（真实 PR 的 bug 修复，确定性判分）
+LiveBench-2.0,Reasoning,推理与知识,LB2·Reasoning,同上（短逻辑/空间/心智推理，单一正确答案）
+LiveBench-2.0,Data Analysis,推理与知识,LB2·Data Analysis,同上（小表数据分析题，单一正确答案）
+LiveBench-2.0,Research,内容创作,LB2·Research,同上（开放式研究简报 → 书面报告，按 rubric 评分）；官方 notes：producing a written report
+LiveBench-2.0,Design,图片与制图,LB2·Design,同上（演示稿/PDF/文档的版式与设计产出，视觉+结构检查）
+AI产品狙击手,Q1强约束指令遵循,指令遵循,TGG·Q1指令遵循,techgogogo.com「AI产品狙击手」v2.x 评测榜 Q1（中文强约束指令遵循，10 句各 1 分，单题主观判分；每模型取最近一次测评；接入渠道/思考档各异，仅作参考）

@@ -1,0 +1,111 @@
+name: Data correction
+description: 分数抄错、版本对不上、来源失效、基准族归并错误
+title: "[Data] "
+labels: ["data"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        数据纠错最有价值的部分是**原始来源**。请尽量附上 URL、数据日期、版本/设置和截图。
+        没有来源的“这个分看起来不对”通常很难处理。
+
+  - type: input
+    id: model
+    attributes:
+      label: 模型
+      placeholder: 例如 Claude-Fable-5.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: dimension
+    attributes:
+      label: 维度
+      options:
+        - 推理与知识
+        - 代码
+        - 指令遵循
+        - Agent 与工具调用
+        - 长文本
+        - 可靠性与低幻觉
+        - 内容创作
+        - 图片与制图
+        - 不确定 / 整体口径
+    validations:
+      required: true
+
+  - type: input
+    id: current
+    attributes:
+      label: 当前账本 / 页面值
+      placeholder: 例如 73.2（族 AA·GPQA，n=18）
+    validations:
+      required: true
+
+  - type: input
+    id: proposed
+    attributes:
+      label: 建议值
+      placeholder: 例如 81.0
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: 来源名称
+      placeholder: 例如 Artificial Analysis / LiveBench / 厂商模型卡
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: 来源 URL
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: 数据日期
+      description: 来源页面标注的日期，不是今天
+      placeholder: 2026-10-21
+    validations:
+      required: true
+
+  - type: input
+    id: setting
+    attributes:
+      label: 版本 / 设置
+      description: 模型版本、thinking 档位、采样设置、benchmark 版本等
+      placeholder: 2026-10-17 版 / max effort / TB4.0
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 原文 / 截图
+      description: 可直接拖入截图，或粘贴表格行、页面文字
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明
+      description: 为什么当前值不对？是否涉及版本、族归并、去重、量纲？
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我确认来源是公开可访问的，且版本/设置能对上
+          required: true
+        - label: 我已搜索过现有 Issue，没有重复
+          required: true

@@ -1,0 +1,120 @@
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+GLM-5.3,智谱,LiveBench,Reasoning,85.8,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,Coding,78.95,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,Agentic Coding,60.91,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,Mathematics,87.9,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,Data Analysis,70.24,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,Language,79.86,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3,智谱,LiveBench,IF (Instruction Following),69.3,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Reasoning,77.64,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Coding,78.95,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Agentic Coding,56.77,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Mathematics,81.24,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Data Analysis,76.4,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,Language,77.31,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GLM-5.3 Flash,智谱,LiveBench,IF (Instruction Following),52.82,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Reasoning,85.84,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Coding,77.16,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Agentic Coding,54.95,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Mathematics,95.09,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Data Analysis,79.24,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,Language,82.07,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4 Pro 0813,DeepSeek,LiveBench,IF (Instruction Following),67.7,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Reasoning,86.69,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Coding,80.04,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Agentic Coding,77.27,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Mathematics,93.29,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Data Analysis,79.25,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,Language,81.19,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+DeepSeek V4.1 Flash Max Effort,DeepSeek,LiveBench,IF (Instruction Following),70.03,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Reasoning,88.21,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Coding,72.87,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Agentic Coding,64.65,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Mathematics,91.31,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Data Analysis,78.41,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,Language,79.69,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Qwen 3.8 Max,阿里,LiveBench,IF (Instruction Following),74.08,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Reasoning,90.67,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Coding,81.45,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Agentic Coding,62.17,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Mathematics,84.44,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Data Analysis,78.73,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,Language,85.53,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi K3,月之暗面,LiveBench,IF (Instruction Following),71.36,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Reasoning,74.48,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Coding,68.2,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Agentic Coding,40.66,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Mathematics,76.95,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Data Analysis,76.17,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,Language,76.84,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Minimax M3,MiniMax,LiveBench,IF (Instruction Following),57.51,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Reasoning,92.65,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Coding,80.36,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Agentic Coding,57.32,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Mathematics,96.81,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Data Analysis,82.97,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,Language,89.43,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Astra Max Effort,OpenAI,LiveBench,IF (Instruction Following),75.58,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Reasoning,88.65,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Coding,81.77,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Agentic Coding,52.88,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Mathematics,96.36,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Data Analysis,81.19,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,Language,85.3,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Sol Max Effort,OpenAI,LiveBench,IF (Instruction Following),68.57,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Reasoning,81.77,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Coding,78.95,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Agentic Coding,51.21,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Mathematics,89.12,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Data Analysis,73.37,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,Language,73.83,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+GPT-6 Luna Max Effort,OpenAI,LiveBench,IF (Instruction Following),55.93,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Reasoning,91.69,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Coding,86.38,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Agentic Coding,66.06,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Mathematics,97.01,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Data Analysis,80.28,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,Language,89.5,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Fable 5.1 Max Effort,Anthropic,LiveBench,IF (Instruction Following),72.99,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Reasoning,92.15,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Coding,89.25,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Agentic Coding,71.72,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Mathematics,97.08,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Data Analysis,80.31,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,Language,86.27,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Opus 5.5 Max Effort,Anthropic,LiveBench,IF (Instruction Following),65.74,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Reasoning,74.7,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Coding,70.7,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Agentic Coding,38.74,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Mathematics,88.66,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Data Analysis,54.46,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,Language,70.81,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Nemotron 3 Ultra 550B A55B,NVIDIA,LiveBench,IF (Instruction Following),73.45,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Reasoning,80.03,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Coding,75.69,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Agentic Coding,61.36,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Mathematics,86.21,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Data Analysis,76.59,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,Language,74.35,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+qwen3.8-27b,,LiveBench,IF (Instruction Following),72.66,0-100,2026-06-25,https://livebench.ai/v1/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Reasoning,91.63,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Coding,91.37,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Agentic Coding,56.31,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Mathematics,96.13,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Data Analysis,59.49,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,Language,77.98,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Claude Sonnet 5.5 Max Effort,Anthropic,LiveBench,IF (Instruction Following),56.79,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Reasoning,79.38,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Coding,78.57,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Agentic Coding,46.92,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Mathematics,84.28,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Data Analysis,65.13,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,Language,75.14,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.6,月之暗面,LiveBench,IF (Instruction Following),64.36,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Reasoning,82.81,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Coding,73.96,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Agentic Coding,45.66,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Mathematics,79.6,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Data Analysis,62.66,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,Language,77.91,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv
+Kimi-K2.7-Code,月之暗面,LiveBench,IF (Instruction Following),56.29,0-100,2026-06-25,https://livebench.ai/table_2026_06_25.csv

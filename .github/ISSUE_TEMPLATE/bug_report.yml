@@ -1,0 +1,81 @@
+name: Bug report
+description: 页面打不开、图表异常、交互报错、构建失败
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量附上可复现步骤、浏览器信息和截图。
+        如果是数据分数争议，请改用 **Data correction** 模板。
+
+  - type: input
+    id: environment
+    attributes:
+      label: 浏览器 / 系统
+      description: 例如 Chrome 130 / Windows 11，或 Safari 18 / macOS 15
+      placeholder: Chrome 130 / Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 项目版本 / 页面底部版本号
+      placeholder: v0.21 / main@abc1234
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从打开页面开始，一步一步写
+      placeholder: |
+        1. 打开 model-radar.html
+        2. 选择场景「代码开发」
+        3. 选择模型 ...
+        4. 点击 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: 控制台报错 / 构建日志
+      description: 浏览器 DevTools Console，或 `python build_scores.py` / `python build_html.py` 的输出
+      render: text
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或录屏
+      description: 可直接把图片拖进这个输入框
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 Issue，没有重复
+          required: true
+        - label: 这不是数据分数争议（数据问题请用 Data correction 模板）
+          required: true
