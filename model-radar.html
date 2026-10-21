@@ -1346,7 +1346,7 @@
         var t = el('div', 'bt'), v = el('div', 'bv');
         /* v0.22：模型名跟着条走 —— 条够长写进条里（白字），条太短就紧跟条尾（模型色） */
         var lbl = el('span', 'bnm', n);
-        lbl.style.color = c;
+        lbl.setAttribute('data-c', c);
         if (!has(m, d)) {
           t.appendChild(el('i', 'no'));
           v.className = 'bv missv';
@@ -1376,17 +1376,20 @@
     for (var q = 0; q < tracks.length; q++) {
       var tr = tracks[q], lb = tr.querySelector('.bnm');
       if (!lb) { continue; }
+      var mc = lb.getAttribute('data-c') || '';
       var noEl = tr.querySelector('i.no');
       var pct = parseFloat(tr.getAttribute('data-pct') || '0');
       var cw = tr.clientWidth, tw = lb.offsetWidth;
       if (!cw) {
         lb.className = 'bnm out';
+        lb.style.color = mc;
         lb.style.left = pct + '%';
         continue;
       }
       if (noEl) {                       /* 待定：没有条，名字跟在斜纹空位后面 */
         var nx = noEl.offsetWidth + 8;
         lb.className = 'bnm out';
+        lb.style.color = mc;
         lb.style.left = nx + 'px';
         lb.style.maxWidth = Math.max(24, cw - nx - 10) + 'px';
         continue;
@@ -1394,9 +1397,11 @@
       var barPx = cw * pct / 100;
       if (barPx >= tw + 16) {          /* 条够长：名字写进条里（白字压在色块上） */
         lb.className = 'bnm in';
+        lb.style.color = '';           /* 交给 CSS：白字 */
         lb.style.left = pct + '%';
       } else {                          /* 条太短：名字紧跟条尾（模型色，写在纸上） */
         lb.className = 'bnm out';
+        lb.style.color = mc;
         lb.style.left = pct + '%';
         lb.style.maxWidth = Math.max(24, cw - barPx - 12) + 'px';
       }
