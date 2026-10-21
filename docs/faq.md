@@ -90,7 +90,7 @@ n=2 时位次分只有 25 / 75 两档，n=3 时只有 16.7 / 50 / 83.3 三档，
 
 见 [CITATION.cff](../CITATION.cff)，或使用：
 
-> Model Radar（模型雷达图），HanGu007 与贡献者，<https://github.com/HanGu007/model-radar>，CC BY 4.0。
+> Model Radar（模型雷达图），Brando-2077 与贡献者，<https://github.com/Brando-2077/model-radar>，CC BY 4.0。
 
 ## 纠错与贡献
 

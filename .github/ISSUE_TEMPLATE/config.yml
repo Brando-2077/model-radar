@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 先看文档
-    url: https://github.com/HanGu007/model-radar/tree/main/docs
+    url: https://github.com/Brando-2077/model-radar/tree/main/docs
     about: 方法论、数据来源、加模型指南与 FAQ
   - name: 安全问题（私密报告）
-    url: https://github.com/HanGu007/model-radar/security/advisories/new
+    url: https://github.com/Brando-2077/model-radar/security/advisories/new
     about: 请不要在公开 Issue 中披露安全漏洞

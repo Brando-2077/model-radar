@@ -12,11 +12,11 @@
 
 如果你发现安全问题，请**不要**先开公开 Issue。请使用 GitHub 的私密漏洞报告：
 
-1. 打开 <https://github.com/HanGu007/model-radar/security/advisories/new>；
+1. 打开 <https://github.com/Brando-2077/model-radar/security/advisories/new>；
 2. 描述问题、影响范围、复现步骤与建议修复；
 3. 如果可能，附最小复现文件或截图。
 
-也可以先在 GitHub 上联系维护者 [@HanGu007](https://github.com/HanGu007)，说明需要私密渠道。
+也可以先在 GitHub 上联系维护者 [@Brando-2077](https://github.com/Brando-2077)，说明需要私密渠道。
 
 ## 我们关心的问题
 

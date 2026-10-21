@@ -4,7 +4,7 @@
 
 Model Radar turns public benchmark results into an 8-dimension capability profile, weights it by real-world scenarios, and leaves missing evidence explicitly blank instead of pretending it is zero.
 
-[Live demo](https://HanGu007.github.io/model-radar/) · [Methodology](docs/methodology.md) · [Data sources](docs/data-sources.md) · [Contributing](CONTRIBUTING.md) · [中文 README](README.md)
+[Live demo](https://Brando-2077.github.io/model-radar/) · [Methodology](docs/methodology.md) · [Data sources](docs/data-sources.md) · [Contributing](CONTRIBUTING.md) · [中文 README](README.md)
 
 ![Model Radar UI](docs/assets/screenshot.png)
 

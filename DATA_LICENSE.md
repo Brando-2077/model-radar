@@ -22,7 +22,7 @@
 
 建议署名格式：
 
-> Model Radar（模型雷达图），HanGu007 与贡献者，<https://github.com/HanGu007/model-radar>，CC BY 4.0。数据经过归一化与基准族内位次分转换；原始分数请回到各来源页面核对。
+> Model Radar（模型雷达图），Brando-2077 与贡献者，<https://github.com/Brando-2077/model-radar>，CC BY 4.0。数据经过归一化与基准族内位次分转换；原始分数请回到各来源页面核对。
 
 ## 上游数据不属于本仓库的许可范围
 

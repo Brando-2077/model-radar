@@ -7,11 +7,11 @@ abstract: >-
   families as pool-relative percentiles, and deliberately leaves missing
   dimensions blank rather than treating them as zero.
 authors:
-  - name: "HanGu007"
+  - name: "Brando-2077"
 version: 0.24.0
 date-released: 2026-10-21
-url: "https://github.com/HanGu007/model-radar"
-repository-code: "https://github.com/HanGu007/model-radar"
+url: "https://github.com/Brando-2077/model-radar"
+repository-code: "https://github.com/Brando-2077/model-radar"
 license: MIT
 keywords:
   - large language models

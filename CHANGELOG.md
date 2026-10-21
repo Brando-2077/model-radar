@@ -46,7 +46,7 @@
 
 ### Added
 
-- 首次以公开仓库形式发布：<https://github.com/HanGu007/model-radar>，并提供 GitHub Pages 在线版。
+- 首次以公开仓库形式发布：<https://github.com/Brando-2077/model-radar>，并提供 GitHub Pages 在线版。
 - 新增 Google 三款现役模型：**Gemini 4 Argon**、**Gemini 3.8 Flash**、**Gemini 3.5 Flash-Lite**。
 - 新增 Artificial Analysis 单模型页 33 行、LiveBench 2.0 官方表 14 行、AI产品狙击手 Q1 2 行、Design Arena 2 行。
 - 新增 `data/README.md`、`docs/` 公开文档、贡献指南、Issue / PR 模板、数据校验脚本与 CI。

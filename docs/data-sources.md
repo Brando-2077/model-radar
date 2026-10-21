@@ -111,6 +111,6 @@
 
 - 保留每条证据的 `URL` 与 `数据日期`；
 - 阅读并遵守原发布方的使用条款；
-- 引用时注明 “Model Radar（模型雷达图），HanGu007 与贡献者，CC BY 4.0”，并说明是否修改。
+- 引用时注明 “Model Radar（模型雷达图），Brando-2077 与贡献者，CC BY 4.0”，并说明是否修改。
 
 完整许可见 [DATA_LICENSE.md](../DATA_LICENSE.md)。

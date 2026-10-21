@@ -36,7 +36,7 @@
 要求 Python 3.10+。
 
 ```bash
-git clone https://github.com/HanGu007/model-radar.git
+git clone https://github.com/Brando-2077/model-radar.git
 cd model-radar
 python -m pip install -r requirements.txt
 python build_scores.py
