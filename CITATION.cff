@@ -8,7 +8,7 @@ abstract: >-
   dimensions blank rather than treating them as zero.
 authors:
   - name: "Brando-2077"
-version: 0.24.0
+version: 0.25.0
 date-released: 2026-10-21
 url: "https://github.com/Brando-2077/model-radar"
 repository-code: "https://github.com/Brando-2077/model-radar"
