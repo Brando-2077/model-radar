@@ -7,6 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](DATA_LICENSE.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![validate](https://github.com/HanGu007/model-radar/actions/workflows/validate.yml/badge.svg)](https://github.com/HanGu007/model-radar/actions/workflows/validate.yml)
 
 [在线体验](https://HanGu007.github.io/model-radar/) · [方法论](docs/methodology.md) · [数据来源](docs/data-sources.md) · [参与贡献](CONTRIBUTING.md) · [English overview](README.en.md)
 
