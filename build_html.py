@@ -328,7 +328,7 @@ def build_ledger():
     ledger = {
         "meta": {
             "title": "模型雷达图",
-            "version": "v0.23",
+            "version": "v0.24",
             "built": date.today().isoformat(),
             "sources": (f"LiveBench {lb.min()}（{lb.max()} 快照） · SuperCLUE 2026-07/09 · "
                         f"Artificial Analysis {aa.min()}~{aa.max()} · LMArena 榜单 · SUYOUUMO 综合全球榜（2026-10-17） · "
