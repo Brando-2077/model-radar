@@ -44,3 +44,6 @@ desktop.ini
 
 # ZCode session transcripts (local only)
 ses_*.json
+
+# ZCode plans (local)
+.zcode/

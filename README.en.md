@@ -26,14 +26,14 @@ The project is independent, ad-free, and has no price, subscription, or vendor-r
 - **Three evidence scopes**: all sources / third-party only / with inferred values.
 - **Evidence drawer** for every data point: source name, date, raw score, benchmark family, family size, percentile formula; raw URLs live in `data/raw_*.csv`.
 - **Single-file HTML**: `model-radar.html` contains the app and the data; open it offline with no runtime dependencies.
-- **Reproducible pipeline**: raw CSVs → `build_scores.py` → `build_html.py`.
+- **Reproducible pipeline**: raw CSVs → `radar/families.py` → `radar/emit.py`.
 
 ## Quick start
 
 ```bash
 python -m pip install -r requirements.txt
-python build_scores.py
-python build_html.py
+python build.py --scores
+python build.py --html
 python scripts/validate.py
 ```
 

@@ -28,10 +28,13 @@ jobs:
           python -m pip install -r requirements.txt
 
       - name: Syntax check
-        run: python -m py_compile build_scores.py build_html.py scripts/*.py
+        run: python -m py_compile build.py radar/*.py scripts/*.py
 
-      - name: Rebuild evidence ledger
-        run: python build_scores.py
+      - name: Unit tests
+        run: python -m pytest tests/ -q
+
+      - name: Rebuild (pipeline + HTML)
+        run: python build.py
 
       - name: Check ledger is committed
         run: git diff --exit-code --ignore-cr-at-eol -- data/scores.csv

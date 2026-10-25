@@ -1,14 +1,14 @@
 # 方法论
 
-本文说明模型雷达图如何从公开证据得到页面上的分数。所有规则都写在 `build_scores.py`、`build_html.py` 与 `data/` 的表中，本文是便于阅读的说明，不替代代码。
+本文说明模型雷达图如何从公开证据得到页面上的分数。所有规则都写在 `radar/` 构建包、`radar/emit.py` 与 `data/` 的表中，本文是便于阅读的说明，不替代代码。
 
 ## 1. 总览
 
 ```text
 data/raw_*.csv  ──┐
-data/mapping.csv ─┼──> build_scores.py ──> data/scores.csv ──┐
+data/mapping.csv ─┼──> radar/families.py ──> data/scores.csv ──┐
 data/canon.csv   ─┘                                          │
-                                                             ├──> build_html.py ──> model-radar.html
+                                                             ├──> radar/emit.py ──> model-radar.html
 data/dimensions.csv ─────────────────────────────────────────┤
 data/weights.csv ────────────────────────────────────────────┤
 data/models.csv ─────────────────────────────────────────────┘
@@ -147,7 +147,7 @@ n=2 时位次分只有 25 / 75 两档，n=3 时只有 16.7 / 50 / 83.3 三档，
 
 使用 `scores.csv` 中所有计分证据，包括厂商自报渠道。
 
-厂商自报渠道在 `build_scores.py` 的 `VENDOR_SRC` 中单点维护，目前包括：
+厂商自报渠道在 `radar/config.py` 的 `VENDOR_SRC` 中单点维护，目前包括：
 
 - `Z.ai官方`
 - `dots官方`

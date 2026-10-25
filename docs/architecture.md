@@ -7,8 +7,16 @@
 ```text
 .
 ├─ model-radar.html          # 唯一交付物：HTML/CSS/JS 展示壳 + 内联数据区
-├─ build_scores.py           # 原始证据 → 证据账本
-├─ build_html.py             # 证据账本 + 维度/权重/名册 → HTML 数据区
+├─ build.py                  # CLI 入口：python build.py（--scores / --html 可分步）
+├─ radar/                    # 构建管线包（v0.27 重写，每层只依赖下一层）
+│  ├─ config.py              #   口径常量单点（权重公式 / 厂商渠道 / TB 规则 / 路径）
+│  ├─ tables.py              #   CSV 读取层（显式 load_*，无导入副作用）
+│  ├─ normalize.py           #   量纲归一化（0-1/百分制/10分制/Elo 池内 min-max）
+│  ├─ families.py            #   TB 版本去重 →（模型×族）去重 → 族内位次分
+│  ├─ aggregate.py           #   维度加权均值 / 三口径 / sf 单基准标记 / 维度统计
+│  ├─ ledger.py              #   JSON 账本组装（页面唯一数据契约，键序即契约）
+│  └─ emit.py                #   scores.csv 落盘 + HTML 数据区写入
+├─ tests/                    # pytest 测试套件（归一化 / 位次分 / 聚合 / 契约 / 幂等）
 ├─ data/
 │  ├─ raw_*.csv              # 各来源原始证据（每行带 URL 与数据日期）
 │  ├─ raw_inferred.csv       # 推理补全（列结构与 raw_* 不同，单独处理）
@@ -43,19 +51,20 @@
 
 ```mermaid
 flowchart LR
-  RAW["data/raw_*.csv<br/>原始证据"] --> BS["build_scores.py"]
-  MAP["data/mapping.csv<br/>来源×类别 → 维度/族"] --> BS
-  CANON["data/canon.csv<br/>榜单名 → 统一名"] --> BS
-  BS --> SCORES["data/scores.csv<br/>证据账本"]
-  SCORES --> BH["build_html.py"]
-  DIMS["data/dimensions.csv"] --> BH
-  W["data/weights.csv"] --> BH
-  ROSTER["data/models.csv"] --> BH
-  INF["data/raw_inferred.csv"] --> BS
-  BH --> HTML["model-radar.html<br/>数据区内联"]
+  RAW["data/raw_*.csv<br/>原始证据"] --> FAM["radar/families.py<br/>去重 + 位次分"]
+  MAP["data/mapping.csv<br/>来源×类别 → 维度/族"] --> FAM
+  CANON["data/canon.csv<br/>榜单名 → 统一名"] --> FAM
+  INF["data/raw_inferred.csv"] --> FAM
+  FAM --> SCORES["data/scores.csv<br/>证据账本"]
+  SCORES --> AGG["radar/aggregate.py<br/>维度加权均值 + 三口径"]
+  DIMS["data/dimensions.csv"] --> LEDGER["radar/ledger.py<br/>契约组装"]
+  W["data/weights.csv"] --> LEDGER
+  ROSTER["data/models.csv"] --> LEDGER
+  AGG --> LEDGER
+  LEDGER --> EMIT["radar/emit.py"] --> HTML["model-radar.html<br/>数据区内联"]
 ```
 
-### 2.1 `build_scores.py`
+### 2.1 `radar/families.py`（阶段①，`python build.py --scores`）
 
 职责：
 
@@ -72,11 +81,11 @@ flowchart LR
 
 `族内n < 4` 的行保留面值与真实人数，页面过滤并标“样本不足”；推理行的 `族` 与 `族内n` 为空。
 
-### 2.2 `build_html.py`
+### 2.2 `radar/ledger.py` + `radar/emit.py`（阶段②，`python build.py --html`）
 
 职责：
 
-1. 从 `build_scores.py` 导入 `CANON`、`FAMILY_MIN_N`、`VENDOR_SRC`，保证口径同源；
+1. 从 `build.py（阶段①）` 导入 `CANON`、`FAMILY_MIN_N`、`VENDOR_SRC`，保证口径同源；
 2. 读取 `scores.csv`、`dimensions.csv`、`weights.csv`、`models.csv`；
 3. 过滤计分证据（`族内n ≥ 4`），按维度求均值；
 4. 同时计算三档口径：全部来源、仅第三方、含推理补全；
@@ -93,7 +102,7 @@ flowchart LR
 <!-- ==== 数据区 END ==== -->
 ```
 
-数据区由 `build_html.py` 整体覆盖，**不要手改**；其余 HTML / CSS / JS 是手写展示壳，可以改。改完壳后重新跑一次 `build_html.py`，确认数据区仍能正常写入。
+数据区由 `build.py（阶段②）` 整体覆盖，**不要手改**；其余 HTML / CSS / JS 是手写展示壳，可以改。改完壳后重新跑一次 `build.py（阶段②）`，确认数据区仍能正常写入。
 
 页面没有运行时依赖：不加载 CDN、不需要网络、不需要构建工具；双击即可打开。
 
@@ -103,12 +112,12 @@ flowchart LR
 
 ```bash
 python -m pip install -r requirements.txt
-python build_scores.py
-python build_html.py
+python build.py（阶段①）
+python build.py（阶段②）
 python scripts/validate.py
 ```
 
-`build_scores.py` 会打印基准族去重、未映射类别、计分覆盖等诊断信息。看到“既未映射、也未声明有意不映射”的提示时，补 `mapping.csv`，不要忽略。
+`build.py（阶段①）` 会打印基准族去重、未映射类别、计分覆盖等诊断信息。看到“既未映射、也未声明有意不映射”的提示时，补 `mapping.csv`，不要忽略。
 
 ### 3.2 构建日期与幂等
 
@@ -137,7 +146,7 @@ python scripts/validate.py
 `.github/workflows/validate.yml` 在 push / PR 时：
 
 1. 安装 `requirements.txt`；
-2. 运行 `build_scores.py`，并检查 `data/scores.csv` 是否与提交版本一致（忽略行尾差异）；
+2. 运行 `build.py（阶段①）`，并检查 `data/scores.csv` 是否与提交版本一致（忽略行尾差异）；
 3. 运行 `scripts/validate.py`；
 4. 对 Python 文件做语法编译检查。
 
@@ -150,9 +159,9 @@ CI 不重建 `model-radar.html`，因为它内置构建日期；页面构建由�
 2. 在 `data/canon.csv` 增加榜单模型名 → 统一名的别名；
 3. 在 `data/mapping.csv` 增加（来源, 类别）→ 维度 + 基准族的行；
    - 不打算映射的总分/综合指数：维度留空，明确声明“有意不映射”；
-4. 如果来源是厂商自报，把来源名加入 `build_scores.py` 的 `VENDOR_SRC`，并补 `VENDOR_SRC_PAGES`；
-5. 跑 `build_scores.py`，检查诊断输出与 `scores.csv`；
-6. 跑 `build_html.py` 与 `validate.py`；
+4. 如果来源是厂商自报，把来源名加入 `build.py（阶段①）` 的 `VENDOR_SRC`，并补 `VENDOR_SRC_PAGES`；
+5. 跑 `build.py（阶段①）`，检查诊断输出与 `scores.csv`；
+6. 跑 `build.py（阶段②）` 与 `validate.py`；
 7. 在 `CHANGELOG.md` 记录来源、日期、行数与口径影响。
 
 ### 4.1 抓取脚本的边界
@@ -172,8 +181,8 @@ CI 不重建 `model-radar.html`，因为它内置构建日期；页面构建由�
 - raw 表有证据行（或明确标记“待定/无公开证据”）；
 - `canon.csv` 有榜单名别名；
 - 新来源/新类别才需要动 `mapping.csv`；
-- `build_scores.py` 无“未映射”警告；
-- `build_html.py` 后页面能选中该模型；
+- `build.py（阶段①）` 无“未映射”警告；
+- `build.py（阶段②）` 后页面能选中该模型；
 - `validate.py` 通过；
 - PR 同时包含数据表与 `model-radar.html`。
 
@@ -184,9 +193,9 @@ CI 不重建 `model-radar.html`，因为它内置构建日期；页面构建由�
 | 页面模型数比名册多 | raw 里有已移除模型的残留行，且 canon 没命中 | 搜 raw 模型名，删残留；跑 validate |
 | 某维一直“待定” | 该维没有计分族，或只有厂商自报（第三方口径） | 看抽屉的族与 n；补第三方证据，或接受待定 |
 | 分数与上次差很多 | 池子增减导致位次整体移动 | 看相对名次与覆盖，不要逐格比较绝对值 |
-| `build_scores.py` 提示未映射 | 新来源/类别没进 mapping | 补 mapping 行，或声明有意不映射 |
-| HTML 数据区没更新 | 没跑 `build_html.py`，或数据区标记被破坏 | 恢复 BEGIN/END 标记，重跑 |
-| CI 报 `scores.csv` 不一致 | 改了 raw/mapping/canon 但没重建账本 | 本地跑 `build_scores.py` 并提交 |
+| `build.py（阶段①）` 提示未映射 | 新来源/类别没进 mapping | 补 mapping 行，或声明有意不映射 |
+| HTML 数据区没更新 | 没跑 `build.py（阶段②）`，或数据区标记被破坏 | 恢复 BEGIN/END 标记，重跑 |
+| CI 报 `scores.csv` 不一致 | 改了 raw/mapping/canon 但没重建账本 | 本地跑 `build.py（阶段①）` 并提交 |
 
 ## 7. 兼容性
 

@@ -32,9 +32,9 @@ KNOWN_UNITS = {"0-100", "0-1", "百分制", "10分制", "5分制", "Elo", "指�
 # Single source of truth for the family threshold and vendor channel list.
 sys.path.insert(0, str(ROOT))
 try:
-    from build_scores import FAMILY_MIN_N, VENDOR_SRC  # noqa: E402
+    from radar.config import FAMILY_MIN_N, VENDOR_SRC, fam_weight  # noqa: E402
 except Exception as exc:  # pragma: no cover - only hit when the repo is broken
-    print(f"[FAIL] 无法从 build_scores.py 读取口径常量：{exc}")
+    print(f"[FAIL] 无法从 radar 包读取口径常量：{exc}")
     raise SystemExit(1)
 
 
@@ -441,13 +441,20 @@ def main() -> int:
                 if m.get("name") in pending_models and m.get("scores"):
                     report.error(f"待定模型 {m.get('name')} 不应有维度分")
 
+            # v0.27：账本证据的 w 字段必须与 fam_weight 公式一致
+            bad_w = [e for e in ledger.get("evidence", [])
+                     if e.get("fam") and e.get("w") is not None and e["w"] != fam_weight(e["famN"])]
+            if bad_w:
+                report.error(f"ledger 证据的 w 字段与 fam_weight 公式不一致："
+                             f"{len(bad_w)} 条（首例 famN={bad_w[0].get('famN')}）")
+
     # Raw inferred rows must have a matching score row; checked above.
     # Summary
     print("=== Model Radar 校验 ===")
     print(f"模型：{len(model_names)} 个（有计分 {len(set(scored['模型'].str.strip()))} 个，待定 {len(pending_models)} 个）")
     print(f"证据：{len(scores)} 条（实测/族行 {len(family_rows)}，推理 {len(inferred_rows)}）")
-    low_rows = scored[scored["族内n"].astype(float) < 4]
-    print(f"计分：{len(scored)} 条（其中低置信降权 {len(low_rows)} 条：n=3×0.6 / n=2×0.35）；"
+    low_rows = scored[scored["族内n"].astype(float) < 4]  # 低置信 = 计分行里 n<4
+    print(f"计分：{len(scored)} 条（其中低置信降权 {len(low_rows)} 条：w(n)=(n−1)/3 → ×0.67/×0.33）；"
           f"无对手不计分 {len(unscored)} 条；族 {len(scored_families)} 个；覆盖 {covered_cells} 格")
     print(f"场景：{scene_count} 套；权重归一化检查已完成")
     print(f"HTML：{HTML.name} · {HTML.stat().st_size:,} 字节")

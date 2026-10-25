@@ -176,7 +176,8 @@ def load_slug_records():
 def main():
     import pandas as pd
     sys.path.insert(0, str(ROOT))
-    from build_scores import CANON  # noqa: E402
+    from radar.tables import load_canon  # noqa: E402
+    CANON = load_canon()
 
     records = load_slug_records()
     print(f"扫描到 {len(records)} 个 slug 记录")

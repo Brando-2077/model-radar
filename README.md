@@ -56,11 +56,10 @@
 
 ```bash
 python -m pip install -r requirements.txt
-python build_scores.py
-python build_html.py
+python build.py
 ```
 
-第一条命令从 `data/raw_*.csv` 重建证据账本 `data/scores.csv`；第二条把账本与维度、权重、名册写进 `model-radar.html` 的数据区。
+一条命令跑完两阶段：先从 `data/raw_*.csv` 重建证据账本 `data/scores.csv`，再把账本与维度、权重、名册写进 `model-radar.html` 的数据区（`--scores` / `--html` 可分步）。
 
 ### 校验
 
@@ -85,8 +84,9 @@ python scripts/validate.py
 ```text
 .
 ├─ model-radar.html          # 唯一交付物：单文件网页（数据内联）
-├─ build_scores.py           # raw_*.csv → scores.csv（归一化 + 族内位次分）
-├─ build_html.py             # scores.csv + 维度/权重/名册 → 写入 HTML 数据区
+├─ build.py                  # CLI 入口（python build.py 一条命令重建）
+├─ radar/                    # 构建管线包：config/tables/normalize/families/aggregate/ledger/emit
+├─ tests/                    # pytest 测试套件
 ├─ data/
 │  ├─ raw_*.csv              # 各来源原始证据（带 URL 与数据日期）
 │  ├─ mapping.csv            #（来源, 类别）→ 维度 + 基准族
@@ -114,8 +114,8 @@ python scripts/validate.py
 提交前请跑：
 
 ```bash
-python build_scores.py
-python build_html.py
+python build.py --scores
+python build.py --html
 python scripts/validate.py
 ```
 

@@ -125,7 +125,7 @@ Artificial-Analysis,GPQA,推理与知识,AA·GPQA,AA 的 GPQA Diamond
 ### Step 5：重建账本并检查诊断
 
 ```bash
-python build_scores.py
+python build.py --scores
 ```
 
 重点看输出：
@@ -150,10 +150,10 @@ grep "Example-Model-1.0" data/scores.csv
 ### Step 6：重建页面
 
 ```bash
-python build_html.py
+python build.py --html
 ```
 
-`build_html.py` 会整体覆盖 `model-radar.html` 的数据区。打开页面确认：
+`python build.py --html` 会整体覆盖 `model-radar.html` 的数据区。打开页面确认：
 
 - 模型能搜索到、能选中；
 - 雷达 / 条形图有该模型；
@@ -181,7 +181,7 @@ python scripts/validate.py
 PR 请同时包含：
 
 - `data/` 下的表；
-- `model-radar.html`（如果跑过 `build_html.py`）；
+- `model-radar.html`（如果跑过 `python build.py --html`）；
 - `CHANGELOG.md`；
 - 证据截图或原始页面链接（方便 review）。
 
@@ -258,9 +258,9 @@ Space-Bunny,匿名,未确认,2026-09-23,匿名 stealth 预览模型；无公开�
 - [ ] `canon.csv` 覆盖所有榜单原名；
 - [ ] 新来源/类别在 `mapping.csv` 有映射或“有意不映射”声明；
 - [ ] 没有为了凑人数而并族；
-- [ ] `python build_scores.py` 无未映射警告；
+- [ ] `python build.py --scores` 无未映射警告；
 - [ ] `data/scores.csv` 已重建并提交；
-- [ ] `python build_html.py` 已运行，页面可选中新模型；
+- [ ] `python build.py --html` 已运行，页面可选中新模型；
 - [ ] `python scripts/validate.py` 通过；
 - [ ] `CHANGELOG.md` 已更新；
 - [ ] PR 描述附原始来源链接/截图。
