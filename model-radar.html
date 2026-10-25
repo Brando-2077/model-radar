@@ -242,6 +242,22 @@
       max-height:calc(100vh - var(--topbar-h, 72px) - 28px);overflow:auto}
   }
 
+  /* v0.27.3 · 手机常驻图形：单栏（≤1120）时把图形面板钉在顶栏下方——
+     点榜单换模型，雷达/条形立刻跟着变，不再"选一个滚上去看一眼"。
+     同时削减手机上的重复控件：首屏三步教学条（与口径说明重复）、star 引导条
+     （页尾还有完整版）、面板内第二份图形开关（顶栏 ③ 已有）、面板副标题与
+     图注长文案（教学性文字）。寸土寸金，图形 + 榜单同屏才是主任务。 */
+  @media (max-width:1120px){
+    .howto,.star-bar,.afford{display:none}
+    .main > .panel:first-child{position:sticky;top:var(--topbar-h,96px);z-index:30;
+      max-height:calc(78vh - var(--topbar-h,96px));overflow:auto;
+      box-shadow:0 6px 16px rgba(23,22,15,.12)}
+    .main > .panel:first-child + .panel{margin-top:14px}
+    .panel:first-child .ctl{display:none}
+    .panel:first-child .ph .sub{display:none}
+    #chart-cap-text{display:none}
+  }
+
   .panel{position:relative;background:var(--paper-2);border:1px solid var(--rule);padding:20px 22px 22px}
   .panel::after{content:"";position:absolute;inset:4px;border:1px solid var(--rule-2);pointer-events:none}
   .ph{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
