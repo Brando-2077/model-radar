@@ -62,3 +62,4 @@ DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Apex Bench v1.1,64.6,0-100,2026-10-1
 DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Chartography (w/tools),78.9,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,BabyVision (w/tools),89.6,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,ZeroBench-main (w/tools),49.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+Kimi-K3.1-Pro,月之暗面,Kimi官方,Terminal-Bench 4.0,65.7,百分制,2026-10-23,https://www.kimi.ai/blog/kimi-k3-1-pro

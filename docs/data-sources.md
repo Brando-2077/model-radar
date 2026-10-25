@@ -11,12 +11,12 @@
 | 来源 | 用途 | raw 行数 | 更新 | 注意 |
 |---|---|---:|---|---|
 | [Artificial Analysis](https://artificialanalysis.ai) | 单模型页的分项基准：GPQA / HLE / CritPt / SciCode / Terminal-Bench / AA-LCR / IFBench / MMMU-Pro / AutomationBench / Omniscience 等 | 306 | 持续 | 部分字段为 `null`；总分/综合指数不直接映射，只用分项 |
-| [LiveBench 2.0](https://livebench.ai) | 七个套件：Reasoning / Coding / Long Agentic / Browser / Data Analysis / Research / Design | 133 | 官方 release | 与 LiveBench 1.x **分族**；当前 release `20261014` |
+| [LiveBench 2.0](https://livebench.ai) | 七个套件：Reasoning / Coding / Long Agentic / Browser / Data Analysis / Research / Design | 112 | 官方 release | 与 LiveBench 1.x **分族**；当前 release `20261023`（2026-10-25 全池迁移；Long Agentic / Browser 两套件被官方重测，4 个移出榜的模型行已删） |
 | [LiveBench](https://livebench.ai) | v1 分类别：Reasoning / Math / Coding / Language / Data Analysis / Instruction Following 等 | 119 | 月更 | 与 LiveBench 2.0 **分族**；只取官方表 |
-| [SuperCLUE](https://www.superclueai.com) | 中文通用榜、长上下文、Terminal、Writing 等 | 96 | 月更 | 只收精确同款版本；Writing 当前仅少量模型，族内 n=4 |
+| [SuperCLUE](https://www.superclueai.com) | 中文通用榜、长上下文、Terminal、Writing 等 | 96 | 月更 | 只收精确同款版本；Writing 当前仅少量模型，族内 n=5 |
 | [LMArena](https://lmarena.ai) | 人评 Elo：总榜与分类目 | 34 | 持续 | 部分页面受 Cloudflare 限制；只用可复核的总榜/类目 Elo |
-| [Design Arena](https://openrouter.ai/rankings#benchmarks) | `models-website` 人评 Elo：网页/视觉产出 | 15 | 持续 | 经 OpenRouter 公开接口；只取 `models-website` 一个类目 → 图片与制图 |
-| [AIWB — AI Writing Benchmark](https://aiwritingbenchmark.com/leaderboard) | 英文写作盲评：盲测对战 + AI 裁判，Bradley–Terry 定分 | 17 | 周更 | 英文口径，50 = 平均模型；与中文写作不并族 |
+| [Design Arena](https://openrouter.ai/rankings#benchmarks) | `models-website` 人评 Elo：网页/视觉产出 | 21 | 持续 | 经 OpenRouter 公开接口；只取 `models-website` 一个类目 → 图片与制图（纯文本模型也在此榜，2026-10-25 补录 5 个池内模型） |
+| [AIWB — AI Writing Benchmark](https://aiwritingbenchmark.com/leaderboard) | 英文写作盲评：盲测对战 + AI 裁判，Bradley–Terry 定分 | 18 | 周更 | 英文口径，50 = 平均模型；与中文写作不并族（2026-10-25 全量刷新至当周榜） |
 | [AI产品狙击手](https://www.techgogogo.com/llm-benchmark/) | 中文多约束指令遵循 Q1（10 分制） | 16 | 不定期 | 单人主观判分、单题；只作一个独立族，不等价于 IFBench |
 | 厂商官方材料：DeepSeek | 官方模型卡/发布页 | 19 | 随发版 | 厂商自报渠道；只收该厂商自己的模型 |
 | 厂商官方材料：腾讯 | 腾讯混元官方页/附录 | 17 | 随发版 | 厂商自报渠道 |
@@ -24,7 +24,7 @@
 | 厂商官方材料：Z.ai / 智谱 | GLM 官方博客/技术报告 | 13 | 随发版 | 厂商自报渠道 |
 | [酥悠沫](https://suyoumo.github.io/) | 聚合榜补缺 | 5（第三方 1 + 官方转录 4） | 不定期 | 只补“该格没有任何实测”的位置；官方转录单独标为厂商渠道 |
 
-合计约 **804 条 raw 行**；经同族去重、TB 回退、未映射行剔除后，当前账本为 **729 条证据**（含 13 条推理补全）。
+合计约 **804 条 raw 行**；经同（模型×族）去重、TB 版本去重、未映射行剔除后，当前账本为 **729 条证据**（含 13 条推理补全）。
 
 ## 各来源的口径与局限
 

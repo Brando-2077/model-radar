@@ -9,7 +9,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![validate](https://github.com/Brando-2077/model-radar/actions/workflows/validate.yml/badge.svg)](https://github.com/Brando-2077/model-radar/actions/workflows/validate.yml)
 
-[在线体验](https://Brando-2077.github.io/model-radar/) · [方法论](docs/methodology.md) · [数据来源](docs/data-sources.md) · [参与贡献](CONTRIBUTING.md) · [English overview](README.en.md)
+[在线体验](https://Brando-2077.github.io/model-radar/) · [方法论](docs/methodology.md) · [数据与算法](docs/data-and-algorithms.md) · [数据来源](docs/data-sources.md) · [参与贡献](CONTRIBUTING.md) · [English overview](README.en.md)
 
 ![模型雷达图界面](docs/assets/screenshot.png)
 
@@ -73,12 +73,12 @@ python scripts/validate.py
 ## 数据口径（先读这三条）
 
 1. **榜单分 = 基准族内位次分。** 同一基准族内，把原始分从低到高排序，最低分记第 1 名；位次分 = `(名次 - 0.5) / n × 100`。原始分越高，名次越靠后、位次分越高。分数越高，表示在该基准的模型池里赢过的对手越多；n 越大越接近 0–100 两端（n=4 时约为 12.5–87.5）。
-2. **族内少于 4 个模型不计分。** 证据保留、标注“样本不足”，等池子变大后自动参与。
+2. **小族降权入分。** 族内 ≥4 个模型全权计分，3 个 ×0.6、2 个 ×0.35（低置信证据按可信度参与，不一刀切排除）；仅 1 个模型的族不计分（无对手不可排名）。
 3. **维度分 = 该维各计分族位次分的算术均值。** 综合分按场景权重加权；缺数据的维度权重自动让位，不按 0 分处理。
 
-同一（模型 × 基准族）只留一票：第三方证据优先，日期新者优先；Terminal-Bench 同族优先 4.0，缺则回退 2.1。
+同一（模型 × 基准族）只留一票：第三方证据优先，日期新者优先；AA 的 Terminal-Bench 同模型只取一版，优先 4.0，缺则回退 2.1。
 
-完整规则、去重、三档口径、推理补全与已知限制见 [方法论](docs/methodology.md)。
+完整规则、去重、三档口径、推理补全与已知限制见 [方法论](docs/methodology.md)；逐条来源、44 个计分族、当前快照与复现步骤见 [数据与算法全解](docs/data-and-algorithms.md)。
 
 ## 项目结构
 

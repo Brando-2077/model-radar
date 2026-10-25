@@ -11,13 +11,14 @@
                       2026-10-18 v0.12 起；下游与文档都引用这张表，代码不另抄一份
   data/canon.csv    各榜单模型名 → 项目统一命名（scores.csv 以统一名为准）
 规则说明见 docs/methodology.md；TB 双版本处理见 TB_PREFER / TB_FALLBACK；
-基准族计分规则见 apply_family_scores()，最小池门槛见 FAMILY_MIN_N。
+基准族计分规则见 apply_family_scores()；入分门槛与降权档位见 FAMILY_MIN_N / FAM_WEIGHT（v0.26）。
 
 - 每行输出 = 模型 × 维度 × 来源 的一条证据（备注列保留原始分与出处，可溯源）
 - **「榜单分」口径（v0.12 起）= 基准族内位次分**：族内 (名次−0.5)/n×100，0-100、池内相对，
   语义 = "在该基准的模型池里赢过多少比例对手"。同一（模型×族）只留一票（第三方优先、
-  日期新者优先）；族内模型数 < FAMILY_MIN_N 的族不计分（行保留、写「族内n」与面值，
-  页面按「样本不足」标注）。「族 / 族内n」两列随行输出，供 build_html.py 过滤与展示。
+  日期新者优先）；族内模型数 ≥ 2 的族计位次分（n=2/3 为低置信、下游按 FAM_WEIGHT 降权），
+  族内仅 1 个模型的族不计分（单模型无对手、位次分恒为 50 无信息；行保留、写「族内n」与面值，
+  页面标注）。「族 / 族内n」两列随行输出，供 build_html.py 加权与展示。
 - 维度分 = 该维度各计分族位次分的均值（由 build_html.py 计算）
 - 只采用可核的跑分与公开榜单
 - data/raw_inferred.csv 是**推理补全**通道：公开榜抽不到分时，用
@@ -60,15 +61,27 @@ CANON = load_canon()
 MAPPING, EXPLICIT_UNMAPPED, FAMILY = load_mapping()
 
 # 基准族最小池（v0.12）：族内模型数 < 4 不进计分——n=3 时"第一名"=83 分、
-# n=2 时"第一名"=75 分，位次分辨率失真。证据行保留、页面标「样本不足」，待池子长大后自动入分。
-FAMILY_MIN_N = 4
+# v0.26「分级入分」（用户拍板，修订 v0.12 的「<4 排除」）：族内 ≥2 人即可排名——
+# n≥4 全权、n=3 权 0.6、n=2 权 0.35（低置信证据按可信度贡献权重，不再一刀切排除）；
+# n=1 仍不计分：单模型无对手，位次分恒为 50、零信息量，入了只会制造「50=平庸」的误读。
+# 权重函数在本文件单点维护，build_html.py import 复用（口径即数据，只写一处）。
+FAMILY_MIN_N = 2          # 入分门槛：族内至少 2 个模型才有排名
+FAM_WEIGHT = {3: 0.6, 2: 0.35}   # 低置信档位；n≥4 一律 1.0
+
+
+def fam_weight(n):
+    """族内模型数 → 该族证据在维度均值里的权重（v0.26 分级口径）。"""
+    n = int(n)
+    if n >= 4:
+        return 1.0
+    return FAM_WEIGHT.get(n, 0.0)
 
 # 「仅第三方榜单」口径要整体排除的**厂商自报渠道**（口径即数据，只在这里维护一处；
 # build_html.py 复用本集合）。判定按来源渠道、不按"是不是自家模型"：
 # 如 NVIDIA 官方页给非自家模型报的分也一并排除。
 # 2026-10-17 增补：DeepSeek官方（1017 官方基准）、酥悠沫-官方（聚合站转录的厂商自报表，
 # 数字仍出自厂商页面，按渠道排除才自洽）。酥悠沫本身（第三方聚合）不算厂商渠道。
-VENDOR_SRC = {"Z.ai官方", "dots官方", "腾讯官方", "NVIDIA官方", "DeepSeek官方", "酥悠沫-官方"}
+VENDOR_SRC = {"Z.ai官方", "dots官方", "腾讯官方", "NVIDIA官方", "DeepSeek官方", "酥悠沫-官方", "Kimi官方"}
 
 # Terminal-Bench 同族口径（2026-10-08 定）：AA 同时有 2.1 与 4.0 两版分数，两版难度差很大
 # （4.0 普遍低 30~80 个百分点），同时计入会让"有双版本数据的模型"在取均值时多吃分。
@@ -114,13 +127,13 @@ def apply_family_scores(rows):
 
     · 去重：同一（模型 × 族）只留一票 —— 第三方来源优先，其次数据日期新者优先
       （与试算脚本完全同式）；被淘汰的行不进 scores.csv（仍留档 raw）。
-    · 计分：族内模型数 >= FAMILY_MIN_N 的族 → (族内名次 − 0.5) / n × 100（tie 取名次均值），
-      写回「榜单分」（1 位小数），并写「族」「族内n」。
-    · 族内 < FAMILY_MIN_N 的族 → 榜单分保留面值，照样写「族」「族内n」，由页面标「样本不足」。
+    · 计分：族内模型数 >= FAMILY_MIN_N（即 ≥2）的族 → (族内名次 − 0.5) / n × 100（tie 取名次均值），
+      写回「榜单分」（1 位小数），并写「族」「族内n」；n=2/3 的行为低置信，下游按 FAM_WEIGHT 降权。
+    · 族内 = 1 的族 → 榜单分保留面值，照样写「族」「族内n」，由页面标「不计分（无对手）」。
     返回 (新 rows, 统计 dict)。"""
     df = pd.DataFrame(rows)
     stats = {"families": 0, "scored_families": 0, "off_families": 0,
-             "scored_rows": 0, "off_rows": 0, "dropped": 0}
+             "scored_rows": 0, "off_rows": 0, "dropped": 0, "low_rows": 0}
     if df.empty:
         return rows, stats
     df["_fam"] = df["_fam"].fillna("").astype(str)
@@ -169,6 +182,7 @@ def apply_family_scores(rows):
     stats["off_families"] = stats["families"] - stats["scored_families"]
     stats["scored_rows"] = int((kept["_n"] >= FAMILY_MIN_N).sum())
     stats["off_rows"] = int(len(kept)) - stats["scored_rows"]
+    stats["low_rows"] = int(kept.loc[kept["_n"] < 4, "_n"].ge(2).sum())
     return out, stats
 
 
@@ -215,9 +229,10 @@ def main():
 
     # 基准族内位次分（v0.12）：去重 + 位次换算 + 「族 / 族内n」两列
     rows, fstats = apply_family_scores(rows)
-    print(f"[口径] 基准族位次分：{fstats['families']} 个基准族 —— {fstats['scored_families']} 族入分"
-          f"（{fstats['scored_rows']} 条证据），{fstats['off_families']} 族因池内 < {FAMILY_MIN_N} 人"
-          f"未计分（{fstats['off_rows']} 条留面值，页面标「样本不足」）")
+    print(f"[口径] 基准族位次分（v0.26 分级入分）：{fstats['families']} 个基准族 —— "
+          f"{fstats['scored_families']} 族入分（{fstats['scored_rows']} 条，其中低置信降权 {fstats['low_rows']} 条"
+          f"：n=3×0.6 / n=2×0.35），{fstats['off_families']} 族因池内 =1 人不计分"
+          f"（{fstats['off_rows']} 条留面值，单模型无对手）")
 
     if skipped:
         print("[提示] 以下类别**既未映射、也未在 data/mapping.csv 里声明「有意不映射」**（请检查该表）：")

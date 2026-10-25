@@ -106,7 +106,7 @@ DeepSeek官方,ZeroBench-main (w/tools),图片与制图,ZeroBench,视觉推理�
 酥悠沫-官方,GDPval-AA v2,内容创作,GDPval-AA v2,酥悠沫转录厂商自报的 GDPval-AA v2 Elo；专业文档/产出类评分，归内容创作
 酥悠沫-官方,AA-LCR,长文本,AA-LCR,酥悠沫转录腾讯混元 3 发布页对比表（AA-LCR 口径同 AA）
 SuperCLUE,Writing总榜-总分,内容创作,SC·Writing总榜-总分,SuperCLUE 官网 2026年5月 Writing xlsx（中文原生创意写作：内容质量/风格/创意/主流题材/约束创作）；与 AIWB 英文写作盲评分族
-LiveBench-2.0,Long Agentic,Agent与工具调用,LB2·Long Agentic,LiveBench 2.0 官方表 data/20261014/table.csv（release 2026-10-14；长时程多轮工程任务）
+LiveBench-2.0,Long Agentic,Agent与工具调用,LB2·Long Agentic,LiveBench 2.0 官方表 data/20261023/table.csv（release 2026-10-23；长时程多轮工程任务；2026-10-25 全池迁自 20261014，Long Agentic/Browser 两套件被官方重测）
 LiveBench-2.0,Browser,Agent与工具调用,LB2·Browser,同上（真实浏览器多步任务通过率）
 LiveBench-2.0,Coding,代码,LB2·Coding,同上（真实 PR 的 bug 修复，确定性判分）
 LiveBench-2.0,Reasoning,推理与知识,LB2·Reasoning,同上（短逻辑/空间/心智推理，单一正确答案）
@@ -114,3 +114,4 @@ LiveBench-2.0,Data Analysis,推理与知识,LB2·Data Analysis,同上（小表�
 LiveBench-2.0,Research,内容创作,LB2·Research,同上（开放式研究简报 → 书面报告，按 rubric 评分）；官方 notes：producing a written report
 LiveBench-2.0,Design,图片与制图,LB2·Design,同上（演示稿/PDF/文档的版式与设计产出，视觉+结构检查）
 AI产品狙击手,Q1强约束指令遵循,指令遵循,TGG·Q1指令遵循,techgogogo.com「AI产品狙击手」v2.x 评测榜 Q1（中文强约束指令遵循，10 句各 1 分，单题主观判分；每模型取最近一次测评；接入渠道/思考档各异，仅作参考）
+Kimi官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,厂商官方技术博客自报（与 AA 同族同票，第三方优先）

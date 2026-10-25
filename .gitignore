@@ -41,3 +41,6 @@ desktop.ini
 .vscode/
 .idea/
 .opencode/
+
+# ZCode session transcripts (local only)
+ses_*.json

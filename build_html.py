@@ -23,9 +23,10 @@
   data/raw_*.csv       各来源原始分（含来源 URL 与数据日期）
   data/models.csv      模型名册：可选的「公司 / 开源 / 数据日期 / 备注」覆盖项，
                        以及尚未进账本的**待定模型**占位（8 维全「待定」）
-维度分口径（v0.12 起）：维度分 = 该维度**计分行**（族内n ≥ FAMILY_MIN_N）位次分的算术均值。
+维度分口径（v0.26 起，修订 v0.12）：维度分 = 该维度**计分行**（族内n ≥ 2）位次分的**加权均值**，
+权重按族内模型数分级：n≥4 ×1.0、n=3 ×0.6、n=2 ×0.35（低置信证据按可信度贡献，不再一刀切排除）。
         分数已由 build_scores.py 换算成「基准族内位次分」，本脚本只做过滤与均值，**不重算位次**；
-        族内 < 4 人的族不计分（行保留、标「样本不足」）；「单基准」标记：某模型某维的计分行
+        族内 =1 的族不计分（单模型无对手）；「单基准」标记：某模型某维的计分行
         只来自 1 个基准族时写 sf / sfTp，页面加小标提示"证据宽度有限"。
 双口径：厂商自报渠道（VENDOR_SRC）整体剔除后重算 = 「仅第三方榜单」口径，随每模型写 scoresTp
         （只在两种口径不同时才写；页面约定"有 scoresTp 就用它，没有就与 scores 相同"）。
@@ -40,7 +41,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from build_scores import CANON, FAMILY_MIN_N, VENDOR_SRC  # 复用统一命名 / 计分门槛 / 厂商渠道，保持与 scores.csv 同源
+from build_scores import CANON, FAMILY_MIN_N, VENDOR_SRC, fam_weight  # 复用统一命名 / 门槛与降权档位 / 厂商渠道
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
@@ -70,6 +71,7 @@ VENDOR_SRC_PAGES = {
     "腾讯官方": "hunyuan.tencent.com / 发布页 appendix", "NVIDIA官方": "build.nvidia.com",
     "DeepSeek官方": "huggingface.co/deepseek-ai / api-docs.deepseek.com",
     "酥悠沫-官方": "酥悠沫转录的厂商自报表（news.qq.com / stepfun.com / text-arena.com 等）",
+    "Kimi官方": "kimi.ai/blog（技术博客，只收自家型号）",
 }
 # 推理补全通道的来源标签（默认不计入维度分；页面切「含推理补全」才纳入）
 INF_SRC = "推理补全"
@@ -115,7 +117,7 @@ def dim_stats():
 
 
 def load_scores():
-    """读证据账本，标出「厂商自报渠道」「推理补全」与「计分行（族内n ≥ FAMILY_MIN_N）」。
+    """读证据账本，标出「厂商自报渠道」「推理补全」与「计分行（族内n ≥ 2，v0.26 分级入分）」。
     备注格式固定：'{来源}·{类别} 原始{原始分}({量纲}) @{数据日期}'，来源即第一个 · 之前的部分。"""
     df = pd.read_csv(DATA / "scores.csv")
     df["榜单分"] = pd.to_numeric(df["榜单分"], errors="coerce")
@@ -153,9 +155,10 @@ def load_evidence():
             item["vend"] = 1
         if bool(r["_inf"]):
             item["inf"] = 1
-        if r["_fam"]:                     # 基准族与池大小（抽屉展示：位次分 / 样本不足）
+        if r["_fam"]:                     # 基准族与池大小（抽屉展示：位次分 / 降权 / 无对手不计分）
             item["fam"] = r["_fam"]
             item["famN"] = int(r["_famN"])
+            item["w"] = fam_weight(int(r["_famN"]))
         out.append(item)
     # 把推理补全的明细（依据 / 留一MAE / URL）挂到对应证据行上，供抽屉展示
     ip = DATA / "raw_inferred.csv"
@@ -241,7 +244,8 @@ def load_roster():
 
 
 def blend_models():
-    """维度分 = 该维度**计分行**（族内n ≥ FAMILY_MIN_N、非推理）位次分的算术均值。
+    """维度分 = 该维度**计分行**（族内n ≥ 2、非推理）位次分的加权均值，权重 = fam_weight(族内n)
+    （n≥4 ×1.0 / n=3 ×0.6 / n=2 ×0.35，v0.26 分级入分）。
     同时算一遍「仅第三方榜单」口径（再剔除厂商自报渠道）；两种口径一致时**不写** scoresTp，
     页面约定：有 scoresTp 就用它，没有就与 scores 相同。
     「单基准」（sf / sfTp）：某维的计分行只来自 1 个基准族时记 {维度: 族名}，页面加小标。"""
@@ -252,18 +256,21 @@ def blend_models():
     for name, grp in scores.groupby("模型", sort=True):
         dims, dims_tp, dims_inf, sf, sf_tp = {}, {}, {}, {}, {}
         for dim, g2 in grp.groupby("维度"):
-            vals = g2.loc[g2["_scored"], "榜单分"].dropna()
+            vals = g2.loc[g2["_scored"], ["榜单分", "_famN"]].dropna()
             if len(vals):
-                dims[dim] = round(float(vals.mean()), 1)
+                w = vals["_famN"].map(fam_weight)
+                dims[dim] = round(float((vals["榜单分"] * w).sum() / w.sum()), 1)
             # 第三方口径 = 计分行里再剔除厂商自报渠道
-            tp = g2.loc[g2["_scored"] & ~g2["_vend"], "榜单分"].dropna()
+            tp = g2.loc[g2["_scored"] & ~g2["_vend"], ["榜单分", "_famN"]].dropna()
             if len(tp):
-                dims_tp[dim] = round(float(tp.mean()), 1)
+                wtp = tp["_famN"].map(fam_weight)
+                dims_tp[dim] = round(float((tp["榜单分"] * wtp).sum() / wtp.sum()), 1)
             # 「含推理补全」口径 = 计分实测优先；没有任何计分实测时才落推理值
-            real_all = g2.loc[g2["_scored"], "榜单分"].dropna()
+            real_all = g2.loc[g2["_scored"], ["榜单分", "_famN"]].dropna()
             infv = g2.loc[g2["_inf"], "榜单分"].dropna()
             if len(real_all):
-                dims_inf[dim] = round(float(real_all.mean()), 1)
+                wr = real_all["_famN"].map(fam_weight)
+                dims_inf[dim] = round(float((real_all["榜单分"] * wr).sum() / wr.sum()), 1)
             elif len(infv):
                 dims_inf[dim] = round(float(infv.iloc[0]), 1)
             # 「单基准」：本维计分行只来自 1 个基准族 → 记「维度: 族名」
@@ -328,7 +335,7 @@ def build_ledger():
     ledger = {
         "meta": {
             "title": "模型雷达图",
-            "version": "v0.25",
+            "version": "v0.26",
             "built": date.today().isoformat(),
             "sources": (f"LiveBench {lb.min()}（{lb.max()} 快照） · SuperCLUE 2026-07/09 · "
                         f"Artificial Analysis {aa.min()}~{aa.max()} · LMArena 榜单 · SUYOUUMO 综合全球榜（2026-10-17） · "
@@ -336,7 +343,7 @@ def build_ledger():
             "disclaimer": ("数据来自公开榜单，仅供选型参考，请以个人体感为准。"
                            "⚠ 维度分不是绝对刻度：全部来源都已归并为「基准族内位次分」——"
                            "你在该基准的模型池里赢过的对手比例（0-100）。同一基准跨来源只算一票；"
-                           "族内不足 4 个模型的基准暂不计分（证据保留、记「样本不足」）。"
+                           "族内 2–3 个模型的基准为低置信证据，按 ×0.6 / ×0.35 降权计入；仅 1 个模型的基准不计分（单模型无对手，面值保留可查）。"
                            "位次分是池内相对分：增减模型会让全池该维分数整体移动，跨期看图只比相对位次。"),
             "noteMissing": "缺数据的维度不参与绘制、也不计入维度分（雷达上画成断口、条形上留空位——不是 0 分）；计算综合分时该维权重自动让位。",
             "scopeSources": [s for s in ["Z.ai官方", "dots官方", "腾讯官方", "NVIDIA官方", "DeepSeek官方", "酥悠沫-官方"] if s in VENDOR_SRC],

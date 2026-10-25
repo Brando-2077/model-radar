@@ -63,7 +63,7 @@ flowchart LR
 2. 用 `canon.csv` 把各榜单模型名统一；
 3. 用 `mapping.csv` 把（来源, 类别）映射到维度与基准族；
 4. 按量纲做第一步归一化（0–1 ×100、0–10 ×10、Elo/指数池内 min–max 到 60–100）；
-5. Terminal-Bench 同族去重（优先 TB4.0，缺则 TB2.1）；
+5. **AA 的** Terminal-Bench 版本去重（同一模型优先 TB4.0，缺则 TB2.1；两版在 `mapping.csv` 中分属 `TB4.0` / `TB2.1` 两个族；厂商渠道的 TB2.1 不受此步影响）；
 6. 按（模型 × 族）去重：第三方优先、日期新者优先；
 7. 计算族内位次分，写入 `scores.csv`；
 8. 追加 `raw_inferred.csv` 的推理值（`族` 为空，默认不计分）。

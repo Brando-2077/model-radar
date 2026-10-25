@@ -339,3 +339,13 @@ Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,MMMU-Pro,0.790173410404624,0-1,
 Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AutomationBench-AA,0.25011270511840955,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
 Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Omniscience Index,5.233333333333333,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
 Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.3435727788279773,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,HLE,0.524559777571826,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,CritPt,0.245714285714286,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,SciCode,0.607638888888889,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.671717171717172,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-LCR,0.863333333333333,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,MMMU-Pro,0.838728323699422,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AutomationBench-AA,0.7329771090921112,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Index,29.516666666666666,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Index,55.0869210959395,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.43892480435522285,0-1越低越好,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro

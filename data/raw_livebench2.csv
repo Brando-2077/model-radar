@@ -1,134 +1,113 @@
-模型,公司,来源,类别,原始分,量纲,数据日期,URL
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Long Agentic,80.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Reasoning,91.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Coding,97.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Browser,100.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Data Analysis,80.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Research,82.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Fable-5.1,Anthropic,LiveBench-2.0,Design,83.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Long Agentic,85.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Reasoning,92.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Coding,96.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Browser,80.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Data Analysis,80.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Research,85.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Opus-5.5,Anthropic,LiveBench-2.0,Design,86.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Long Agentic,78.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Reasoning,91.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Coding,94.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Browser,84.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Data Analysis,59.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Research,83.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Design,85.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Long Agentic,50.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Reasoning,89.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Coding,96.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Browser,76.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Data Analysis,79.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Research,79.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Design,83.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Long Agentic,40.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Reasoning,86.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Coding,90.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Browser,84.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Data Analysis,79.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Research,86.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-DeepSeek-V4.1-Flash,DeepSeek,LiveBench-2.0,Design,79.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Long Agentic,28.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Reasoning,77.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Coding,80.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Browser,84.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Data Analysis,76.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Research,70.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3 Flash,智谱,LiveBench-2.0,Design,77.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Long Agentic,35.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Reasoning,85.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Coding,82.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Browser,0.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Data Analysis,70.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Research,73.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GLM-5.3,智谱,LiveBench-2.0,Design,77.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Long Agentic,82.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Reasoning,92.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Coding,93.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Browser,84.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Data Analysis,83.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Research,85.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Astra,OpenAI,LiveBench-2.0,Design,82.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Long Agentic,48.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Reasoning,81.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Coding,84.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Browser,72.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Data Analysis,73.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Research,43.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Luna,OpenAI,LiveBench-2.0,Design,82.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Long Agentic,66.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Reasoning,88.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Coding,93.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Browser,92.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Data Analysis,81.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Research,69.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-GPT-6-Sol,OpenAI,LiveBench-2.0,Design,82.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Long Agentic,42.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Reasoning,90.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Coding,59.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Browser,16.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Data Analysis,78.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Research,79.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Kimi-K3,月之暗面,LiveBench-2.0,Design,77.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Long Agentic,12.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Reasoning,74.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Coding,70.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Browser,8.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Data Analysis,76.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Research,68.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3,MiniMax,LiveBench-2.0,Design,66.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Long Agentic,27.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Reasoning,80.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Coding,86.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Browser,32.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Data Analysis,76.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Research,59.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-27B,阿里,LiveBench-2.0,Design,75.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Long Agentic,42.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Reasoning,88.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Coding,60.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Browser,32.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Data Analysis,78.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Research,69.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Qwen3.8-Max,阿里,LiveBench-2.0,Design,78.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Long Agentic,27.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Reasoning,83.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Coding,85.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Browser,24.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Data Analysis,63.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Research,72.8,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Step-5-Preview,阶跃星辰,LiveBench-2.0,Design,76.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Long Agentic,47.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Reasoning,79.6,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Coding,81.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Browser,88.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Data Analysis,72.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Research,76.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Design,78.5,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Long Agentic,34.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Reasoning,82.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Coding,83.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Browser,92.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Data Analysis,71.4,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Research,72.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Design,74.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Long Agentic,69.9,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Reasoning,95.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Coding,89.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Browser,92.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Data Analysis,85.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Research,83.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 4 Argon,Google,LiveBench-2.0,Design,73.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Long Agentic,30.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Reasoning,89.3,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Coding,82.2,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Browser,64.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Data Analysis,54.0,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Research,79.1,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
-Gemini 3.8 Flash,Google,LiveBench-2.0,Design,72.7,0-100,2026-10-14,https://livebench.ai/data/20261014/table.csv
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Long Agentic,77.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Reasoning,91.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Coding,97.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Browser,89.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Data Analysis,80.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Research,82.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Fable-5.1,Anthropic,LiveBench-2.0,Design,83.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Long Agentic,72.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Reasoning,92.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Coding,96.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Browser,88.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Data Analysis,80.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Research,85.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Opus-5.5,Anthropic,LiveBench-2.0,Design,86.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Long Agentic,63.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Reasoning,91.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Coding,94.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Browser,89.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Data Analysis,59.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Research,83.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Claude-Sonnet-5.5,Anthropic,LiveBench-2.0,Design,85.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Long Agentic,40.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Reasoning,89.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Coding,96.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Browser,67.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Data Analysis,79.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Research,79.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+DeepSeek-V4.1-Flash-1017,DeepSeek,LiveBench-2.0,Design,83.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Long Agentic,19.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Reasoning,77.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Coding,80.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Browser,59.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Data Analysis,76.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Research,70.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GLM-5.3 Flash,智谱,LiveBench-2.0,Design,77.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Long Agentic,77.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Reasoning,92.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Coding,93.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Browser,91.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Data Analysis,83.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Research,85.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Astra,OpenAI,LiveBench-2.0,Design,82.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Long Agentic,30.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Reasoning,81.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Coding,84.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Browser,70.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Data Analysis,73.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Research,43.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+GPT-6-Luna,OpenAI,LiveBench-2.0,Design,82.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Long Agentic,26.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Reasoning,90.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Coding,59.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Browser,75.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Data Analysis,78.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Research,79.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3,月之暗面,LiveBench-2.0,Design,77.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Long Agentic,20.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Reasoning,80.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Coding,86.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Browser,24.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Data Analysis,76.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Research,59.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-27B,阿里,LiveBench-2.0,Design,75.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Long Agentic,29.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Reasoning,88.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Coding,60.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Browser,49.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Data Analysis,78.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Research,69.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Qwen3.8-Max,阿里,LiveBench-2.0,Design,78.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Long Agentic,19.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Reasoning,83.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Coding,85.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Browser,24.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Data Analysis,63.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Research,72.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Step-5-Preview,阶跃星辰,LiveBench-2.0,Design,76.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Long Agentic,35.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Reasoning,79.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Coding,81.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Browser,77.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Data Analysis,72.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Research,76.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiMo-V2.6-Pro,小米集团,LiveBench-2.0,Design,78.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Long Agentic,28.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Reasoning,82.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Coding,83.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Browser,80.6,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Data Analysis,71.4,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Research,72.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+MiniMax-M3.1-Flash,MiniMax,LiveBench-2.0,Design,74.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Long Agentic,61.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Reasoning,95.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Coding,89.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Browser,82.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Data Analysis,85.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Research,83.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 4 Argon,Google,LiveBench-2.0,Design,73.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Long Agentic,16.5,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Reasoning,89.3,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Coding,82.2,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Browser,45.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Data Analysis,54.0,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Research,79.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Gemini 3.8 Flash,Google,LiveBench-2.0,Design,72.7,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Long Agentic,39.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Reasoning,91.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Coding,81.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Browser,75.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Data Analysis,79.1,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Research,77.9,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv
+Kimi-K3.1-Pro,月之暗面,LiveBench-2.0,Design,77.8,0-100,2026-10-23,https://livebench.ai/data/20261023/table.csv

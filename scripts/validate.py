@@ -446,7 +446,9 @@ def main() -> int:
     print("=== Model Radar 校验 ===")
     print(f"模型：{len(model_names)} 个（有计分 {len(set(scored['模型'].str.strip()))} 个，待定 {len(pending_models)} 个）")
     print(f"证据：{len(scores)} 条（实测/族行 {len(family_rows)}，推理 {len(inferred_rows)}）")
-    print(f"计分：{len(scored)} 条；未计分族行 {len(unscored)} 条；族 {len(scored_families)} 个；覆盖 {covered_cells} 格")
+    low_rows = scored[scored["族内n"].astype(float) < 4]
+    print(f"计分：{len(scored)} 条（其中低置信降权 {len(low_rows)} 条：n=3×0.6 / n=2×0.35）；"
+          f"无对手不计分 {len(unscored)} 条；族 {len(scored_families)} 个；覆盖 {covered_cells} 格")
     print(f"场景：{scene_count} 套；权重归一化检查已完成")
     print(f"HTML：{HTML.name} · {HTML.stat().st_size:,} 字节")
     if pending_models:
