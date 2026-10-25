@@ -248,7 +248,7 @@
      （页尾还有完整版）、面板内第二份图形开关（顶栏 ③ 已有）、面板副标题与
      图注长文案（教学性文字）。寸土寸金，图形 + 榜单同屏才是主任务。 */
   @media (max-width:1120px){
-    .howto,.star-bar,.afford{display:none}
+    .howto,body .star-bar,.afford{display:none}
     .main > .panel:first-child{position:sticky;top:var(--topbar-h,96px);z-index:30;
       max-height:calc(78vh - var(--topbar-h,96px));overflow:auto;
       box-shadow:0 6px 16px rgba(23,22,15,.12)}
@@ -1135,6 +1135,11 @@
     setH();
     if (window.ResizeObserver) new ResizeObserver(setH).observe(tb);
     window.addEventListener('resize', setH);
+    /* 字体晚到会让顶栏折行数变化（RO 未必捕捉中间态），load / fonts.ready /
+       迟到定时器各复测一次，粘性面板的吸附偏移才不会过期 */
+    window.addEventListener('load', setH);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(setH); }
+    setTimeout(setH, 600);
   })();
 
   /* ════════════════════════════════════════════════════════════════════
