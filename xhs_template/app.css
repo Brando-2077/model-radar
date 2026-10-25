@@ -218,10 +218,12 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
 
 /* 滚动排队：满员两次确认的 toast + 待替换描边 */
 #pick-tip{position:fixed;z-index:80;display:none;left:12px;right:12px;
-  top:calc(var(--hd-h, 92px) + 8px);padding:9px 12px;background:var(--ink);color:var(--paper);
-  border-left:3px solid var(--signal);font-family:var(--f-mono);font-size:10.5px;
-  line-height:1.8;pointer-events:none}
-#pick-tip.on{display:block;animation:nudgeIn .3s ease-out both}
+  top:30%;transform:translateY(-50%);padding:13px 16px;background:var(--ink);color:var(--paper);
+  border:1px solid var(--signal);border-left:4px solid var(--signal);
+  font:600 13.5px/1.9 var(--f-sans);pointer-events:none;
+  box-shadow:0 8px 28px rgba(23,22,15,.4)}
+#pick-tip.on{display:block;animation:pickIn .3s ease-out both}
+@keyframes pickIn{from{opacity:0;transform:translateY(-46%)}to{opacity:1;transform:translateY(-50%)}}
 .card.pick-pending{outline:1.5px dashed var(--signal);outline-offset:-1px}
 
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}

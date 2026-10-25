@@ -732,12 +732,15 @@
                          50%{box-shadow:0 0 0 5.5px rgba(194,57,26,.14)}}
   }
   /* ── v0.27.2 滚动排队：满员后点击的两次确认（toast + 待替换描边）───────── */
-  #pick-tip{position:fixed;z-index:46;display:none;max-width:420px;margin:0 12px;
-           top:calc(var(--topbar-h, 72px) + 8px);left:50%;transform:translateX(-50%);
-           padding:8px 12px;background:var(--ink);color:var(--paper);
-           border-left:3px solid var(--signal);font-family:var(--f-mono);
-           font-size:10.5px;line-height:1.8;pointer-events:none}
-  #pick-tip.on{display:block;animation:nudgeIn .3s ease-out both}
+  #pick-tip{position:fixed;z-index:46;display:none;
+           top:30%;left:12px;right:12px;margin:0 auto;max-width:440px;
+           transform:translateY(-50%);
+           padding:13px 17px;background:var(--ink);color:var(--paper);
+           border:1px solid var(--signal);border-left:4px solid var(--signal);
+           font:600 13.5px/1.9 var(--f-sans);pointer-events:none;
+           box-shadow:0 8px 28px rgba(23,22,15,.4)}
+  #pick-tip.on{display:block;animation:pickIn .3s ease-out both}
+  @keyframes pickIn{from{opacity:0;transform:translateY(-46%)}to{opacity:1;transform:translateY(-50%)}}
   .rrow.pick-pending,.prow.pick-pending{outline:1.5px dashed var(--signal);outline-offset:-1.5px}
 
   @media (prefers-reduced-motion: reduce){
