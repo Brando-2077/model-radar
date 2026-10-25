@@ -279,7 +279,9 @@
   function renderCards() {
     var box = $('cards'); box.textContent = '';
     var rows = ranked();
-    var show = state.more ? rows : rows.slice(0, 15);
+    /* 默认只展示前 10 名（v2：关注作者解锁全部）；搜索是定向查找，不受上限约束 */
+    var capped = !state.q.trim();
+    var show = (state.more || !capped) ? rows : rows.slice(0, 10);
     show.forEach(function (r, i) {
       var m = r.m, sel = state.selected.indexOf(m.name), selIdx = sel >= 0 ? sel : -1;
       var card = el('div', 'card' + (sel >= 0 ? ' on' : '') +
@@ -346,7 +348,7 @@
       box.appendChild(card);
     });
     if (!rows.length) box.appendChild(el('div', 'card', '没有匹配的模型'));
-    $('btn-more').textContent = state.more ? '收起' : '展开全部 ' + rows.length + ' 个';
+    $('btn-more').textContent = moreLabel(rows.length);
   }
 
   function renderRadar() {
@@ -696,6 +698,7 @@
     mt.followAuthor().then(function (r) {
       if (r.follow_status === 1 || r.follow_status === 2) {
         gate.unlocked = true; gate.status = r.follow_status;
+        state.more = true;   /* 关注成功自动展开全部，立刻看到解锁效果 */
         hideFollowBar(); renderLocks(); renderAll();
         showTip('已关注作者，全部功能已解锁 ✦');
       }
@@ -706,6 +709,10 @@
       else if (code === 10003) showTip('关注流程进行中，稍候…');
     });
   }
+  function moreLabel(n) {
+    if (!gate.unlocked) return '关注解锁全部 ' + n + ' 个模型 🔒';
+    return state.more ? '收起' : '展开全部 ' + n + ' 个';
+  }
   function renderLocks() {
     state.unlocked = gate.unlocked;
     var infBtn = document.querySelector('#scope button[data-s=inf]');
@@ -715,8 +722,7 @@
     }
     var more = $('btn-more');
     if (more && state.tab === 'rank') {
-      var rows = ranked();
-      more.textContent = (state.more ? '收起' : '展开全部 ' + rows.length + ' 个') + (gate.unlocked ? '' : ' 🔒 关注解锁');
+      more.textContent = moreLabel(ranked().length);
     }
   }
   function showFollowBar(why) {
