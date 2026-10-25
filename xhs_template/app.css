@@ -209,6 +209,19 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
 .dd .rw{display:grid;grid-template-columns:84px 1fr;grid-gap:8px;gap:8px;padding:6px 0;border-bottom:1px solid var(--rule-2);font-size:12px;line-height:1.75;color:var(--ink-2)}
 .dd .rw .k{font-family:var(--f-mono);font-size:9.5px;color:var(--ink-3);padding-top:2px}
 
+/* ── 关注解锁条（底部 tabbar 上方，朱红实底）── */
+.follow-bar{position:fixed;left:0;right:0;bottom:calc(var(--tab-h) + env(safe-area-inset-bottom, 0px));
+  z-index:70;display:-webkit-box;display:flex;align-items:center;gap:9px;
+  padding:10px 13px;background:var(--signal);color:#fff}
+.follow-bar[hidden]{display:none}
+.fb-star{font-size:15px;line-height:1;flex:none}
+.fb-txt{font-size:11.5px;line-height:1.6;min-width:0}
+.fb-txt b{display:block;font-size:12.5px;font-weight:600}
+.fb-go{flex:none;margin-left:auto;background:#fff;color:var(--signal);
+  font-size:12.5px;font-weight:600;padding:6px 13px}
+.fb-x{flex:none;width:24px;height:24px;color:rgba(255,255,255,.85);font-size:11px}
+.hd-scope button.locked{color:var(--ink-3)}
+
 /* 雷达 SVG 内部样式 */
 .ax-tag{cursor:pointer}
 .ax-tag .lbl{font-family:var(--f-sans);font-size:11px;font-weight:500;fill:var(--ink)}

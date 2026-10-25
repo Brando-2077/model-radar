@@ -38,7 +38,7 @@
   var ALIAS_FIRST = true;   // 竖屏窄宽：轴标签优先用白话别名
 
   /* ── 2. 纯计算 ───────────────────────────────────────────────── */
-  var state = { scene: SCENES[0].name, scope: 'all', selected: [], tab: 'rank', pendingPick: null,
+  var state = { scene: SCENES[0].name, scope: 'all', selected: [], tab: 'rank', pendingPick: null, unlocked: true,
                 q: '', hidePending: false, more: false, sheet: null };
 
   function scopeScores(m) {
@@ -162,6 +162,7 @@
     if (t === 'rank') renderRank();
   }
   function setScope(s) {
+    if (s === 'inf' && !gate.unlocked) { showFollowBar('「含推理补全」口径为关注解锁功能'); return; }
     if (state.scope === s) return;
     state.scope = s;
     POOL = {};
@@ -665,6 +666,68 @@
     syncHash();
   }
 
+  /* ── 关注作者解锁（平台 API，客户端 9.51+；在线文档 §3.15）─────────
+     门控原则：核心功能永远免费；只锁进阶项（含推理补全 / 展开全部）。
+     降级原则：API 不存在（<9.51 或浏览器）或查询失败（-1）一律不锁——
+     宁可不锁、不误伤老客户端；作者本人（2）视为已解锁。 */
+  var gate = { apiOK: false, unlocked: true, status: -9 };
+  function clientVersionAtLeast(minVer) {
+    try {
+      var lo = (window.xhs && window.xhs.launchOptions) || null;
+      var bv = lo && lo.miniToolEnv && Number(lo.miniToolEnv.buildVersion) || 0;
+      return Math.floor(bv / 1000) >= minVer;
+    } catch (e) { return false; }
+  }
+  function gateRefresh() {
+    var mt = window.xhs && window.xhs.miniTool;
+    var ok = !!(mt && typeof mt.getFollowStatus === 'function' && clientVersionAtLeast(9510));
+    gate.apiOK = ok;
+    if (!ok) { gate.unlocked = true; renderLocks(); return Promise.resolve(); }
+    return mt.getFollowStatus().then(function (r) {
+      gate.status = r.follow_status;
+      /* -1 查询失败 → 不锁（可重试）；1 已关注（含互关）/ 2 作者本人 → 解锁 */
+      gate.unlocked = r.follow_status !== 0;
+      renderLocks();
+    }).catch(function () { gate.unlocked = true; renderLocks(); });
+  }
+  function gateFollow() {
+    var mt = window.xhs && window.xhs.miniTool;
+    if (!mt || typeof mt.followAuthor !== 'function') { showTip('当前小红书版本不支持关注引导，功能已直接解锁'); gate.unlocked = true; renderAll(); return; }
+    mt.followAuthor().then(function (r) {
+      if (r.follow_status === 1 || r.follow_status === 2) {
+        gate.unlocked = true; gate.status = r.follow_status;
+        hideFollowBar(); renderLocks(); renderAll();
+        showTip('已关注作者，全部功能已解锁 ✦');
+      }
+    }).catch(function (err) {
+      var code = err && err.errCode;
+      if (code === 20002) showTip('还没有完成关注——进阶功能保持锁定');
+      else if (code === 15404) showTip('今日关注引导次数已达上限，明天再来或先体验基础功能');
+      else if (code === 10003) showTip('关注流程进行中，稍候…');
+    });
+  }
+  function renderLocks() {
+    state.unlocked = gate.unlocked;
+    var infBtn = document.querySelector('#scope button[data-s=inf]');
+    if (infBtn) {
+      infBtn.textContent = gate.unlocked ? '含推理' : '含推理 🔒';
+      infBtn.classList.toggle('locked', !gate.unlocked);
+    }
+    var more = $('btn-more');
+    if (more && state.tab === 'rank') {
+      var rows = ranked();
+      more.textContent = (state.more ? '收起' : '展开全部 ' + rows.length + ' 个') + (gate.unlocked ? '' : ' 🔒 关注解锁');
+    }
+  }
+  function showFollowBar(why) {
+    var bar = $('follow-bar');
+    $('follow-why').textContent = why || '';
+    bar.hidden = false;
+  }
+  function hideFollowBar() { $('follow-bar').hidden = true; }
+  window.__followGate = gate;        /* 容器内调试 / 自测句柄（无副作用） */
+  gate.refresh = gateRefresh; gate.follow = gateFollow;
+
   /* ── 5. 事件 ─────────────────────────────────────────────────── */
   $('scope').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
@@ -686,7 +749,12 @@
   $('hide-pending').addEventListener('change', function () {
     state.hidePending = this.checked; renderVerdict(); renderCards();
   });
-  $('btn-more').addEventListener('click', function () { state.more = !state.more; renderCards(); });
+  $('btn-more').addEventListener('click', function () {
+    if (!gate.unlocked) { showFollowBar('「展开全部模型」为关注解锁功能'); return; }
+    state.more = !state.more; renderCards(); renderLocks();
+  });
+  $('follow-go').addEventListener('click', gateFollow);
+  $('follow-x').addEventListener('click', hideFollowBar);
   $('sh-close').addEventListener('click', closeSheet);
   $('sheet-scrim').addEventListener('click', closeSheet);
   document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeSheet(); });
@@ -704,6 +772,15 @@
   /* ── 启动 ────────────────────────────────────────────────────── */
   readHash();
   [...$('scope').children].forEach(function (x) { x.className = x.getAttribute('data-s') === state.scope ? 'on' : ''; });
+  if (state.scope === 'inf' && false) { /* 深链兜底在 gate 查询后处理 */ }
   renderAll();
   setTab(state.tab);
+  gateRefresh().then(function () {
+    if (state.scope === 'inf' && !gate.unlocked) {
+      state.scope = 'all';
+      [...$('scope').children].forEach(function (x) { x.className = x.getAttribute('data-s') === 'all' ? 'on' : ''; });
+      renderAll(); syncHash();
+      showFollowBar('「含推理补全」口径为关注解锁功能');
+    }
+  });
 })();
