@@ -270,6 +270,26 @@
         box.appendChild(el('div', 'vd-warn', '⚠ 内容创作维以英文写作为主，中文选型建议先试稿'));
       }
     }
+    /* 场景权重条 + 前 3 权重图例（竖屏版恢复） */
+    var wbar = el('div', 'vwbar');
+    DIMS.forEach(function (d, i) {
+      var s = document.createElement('i');
+      s.style.width = (w[d] || 0) + '%';
+      s.style.background = 'rgba(23,22,15,' + (0.80 - i * 0.072).toFixed(3) + ')';
+      wbar.appendChild(s);
+    });
+    box.appendChild(wbar);
+    var wl = el('div', 'vwlegend');
+    DIMS.map(function (d) { return { d: d, w: w[d] || 0 }; })
+      .sort(function (a, b) { return b.w - a.w; })
+      .forEach(function (x, i) {
+        var s = el('span', i < 3 ? '' : 'muted');
+        s.innerHTML = (i < 3 ? '<b>' + x.d + '</b>' : x.d) + ' ' + Math.round(x.w) + '%';
+        wl.appendChild(s);
+        wl.appendChild(document.createTextNode('　'));
+      });
+    box.appendChild(wl);
+
     var blanks = ALL.length * 8 - ALL.reduce(function (s, m) { return s + coverage(m); }, 0);
     box.appendChild(el('div', 'vd-meta',
       (state.scope === 'all' ? '全部来源' : state.scope === 'tp' ? '仅第三方' : '含推理补全') +
@@ -469,6 +489,11 @@
       it.appendChild(el('span', '', ' ' + coverage(MODEL_IX[n]) + '/8'));
       lg.appendChild(it);
     });
+    var anySf = state.selected.some(function (n) {
+      var mm = MODEL_IX[n]; return mm && Object.keys(singlesOf(mm)).length;
+    });
+    if (anySf) lg.appendChild(el('span', 'sfx-note',
+      '† = 该维只由 1 个基准族支撑（单一来源 ≠ 模型弱，点维度行看证据）'));
   }
 
   function renderDimCmp() {
@@ -489,7 +514,11 @@
       if (dimSub(d)) dt.appendChild(el('span', 'w', dimSub(d)));
       dt.appendChild(el('span', 'w', '权重 ' + Math.round(w[d] || 0) + '%'));
       var hasSf = state.selected.some(function (n) { var mm = MODEL_IX[n]; return mm && singlesOf(mm)[d]; });
-      if (hasSf) { var sf = el('span', 'sfb', '†'); sf.title = '单基准：仅 1 个基准族支撑'; dt.appendChild(sf); }
+      if (hasSf) { var sf = el('span', 'sfb', '†'); dt.appendChild(sf); }
+      dt.style.cursor = 'pointer';
+      dt.addEventListener('click', function () {
+        openSheet('dim', state.selected[0] || null, d);
+      });
       row.appendChild(dt);
       var cells = el('div', 'cells');
       state.selected.forEach(function (n) {

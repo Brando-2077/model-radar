@@ -41,15 +41,14 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
 
 /* ── 场景横滑档位 ── */
 .scenes{position:sticky;top:var(--hd-h);z-index:35;display:-webkit-box;display:flex;
-  overflow-x:auto;-webkit-overflow-scrolling:touch;gap:0;background:var(--paper-3);
-  border-bottom:1px solid var(--rule);padding:0 6px}
-.scenes::-webkit-scrollbar{display:none}
+  -webkit-flex-wrap:wrap;flex-wrap:wrap;gap:0;background:var(--paper-3);
+  border-bottom:1px solid var(--rule);padding:4px 6px}
 .scenes button{display:-webkit-inline-box;display:inline-flex;align-items:center;gap:5px;
-  padding:9px 11px;white-space:nowrap;font-size:12.5px;font-weight:600;color:var(--ink-2);
-  border-bottom:2.5px solid transparent}
-.scenes button i{font-style:normal;font-family:var(--f-mono);font-size:9px;color:var(--ink-4)}
-.scenes button.on{color:var(--signal);border-bottom-color:var(--signal)}
-.scenes button.on i{color:var(--signal)}
+  padding:7px 9px;margin:2px;white-space:nowrap;font-size:12px;font-weight:600;color:var(--ink-2);
+  border:1px solid var(--rule);background:var(--paper-2);border-bottom:1px solid var(--rule)}
+.scenes button i{font-style:normal;font-family:var(--f-mono);font-size:8.5px;color:var(--ink-4)}
+.scenes button.on{color:#fff;background:var(--signal);border-color:var(--signal)}
+.scenes button.on i{color:rgba(255,255,255,.85)}
 
 /* ── 视图区 ── */
 .views{padding:12px 12px 16px}
@@ -221,6 +220,16 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
   font-size:12.5px;font-weight:600;padding:6px 13px}
 .fb-x{flex:none;width:24px;height:24px;color:rgba(255,255,255,.85);font-size:11px}
 .hd-scope button.locked{color:var(--ink-3)}
+
+/* ── 场景权重条（竖屏版恢复自主版的价值元素）── */
+.vwbar{display:-webkit-box;display:flex;height:7px;margin:9px 0 5px;
+  border-bottom:1px solid var(--rule-2)}
+.vwbar i{display:block}
+.vwlegend{font-family:var(--f-mono);font-size:9.5px;color:var(--ink-3);line-height:1.9}
+.vwlegend b{color:var(--ink);font-weight:600}
+.radar-legend .sfx-note{width:100%;color:var(--ink-3);font-size:10.5px;line-height:1.7}
+.dimrow .dt{cursor:pointer}
+.dimrow .dt:active{color:var(--signal)}
 
 /* 雷达 SVG 内部样式 */
 .ax-tag{cursor:pointer}
