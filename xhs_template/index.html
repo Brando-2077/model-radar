@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>模型雷达 · 按场景选模型</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2EFE7'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23C2391A' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23C2391A'/%3E%3C/svg%3E">
+<style>
+{{APP_CSS}}
+</style>
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-brand">
+    <b>模型雷达</b>
+    <span class="hd-sub" id="hd-sub"></span>
+  </div>
+  <div class="hd-scope" id="scope">
+    <button data-s="all" class="on">全部来源</button>
+    <button data-s="tp">仅第三方</button>
+    <button data-s="inf">含推理</button>
+  </div>
+</header>
+
+<nav class="scenes" id="scene-strip"></nav>
+
+<main class="views">
+  <!-- ── Tab 1 · 榜单 ─────────────────────────────── -->
+  <section class="view" id="view-rank">
+    <div class="search"><input id="q" placeholder="搜索模型 / 厂商…" autocomplete="off"><button class="qc" id="q-clear" hidden>✕</button></div>
+    <div class="verdict" id="verdict"></div>
+    <div class="cards" id="cards"></div>
+    <button class="more" id="btn-more"></button>
+    <label class="hidep"><input type="checkbox" id="hide-pending"> 只看有分数的模型</label>
+  </section>
+
+  <!-- ── Tab 2 · 对比 ─────────────────────────────── -->
+  <section class="view" id="view-cmp" hidden>
+    <div class="cmp-chips" id="cmp-chips"></div>
+    <div class="radar-box">
+      <svg id="radar" viewBox="0 0 340 300" aria-label="能力雷达图"></svg>
+      <div class="radar-legend" id="radar-legend"></div>
+    </div>
+    <div class="cmp-tip" id="cmp-tip"></div>
+    <div class="dimcmp" id="dimcmp"></div>
+    <div class="scenetake" id="scenetake"></div>
+  </section>
+
+  <!-- ── Tab 3 · 关于 ─────────────────────────────── -->
+  <section class="view" id="view-about" hidden>
+    <div class="about-sec">
+      <h3>分数怎么读</h3>
+      <p>0–100 是<b>位次分</b>：约等于在该基准的当期模型池里赢过多少比例的对手——相对站位，不是考试分。维度分 = 该维各计分基准族位次分的<b>加权均值</b>，权重按族内模型数分级 w(n)=min(1,(n−1)/3)（×1.0 / ×0.67 / ×0.33）。</p>
+      <p>同一基准跨来源只算一票；族内仅 1 个模型的基准不计分（单模型无对手）。</p>
+    </div>
+    <div class="about-sec">
+      <h3>缺数据 ≠ 0 分</h3>
+      <p>缺计分证据的维度：<b>雷达断开、条形留「待定」、综合分该维权重让位</b>——不按 0 惩罚。低置信（族内 2–3 人）证据按 ×0.67 / ×0.33 降权参与。</p>
+    </div>
+    <div class="about-sec">
+      <h3>标记得分</h3>
+      <p><b>†</b> = 该维仅由 1 个基准族支撑（单一来源 ≠ 模型弱）；<b>·低覆盖</b> = 本场景权重覆盖不足 60%，名次仅供参考；<b>虚线值</b> = 推理补全（估算，非实测，默认口径不计入）。</p>
+    </div>
+    <div class="about-sec" id="about-data">
+      <h3>数据</h3>
+      <div id="about-data-body"></div>
+    </div>
+  </section>
+</main>
+
+<nav class="tabbar" id="tabbar">
+  <button data-t="rank" class="on"><i>▤</i><span>榜单</span></button>
+  <button data-t="cmp"><i>◈</i><span>对比</span></button>
+  <button data-t="about"><i>ⓘ</i><span>关于</span></button>
+</nav>
+
+<div class="sheet-scrim" id="sheet-scrim"></div>
+<aside class="sheet" id="sheet" aria-hidden="true">
+  <div class="sh-hd"><div><div class="sh-t" id="sh-title"></div><div class="sh-s" id="sh-sub"></div></div>
+  <button class="sh-x" id="sh-close">✕</button></div>
+  <div class="sh-bd" id="sh-body"></div>
+</aside>
+
+<div id="err"></div>
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
