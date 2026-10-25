@@ -47,3 +47,6 @@ ses_*.json
 
 # ZCode plans (local)
 .zcode/
+
+# External review documents (local reference, not published)
+外部评审_*.md

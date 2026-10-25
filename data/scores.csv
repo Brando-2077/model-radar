@@ -712,7 +712,6 @@ Step-5-Preview,Agent与工具调用,15.6,LiveBench-2.0·Long Agentic 原始19.4(
 Step-5-Preview,代码,69.6,Artificial-Analysis·SciCode 原始0.58912(0-1) @2026-10-17,SciCode,28
 Step-5-Preview,代码,53.1,LiveBench-2.0·Coding 原始85.6(0-100) @2026-10-23,LB2·Coding,16
 Step-5-Preview,内容创作,34.4,LiveBench-2.0·Research 原始72.8(0-100) @2026-10-23,LB2·Research,16
-Step-5-Preview,内容创作,80.0,酥悠沫-官方·GDPval-AA v2 原始1571(Elo) @2026-09-20,GDPval-AA v2,1
 Step-5-Preview,可靠性与低幻觉,67.2,Artificial-Analysis·AA-Omniscience Index 原始16.3833(指数) @2026-10-17,AA-Omni指数,29
 Step-5-Preview,图片与制图,14.7,Artificial-Analysis·MMMU-Pro 原始0.763584(0-1) @2026-10-17,MMMU-Pro,17
 Step-5-Preview,图片与制图,28.1,LiveBench-2.0·Design 原始76.9(0-100) @2026-10-23,LB2·Design,16
