@@ -38,7 +38,7 @@
   var ALIAS_FIRST = true;   // 竖屏窄宽：轴标签优先用白话别名
 
   /* ── 2. 纯计算 ───────────────────────────────────────────────── */
-  var state = { scene: SCENES[0].name, scope: 'all', selected: [], tab: 'rank',
+  var state = { scene: SCENES[0].name, scope: 'all', selected: [], tab: 'rank', pendingPick: null,
                 q: '', hidePending: false, more: false, sheet: null };
 
   function scopeScores(m) {
@@ -125,12 +125,30 @@
 
   function toggleSelect(name) {
     var i = state.selected.indexOf(name);
-    if (i >= 0) state.selected.splice(i, 1);
-    else {
-      if (state.selected.length >= MAX_SELECT) return flash('最多同时对比 ' + MAX_SELECT + ' 个');
+    if (i >= 0) { state.selected.splice(i, 1); state.pendingPick = null; }
+    else if (state.selected.length < MAX_SELECT) { state.selected.push(name); state.pendingPick = null; }
+    else if (state.pendingPick !== name) {
+      /* 滚动排队 · 第一次点击：提示 + 标记，再点同模型才替换 */
+      state.pendingPick = name;
+      showTip('已选满 ' + MAX_SELECT + ' 个：再点一次「' + name + '」＝替换最早的「' +
+        state.selected[0] + '」');
+      renderCards();
+      return;
+    } else {
+      state.selected.shift();
       state.selected.push(name);
+      state.pendingPick = null;
+      showTip('已替换：' + state.selected.join(' / '));
     }
     syncHash(); renderAll();
+  }
+  var tipTimer = null;
+  function showTip(msg) {
+    var t = $('pick-tip');
+    t.textContent = msg;
+    t.classList.add('on');
+    clearTimeout(tipTimer);
+    tipTimer = setTimeout(function () { t.classList.remove('on'); }, 3000);
   }
   function setTab(t) {
     state.tab = t;
@@ -263,7 +281,8 @@
     var show = state.more ? rows : rows.slice(0, 15);
     show.forEach(function (r, i) {
       var m = r.m, sel = state.selected.indexOf(m.name), selIdx = sel >= 0 ? sel : -1;
-      var card = el('div', 'card' + (sel >= 0 ? ' on' : ''));
+      var card = el('div', 'card' + (sel >= 0 ? ' on' : '') +
+        (state.pendingPick === m.name ? ' pick-pending' : ''));
       if (selIdx >= 0) card.style.setProperty('--row-c', COLORS[selIdx % 3]);
       card.setAttribute('data-model', m.name);
       var hd = el('div', 'card-hd');
