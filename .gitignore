@@ -55,3 +55,6 @@ ses_*.json
 .skill/
 dist-xhs/
 model-radar-xhs.zip
+
+# Windows reserved-name artifact
+NUL

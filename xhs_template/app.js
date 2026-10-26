@@ -796,6 +796,16 @@
   });
   $('follow-go').addEventListener('click', gateFollow);
   $('follow-x').addEventListener('click', hideFollowBar);
+  /* [data-dim] 全局委托：雷达轴标签 / 条形图行标签 → 维度证据 sheet
+     （竖屏版此前漏接，轴标签点了没反应） */
+  document.addEventListener('click', function (ev) {
+    var n = ev.target.closest ? ev.target.closest('[data-dim]') : null;
+    if (!n) return;
+    var d = n.getAttribute('data-dim');
+    if (!d) return;
+    var model = n.getAttribute('data-model');
+    openSheet('dim', model || state.selected[0] || null, d);
+  });
   $('sh-close').addEventListener('click', closeSheet);
   $('sheet-scrim').addEventListener('click', closeSheet);
   document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closeSheet(); });
