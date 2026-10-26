@@ -159,7 +159,7 @@
     });
     syncHash();
     if (t === 'cmp') { renderCmpChips(); renderRadar(); renderDimCmp(); renderSceneTake(); renderCmpTip(); }
-    if (t === 'rank') renderRank();
+    if (t === 'rank') { renderVerdict(); renderCards(); }
   }
   function setScope(s) {
     if (s === 'inf' && !gate.unlocked) { showFollowBar('「含推理补全」口径为关注解锁功能'); return; }
@@ -701,7 +701,9 @@
      门控原则：核心功能永远免费；只锁进阶项（含推理补全 / 展开全部）。
      降级原则：API 不存在（<9.51 或浏览器）或查询失败（-1）一律不锁——
      宁可不锁、不误伤老客户端；作者本人（2）视为已解锁。 */
-  var gate = { apiOK: false, unlocked: true, status: -9 };
+  var gate = { apiOK: false, unlocked: true, status: -9, forceLock: false };
+  /* 预览开关：URL 加 ?lock=1 可在浏览器里强制呈现锁定态（真实容器内不需要） */
+  gate.forceLock = new URLSearchParams(location.search).get('lock') === '1';
   function clientVersionAtLeast(minVer) {
     try {
       var lo = (window.xhs && window.xhs.launchOptions) || null;
@@ -710,6 +712,7 @@
     } catch (e) { return false; }
   }
   function gateRefresh() {
+    if (gate.forceLock) { gate.unlocked = false; gate.status = 0; renderLocks(); return Promise.resolve(); }
     var mt = window.xhs && window.xhs.miniTool;
     var ok = !!(mt && typeof mt.getFollowStatus === 'function' && clientVersionAtLeast(9510));
     gate.apiOK = ok;
@@ -723,7 +726,10 @@
   }
   function gateFollow() {
     var mt = window.xhs && window.xhs.miniTool;
-    if (!mt || typeof mt.followAuthor !== 'function') { showTip('当前小红书版本不支持关注引导，功能已直接解锁'); gate.unlocked = true; renderAll(); return; }
+    if (gate.forceLock && (!mt || typeof mt.followAuthor !== 'function')) {
+      showTip('浏览器预览：真实容器内此处将拉起小红书关注面板');
+      return;
+    }
     mt.followAuthor().then(function (r) {
       if (r.follow_status === 1 || r.follow_status === 2) {
         gate.unlocked = true; gate.status = r.follow_status;
