@@ -26,8 +26,9 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
 #err{display:none;margin:12px;padding:10px;border:1px solid var(--signal);background:var(--signal-2);color:#7d2410;font-size:12px;white-space:pre-wrap}
 
 /* ── 头部：品牌 + 口径 ── */
-.hd{position:sticky;top:0;z-index:40;background:rgba(242,239,231,.96);
-  padding:10px 14px 8px;padding-top:calc(10px + env(safe-area-inset-top, 0px));
+.hd{position:sticky;top:0;z-index:40;background:rgba(242,239,231,.97);
+  padding:28px 14px 8px;
+  padding-top:max(28px, calc(env(safe-area-inset-top, 0px) + 10px));
   border-bottom:2px solid var(--ink)}
 .hd::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:var(--ink-4)}
 .hd-brand{display:-webkit-box;display:flex;align-items:baseline;gap:8px}
@@ -160,7 +161,7 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
 
 /* ── 底部 Tab Bar ── */
 .tabbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:-webkit-box;display:flex;
-  height:calc(var(--tab-h) + env(safe-area-inset-bottom, 0px));padding-bottom:env(safe-area-inset-bottom, 0px);
+  height:calc(var(--tab-h) + max(0px, env(safe-area-inset-bottom, 0px)));padding-bottom:max(0px, env(safe-area-inset-bottom, 0px));
   background:rgba(250,248,243,.97);border-top:2px solid var(--ink)}
 .tabbar button{-webkit-box-flex:1;flex:1;display:-webkit-box;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:2px;font-size:10.5px;color:var(--ink-3);
@@ -177,8 +178,9 @@ button:focus{outline:1px dashed var(--ink-4);outline-offset:1px}
   -webkit-transition:transform .26s cubic-bezier(.4,0,.15,1);transition:transform .26s cubic-bezier(.4,0,.15,1);
   display:-webkit-box;display:flex;-webkit-box-orient:vertical;flex-direction:column}
 .sheet.on{-webkit-transform:none;transform:none}
-.sh-hd{display:-webkit-box;display:flex;align-items:flex-start;gap:10px;padding:14px 16px 11px;
-  padding-top:calc(14px + env(safe-area-inset-top, 0px));border-bottom:2px solid var(--ink)}
+.sh-hd{display:-webkit-box;display:flex;align-items:flex-start;gap:10px;padding:28px 16px 11px;
+  padding-top:max(28px, calc(env(safe-area-inset-top, 0px) + 14px));
+  border-bottom:2px solid var(--ink)}
 .sh-t{font-family:var(--f-disp);font-size:16px;font-weight:700}
 .sh-s{margin-top:3px;font-family:var(--f-mono);font-size:9.5px;color:var(--ink-3);line-height:1.7}
 .sh-x{margin-left:auto;flex:none;width:28px;height:28px;border:1px solid var(--rule);color:var(--ink-2);font-size:11px}
