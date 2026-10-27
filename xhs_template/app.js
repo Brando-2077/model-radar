@@ -706,6 +706,22 @@
   }
 
   /* ── 8. 事件 ─────────────────────────────────────────────────── */
+  /* ── 容器顶部避让（在线文档 §3.11 getWindowInfo，9.49+）─────────────
+     容器全屏渲染：状态栏 + 导航按钮（back/me/share）浮在页面顶部。
+     向容器要真实高度：--top-inset = max(状态栏, 导航按钮底部) + 10px 余量。
+     API 不可用（浏览器/老客户端）时不动，回落到 CSS 基线 28px。 */
+  (function () {
+    var mt = window.xhs && window.xhs.miniTool;
+    if (!mt || typeof mt.getWindowInfo !== 'function') return;
+    mt.getWindowInfo().then(function (r) {
+      var top = (r.statusBarHeight || 0) + 10;
+      var mb = r.menuButtons && r.menuButtons.back;
+      if (mb && typeof mb.bottom === 'number') top = Math.max(top, mb.bottom + 10);
+      if (r.safeArea && typeof r.safeArea.top === 'number') top = Math.max(top, r.safeArea.top + 10);
+      document.documentElement.style.setProperty('--top-inset', top.toFixed(0) + 'px');
+    }).catch(function () {});
+  })();
+
   $('scope').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
     var s = b.getAttribute('data-s');
