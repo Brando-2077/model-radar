@@ -135,8 +135,17 @@
   }
 
   /* ── 4. 关注门控（平台 API，9.51+；降级不锁）────────────────── */
-  var gate = { unlocked: true, status: -9,
-               forceLock: new URLSearchParams(location.search).get('lock') === '1' };
+  var gate = { unlocked: true, status: -9, forceLock: false };
+  /* 预览开关：?lock=1 强制锁定（会话级记忆，关标签页失效）；?lock=0 显式解除。
+     仅影响浏览器预览——真实容器内不会带这个参数，始终按真实关注状态门控 */
+  try {
+    if (new URLSearchParams(location.search).get('lock') === '1') {
+      sessionStorage.setItem('xhs-preview-lock', '1');
+    } else if (new URLSearchParams(location.search).get('lock') === '0') {
+      sessionStorage.removeItem('xhs-preview-lock');
+    }
+    if (sessionStorage.getItem('xhs-preview-lock') === '1') gate.forceLock = true;
+  } catch (e) { /* 存储不可用则忽略 */ }
   function clientVersionAtLeast(minVer) {
     try {
       var lo = (window.xhs && window.xhs.launchOptions) || null;
@@ -178,12 +187,23 @@
       infBtn.classList.toggle('locked', !gate.unlocked);
       if (lk) lk.textContent = gate.unlocked ? '' : ' 🔒';
     }
+    var more = document.getElementById('more');
+    if (more && !state.page) {
+      var n = ranked().length;
+      more.textContent = (!gate.unlocked && !state.more && !state.q.trim())
+        ? '🔒 关注解锁全部 ' + n + ' 个模型'
+        : (state.more ? '收起' : '展开全部 ' + n + ' 个');
+    }
     showFcta(!gate.unlocked);
   }
   function showFcta(on) {
     var f = document.getElementById('fcta');
     if (f) f.hidden = !on || gate.unlocked;
   }
+  /* 自测句柄：mock window.xhs 后可 window.__followGate.refresh() 全流程验证 */
+  window.__followGate = gate;
+  gate.refresh = gateRefresh;
+  gate.follow = gateFollow;
   function hideFcta() { var f = document.getElementById('fcta'); if (f) f.hidden = true; }
 
   /* ── 5. 工具 ─────────────────────────────────────────────────── */
