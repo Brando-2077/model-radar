@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>模型雷达 · 按场景选模型</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2EFE7'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23C2391A' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23C2391A'/%3E%3C/svg%3E">
 <style>
 {{APP_CSS}}
 </style>
@@ -12,90 +11,72 @@
 <body>
 
 <header class="hd">
-  <div class="hd-brand">
-    <b>模型雷达</b>
-    <span class="hd-sub" id="hd-sub"></span>
+  <div class="hd-r1">
+    <div class="brand"><b>模型雷达</b><span id="hd-sub"></span></div>
+    <button class="hicon" id="about-open" aria-label="关于与口径">ⓘ</button>
   </div>
-  <div class="hd-scope" id="scope">
+  <div class="scope" id="scope">
     <button data-s="all" class="on">全部来源</button>
     <button data-s="tp">仅第三方</button>
-    <button data-s="inf">含推理</button>
+    <button data-s="inf">含推理<span class="lk" id="inf-lk"></span></button>
   </div>
 </header>
 
-<nav class="scenes" id="scene-strip"></nav>
+<div class="chips" id="chips"></div>
 
-<main class="views">
-  <!-- ── Tab 1 · 榜单 ─────────────────────────────── -->
-  <section class="view" id="view-rank">
-    <div class="search"><input id="q" placeholder="搜索模型 / 厂商…" autocomplete="off"><button class="qc" id="q-clear" hidden>✕</button></div>
-    <div class="verdict" id="verdict"></div>
-    <div class="cards" id="cards"></div>
-    <button class="more" id="btn-more"></button>
-    <label class="hidep"><input type="checkbox" id="hide-pending"> 只看有分数的模型</label>
-  </section>
-
-  <!-- ── Tab 2 · 对比 ─────────────────────────────── -->
-  <section class="view" id="view-cmp" hidden>
-    <div class="cmp-chips" id="cmp-chips"></div>
-    <div class="radar-box">
-      <svg id="radar" viewBox="0 0 340 300" aria-label="能力雷达图"></svg>
-      <div class="radar-legend" id="radar-legend"></div>
-    </div>
-    <div class="cmp-tip" id="cmp-tip"></div>
-    <div class="dimcmp" id="dimcmp"></div>
-    <div class="scenetake" id="scenetake"></div>
-  </section>
-
-  <!-- ── Tab 3 · 关于 ─────────────────────────────── -->
-  <section class="view" id="view-about" hidden>
-    <div class="about-sec">
-      <h3>分数怎么读</h3>
-      <p>0–100 是<b>位次分</b>：约等于在该基准的当期模型池里赢过多少比例的对手——相对站位，不是考试分。维度分 = 该维各计分基准族位次分的<b>加权均值</b>，权重按族内模型数分级 w(n)=min(1,(n−1)/3)（×1.0 / ×0.67 / ×0.33）。</p>
-      <p>同一基准跨来源只算一票；族内仅 1 个模型的基准不计分（单模型无对手）。</p>
-    </div>
-    <div class="about-sec">
-      <h3>缺数据 ≠ 0 分</h3>
-      <p>缺计分证据的维度：<b>雷达断开、条形留「待定」、综合分该维权重让位</b>——不按 0 惩罚。低置信（族内 2–3 人）证据按 ×0.67 / ×0.33 降权参与。</p>
-    </div>
-    <div class="about-sec">
-      <h3>标记得分</h3>
-      <p><b>†</b> = 该维仅由 1 个基准族支撑（单一来源 ≠ 模型弱）；<b>·低覆盖</b> = 本场景权重覆盖不足 60%，名次仅供参考；<b>虚线值</b> = 推理补全（估算，非实测，默认口径不计入）。</p>
-    </div>
-    <div class="about-sec">
-      <h3>关注作者解锁</h3>
-      <p>关注作者即可解锁两项进阶功能：<b>查看全部模型</b>（默认只展示前 10 名）与<b>含推理补全口径</b>。核心功能——榜单、雷达对比、证据链——始终免费。</p>
-      <p>关注通过小红书官方「关注作者」能力完成（需客户端 9.51+）；低版本客户端自动跳过锁定，不影响使用。</p>
-    </div>
-    <div class="about-sec" id="about-data">
-      <h3>数据</h3>
-      <div id="about-data-body"></div>
-    </div>
-  </section>
+<main id="home">
+  <div id="hero"></div>
+  <div class="fcta" id="fcta" hidden>
+    <div class="fcta-t"><b>关注作者，解锁全部模型</b><span>默认展示前 10 名 · 全部 34 个需关注</span></div>
+    <button id="fcta-go">关注解锁</button>
+    <button class="fcta-x" id="fcta-x">✕</button>
+  </div>
+  <div class="search"><input id="q" placeholder="搜索模型 / 厂商…" autocomplete="off"><button id="q-clear" hidden>✕</button></div>
+  <div id="cards"></div>
+  <button class="more" id="more"></button>
+  <label class="hidep"><input type="checkbox" id="hide-pending">只看有分数的模型</label>
+  <p class="foot">分数为「基准族内位次分」——约等于赢过池内对手的比例，不是绝对能力值。数据来自公开榜单，口径详见「关于」。</p>
 </main>
 
-<nav class="tabbar" id="tabbar">
-  <button data-t="rank" class="on"><i>▤</i><span>榜单</span></button>
-  <button data-t="cmp"><i>◈</i><span>对比</span></button>
-  <button data-t="about"><i>ⓘ</i><span>关于</span></button>
-</nav>
+<button id="fab"><i>⚖</i> 对比 <b id="fab-n">0</b><span class="fab-s">/3</span></button>
 
-<div class="sheet-scrim" id="sheet-scrim"></div>
-<aside class="sheet" id="sheet" aria-hidden="true">
-  <div class="sh-hd"><div><div class="sh-t" id="sh-title"></div><div class="sh-s" id="sh-sub"></div></div>
-  <button class="sh-x" id="sh-close">✕</button></div>
-  <div class="sh-bd" id="sh-body"></div>
-</aside>
+<!-- ── 对比层 ── -->
+<section class="pg" id="pg-cmp">
+  <div class="pghd">
+    <button class="back" id="cmp-back">‹</button>
+    <b>对比</b><span class="pgsub" id="cmp-sub"></span>
+  </div>
+  <div class="pgbd" id="cmp-body"></div>
+</section>
 
+<!-- ── 模型详情层 ── -->
+<section class="pg" id="pg-det">
+  <div class="pghd">
+    <button class="back" id="det-back">‹</button>
+    <b id="det-name"></b><span class="pgsub" id="det-sub"></span>
+  </div>
+  <div class="pgbd" id="det-body"></div>
+</section>
+
+<!-- ── 关于层 ── -->
+<section class="pg" id="pg-about">
+  <div class="pghd"><button class="back" id="about-back">‹</button><b>关于 / 口径</b></div>
+  <div class="pgbd">
+    <div class="asec"><h3>分数怎么读</h3>
+      <p>0–100 是<b>位次分</b>：约等于在该基准的当期模型池里赢过多少比例的对手——相对站位，不是考试分。维度分 = 该维各计分基准族位次分的<b>加权均值</b>，权重按族内模型数分级 w(n)=min(1,(n−1)/3)（×1.0 / ×0.67 / ×0.33）。</p>
+      <p>同一基准跨来源只算一票；族内仅 1 个模型的基准不计分（单模型无对手）。</p></div>
+    <div class="asec"><h3>缺数据 ≠ 0 分</h3>
+      <p>缺计分证据的维度：<b>雷达断开、条形留「待定」、综合分该维权重让位</b>。低置信（族内 2–3 人）证据按 ×0.67 / ×0.33 降权参与。</p></div>
+    <div class="asec"><h3>标记得分</h3>
+      <p><b>†</b> = 该维仅由 1 个基准族支撑（单一来源 ≠ 模型弱）；<b>·低覆盖</b> = 本场景权重覆盖不足 60%，名次仅供参考；<b>虚线值</b> = 推理补全（估算，非实测，默认口径不计入）。</p></div>
+    <div class="asec"><h3>关注解锁</h3>
+      <p>默认展示前 10 名模型；<b>关注作者</b>后解锁全部 34 个与「含推理补全」口径。核心功能（榜单 / 雷达对比 / 证据链）始终免费。关注通过小红书官方能力完成（客户端 9.51+），低版本自动跳过锁定。</p></div>
+    <div class="asec"><h3>数据</h3><div id="about-data-body"></div></div>
+  </div>
+</section>
+
+<div id="toast"></div>
 <div id="err"></div>
-
-<div class="follow-bar" id="follow-bar" hidden>
-  <span class="fb-star">★</span>
-  <span class="fb-txt"><b>关注作者，解锁进阶功能</b><span id="follow-why"></span> · 全部模型 · 推理补全口径</span>
-  <button class="fb-go" id="follow-go">关注解锁</button>
-  <button class="fb-x" id="follow-x">✕</button>
-</div>
-<div id="pick-tip"></div>
 
 <script src="./data.js"></script>
 <script src="./app.js"></script>
