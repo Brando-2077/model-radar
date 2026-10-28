@@ -15,24 +15,12 @@ build_scores.log
 
 # Internal working notes (kept locally, not part of the public repo)
 AGENTS.md
-项目资源清单.md
-素材学习笔记.md
-计分口径改造设计草案.md
-酥悠沫站点设计拆解.md
-雷达图设计方案.md
-数据补齐清单.md
-新增模型操作手册.md
+notes/
 data/数据源与采集说明.md
 
 # Historical backups and archives
 backup_*/
 data/archive/
-
-# Empty legacy source (no current NVIDIA-only evidence)
-data/raw_nvidia.csv
-
-# One-off historical script (kept locally for provenance)
-scripts/append_hy3_tb21.py
 
 # OS / editor
 .DS_Store
@@ -48,10 +36,15 @@ ses_*.json
 # ZCode plans (local)
 .zcode/
 
-# External review documents (local reference, not published)
-外部评审_*.md
-
-# Xiaohongshu minitool branch (distributed via XHS, not GitHub)
-.skill/
+# Xiaohongshu tool (local product line, not published to GitHub)
+xhs_template/
+scripts/build_xhs.py
+scripts/preview_xhs.py
+xhs_cover.png
+xhs_icon.png
 dist-xhs/
 model-radar-xhs.zip
+.skill/
+
+# Windows reserved-name artifact
+NUL
