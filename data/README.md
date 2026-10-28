@@ -29,8 +29,6 @@ canon.csv ─┘
 | `weights.csv` | 权重 | 5 套场景 × 8 维相对权重 |
 | `scores.csv` | **生成物** | `build_scores.py` 的输出，勿手改 |
 
-`raw_nvidia.csv` 是历史遗留的空源文件（当前名册没有仅由 NVIDIA 官方卡覆盖的证据），不随公开仓库发布。
-
 ## 2. raw 表的列
 
 除 `raw_inferred.csv` 外，所有 `raw_*.csv` 的列为：

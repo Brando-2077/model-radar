@@ -152,7 +152,6 @@
 | `scripts/diff_aa.py` | AA 全 slug 记录与账本的差集；`--append` 可补缺失分项 |
 | `scripts/scan_aa.py` | 扫描 AA 存档页的字段名 |
 | `scripts/append_design_arena.py` | Design Arena → 图片与制图 |
-| `scripts/append_hy3_tb21.py` | 一次性补 Hy3 的 TB2.1（历史脚本，保留备查） |
 | `scripts/fetch_or_rankings.py` | OpenRouter 榜单快照（**只做热度参考，不进雷达**） |
 | `.github/workflows/validate.yml` | CI：语法检查 → 重建账本 → 账本必须已提交 → 校验 |
 | `requirements.txt` | 仅 `pandas>=2.0,<4` |
@@ -265,10 +264,10 @@ python scripts/validate.py # 校验（0 错误 0 警告才算过）
 | 腾讯官方 | **厂商** | `raw_vendor.csv` | 17 | 17 | 1 | 17 | 2026-08-28 | 0-100 | 推理、代码、Agent |
 | DeepSeek官方 | **厂商** | `raw_vendor.csv` | 19 | 16 | 2 | 11 | 2026-10-17 | 0-100 | 代码、Agent、图片 |
 | 酥悠沫-官方 | **厂商** | `raw_suyoumo.csv` | 4 | 4 | 3 | 4 | 2026-06-30 – 2026-09-20 | 0-100 / Elo | 指令、长文本、内容 |
-| NVIDIA官方 | **厂商** | `raw_nvidia.csv` | 0 | 0 | 0 | 4（仅 mapping） | — | 0-100 | 预留；当前无 raw 行 |
+| NVIDIA官方 | **厂商** | —（无证据行） | 0 | 0 | 0 | 4（仅 mapping） | — | 0-100 | 预留渠道；当前无 raw 行 |
 | **合计** | | | **804** | **716** | — | **89** | 2026-04-29 – 2026-10-21 | | |
 
-> 注：NVIDIA官方 的 4 个类别（BrowseComp / IFBench-loose / MMLU Pro / SWE-bench Verified）在 `mapping.csv` 里有声明，但当前 `raw_nvidia.csv` 为空（该文件不进公开仓库）。BrowseComp 族仍有 dots官方 的 1 条证据，所以不是“空族”。
+> 注：NVIDIA官方 的 4 个类别（BrowseComp / IFBench-loose / MMLU Pro / SWE-bench Verified）在 `mapping.csv` 里有声明，但当前没有任何 raw 证据行（原空表 `raw_nvidia.csv` 已于 2026-10-28 清理）。BrowseComp 族仍有 dots官方 的 1 条证据，所以不是“空族”。
 >
 > 合计列的“类别 89”是**类别名称去重后**的数量；按（来源, 类别）组合计是 106 个键。
 
