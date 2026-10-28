@@ -100,6 +100,44 @@ button:focus{outline:2px solid var(--red);outline-offset:1px}
 .card-info:active{background:var(--line2)}
 .card.sel .card-info{color:var(--rc,var(--red));border-color:var(--rc,var(--red))}
 
+/* ── 置信带（v2.1）── */
+.card-t .un{margin-left:4px;font-size:10px;color:var(--ink3);font-weight:600;flex:none}
+.tg{display:flex;align-items:center;gap:8px;margin:3px 0 9px;font-size:10px;color:var(--ink3)}
+.tg::before,.tg::after{content:"";flex:1;height:1px;background:var(--line)}
+.dimc .cell .cu{font-size:9.5px;color:var(--ink3);font-variant-numeric:tabular-nums;margin-top:1px}
+.d8 .r .v .un{color:var(--ink3);font-size:9px}
+.evnote{margin-top:5px;padding-top:5px;border-top:1px solid var(--line2);
+  font-size:9.5px;color:var(--ink3);line-height:1.7}
+
+/* ── 分享卡（v2.2）：入口 + 底部预览弹层 ── */
+.share-row{margin-bottom:10px}
+.share-row button{width:100%;display:flex;align-items:center;justify-content:center;
+  padding:12px;border-radius:12px;font-size:14px;font-weight:700;
+  background:var(--red);color:#fff;box-shadow:0 5px 16px rgba(226,58,30,.28)}
+.share-row button:active{opacity:.85}
+.sheet-scrim{position:fixed;top:0;left:0;right:0;bottom:0;z-index:80;
+  background:rgba(26,26,26,.5);opacity:0;pointer-events:none;transition:opacity .25s}
+.sheet-scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:85;background:var(--card);
+  border-radius:18px 18px 0 0;padding:14px 16px 16px;
+  padding-bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+  max-width:520px;margin:0 auto;
+  transform:translateY(105%);transition:transform .28s cubic-bezier(.35,0,.15,1)}
+.sheet.on{transform:translateY(0)}
+.sheet-h{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.sheet-h b{font-size:15px}
+.sheet-h span{font-size:10.5px;color:var(--ink3)}
+.sheet-h button{margin-left:auto;width:28px;height:28px;border-radius:50%;
+  border:1px solid var(--line);color:var(--ink2);font-size:12px;background:var(--bg)}
+.sheet-img{display:block;width:100%;max-height:48vh;object-fit:contain;
+  border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.sheet-btns{display:flex;gap:9px;margin-top:12px}
+.sheet-btns button{flex:1;padding:12px;border-radius:12px;font-size:14px;font-weight:700}
+.sheet-btns button:disabled{opacity:.5}
+.sheet-btns .primary{background:var(--red);color:#fff}
+.sheet-btns .ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.sheet-hint{margin-top:9px;font-size:10px;color:var(--ink3);line-height:1.7;text-align:center}
+
 /* ── 展开逐维（v2 改为卡片下方直接展开）── */
 .card-x{border-top:1px solid var(--line2);margin-top:8px;padding:7px 2px 2px}
 .card-x .xr{display:flex;align-items:center;gap:7px;padding:4.5px 0}
@@ -218,14 +256,14 @@ button:focus{outline:2px solid var(--red);outline-offset:1px}
 #fab .fab-s{font-size:10.5px;opacity:.8}
 #fab.zero{background:var(--ink);box-shadow:0 6px 20px rgba(23,22,15,.3)}
 
-/* ── toast ── */
-#toast{position:fixed;z-index:90;display:none;left:16px;right:16px;
-  top:calc(env(safe-area-inset-top, 0px) + 54px);
-  padding:12px 15px;border-radius:12px;background:var(--ink);color:#fff;
-  font-size:12.5px;font-weight:600;line-height:1.7;pointer-events:none;
-  box-shadow:0 8px 28px rgba(0,0,0,.28)}
+/* ── toast（v2.1：屏幕居中偏上、大字醒目——选满替换教学等关键提示用）── */
+#toast{position:fixed;z-index:90;display:none;left:28px;right:28px;top:38%;
+  transform:translateY(-50%);
+  padding:14px 18px;border-radius:14px;background:rgba(26,26,26,.96);color:#fff;
+  font-size:14px;font-weight:700;line-height:1.75;text-align:center;pointer-events:none;
+  box-shadow:0 10px 34px rgba(0,0,0,.35)}
 #toast.on{display:block;animation:tin .25s ease-out both}
-@keyframes tin{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@keyframes tin{from{opacity:0;transform:translateY(calc(-50% - 10px))}to{opacity:1;transform:translateY(-50%)}}
 /* hidden 属性压过作者 display（.fcta/.pg 都设置了 display，需显式兜底） */
 .fcta[hidden]{display:none!important}
 .pg[hidden]{display:none!important}

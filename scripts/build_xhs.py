@@ -50,9 +50,18 @@ def main() -> None:
     (DIST / "data.js").write_bytes(("window.RADAR_LEDGER = " + ledger_json + ";\n").encode("utf-8"))
     (DIST / "app.js").write_bytes(app.encode("utf-8"))
 
+    extras = []
+    for name in ("author.png", "author.jpg"):
+        p = TPL / name
+        if p.exists():
+            (DIST / name).write_bytes(p.read_bytes())
+            extras.append(name)
+
     with zipfile.ZipFile(ZIP_PATH, "w", zipfile.ZIP_DEFLATED) as z:
         for f in ("index.html", "data.js", "app.js"):
             z.write(DIST / f, f)
+        for name in extras:
+            z.write(DIST / name, name)
 
     total = sum((DIST / f).stat().st_size for f in ("index.html", "data.js", "app.js"))
     print(f"已生成 {DIST.name}/：index.html / data.js / app.js，源码合计 {total:,} 字节；"
