@@ -9,7 +9,7 @@ import pytest
 
 from radar.config import VERSION
 from radar.ledger import build_ledger
-from radar.tables import load_scores
+from radar.tables import load_roster, load_scores
 
 
 @pytest.fixture(scope="module")
@@ -32,7 +32,10 @@ def test_meta_key_order(ledger):
 def test_counts_match_scores_csv(ledger):
     scores = load_scores()
     assert len(ledger["evidence"]) == len(scores)
-    assert len(ledger["models"]) == scores["模型"].nunique() + 1   # + 待定 Space-Bunny
+    # 名册（含待定占位）↔ 账本模型一一对应，不写死任何具体模型数
+    roster = load_roster()
+    assert len(ledger["models"]) == len(roster)
+    assert {m["name"] for m in ledger["models"]} == set(roster)
 
 
 def test_all_scores_in_range(ledger):
