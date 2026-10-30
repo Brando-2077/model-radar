@@ -840,7 +840,8 @@
     ctx.arcTo(x, y, x + w, y, r);
     ctx.closePath();
   }
-  /* ═══ 分享卡 v4「深空霓虹」——深色渐变 + 玻璃卡片 + 发光雷达。与旧版零继承。 ═══ */
+  /* ═══ 分享卡 v5「杂志海报」——墨底平色块 + 超大字号 + 按名次配色；零渐变、零玻璃、零发光。
+         构图统一：主榜块 = 选型冠军（整幅色块），副榜 = #2/#3 行，未选模型 = 场景 Top 3。与 v3/v4 零继承。 ═══ */
   /* ★ 作者署名配置：填昵称/小红书号即显示在卡底（留空则不显示）；头像 author.png 放 xhs_template/ 重跑构建 */
   var AUTHOR = { name: '赛博摆渡人', xhsId: '', avatar: 'author.png' };
   var authorImg = null;
@@ -849,14 +850,19 @@
     im.onload = function () { authorImg = im; };
     im.src = AUTHOR.avatar;
   })();
-  /* 分享卡书面维度短名 */
+  /* 分享卡书面维度短名（当前海报版不含雷达，保留供后续版式使用） */
   var CARD_DIM = { '推理与知识': '推理', '代码': '代码', '指令遵循': '指令遵循', 'Agent与工具调用': 'Agent',
                    '长文本': '长文本', '可靠性与低幻觉': '可靠性', '内容创作': '内容创作', '图片与制图': '图片制图' };
   function drawShareCard() {
-    var W = 1080, H = 1440, M = 64;
+    var W = 1080, H = 1440, M = 72;
     var SANS = '-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif';
     var MONO = 'ui-monospace,Menlo,Consolas,"Courier New",monospace';
+    var PAPER = '#F5F0E4', INK = '#161309', DIMC = 'rgba(245,240,228,0.55)';
     var COLS = ['#FF6B4A', '#4D8DFF', '#3DDC84'];
+    function inkOn(hex) {
+      var n = parseInt(hex.slice(1), 16);
+      return ((n >> 16 & 255) * 0.299 + (n >> 8 & 255) * 0.587 + (n & 255) * 0.114) > 150 ? INK : PAPER;
+    }
     var c = document.createElement('canvas');
     c.width = W; c.height = H;
     var ctx = c.getContext('2d');
@@ -866,138 +872,84 @@
       while (t.length > 1 && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
       return t + '…';
     }
-    function glass(x, y, w, h, r) {
-      ctx.fillStyle = 'rgba(255,255,255,0.055)';
-      rrPath(ctx, x, y, w, h, r); ctx.fill();
-      ctx.strokeStyle = 'rgba(255,255,255,0.13)'; ctx.lineWidth = 1.5;
-      rrPath(ctx, x, y, w, h, r); ctx.stroke();
-    }
 
-    /* 深空背景 + 双色氛围光 */
-    var bg = ctx.createLinearGradient(0, 0, 0, H);
-    bg.addColorStop(0, '#171A30'); bg.addColorStop(1, '#0B0C16');
-    ctx.fillStyle = bg; ctx.fillRect(0, 0, W, H);
-    var blob = ctx.createRadialGradient(880, 150, 0, 880, 150, 500);
-    blob.addColorStop(0, 'rgba(255,90,60,0.20)'); blob.addColorStop(1, 'rgba(255,90,60,0)');
-    ctx.fillStyle = blob; ctx.fillRect(0, 0, W, H);
-    blob = ctx.createRadialGradient(150, 1200, 0, 150, 1200, 540);
-    blob.addColorStop(0, 'rgba(77,141,255,0.17)'); blob.addColorStop(1, 'rgba(77,141,255,0)');
-    ctx.fillStyle = blob; ctx.fillRect(0, 0, W, H);
+    /* 墨底平铺 */
+    ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H);
 
-    /* 顶栏：品牌玻璃片 + 日期 */
-    glass(M, 64, 286, 68, 34);
-    ctx.beginPath(); ctx.arc(M + 38, 98, 9, 0, Math.PI * 2);
-    ctx.fillStyle = '#FF6B4A'; ctx.shadowColor = '#FF6B4A'; ctx.shadowBlur = 10; ctx.fill(); ctx.shadowBlur = 0;
-    ctx.fillStyle = '#fff'; ctx.font = '800 30px ' + SANS; ctx.textAlign = 'left';
-    ctx.fillText('模型雷达', M + 62, 110);
+    /* 刊头：色块方章 + 品名 + 期号，粗横线压底 */
+    ctx.fillStyle = COLS[0]; ctx.fillRect(M, 66, 44, 44);
+    ctx.fillStyle = PAPER; ctx.font = '900 46px ' + SANS; ctx.textAlign = 'left';
+    ctx.fillText('模型雷达', M + 68, 103);
     ctx.textAlign = 'right';
-    ctx.fillStyle = 'rgba(255,255,255,0.5)'; ctx.font = '500 22px ' + MONO;
-    ctx.fillText(String(META.built || '').slice(0, 10), W - M, 108);
+    ctx.fillStyle = DIMC; ctx.font = '500 24px ' + MONO;
+    ctx.fillText('VOL.' + String(META.built || '').slice(0, 10), W - M, 98);
     ctx.textAlign = 'left';
+    ctx.fillStyle = PAPER; ctx.fillRect(M, 138, W - 2 * M, 6);
 
-    /* 场景大标题 */
+    /* 眉题 + 场景大标题 */
     var scene = sceneByName(state.scene);
     var sel = state.selected.map(function (n) { return MODEL_IX[n]; }).filter(Boolean);
-    ctx.fillStyle = 'rgba(255,255,255,0.45)'; ctx.font = '600 24px ' + SANS;
-    ctx.fillText(sel.length ? '我的选型 · 当前场景' : '当前场景 · TOP 3', M, 250);
-    ctx.fillStyle = '#fff'; ctx.font = '900 92px ' + SANS;
-    ctx.fillText(fit(scene.name, '900 92px ' + SANS, W - 2 * M), M, 356);
-    var ubar = ctx.createLinearGradient(M, 0, M + 190, 0);
-    ubar.addColorStop(0, '#FF6B4A'); ubar.addColorStop(1, '#FFC24A');
-    ctx.fillStyle = ubar; rrPath(ctx, M, 384, 190, 10, 5); ctx.fill();
-
-    /* 霓虹雷达 */
-    var N = DIMS.length, R = 224, CX = W / 2, CY = 655;
-    [25, 50, 75, 100].forEach(function (r) {
-      ctx.beginPath();
-      for (var i = 0; i < N; i++) {
-        var a = (-90 + i * 360 / N) * Math.PI / 180;
-        var px = CX + r / 100 * R * Math.cos(a), py = CY + r / 100 * R * Math.sin(a);
-        if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py);
-      }
-      ctx.closePath();
-      ctx.strokeStyle = r === 100 ? 'rgba(255,255,255,0.26)' : 'rgba(255,255,255,0.08)';
-      ctx.lineWidth = r === 100 ? 2 : 1.5;
-      ctx.setLineDash(r === 100 ? [] : [4, 9]);
-      ctx.stroke();
-    });
-    ctx.setLineDash([]);
-    for (var i = 0; i < N; i++) {
-      var ang = (-90 + i * 360 / N) * Math.PI / 180;
-      ctx.strokeStyle = 'rgba(255,255,255,0.07)'; ctx.lineWidth = 1.5;
-      ctx.beginPath(); ctx.moveTo(CX, CY);
-      ctx.lineTo(CX + R * Math.cos(ang), CY + R * Math.sin(ang)); ctx.stroke();
-      var lx = CX + (R + 44) * Math.cos(ang), ly = CY + (R + 44) * Math.sin(ang);
-      ctx.fillStyle = 'rgba(255,255,255,0.72)'; ctx.font = '600 27px ' + SANS;
-      ctx.textAlign = Math.abs(Math.cos(ang)) < 0.35 ? 'center' : (Math.cos(ang) > 0 ? 'left' : 'right');
-      ctx.fillText(CARD_DIM[DIMS[i]] || DIMS[i], lx, ly + 9);
-    }
-    ctx.textAlign = 'left';
-    sel.forEach(function (m, idx) {
-      var col = COLS[idx % 3];
-      var vs = DIMS.map(function (d) { return has(m, d) ? clamp(sv(m, d)) : null; });
-      var runs = [], cur = null, start = 0;
-      if (vs.some(function (v) { return v === null; })) { while (vs[start] !== null) start++; }
-      for (var k = 0; k < N; k++) {
-        var kk = (start + k) % N;
-        if (vs[kk] === null) cur = null;
-        else { if (!cur) { cur = []; runs.push(cur); } cur.push(kk); }
-      }
-      runs.forEach(function (run) {
-        ctx.beginPath();
-        run.forEach(function (r2, j) {
-          var a2 = (-90 + r2 * 360 / N) * Math.PI / 180;
-          var px = CX + vs[r2] / 100 * R * Math.cos(a2), py = CY + vs[r2] / 100 * R * Math.sin(a2);
-          if (j) ctx.lineTo(px, py); else ctx.moveTo(px, py);
-        });
-        if (run.length === N) ctx.closePath();
-        ctx.shadowColor = col; ctx.shadowBlur = 10;
-        ctx.strokeStyle = col; ctx.lineWidth = 6;
-        ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-        if (run.length === N && idx === 0) { ctx.fillStyle = col; ctx.globalAlpha = 0.15; ctx.fill(); ctx.globalAlpha = 1; }
-        ctx.stroke();
-        ctx.shadowBlur = 0;
-        run.forEach(function (r2) {
-          var a2 = (-90 + r2 * 360 / N) * Math.PI / 180;
-          ctx.beginPath();
-          ctx.arc(CX + vs[r2] / 100 * R * Math.cos(a2), CY + vs[r2] / 100 * R * Math.sin(a2), 7, 0, Math.PI * 2);
-          ctx.fillStyle = col; ctx.fill();
-          ctx.strokeStyle = 'rgba(255,255,255,0.9)'; ctx.lineWidth = 2.5; ctx.stroke();
-        });
-      });
-    });
-
-    /* 玻璃卡排行（选中的模型 / 未选则 Top3） */
     var rows = sel.length
-      ? sel.map(function (m, i) { return { m: m, c: composite(m, scene), s: sceneSigmaCached(m, scene) }; })
+      ? sel.map(function (m) { return { m: m, c: composite(m, scene), s: sceneSigmaCached(m, scene) }; })
+          .sort(function (a, b) { return b.c - a.c; })
       : ranked().slice(0, 3).map(function (r) { return { m: r.m, c: r.c, s: r.s }; });
-    var cy0 = 956, ch = 104, gap = 14;
-    rows.forEach(function (r, i) {
-      var col = COLS[i % 3];
-      glass(M, cy0, W - 2 * M, ch, 22);
-      var pg = ctx.createLinearGradient(M + 20, cy0, M + 80, cy0 + ch);
-      if (i === 0) { pg.addColorStop(0, '#FF6B4A'); pg.addColorStop(1, '#FFC24A'); }
-      else { pg.addColorStop(0, 'rgba(255,255,255,0.16)'); pg.addColorStop(1, 'rgba(255,255,255,0.05)'); }
-      ctx.fillStyle = pg; rrPath(ctx, M + 22, cy0 + (ch - 56) / 2, 56, 56, 18); ctx.fill();
-      ctx.fillStyle = '#fff'; ctx.font = '800 25px ' + SANS; ctx.textAlign = 'center';
-      ctx.fillText('#' + (i + 1), M + 50, cy0 + ch / 2 + 9);
-      ctx.textAlign = 'left';
-      ctx.fillStyle = '#fff'; ctx.font = '700 37px ' + SANS;
-      ctx.fillText(fit(r.m.name, '700 37px ' + SANS, 450), M + 102, cy0 + 48);
-      ctx.fillStyle = 'rgba(255,255,255,0.5)'; ctx.font = '500 21px ' + MONO;
-      ctx.fillText('±' + fmt(r.s) + ' · ' + coverage(r.m) + '/8', M + 104, cy0 + 84);
+    ctx.fillStyle = DIMC; ctx.font = '600 26px ' + MONO;
+    ctx.fillText((sel.length ? '我的选型结论' : '本期结论') + ' · ' + scopeLabel() + ' 口径', M, 210);
+    ctx.fillStyle = PAPER; ctx.font = '900 116px ' + SANS;
+    ctx.fillText(fit(scene.name, '900 116px ' + SANS, W - 2 * M), M, 334);
+
+    /* 主榜块：#1 整幅平色块（本期主角） */
+    var hero = rows[0];
+    var hCol = COLS[0], hTxt = inkOn(hCol);
+    var HY = 398, HH = rows.length === 1 ? 668 : 548, HW = W - 2 * M;
+    ctx.fillStyle = hCol; ctx.fillRect(M, HY, HW, HH);
+    ctx.fillStyle = hTxt;
+    ctx.font = '900 40px ' + SANS;
+    ctx.fillText('No.1', M + 48, HY + 86);
+    ctx.font = '500 24px ' + MONO;
+    ctx.textAlign = 'right';
+    ctx.fillText('POOL ' + ranked().length, M + HW - 48, HY + 82);
+    ctx.textAlign = 'left';
+    var nameF = 96;
+    ctx.font = '900 ' + nameF + 'px ' + SANS;
+    while (nameF > 56 && ctx.measureText(hero.m.name).width > HW - 96) { nameF -= 6; ctx.font = '900 ' + nameF + 'px ' + SANS; }
+    ctx.fillText(fit(hero.m.name, '900 ' + nameF + 'px ' + SANS, HW - 96), M + 48, HY + 210);
+    ctx.font = '900 232px ' + SANS;
+    var sc = fmt(hero.c);
+    ctx.fillText(sc, M + 36, HY + HH - 88);
+    var scW = ctx.measureText(sc).width;
+    ctx.font = '700 44px ' + SANS;
+    ctx.fillText('±' + fmt(hero.s), M + 48 + scW + 24, HY + HH - 88);
+    ctx.font = '500 26px ' + MONO;
+    ctx.textAlign = 'right';
+    ctx.fillText(coverage(hero.m) + '/8 维 · ' + (hero.m.company || ''), M + HW - 48, HY + HH - 52);
+    ctx.textAlign = 'left';
+
+    /* 副榜：#2 / #3 行（粗色条 + 大分数） */
+    var RY = HY + HH + 58;
+    rows.slice(1).forEach(function (r, i) {
+      var col = COLS[i + 1];
+      ctx.fillStyle = col; ctx.fillRect(M, RY, 14, 96);
+      ctx.fillStyle = DIMC; ctx.font = '800 34px ' + SANS;
+      ctx.fillText('#' + (i + 2), M + 46, RY + 62);
+      ctx.fillStyle = PAPER; ctx.font = '800 52px ' + SANS;
+      ctx.fillText(fit(r.m.name, '800 52px ' + SANS, HW - 430), M + 130, RY + 66);
       ctx.textAlign = 'right';
-      ctx.font = '800 56px ' + SANS;
-      ctx.shadowColor = col; ctx.shadowBlur = 12;
-      ctx.fillStyle = col;
-      ctx.fillText(fmt(r.c), W - M - 28, cy0 + 68);
-      ctx.shadowBlur = 0;
+      ctx.fillStyle = col; ctx.font = '900 84px ' + SANS;
+      ctx.fillText(fmt(r.c), W - M, RY + 78);
       ctx.textAlign = 'left';
-      cy0 += ch + gap;
+      ctx.fillStyle = 'rgba(245,240,228,0.14)'; ctx.fillRect(M, RY + 122, HW, 2);
+      RY += 150;
     });
+    if (rows.length === 1) {
+      var pos = 1;
+      ranked().some(function (x) { if (x.m.name === hero.m.name) return true; pos++; return false; });
+      ctx.fillStyle = DIMC; ctx.font = '500 30px ' + MONO;
+      ctx.fillText('单模型选型 · 全池第 ' + pos + ' / ' + ranked().length + ' · 多选生成对比卡', M, RY + 40);
+    }
 
     /* 底部：署名 + 口径 */
-    ctx.fillStyle = 'rgba(255,255,255,0.12)'; ctx.fillRect(M, 1338, W - 2 * M, 1.5);
+    ctx.fillStyle = 'rgba(245,240,228,0.35)'; ctx.fillRect(M, 1338, W - 2 * M, 2);
     ctx.textAlign = 'center';
     if (AUTHOR.name || AUTHOR.xhsId) {
       var sig = (AUTHOR.name ? '@' + AUTHOR.name : '') +
@@ -1011,16 +963,16 @@
         ctx.beginPath(); ctx.arc(gx + avD / 2, 1372, avD / 2, 0, Math.PI * 2); ctx.clip();
         ctx.drawImage(authorImg, gx, 1347, avD, avD);
         ctx.restore();
-        ctx.strokeStyle = 'rgba(255,255,255,0.35)'; ctx.lineWidth = 2;
+        ctx.strokeStyle = 'rgba(245,240,228,0.4)'; ctx.lineWidth = 2;
         ctx.beginPath(); ctx.arc(gx + avD / 2, 1372, avD / 2, 0, Math.PI * 2); ctx.stroke();
       }
-      ctx.fillStyle = 'rgba(255,255,255,0.88)'; ctx.font = '700 30px ' + SANS;
+      ctx.fillStyle = PAPER; ctx.font = '700 30px ' + SANS;
       ctx.fillText(sig, gx + avD + gap2 + tw / 2, 1382);
-      ctx.fillStyle = 'rgba(255,255,255,0.38)'; ctx.font = '400 20px ' + MONO;
-      ctx.fillText('RANK-IN-POOL · 缺数据 ≠ 0 · MODEL RADAR', W / 2, 1416);
+      ctx.fillStyle = DIMC; ctx.font = '400 20px ' + MONO;
+      ctx.fillText('分数为基准族内位次分 · 缺数据 ≠ 0 · MODEL RADAR', W / 2, 1416);
     } else {
-      ctx.fillStyle = 'rgba(255,255,255,0.38)'; ctx.font = '400 20px ' + MONO;
-      ctx.fillText('RANK-IN-POOL · 缺数据 ≠ 0 · VOL.' + String(META.built || '').slice(0, 10) + ' · MODEL RADAR', W / 2, 1392);
+      ctx.fillStyle = DIMC; ctx.font = '400 20px ' + MONO;
+      ctx.fillText('分数为基准族内位次分 · 缺数据 ≠ 0 · VOL.' + String(META.built || '').slice(0, 10) + ' · MODEL RADAR', W / 2, 1392);
     }
     ctx.textAlign = 'left';
     return c;
