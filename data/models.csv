@@ -23,11 +23,10 @@ MiniMax-M3,,是,,
 Nemotron-3-Ultra,,是,,Design Arena 1144 Elo（图片维缺口 2026-10-25 补上）
 Qwen3.8-27B,,是,,
 Qwen3.8-Max,,是,,
-Space-Bunny,匿名（OpenRouter stealth/space-bunny-alpha）,未确认,2026-09-23,匿名 stealth 预览模型，无公开可核 benchmark；AA / LiveBench / LMArena 均未收录。8 维暂无证据。
 Step-5-Preview,,是,,
 GLM-5.1,智谱,是,2026-04-07,GLM-5 系列上一代（AA 页为 Reasoning 档；200K 上下文）；Design Arena 1290 Elo（图片维缺口 2026-10-25 补上）
 GLM-5.2,智谱,是,2026-06-16,GLM-5 中间代（max 档；1M 上下文；2026-07 SuperCLUE 总榜第 12）；2026-10-25 补 Design Arena 1283 + AIWB 英文写作 76.4（图片与内容创作缺口已填）
-MiniMax-M3.1-Flash,MiniMax,未确认,2026-10-19,MiniMax M3 系列 Flash 版（1M 上下文、图像输入）；官方称 10-23 起开放权重，AA 页当前仍记闭源 → 开源状态待确认
+MiniMax-M3.1-Flash,MiniMax,未确认,2026-10-19,MiniMax M3 系列 Flash 版（1M 上下文、图像输入）；官方称 10-23 起开放权重，AA 页当前仍记闭源 → 开源状态待确认；OpenRouter 匿名 stealth 模型 Space-Bunny 经证实即本模型（2026-10-31 确认），名册不再单列占位
 MiMo-V2.6-Pro,小米集团,是,2026-09-21,小米 MiMo 旗舰（1M 上下文）；同族 V2.6 Flash 曾被评测者标注「疑似接入错模型」，本条证据取自 V2.6 Pro 专属页；Design Arena 1306 Elo（2026-10-25 补）
 Gemini 4 Argon,Google,否,2026-09-30,Google 最新旗舰（AA 记 2026-09-30；Antigravity 渠道 10-13 上线）；1M 上下文；纯文本输出；AA 有 HLE / CritPt / SciCode / TB4.0 / LCR / Automation / Omni，缺 GPQA / MMMU-Pro / IFBench / TB2.1 / τ²；LiveBench 2.0 七套件 61.2-95.1（20261023）；Design Arena 1314 Elo；AI产品狙击手 Q1 10/10
 Gemini 3.8 Flash,Google,否,2026-09-02,Google 主力（2026-09-02）；1M 上下文；纯文本输出；AA 有 GPQA / HLE / CritPt / SciCode / TB4.0 / TB2.1 / LCR / MMMU-Pro / Automation / Omni；TB4.0 19.7 与 TB2.1 87.6 差距大（同族只取 TB4.0）；LiveBench 2.0 七套件；Design Arena 1299 Elo；Q1 10/10
