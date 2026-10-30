@@ -217,11 +217,23 @@
     var mt = window.xhs && window.xhs.miniTool;
     if (!gate.apiOK) { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
     mt.followAuthor().then(function (r) {
-      if (r.follow_status === 1 || r.follow_status === 2) {
+      var st = r && r.follow_status;
+      if (st === 1 || st === 2) return { follow_status: st };
+      /* 文档 §3.15：followAuthor 执行失败也 resolve（follow_status=-1），不走 reject——
+         返回值不是明确的 1/2 时一律用 getFollowStatus 复查，杜绝静默无反馈 */
+      return mt.getFollowStatus();
+    }).then(function (r) {
+      var st = r && r.follow_status;
+      if (st === 1 || st === 2) {
         gate.unlocked = true; state.more = true;
         hideFcta(); renderGate(); renderAll();
         haptic('medium');
         toast('已关注作者，全部模型已解锁 ✦');
+      } else if (st === -1) {
+        gate.unlocked = true; renderGate();   /* 查询失败不锁——与 gateRefresh 同一降级口径 */
+        toast('关注状态查询失败，已临时解锁');
+      } else {
+        toast('还没有完成关注——进阶功能保持锁定');
       }
     }).catch(function (err) {
       var code = err && err.errCode;
@@ -830,7 +842,7 @@
   }
   /* ═══ 分享卡 v4「深空霓虹」——深色渐变 + 玻璃卡片 + 发光雷达。与旧版零继承。 ═══ */
   /* ★ 作者署名配置：填昵称/小红书号即显示在卡底（留空则不显示）；头像 author.png 放 xhs_template/ 重跑构建 */
-  var AUTHOR = { name: '', xhsId: '', avatar: 'author.png' };
+  var AUTHOR = { name: '赛博摆渡人', xhsId: '', avatar: 'author.png' };
   var authorImg = null;
   (function () {
     var im = new Image();
