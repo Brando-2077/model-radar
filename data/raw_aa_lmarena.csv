@@ -18,7 +18,7 @@ GLM-5.3,智谱,Artificial-Analysis,CritPt,0.1914,0-1,2026-09-28,https://artifici
 GLM-5.3,智谱,Artificial-Analysis,AA-Omniscience Index,14.3,指数,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
 GLM-5.3,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.2955,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
 GLM-5.3,智谱,Artificial-Analysis,AutomationBench-AA,0.622,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Index,41.81,指数,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Index,27.75,指数,2026-10-31,https://artificialanalysis.ai/models/glm-5-3-flash（1031 复核：子分与 0928 逐位一致，AA 全局改基线致指数 41.81→27.75；该行仅留档不映射）
 GLM-5.3 Flash,智谱,Artificial-Analysis,GPQA,0.9121,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
 GLM-5.3 Flash,智谱,Artificial-Analysis,HLE,0.3985,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
 GLM-5.3 Flash,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.3283,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
