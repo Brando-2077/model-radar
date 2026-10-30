@@ -9,7 +9,7 @@ Dots-3-Note-Preview,,是,,
 Doubao-Seed-2.1-Pro,,否,,
 ERNIE-5.1,,否,,
 GLM-5.3,,是,,
-GLM-5.3 Flash,,是,,
+GLM-5.3 Flash,智谱,是,,轻量档（320B MoE / 18B 激活 · 1M 上下文 · MIT）；2026-10-31 复核：AA 全部计分子分与 0928 逐位一致、LiveBench 20261023 仍为最新 release、AA IFBench 仍为 null——位次分偏低源于旗舰池密度（GPQA 91.2% 绝对分很高但池内正好中位），非数据陈旧；AA 已全局改基线（AA-Index 41.81→27.75，留档已更新、不映射）
 GLM-5v-Turbo,,否,,
 GPT-6-Astra,,否,,
 GPT-6-Luna,,否,,

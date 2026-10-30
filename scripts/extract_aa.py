@@ -61,49 +61,67 @@ def load_payload(path):
     return "\n".join(texts)
 
 
-def find_record(blob):
-    """找含 gpqa 与价格字段的扁平 JSON 对象：从 "gpqa" 处向前枚举每个 '{' 起点试解析，
-    取第一个「配平成功且含 gpqa + price1mInputTokens」的对象（即最近的外层记录）。"""
-    i = blob.find('"gpqa"')
-    if i < 0:
-        return None
-    starts = [m.start() for m in re.finditer(r"\{", blob[:i])]
-    for start in reversed(starts):
-        depth, j, in_str, esc = 0, start, False, False
-        while j < len(blob):
-            c = blob[j]
-            if in_str:
-                if esc:
-                    esc = False
-                elif c == "\\":
-                    esc = True
-                elif c == '"':
-                    in_str = False
-            else:
-                if c == '"':
-                    in_str = True
-                elif c == "{":
-                    depth += 1
-                elif c == "}":
-                    depth -= 1
-                    if depth == 0:
-                        chunk = blob[start:j + 1]
-                        if '"price1mInputTokens"' in chunk:
-                            try:
-                                return json.loads(chunk)
-                            except Exception:
-                                pass  # 该起点不是合法 JSON，继续向更早的起点找
-                        break
-            j += 1
-    return None
+def find_all_records(blob):
+    """找出 payload 里全部「含 gpqa + 价格字段」的模型记录，按 slug 归并。
+    AA 单模型页会内嵌一串对比模型的完整记录，谁排在 payload 最前就看谁——
+    所以必须按页面本尊的 slug 归属，不能取第一条（2026-10-31 修复的归属隐患）。"""
+    import bisect
+    braces = [mm.start() for mm in re.finditer(r"\{", blob)]
+    recs = {}
+    for m in re.finditer(r'"gpqa"', blob):
+        i = m.start()
+        k = bisect.bisect_left(braces, i)
+        for idx in range(k - 1, -1, -1):
+            start = braces[idx]
+            depth, j, in_str, esc = 0, start, False, False
+            while j < len(blob):
+                c = blob[j]
+                if in_str:
+                    if esc:
+                        esc = False
+                    elif c == "\\":
+                        esc = True
+                    elif c == '"':
+                        in_str = False
+                else:
+                    if c == '"':
+                        in_str = True
+                    elif c == "{":
+                        depth += 1
+                    elif c == "}":
+                        depth -= 1
+                        if depth == 0:
+                            chunk = blob[start:j + 1]
+                            if '"price1mInputTokens"' in chunk:
+                                try:
+                                    rec = json.loads(chunk)
+                                    sl = rec.get("slug")
+                                    if sl and sl not in recs:
+                                        recs[sl] = rec
+                                except Exception:
+                                    pass  # 该起点不是合法 JSON，继续向更早的起点找
+                            break
+                j += 1
+        if len(recs) >= 60:  # 安全阀：页内对比集不会无限大
+            break
+    return recs
 
 
 for path in sys.argv[1:]:
     blob = load_payload(path)
-    rec = find_record(blob)
     print(f"===== {path}")
+    recs = find_all_records(blob)
+    m = re.search(r"model_([a-z0-9.-]+)\.html$", path)
+    expected = m.group(1) if m else None
+    rec = recs.get(expected)
+    if rec is None:
+        print(f"  ⚠ payload 中未找到 slug={expected} 的本尊记录（页面可能是轻量 SSR 变体，"
+              f"基准数据未内联）。页内记录 slugs: {list(recs)[:10] or '（无）'}")
+        rec = next(iter(recs.values())) if recs else None
+        if rec:
+            print(f"  ⚠ 以下输出属于 slug={rec.get('slug')}（非本尊，仅参考勿入账！）")
     if not rec:
-        print("  未找到模型记录")
+        print("  未找到任何模型记录")
         continue
     if "_parse_error" in rec:
         print(f"  JSON 解析失败: {rec['_parse_error']}")
