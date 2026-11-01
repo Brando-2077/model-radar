@@ -274,6 +274,8 @@
         ? '🔒 关注解锁全部 ' + n + ' 个模型'
         : (state.more ? '收起' : '展开全部 ' + n + ' 个');
     }
+    var sb = document.getElementById('share-btn');
+    if (sb) sb.textContent = gate.unlocked ? '生成分享卡 ⤴' : '🔒 关注后生成分享卡';
     showFcta(!gate.unlocked);
   }
   function showFcta(on) {
@@ -545,7 +547,8 @@
       '点卡片上的「详情」查看单模型 8 维明细与证据链');
     body.appendChild(tip);
     var srow = el('div', 'share-row');
-    var sb = el('button', '', '生成分享卡 ⤴');
+    var sb = el('button', 'share-cta', gate.unlocked ? '生成分享卡 ⤴' : '🔒 关注后生成分享卡');
+    sb.id = 'share-btn';
     sb.addEventListener('click', openShare);
     srow.appendChild(sb);
     body.appendChild(srow);
@@ -1035,6 +1038,7 @@
     sheetEls = { scrim: scrim, sh: sh, img: img, bp: bp, bs: bs, busy: false };
   }
   function openShare() {
+    if (!gate.unlocked) { showFcta(true); toast('关注作者后可生成分享卡'); return; }
     if (!sheetEls) buildSheet();
     sheetEls.img.src = drawShareCard().toDataURL('image/png');
     sheetEls.scrim.classList.add('on');
