@@ -27,9 +27,14 @@
 <main id="home">
   <div id="hero"></div>
   <div class="fcta" id="fcta" hidden>
-    <div class="fcta-t"><b>关注作者，解锁全部模型</b><span>默认展示前 10 名 · 全部 34 个需关注</span></div>
+    <img class="fcta-av" src="author.png" alt="">
+    <div class="fcta-t">
+      <b>关注作者 · 解锁完整榜单</b>
+      <span id="fcta-sub">全部 33 个模型 · 前 10 名永久免费</span>
+      <span class="fcta-hint">两步完成：点「关注解锁」→ 小红书弹窗中再点「关注」</span>
+    </div>
     <button id="fcta-go">关注解锁</button>
-    <button class="fcta-x" id="fcta-x">✕</button>
+    <button class="fcta-x" id="fcta-x" aria-label="关闭">✕</button>
   </div>
   <div class="search"><input id="q" placeholder="搜索模型 / 厂商…" autocomplete="off"><button id="q-clear" hidden>✕</button></div>
   <div id="cards"></div>

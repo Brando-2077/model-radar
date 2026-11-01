@@ -261,6 +261,8 @@
     });
   }
   function renderGate() {
+    var fsub = document.getElementById('fcta-sub');
+    if (fsub) fsub.textContent = '全部 ' + ranked().length + ' 个模型 · 前 10 名永久免费';
     var lk = document.getElementById('inf-lk');
     var infBtn = document.querySelector('#scope button[data-s="inf"]');
     if (infBtn) {
@@ -1605,7 +1607,7 @@
     state.hidePending = this.checked; renderCards(); storeSave();
   });
   $('more').addEventListener('click', function () {
-    if (!gate.unlocked && !state.more && !state.q.trim()) { showFcta(true); toast('关注作者解锁全部模型'); return; }
+    if (!gate.unlocked && !state.more && !state.q.trim()) { showFcta(true); toast('两步解锁：在小红书弹窗中再点一次「关注」'); return; }
     state.more = !state.more; renderCards(); renderGate();
   });
   $('fcta-go').addEventListener('click', gateFollow);

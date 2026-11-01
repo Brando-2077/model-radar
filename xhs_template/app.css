@@ -58,13 +58,16 @@ button:focus{outline:2px solid var(--red);outline-offset:1px}
   font-size:10px;color:var(--ink3)}
 
 /* ── 关注 CTA ── */
-.fcta{display:flex;align-items:center;gap:9px;background:linear-gradient(135deg,#2B2B2B,#111);
-  color:#fff;border-radius:var(--r);padding:11px 13px;margin-bottom:12px}
-.fcta-t{min-width:0;font-size:11px;line-height:1.5;color:rgba(255,255,255,.85)}
-.fcta-t b{display:block;font-size:13px;color:#fff}
-.fcta button{flex:none;font-size:12.5px;font-weight:700;color:var(--ink);
-  background:#FFD54A;border-radius:9px;padding:7px 12px}
-.fcta .fcta-x{background:none;color:rgba(255,255,255,.7);font-size:12px;padding:2px 4px}
+.fcta{display:flex;align-items:center;gap:11px;background:linear-gradient(135deg,#2B2B2B,#111);
+  color:#fff;border-radius:14px;padding:12px 14px;margin-bottom:12px}
+.fcta-av{width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,213,74,.9);flex:none;object-fit:cover}
+.fcta-t{min-width:0;flex:1;font-size:11px;line-height:1.55;color:rgba(255,255,255,.78)}
+.fcta-t b{display:block;font-size:13.5px;color:#fff;letter-spacing:.3px}
+.fcta-t .fcta-hint{display:block;color:#FFD54A;opacity:.95;margin-top:1px}
+.fcta button{flex:none;font-size:12.5px;font-weight:700;color:#17160F;
+  background:linear-gradient(135deg,#FFD54A,#FFB84A);border-radius:10px;padding:9px 13px;
+  box-shadow:0 2px 10px rgba(255,180,74,.35)}
+.fcta .fcta-x{background:none;color:rgba(255,255,255,.7);font-size:12px;padding:2px 4px;box-shadow:none}
 
 /* ── 搜索 ── */
 .search{position:relative;margin-bottom:11px}
