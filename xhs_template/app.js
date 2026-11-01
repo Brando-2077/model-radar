@@ -873,6 +873,34 @@
     im.onload = function () { authorImg = im; };
     im.src = AUTHOR.avatar;
   })();
+  /* 小红书二维码：矩阵由 python qrcode 库预生成，Canvas 自绘圆点风格。当前载荷=小红书号文本（待替换为主页短链接：用户提供二维码截图后解码替换） */
+  var XHS_QR = { payload: "小红书号：49224513797", n: 25, rows: [
+    '1111111000001100101111111',
+    '1000001010111100101000001',
+    '1011101011010001001011101',
+    '1011101010100111001011101',
+    '1011101000100010001011101',
+    '1000001001101100001000001',
+    '1111111010101010101111111',
+    '0000000010101000100000000',
+    '1000001011001101111001110',
+    '1101100110110001100101001',
+    '1111101111010011011010100',
+    '0101000101101001011101101',
+    '0010011010111010010101011',
+    '1011010001001010001011010',
+    '1010101010100010010100100',
+    '1000100001110000010000011',
+    '1011101000000100111110111',
+    '0000000011011011100010100',
+    '1111111001010110101011000',
+    '1000001001001010100010100',
+    '1011101000010100111111100',
+    '1011101000111001000100111',
+    '1011101001000100110011101',
+    '1000001000010010111001101',
+    '1111111011110010000011001'
+  ] };
   var CARD_DIM = { '推理与知识': '推理与知识', '代码': '代码', '指令遵循': '指令遵循', 'Agent与工具调用': '智能体',
                    '长文本': '长文本', '可靠性与低幻觉': '可靠性', '内容创作': '内容创作', '图片与制图': '图片与制图' };
   var CARD_DIM_MINI = { '推理与知识': '推理', '代码': '代码', '指令遵循': '指令', 'Agent与工具调用': '智能',
@@ -1146,33 +1174,66 @@
       rowY += rowH;
     }
 
-    /* ── 元信息 + 页脚 ── */
+    /* ── 元信息 + 页脚（左文字 · 右二维码） ── */
     var metaY = PY + PH + 34;
     ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
     ctx.fillText('数据覆盖：' + trio.map(function (m) { return coverage(m) + '/8'; }).join(' / ') + '　·　数据截至 ' + (String(META.built || '').slice(0, 10) || '—'), M, metaY);
+    var QS = 150, qx = W - M - QS, qy = metaY - 10;
+    framePanel(qx, qy, QS, QS);
+    (function () {
+      var n = XHS_QR.n, quiet = 3;
+      var mod = (QS - 20) / (n + quiet * 2);
+      var ox = qx + 10 + quiet * mod, oy = qy + 10 + quiet * mod;
+      function eye(cx, cy) {
+        var sz = mod * 7;
+        ctx.fillStyle = INK;
+        rrPath(ctx, ox + cx * mod, oy + cy * mod, sz, sz, mod * 1.8); ctx.fill();
+        ctx.fillStyle = '#FFFDF8';
+        rrPath(ctx, ox + (cx + 1) * mod, oy + (cy + 1) * mod, mod * 5, mod * 5, mod * 1.2); ctx.fill();
+        ctx.fillStyle = INK;
+        rrPath(ctx, ox + (cx + 2) * mod, oy + (cy + 2) * mod, mod * 3, mod * 3, mod * 0.9); ctx.fill();
+      }
+      for (var r = 0; r < n; r++) {
+        var row = XHS_QR.rows[r];
+        for (var cc = 0; cc < n; cc++) {
+          if (row.charAt(cc) !== '1') continue;
+          var inEye = (r < 7 && cc < 7) || (r < 7 && cc >= n - 7) || (r >= n - 7 && cc < 7);
+          if (inEye) continue;
+          ctx.fillStyle = INK;
+          rrPath(ctx, ox + cc * mod + mod * 0.09, oy + r * mod + mod * 0.09, mod * 0.82, mod * 0.82, mod * 0.28);
+          ctx.fill();
+        }
+      }
+      eye(0, 0); eye(n - 7, 0); eye(0, n - 7);
+    })();
+    ctx.fillStyle = SUB; ctx.font = '500 18px ' + SANS; ctx.textAlign = 'center';
+    ctx.fillText('扫码 · 在小红书找到我', qx + QS / 2, qy + QS + 26);
+    ctx.font = '500 17px ' + MONO;
+    ctx.fillText('小红书号 49224513797', qx + QS / 2, qy + QS + 48);
+    ctx.textAlign = 'left';
     ctx.strokeStyle = HAIR; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(M, 1270); ctx.lineTo(W - M, 1270); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(M, metaY + 34); ctx.lineTo(qx - 24, metaY + 34); ctx.stroke();
     ctx.fillStyle = SUB; ctx.font = '400 20px ' + SANS;
-    ctx.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', M, 1310);
+    ctx.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', M, metaY + 74);
     ctx.font = '500 18px ' + MONO;
-    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, 1352);
+    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, metaY + 104);
     var sig = (AUTHOR.name ? '@' + AUTHOR.name : '') +
               (AUTHOR.xhsId ? (AUTHOR.name ? ' · ' : '') + '小红书号 ' + AUTHOR.xhsId : '');
     if (sig) {
       ctx.font = '700 30px ' + SANS;
       var tw = ctx.measureText(sig).width;
       var avD = authorImg ? 46 : 0, gap2 = authorImg ? 14 : 0;
-      var gx = W - M - tw - avD - gap2;
+      var gx = W - M - QS - 24 - tw - avD - gap2;
       if (authorImg) {
         ctx.save();
-        ctx.beginPath(); ctx.arc(gx + avD / 2, 1302, avD / 2, 0, Math.PI * 2); ctx.clip();
-        ctx.drawImage(authorImg, gx, 1279, avD, avD);
+        ctx.beginPath(); ctx.arc(gx + avD / 2, metaY + 96, avD / 2, 0, Math.PI * 2); ctx.clip();
+        ctx.drawImage(authorImg, gx, metaY + 73, avD, avD);
         ctx.restore();
         ctx.strokeStyle = 'rgba(23,22,15,0.3)'; ctx.lineWidth = 2;
-        ctx.beginPath(); ctx.arc(gx + avD / 2, 1302, avD / 2, 0, Math.PI * 2); ctx.stroke();
+        ctx.beginPath(); ctx.arc(gx + avD / 2, metaY + 96, avD / 2, 0, Math.PI * 2); ctx.stroke();
       }
       ctx.fillStyle = INK; ctx.font = '700 30px ' + SANS; ctx.textAlign = 'right';
-      ctx.fillText(sig, W - M, 1312);
+      ctx.fillText(sig, gx - avD - gap2, metaY + 106);
       ctx.textAlign = 'left';
     }
     return c;
