@@ -909,7 +909,6 @@
     var W = 1080, H = 1440, M = 64;
     var SANS = '-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif';
     var MONO = 'ui-monospace,Menlo,Consolas,"Courier New",monospace';
-    var SERIF = 'Georgia,"Times New Roman","Songti SC","Noto Serif CJK SC",serif';
     var PAPER = '#F4F1E8', INK = '#17160F', SUB = '#6F6A5C',
         FRAME = 'rgba(23,22,15,0.55)', FRAME2 = 'rgba(23,22,15,0.22)', HAIR = 'rgba(23,22,15,0.16)',
         RED = '#C2391A', REDBG = 'rgba(194,57,26,0.10)';
@@ -986,7 +985,7 @@
     }
 
     /* ── 墨色刊头带 ── */
-    var BH = 430;
+    var BH = nCols === 2 ? 430 : 392;
     ctx.fillStyle = INK; ctx.fillRect(0, 0, W, BH);
     ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 50, 34, 34, 8); ctx.fill();
     ctx.fillStyle = PAPER; ctx.font = '800 30px ' + SANS;
@@ -1002,7 +1001,7 @@
       var x0 = M + ci * colW;
       ctx.fillStyle = col; ctx.font = '800 27px ' + SANS;
       ctx.fillText(fit(m.name, '800 27px ' + SANS, colW - 30), x0, 186);
-      ctx.fillStyle = PAPER; ctx.font = '400 76px ' + SERIF;
+      ctx.fillStyle = PAPER; ctx.font = '800 68px ' + SANS;
       var numW = 0;
       var cTxt = fmt(composite(m, scene));
       ctx.fillText(cTxt, x0 - 3, 266);
@@ -1012,7 +1011,7 @@
       var rkW = ctx.measureText(rkT).width + 26;
       ctx.fillStyle = RED; rrPath(ctx, x0 + numW + 20, 222, rkW, 42, 8); ctx.fill();
       ctx.fillStyle = PAPER; ctx.fillText(rkT, x0 + numW + 33, 250);
-      ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '500 22px ' + MONO;
+      ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '500 20px ' + SANS;
       ctx.fillText('±' + fmt(sigmaOf(m)), x0 + numW + 20, 296);
     }
     var verdict = '';
@@ -1023,13 +1022,11 @@
       verdict = tied
         ? '综合 ' + fmt(aC) + ' ≈ ' + fmt(bC) + '（差 ' + fmt(Math.abs(diff)) + '，噪声级）——建议两个都试'
         : trio[0].name + ' 领先 +' + fmt(diff);
-    } else {
-      var parts = [];
-      for (var vi = 0; vi < nCols; vi++) parts.push(trio[vi].name + ' ' + fmt(composite(trio[vi], scene)));
-      verdict = parts.join(' · ');
     }
-    ctx.fillStyle = PAPER; ctx.font = '600 27px ' + SANS;
-    ctx.fillText(fit(verdict, '600 27px ' + SANS, W - 2 * M), M, 372);
+    if (verdict) {
+      ctx.fillStyle = PAPER; ctx.font = '600 27px ' + SANS;
+      ctx.fillText(fit(verdict, '600 27px ' + SANS, W - 2 * M), M, 372);
+    }
     ctx.fillStyle = RED; ctx.fillRect(0, BH - 6, W, 6);
 
     /* ── 五场景名次对比条 ── */
@@ -1079,12 +1076,13 @@
     ctx.fillText('50＝池内中位', W - M - 26, PY + 42);
     ctx.textAlign = 'left';
     /* 表头：模型名按列着色 */
-    var LX = M + 400, nameW = nCols === 2 ? 150 : 120;
+    var LX = M + 400, nameW = nCols === 2 ? 150 : 122;
     var colW2 = (W - M - 26 - LX - nameW) / nCols;
-    ctx.font = '800 24px ' + SANS;
+    var hdrF = nCols === 2 ? '800 24px ' : '700 14px ';
+    ctx.font = hdrF + SANS;
     for (var ci = 0; ci < nCols; ci++) {
       ctx.fillStyle = COLS[ci % 3]; ctx.textAlign = 'right';
-      ctx.fillText(fit(trio[ci].name, '800 24px ' + SANS, colW2 - 12), LX + nameW + (ci + 1) * colW2 - 8, PY + 96);
+      ctx.fillText(fit(trio[ci].name, hdrF + SANS, colW2 - 8), LX + nameW + (ci + 1) * colW2 - 8, PY + 96);
     }
     ctx.textAlign = 'left';
     /* 左：雷达 */
@@ -1158,12 +1156,10 @@
           for (var cj = 0; cj < nCols; cj++) {
             if (cj !== ci && has(trio[cj], d) && sv(trio[cj], d) > sv(m, d)) isWin = false;
           }
-          ctx.globalAlpha = isWin ? 1 : 0.6;
-          ctx.fillStyle = col; ctx.font = '800 25px ' + SANS;
-          ctx.fillText(fmt(clamp(sv(m, d))), cRight - 62, rowY);
-          ctx.fillStyle = RED; ctx.font = '700 17px ' + MONO;
+          ctx.fillStyle = col; ctx.font = (isWin ? '800 25px ' : '500 25px ') + SANS;
+          ctx.fillText(fmt(clamp(sv(m, d))), cRight - 66, rowY);
+          ctx.fillStyle = RED; ctx.font = '700 16px ' + SANS;
           ctx.fillText('#' + dr.r + '/' + dr.n, cRight, rowY);
-          ctx.globalAlpha = 1;
         } else {
           ctx.fillStyle = SUB; ctx.font = '500 20px ' + SANS;
           ctx.fillText('待定', cRight, rowY);
@@ -1177,7 +1173,7 @@
     /* ── 元信息 + 页脚（左文字 · 右二维码） ── */
     var metaY = PY + PH + 34;
     ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
-    ctx.fillText('数据覆盖：' + trio.map(function (m) { return coverage(m) + '/8'; }).join(' / ') + '　·　数据截至 ' + (String(META.built || '').slice(0, 10) || '—'), M, metaY);
+    ctx.fillText('数据覆盖 ' + trio.map(function (m) { return coverage(m) + '/8'; }).join(' · ') + '　·　数据截至 ' + (String(META.built || '').slice(0, 10) || '—'), M, metaY);
     var QS = 150, qx = W - M - QS, qy = metaY - 10;
     framePanel(qx, qy, QS, QS);
     (function () {
