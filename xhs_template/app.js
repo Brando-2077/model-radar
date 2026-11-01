@@ -861,9 +861,11 @@
     ctx.arcTo(x, y, x + w, y, r);
     ctx.closePath();
   }
-  /* ═══ 分享卡 v6「能力档案」——信息主角＝模型能力画像（用户分享的是"这个模型多强、名次多靠前"），
-         场景与口径退为角标。浅底白卡 + 大字模型名 + 双数据卡 + 八维雷达（每维 位次分 + 全池名次徽章）。
-         信息架构参考图灵坐标式档案卡；数据用本项目的基准族内位次分。与 v3/v4/v5 零继承。 ═══ */
+  /* ═══ 分享卡 v7「能力档案 · 刊物版」——原创构图，非参考卡复刻。
+         借鉴的只是通用长处：浅底、大字模型名、每维「位次分＋名次」双读数、来源脚注。
+         自有语言：墨色刊头带（反白大字＋综合分）／五场景名次条（图灵坐标没有的场景维度）／
+         雷达＋名次清单双栏（形状与精确读数并置）／双线细框（替代白卡投影）／朱红信号色。
+         信息主角＝模型能力画像；场景与口径是角标。与 v3–v6 零继承。 ═══ */
   /* ★ 作者署名配置：填昵称/小红书号即显示在卡底（留空则不显示）；头像 author.png 放 xhs_template/ 重跑构建 */
   var AUTHOR = { name: '赛博摆渡人', xhsId: '', avatar: 'author.png' };
   var authorImg = null;
@@ -872,16 +874,19 @@
     im.onload = function () { authorImg = im; };
     im.src = AUTHOR.avatar;
   })();
-  /* 分享卡书面维度短名（对齐图灵坐标式命名语感） */
-  var CARD_DIM = { '推理与知识': '认知推理', '代码': '代码编程', '指令遵循': '指令遵循', 'Agent与工具调用': '智能体任务',
-                   '长文本': '长文本推理', '可靠性与低幻觉': '事实可靠性', '内容创作': '内容创作', '图片与制图': '图片与制图' };
+  /* 清单用标准短名；雷达内用两字缩写 */
+  var CARD_DIM = { '推理与知识': '推理与知识', '代码': '代码', '指令遵循': '指令遵循', 'Agent与工具调用': '智能体',
+                   '长文本': '长文本', '可靠性与低幻觉': '可靠性', '内容创作': '内容创作', '图片与制图': '图片与制图' };
+  var CARD_DIM_MINI = { '推理与知识': '推理', '代码': '代码', '指令遵循': '指令', 'Agent与工具调用': '智能',
+                        '长文本': '长文', '可靠性与低幻觉': '可靠', '内容创作': '内容', '图片与制图': '图片' };
   function drawShareCard() {
     var W = 1080, H = 1440, M = 64;
     var SANS = '-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif';
     var MONO = 'ui-monospace,Menlo,Consolas,"Courier New",monospace';
-    var SERIF = 'Georgia,"Times New Roman",serif';
-    var BG = '#E9EDF1', CARD = '#FFFFFF', INK = '#1A1E24', SUB = '#737C86',
-        LINE = '#D9DEE4', BLUE = '#3D6FB4', BLUEBG = 'rgba(61,111,180,0.13)';
+    var SERIF = 'Georgia,"Times New Roman","Songti SC","Noto Serif CJK SC",serif';
+    var PAPER = '#F4F1E8', INK = '#17160F', BAND = '#17160F', SUB = '#6F6A5C',
+        FRAME = 'rgba(23,22,15,0.55)', FRAME2 = 'rgba(23,22,15,0.22)', HAIR = 'rgba(23,22,15,0.16)',
+        RED = '#C2391A', REDBG = 'rgba(194,57,26,0.10)';
     var COLS = ['#FF6B4A', '#4D8DFF', '#3DDC84'];
     var c = document.createElement('canvas');
     c.width = W; c.height = H;
@@ -892,15 +897,25 @@
       while (t.length > 1 && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
       return t + '…';
     }
-    function card(x, y, w, h, r) {
-      ctx.save();
-      ctx.shadowColor = 'rgba(23,32,44,0.10)'; ctx.shadowBlur = 16; ctx.shadowOffsetY = 5;
-      ctx.fillStyle = CARD; rrPath(ctx, x, y, w, h, r); ctx.fill();
-      ctx.restore();
+    /* 双线细框面板（品牌语言：替代圆角白卡+投影） */
+    function framePanel(x, y, w, h) {
+      ctx.fillStyle = '#FFFDF8'; ctx.fillRect(x, y, w, h);
+      ctx.strokeStyle = FRAME; ctx.lineWidth = 1.5; ctx.strokeRect(x + 0.75, y + 0.75, w - 1.5, h - 1.5);
+      ctx.strokeStyle = FRAME2; ctx.lineWidth = 0.75; ctx.strokeRect(x + 5, y + 5, w - 10, h - 10);
     }
-    ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
+    function chipOutline(text, rightX, y, fg, stroke) {
+      ctx.font = '600 23px ' + SANS;
+      var w = ctx.measureText(text).width + 36;
+      ctx.strokeStyle = stroke; ctx.lineWidth = 1.5;
+      rrPath(ctx, rightX - w, y, w, 42, 21); ctx.stroke();
+      ctx.fillStyle = fg; ctx.textAlign = 'center';
+      ctx.fillText(text, rightX - w / 2, y + 29);
+      ctx.textAlign = 'left';
+      return rightX - w - 14;
+    }
+    ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, H);
 
-    /* ── 数据：主角模型 + 名次 ── */
+    /* ── 数据 ── */
     var scene = sceneByName(state.scene);
     var sel = state.selected.map(function (n) { return MODEL_IX[n]; }).filter(Boolean);
     var pool = ranked();
@@ -909,7 +924,7 @@
       : pool[0].m;
     var others = sel.filter(function (m) { return m.name !== hero.name; });
     var heroCol = COLS[0];
-    var heroRank = 1, heroC = composite(hero, scene);
+    var heroRank = 1, heroC = composite(hero, scene), heroS = sceneSigmaCached(hero, scene);
     for (var i = 0; i < pool.length; i++) if (pool[i].m.name === hero.name) { heroRank = i + 1; break; }
     function poolRank(m) {
       for (var k = 0; k < pool.length; k++) if (pool[k].m.name === m.name) return k + 1;
@@ -924,110 +939,112 @@
       }
       return { r: r, n: n };
     }
+    function sceneShort(n) {
+      if (n.indexOf('自媒体') === 0) return '自媒体';
+      if (n.indexOf('Agent') === 0) return '智能体';
+      if (n.indexOf('代码') === 0) return '代码';
+      if (n.indexOf('RAG') === 0) return 'RAG';
+      return '日常';
+    }
 
-    /* ── 刊头：品牌 + 场景/口径角标 ── */
-    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 56, 40, 40, 10); ctx.fill();
-    ctx.fillStyle = INK; ctx.font = '800 34px ' + SANS; ctx.textAlign = 'left';
-    ctx.fillText('模型雷达', M + 56, 87);
+    /* ── 墨色刊头带 ── */
+    ctx.fillStyle = BAND; ctx.fillRect(0, 0, W, 342);
+    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 52, 34, 34, 8); ctx.fill();
+    ctx.fillStyle = PAPER; ctx.font = '800 30px ' + SANS;
+    ctx.fillText('模型雷达', M + 48, 78);
     var chipR = W - M;
-    ctx.font = '600 24px ' + SANS;
-    var scTxt = scene.name, scW = ctx.measureText(scTxt).width + 40;
-    ctx.fillStyle = 'rgba(255,107,74,0.14)'; rrPath(ctx, chipR - scW, 52, scW, 44, 22); ctx.fill();
-    ctx.fillStyle = '#D6471F'; ctx.textAlign = 'center';
-    ctx.fillText(scTxt, chipR - scW / 2, 82);
-    chipR -= scW + 14;
-    var calTxt = scopeLabel(), calW = ctx.measureText(calTxt).width + 40;
-    ctx.fillStyle = 'rgba(115,124,134,0.14)'; rrPath(ctx, chipR - calW, 52, calW, 44, 22); ctx.fill();
-    ctx.fillStyle = SUB; ctx.fillText(calTxt, chipR - calW / 2, 82);
+    chipR = chipOutline(scene.name, chipR, 48, PAPER, 'rgba(244,241,232,0.45)') - 4;
+    chipR = chipOutline(scopeLabel(), chipR, 48, 'rgba(244,241,232,0.72)', 'rgba(244,241,232,0.25)');
+    var nameF = 94;
+    while (nameF > 52) { ctx.font = '900 ' + nameF + 'px ' + SANS; if (ctx.measureText(hero.name).width <= W - 2 * M) break; nameF -= 6; }
+    ctx.fillStyle = PAPER; ctx.font = '900 ' + nameF + 'px ' + SANS;
+    ctx.fillText(fit(hero.name, '900 ' + nameF + 'px ' + SANS, W - 2 * M), M, 186);
+    ctx.fillStyle = 'rgba(244,241,232,0.62)'; ctx.font = '500 25px ' + SANS;
+    ctx.fillText((hero.company || '公司未标注') + ' · 覆盖 ' + coverage(hero) + '/8 维 · ' + scene.name, M, 228);
+    /* 综合分：大数字 + 名次章 + 置信带 */
+    ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '600 22px ' + SANS;
+    ctx.fillText('场景加权综合', M, 264);
+    ctx.fillStyle = PAPER; ctx.font = '400 92px ' + SERIF;
+    ctx.fillText(fmt(heroC), M - 4, 330);
+    var numW = ctx.measureText(fmt(heroC)).width;
+    ctx.fillStyle = RED; rrPath(ctx, M + numW + 26, 252, ctx.measureText('#' + heroRank + '/' + pool.length).width + 30, 46, 8);
+    ctx.fill();
+    ctx.fillStyle = PAPER; ctx.font = '800 26px ' + SANS;
+    ctx.fillText('#' + heroRank + '/' + pool.length, M + numW + 41, 284);
+    ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '500 24px ' + MONO;
+    ctx.fillText('±' + fmt(heroS), M + numW + 26, 326);
+    ctx.fillStyle = RED; ctx.fillRect(0, 336, W, 6);
+
+    /* ── 五场景名次条（原创元素） ── */
+    var FY = 386, FH = 108;
+    framePanel(M, FY, W - 2 * M, FH);
+    var cellW = (W - 2 * M) / 5;
+    for (var si = 0; si < SCENES.length && si < 5; si++) {
+      var scn = SCENES[si];
+      var cur = scn.name === scene.name;
+      var cx0 = M + si * cellW;
+      if (cur) { ctx.fillStyle = REDBG; ctx.fillRect(cx0 + 6, FY + 6, cellW - 12, FH - 12); }
+      /* 该场景名次：按该场景权重对全池求综合（与页面口径同源） */
+      var rkS = 1;
+      for (var k = 0; k < ALL.length; k++) {
+        if (ALL[k].name === hero.name) continue;
+        if (composite(ALL[k], scn) > composite(hero, scn)) rkS++;
+      }
+      ctx.textAlign = 'center';
+      ctx.fillStyle = cur ? RED : SUB; ctx.font = '500 22px ' + SANS;
+      ctx.fillText(sceneShort(scn.name), cx0 + cellW / 2, FY + 40);
+      ctx.fillStyle = cur ? RED : INK; ctx.font = '800 34px ' + SANS;
+      ctx.fillText('#' + rkS, cx0 + cellW / 2, FY + 84);
+      ctx.textAlign = 'left';
+      if (si) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx0, FY + 12); ctx.lineTo(cx0, FY + FH - 12); ctx.stroke(); }
+    }
+
+    /* ── 雷达 + 名次清单 双栏面板 ── */
+    var PY = 524, PH = 618;
+    framePanel(M, PY, W - 2 * M, PH);
+    ctx.fillStyle = INK; ctx.font = '700 25px ' + SANS;
+    ctx.fillText('八维能力 · 位次分', M + 26, PY + 44);
+    ctx.fillStyle = SUB; ctx.font = '500 20px ' + SANS; ctx.textAlign = 'right';
+    ctx.fillText('50＝池内中位', W - M - 26, PY + 42);
     ctx.textAlign = 'left';
-    ctx.fillStyle = LINE; ctx.fillRect(M, 128, W - 2 * M, 2);
-
-    /* ── 主角：模型名 ── */
-    var nameF = 100;
-    while (nameF > 54) { ctx.font = '900 ' + nameF + 'px ' + SANS; if (ctx.measureText(hero.name).width <= W - 2 * M) break; nameF -= 6; }
-    ctx.fillStyle = INK; ctx.font = '900 ' + nameF + 'px ' + SANS;
-    ctx.fillText(fit(hero.name, '900 ' + nameF + 'px ' + SANS, W - 2 * M), M, 240);
-    ctx.fillStyle = SUB; ctx.font = '500 27px ' + SANS;
-    ctx.fillText((hero.company || '公司未标注') + ' · 覆盖 ' + coverage(hero) + '/8 维', M, 288);
-
-    /* ── 双数据卡 ── */
-    var SY = 330, SH = 156, CW = (W - 2 * M - 24) / 2;
-    card(M, SY, CW, SH, 18);
-    ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
-    ctx.fillText('场景加权综合', M + 28, SY + 46);
-    ctx.fillStyle = INK; ctx.font = '400 72px ' + SERIF;
-    ctx.fillText(fmt(heroC), M + 24, SY + 124);
-    ctx.font = '700 23px ' + SANS;
-    var rk1 = '#' + heroRank + '/' + pool.length, rk1w = ctx.measureText(rk1).width + 26;
-    ctx.fillStyle = BLUEBG; rrPath(ctx, M + CW - rk1w - 24, SY + 36, rk1w, 38, 19); ctx.fill();
-    ctx.fillStyle = BLUE; ctx.fillText(rk1, M + CW - rk1w - 24 + 13, SY + 63);
-    card(M + CW + 24, SY, CW, SH, 18);
-    var best = null, bestV = -1;
-    for (var d = 0; d < DIMS.length; d++) {
-      if (!has(hero, DIMS[d])) continue;
-      if (sv(hero, DIMS[d]) > bestV) { bestV = sv(hero, DIMS[d]); best = DIMS[d]; }
+    /* 图例（多选时） */
+    var lgX = M + 26, lgY = PY + 86;
+    function lgDot(x, y, col, txt) {
+      ctx.fillStyle = col; ctx.fillRect(x, y - 13, 22, 14);
+      ctx.fillStyle = INK; ctx.font = '600 22px ' + SANS;
+      ctx.fillText(txt, x + 30, y);
+      return x + 30 + ctx.measureText(txt).width + 30;
     }
-    if (others.length) {
-      var o2 = others.slice().sort(function (a, b) { return composite(b, scene) - composite(a, scene); })[0];
-      ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
-      ctx.fillText('同场对比 · ' + fit(o2.name, '500 24px ' + SANS, CW - 200), M + CW + 52, SY + 46);
-      ctx.fillStyle = INK; ctx.font = '400 72px ' + SERIF;
-      ctx.fillText(fmt(composite(o2, scene)), M + CW + 48, SY + 124);
-      ctx.font = '700 23px ' + SANS;
-      var rk2 = '#' + poolRank(o2) + '/' + pool.length, rk2w = ctx.measureText(rk2).width + 26;
-      ctx.fillStyle = BLUEBG; rrPath(ctx, M + CW + 24 + CW - rk2w - 24, SY + 36, rk2w, 38, 19); ctx.fill();
-      ctx.fillStyle = BLUE; ctx.fillText(rk2, M + CW + 24 + CW - rk2w - 24 + 13, SY + 63);
-    } else if (best) {
-      var bdr = dimRank(hero, best);
-      ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
-      ctx.fillText('最强维度 · ' + (CARD_DIM[best] || best), M + CW + 52, SY + 46);
-      ctx.fillStyle = INK; ctx.font = '400 72px ' + SERIF;
-      ctx.fillText(fmt(bestV), M + CW + 48, SY + 124);
-      ctx.font = '700 23px ' + SANS;
-      var rk3 = '#' + bdr.r + '/' + bdr.n, rk3w = ctx.measureText(rk3).width + 26;
-      ctx.fillStyle = BLUEBG; rrPath(ctx, M + CW + 24 + CW - rk3w - 24, SY + 36, rk3w, 38, 19); ctx.fill();
-      ctx.fillStyle = BLUE; ctx.fillText(rk3, M + CW + 24 + CW - rk3w - 24 + 13, SY + 63);
-    }
-
-    /* ── 雷达卡 ── */
-    var RY = 508, RH = 644;
-    card(M, RY, W - 2 * M, RH, 20);
-    ctx.fillStyle = INK; ctx.font = '700 27px ' + SANS; ctx.textAlign = 'left';
-    ctx.fillText('八维能力雷达', M + 28, RY + 48);
-    ctx.fillStyle = SUB; ctx.font = '500 22px ' + SANS; ctx.textAlign = 'right';
-    ctx.fillText('0-100 位次分 · 50＝池内中位', W - M - 28, RY + 46);
-    ctx.textAlign = 'left';
-    var legX = M + 28, legY = RY + 92;
-    function legendDot(x, y, col, txt) {
-      ctx.fillStyle = col; rrPath(ctx, x, y - 14, 26, 16, 5); ctx.fill();
-      ctx.fillStyle = INK; ctx.font = '600 24px ' + SANS;
-      ctx.fillText(txt, x + 36, y);
-      return x + 36 + ctx.measureText(txt).width + 34;
-    }
-    legX = legendDot(legX, legY, heroCol, fit(hero.name, '600 24px ' + SANS, 300));
+    lgX = lgDot(lgX, lgY, heroCol, fit(hero.name, '600 22px ' + SANS, 240));
     for (var oi = 0; oi < others.length && oi < 2; oi++) {
-      legX = legendDot(legX, legY, COLS[oi + 1], fit(others[oi].name, '600 24px ' + SANS, 220));
+      lgX = lgDot(lgX, lgY, COLS[oi + 1], fit(others[oi].name, '600 22px ' + SANS, 200));
     }
-    var CX = W / 2, CY = RY + 380, R = 170, N = DIMS.length;
+    /* 左：雷达（小缩写内标，精确读数在右列） */
+    var RX = M + 252, RCY = PY + 372, R = 172, N = DIMS.length;
     [25, 50, 75, 100].forEach(function (r) {
       ctx.beginPath();
       for (var k = 0; k < N; k++) {
         var a = (-90 + k * 360 / N) * Math.PI / 180;
-        var px = CX + r / 100 * R * Math.cos(a), py = CY + r / 100 * R * Math.sin(a);
+        var px = RX + r / 100 * R * Math.cos(a), py = RCY + r / 100 * R * Math.sin(a);
         if (k) ctx.lineTo(px, py); else ctx.moveTo(px, py);
       }
       ctx.closePath();
-      ctx.strokeStyle = r === 50 ? 'rgba(61,111,180,0.35)' : 'rgba(26,30,36,0.10)';
-      ctx.lineWidth = r === 50 ? 2 : 1;
-      ctx.setLineDash(r === 50 ? [5, 7] : []);
+      ctx.strokeStyle = r === 50 ? RED : 'rgba(23,22,15,0.14)';
+      ctx.lineWidth = r === 50 ? 1.5 : 1;
+      ctx.setLineDash(r === 50 ? [4, 6] : []);
+      ctx.globalAlpha = r === 50 ? 0.55 : 1;
       ctx.stroke();
+      ctx.globalAlpha = 1;
     });
     ctx.setLineDash([]);
     for (var k = 0; k < N; k++) {
       var ang = (-90 + k * 360 / N) * Math.PI / 180;
-      ctx.strokeStyle = 'rgba(26,30,36,0.08)'; ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.moveTo(CX, CY);
-      ctx.lineTo(CX + R * Math.cos(ang), CY + R * Math.sin(ang)); ctx.stroke();
+      ctx.strokeStyle = 'rgba(23,22,15,0.10)'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(RX, RCY);
+      ctx.lineTo(RX + R * Math.cos(ang), RCY + R * Math.sin(ang)); ctx.stroke();
+      ctx.fillStyle = SUB; ctx.font = '500 20px ' + SANS; ctx.textAlign = 'center';
+      ctx.fillText(CARD_DIM_MINI[DIMS[k]], RX + (R + 24) * Math.cos(ang), RCY + (R + 24) * Math.sin(ang) + 7);
+      ctx.textAlign = 'left';
     }
     function runsOf(m) {
       var vs = [], runs = [], cur = null, start = 0;
@@ -1046,63 +1063,53 @@
         ctx.beginPath();
         run.forEach(function (r2, j) {
           var a2 = (-90 + r2 * 360 / N) * Math.PI / 180;
-          var px = CX + d.vs[r2] / 100 * R * Math.cos(a2), py = CY + d.vs[r2] / 100 * R * Math.sin(a2);
+          var px = RX + d.vs[r2] / 100 * R * Math.cos(a2), py = RCY + d.vs[r2] / 100 * R * Math.sin(a2);
           if (j) ctx.lineTo(px, py); else ctx.moveTo(px, py);
         });
         if (run.length === N) ctx.closePath();
         ctx.lineJoin = 'round'; ctx.lineCap = 'round';
-        if (fill && run.length === N) { ctx.fillStyle = col; ctx.globalAlpha = 0.13; ctx.fill(); ctx.globalAlpha = 1; }
+        if (fill && run.length === N) { ctx.fillStyle = col; ctx.globalAlpha = 0.12; ctx.fill(); ctx.globalAlpha = 1; }
         ctx.strokeStyle = col; ctx.lineWidth = lw; ctx.stroke();
       });
     }
-    others.slice(0, 2).forEach(function (m, oi) { drawPoly(m, COLS[oi + 1], 3.5, false); });
-    drawPoly(hero, heroCol, 5.5, true);
-    /* 轴标签：维度名 + 位次分 + 名次徽章 */
+    others.slice(0, 2).forEach(function (m, oi) { drawPoly(m, COLS[oi + 1], 3, false); });
+    drawPoly(hero, heroCol, 5, true);
+    /* 右：八维名次清单（形状之外的精确读数） */
+    var LX = M + 470, LW = W - M - 26 - LX;
+    var rowY = PY + 118, rowH = 60;
     for (var k = 0; k < N; k++) {
-      var ang = (-90 + k * 360 / N) * Math.PI / 180;
-      var dname = DIMS[k];
-      var lx = CX + (R + 56) * Math.cos(ang), ly = CY + (R + 56) * Math.sin(ang);
-      var align = Math.abs(Math.cos(ang)) < 0.35 ? 'center' : (Math.cos(ang) > 0 ? 'left' : 'right');
-      var tx = lx + (align === 'left' ? -4 : align === 'right' ? 4 : 0);
-      ctx.textAlign = align;
-      ctx.fillStyle = INK; ctx.font = '700 25px ' + SANS;
-      ctx.fillText(CARD_DIM[dname] || dname, tx, ly - 8);
-      if (!has(hero, dname)) {
-        ctx.fillStyle = SUB; ctx.font = '500 22px ' + SANS;
-        ctx.fillText('待定', tx, ly + 26);
-      } else {
-        var vv = fmt(clamp(sv(hero, dname)));
-        var dr = dimRank(hero, dname);
-        ctx.font = '800 30px ' + SANS;
-        var w1 = ctx.measureText(vv).width;
-        ctx.font = '800 21px ' + SANS;
-        var w2 = ctx.measureText('#' + dr.r).width + 16;
-        var x0 = align === 'center' ? tx - (w1 + 12 + w2) / 2 : align === 'left' ? tx : tx - (w1 + 12 + w2);
+      var d = DIMS[k];
+      ctx.fillStyle = INK; ctx.font = '600 24px ' + SANS;
+      ctx.fillText(CARD_DIM[d] || d, LX, rowY);
+      if (has(hero, d)) {
+        var dr = dimRank(hero, d);
+        ctx.textAlign = 'right';
         ctx.fillStyle = heroCol; ctx.font = '800 30px ' + SANS;
-        ctx.fillText(vv, x0, ly + 26);
-        ctx.fillStyle = BLUEBG; rrPath(ctx, x0 + w1 + 12, ly + 2, w2, 30, 15); ctx.fill();
-        ctx.fillStyle = BLUE; ctx.font = '800 21px ' + SANS;
-        ctx.fillText('#' + dr.r, x0 + w1 + 20, ly + 23);
+        ctx.fillText(fmt(clamp(sv(hero, d))), LX + LW - 96, rowY);
+        ctx.fillStyle = RED; ctx.font = '700 22px ' + MONO;
+        ctx.fillText('#' + dr.r + '/' + dr.n, LX + LW, rowY);
+        ctx.textAlign = 'left';
+      } else {
+        ctx.textAlign = 'right';
+        ctx.fillStyle = SUB; ctx.font = '500 22px ' + SANS;
+        ctx.fillText('待定', LX + LW, rowY);
+        ctx.textAlign = 'left';
       }
+      if (k < N - 1) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(LX, rowY + 16); ctx.lineTo(LX + LW, rowY + 16); ctx.stroke(); }
+      rowY += rowH;
     }
-    ctx.textAlign = 'left';
 
-    /* ── 元信息行 ── */
-    var MY = 1176, MH = 86, MW3 = (W - 2 * M - 40) / 3;
-    [['公司', hero.company || '—'], ['数据覆盖', coverage(hero) + '/8 维'], ['数据截至', String(META.built || '').slice(0, 10) || '—']].forEach(function (it, i) {
-      var mx = M + i * (MW3 + 20);
-      card(mx, MY, MW3, MH, 14);
-      ctx.fillStyle = SUB; ctx.font = '500 21px ' + SANS;
-      ctx.fillText(it[0], mx + 22, MY + 32);
-      ctx.fillStyle = INK; ctx.font = '600 27px ' + SANS;
-      ctx.fillText(fit(it[1], '600 27px ' + SANS, MW3 - 44), mx + 22, MY + 66);
-    });
+    /* ── 元信息行（内联，不做卡片） ── */
+    ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
+    ctx.fillText('公司 ' + (hero.company || '—') + '　·　数据覆盖 ' + coverage(hero) + '/8 维　·　数据截至 ' + (String(META.built || '').slice(0, 10) || '—'), M, 1198);
 
-    /* ── 页脚：免责 + 署名 ── */
-    ctx.fillStyle = SUB; ctx.font = '400 20px ' + SANS; ctx.textAlign = 'left';
-    ctx.fillText('分数为基准族内位次分（50＝池内中位）· 缺数据 ≠ 0 · 数据来自公开榜单聚合', M, 1312);
+    /* ── 页脚 ── */
+    ctx.strokeStyle = HAIR; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(M, 1286); ctx.lineTo(W - M, 1286); ctx.stroke();
+    ctx.fillStyle = SUB; ctx.font = '400 20px ' + SANS;
+    ctx.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', M, 1330);
     ctx.font = '500 18px ' + MONO;
-    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, 1394);
+    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, 1372);
     var sig = (AUTHOR.name ? '@' + AUTHOR.name : '') +
               (AUTHOR.xhsId ? (AUTHOR.name ? ' · ' : '') + '小红书号 ' + AUTHOR.xhsId : '');
     if (sig) {
@@ -1112,14 +1119,14 @@
       var gx = W - M - tw - avD - gap2;
       if (authorImg) {
         ctx.save();
-        ctx.beginPath(); ctx.arc(gx + avD / 2, 1342, avD / 2, 0, Math.PI * 2); ctx.clip();
-        ctx.drawImage(authorImg, gx, 1319, avD, avD);
+        ctx.beginPath(); ctx.arc(gx + avD / 2, 1322, avD / 2, 0, Math.PI * 2); ctx.clip();
+        ctx.drawImage(authorImg, gx, 1299, avD, avD);
         ctx.restore();
-        ctx.strokeStyle = 'rgba(26,30,36,0.25)'; ctx.lineWidth = 2;
-        ctx.beginPath(); ctx.arc(gx + avD / 2, 1342, avD / 2, 0, Math.PI * 2); ctx.stroke();
+        ctx.strokeStyle = 'rgba(23,22,15,0.3)'; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(gx + avD / 2, 1322, avD / 2, 0, Math.PI * 2); ctx.stroke();
       }
       ctx.fillStyle = INK; ctx.font = '700 30px ' + SANS; ctx.textAlign = 'right';
-      ctx.fillText(sig, W - M, 1354);
+      ctx.fillText(sig, W - M, 1332);
       ctx.textAlign = 'left';
     }
     return c;
