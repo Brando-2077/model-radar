@@ -262,7 +262,7 @@
   }
   function renderGate() {
     var fsub = document.getElementById('fcta-sub');
-    if (fsub) fsub.textContent = '全部 ' + ALL.length + ' 个模型 · 前 10 名永久免费';
+    if (fsub) fsub.textContent = '全部 ' + ranked().length + ' 个模型 · 前 10 名永久免费';
     var lk = document.getElementById('inf-lk');
     var infBtn = document.querySelector('#scope button[data-s="inf"]');
     if (infBtn) {
@@ -375,45 +375,56 @@
     });
   }
   function renderHero() {
-    var box = $('qhead'); box.textContent = '';
+    var box = $('hero'); box.textContent = '';
     var scene = sceneByName(state.scene), w = W();
     var rowsR = ranked(), refH = sigmaRef(rowsR);
     var top = rowsR.slice(0, 3);
-    box.appendChild(el('h2', 'q-t', '「' + scene.name + '」，该用哪个模型？'));
     if (top.length) {
+      var r1 = el('div', 'hero-r1');
+      r1.appendChild(el('span', 'rk', '#1'));
+      r1.appendChild(el('b', '', top[0].m.name));
+      r1.appendChild(el('span', 's num', fmt(top[0].c)));
+      r1.title = coverage(top[0].m) + '/8 维 · 点卡片看详情';
+      box.appendChild(r1);
       var m0 = top[0].m;
-      var tied = top.length > 1 && top[0].c - top[1].c <= tieThreshold(top[0].s, top[1].s, refH);
-      var f = el('p', 'q-f');
-      if (tied) f.innerHTML = '<b>' + top[0].m.name + '</b> 与 <b>' + top[1].m.name + '</b> 并列第一（差 <span class="qn">' + fmt(top[0].c - top[1].c) + '</span>，在置信带内）——建议两个都试';
-      else f.innerHTML = '<b>' + top[0].m.name + '</b> 排第一，综合 <span class="qn">' + fmt(top[0].c) + '</span>，领先第二名 ' + fmt(top[0].c - top[1].c) + ' 分';
-      box.appendChild(f);
-      if (coverage(m0) < 6) box.appendChild(el('div', 'q-note',
-        '首选仅 ' + coverage(m0) + '/8 维有证据：缺维权重已让位，名次仅供参考'));
-      if ((w['内容创作'] || 0) >= 20) box.appendChild(el('div', 'q-note',
-        '内容创作维以英文写作为主，中文选型建议先试稿'));
-    }
-    var qw = el('div', 'q-w');
-    var bar = el('div', 'qw-bar');
-    DIMS.forEach(function (d, i) {
-      var sgm = document.createElement('i');
-      sgm.style.width = (w[d] || 0) + '%';
-      bar.appendChild(sgm);
-    });
-    qw.appendChild(bar);
-    var seg = [];
-    DIMS.map(function (d) { return { d: d, w: w[d] || 0 }; })
-      .sort(function (a, b) { return b.w - a.w; })
-      .forEach(function (x, i) {
-        seg.push((i < 3 ? '<b>' + x.d + '</b>' : x.d) + ' ' + Math.round(x.w) + '%');
+      var picks = DIMS.filter(function (d) { return has(m0, d); })
+        .sort(function (a, b) { return (w[b] || 0) - (w[a] || 0); }).slice(0, 2);
+      var why = el('div', 'hero-why');
+      why.innerHTML = '<b>先看 ' + m0.name + '</b>：' + picks.map(function (d) {
+        return dimLabel(d) + ' 权重 ' + Math.round(w[d] || 0) + '%，排 #' + dimRank(d, m0);
+      }).join('；') + '。' + (SCENE_HINT[scene.name] ? '场景＝' + SCENE_HINT[scene.name] + '。' : '');
+      box.appendChild(why);
+      if (coverage(m0) < 6) box.appendChild(el('div', 'hero-warn',
+        '⚠ 首选仅 ' + coverage(m0) + '/8 维有证据：缺维权重已让位，名次仅供参考'));
+      if ((w['内容创作'] || 0) >= 20) box.appendChild(el('div', 'hero-warn',
+        '⚠ 内容创作维以英文写作为主，中文选型建议先试稿'));
+      if (top.length > 1 && top[0].c - top[1].c <= tieThreshold(top[0].s, top[1].s, refH))
+        box.appendChild(el('div', 'hero-warn',
+          '⚠ #1 与 #2 差 ' + fmt(top[0].c - top[1].c) + ' 分，在置信带宽内（≈并列）——建议两个都试'));
+      /* 权重条 */
+      var bar = el('div', 'hero-bar');
+      DIMS.forEach(function (d, i) {
+        var s = document.createElement('i');
+        s.style.width = (w[d] || 0) + '%';
+        s.style.background = 'rgba(26,26,26,' + (0.72 - i * 0.062).toFixed(3) + ')';
+        bar.appendChild(s);
       });
-    var wl = document.createElement('span');
-    wl.innerHTML = seg.join(' · ');
-    qw.appendChild(wl);
-    box.appendChild(qw);
+      box.appendChild(bar);
+      var wl = el('div', 'hero-wl');
+      DIMS.map(function (d) { return { d: d, w: w[d] || 0 }; })
+        .sort(function (a, b) { return b.w - a.w; })
+        .forEach(function (x, i) {
+          var s = el('span', i < 3 ? '' : '');
+          s.innerHTML = (i < 3 ? '<b>' + x.d + '</b>' : x.d) + ' ' + Math.round(x.w) + '%';
+          wl.appendChild(s);
+          wl.appendChild(document.createTextNode('　'));
+        });
+      box.appendChild(wl);
+    }
     var blanks = ALL.length * 8 - ALL.reduce(function (s, m) { return s + coverage(m); }, 0);
-    box.appendChild(el('div', 'q-meta',
+    box.appendChild(el('div', 'hero-meta',
       (state.scope === 'all' ? '全部来源' : state.scope === 'tp' ? '仅第三方榜单' : '含推理补全') +
-      ' 口径 · ' + blanks + ' 格待定（缺数据 ≠ 0 分）'));
+      ' 口径 · ' + scene.name + ' · ' + blanks + ' 格待定（缺数据 ≠ 0 分）'));
   }
   function renderCards() {
     var box = $('cards'); box.textContent = '';
@@ -435,40 +446,42 @@
         prevStart = i;
       }
       var m = r.m, sel = state.selected.indexOf(m.name);
-      var row = el('div', 'lrow' + (sel >= 0 ? ' sel' : '') +
+      var card = el('div', 'card' + (sel >= 0 ? ' sel' : '') +
         (state.pendingPick === m.name ? ' pend' : ''));
-      if (sel >= 0) row.style.setProperty('--rc', COLORS[sel % 3]);
-      row.appendChild(el('span', 'lrank num', String(i + 1)));
-      var wAll = W(), wCov = 0, wTot = 0;
-      for (var kk in wAll) { wTot += wAll[kk]; if (has(m, kk)) wCov += wAll[kk]; }
-      var covN = coverage(m), low = wTot > 0 && wCov / wTot < LOW_COV;
-      var idd = el('div', 'lid');
-      idd.appendChild(el('b', '', m.name));
-      idd.appendChild(el('span', '', (m.company ? m.company + ' · ' : '') + covN + '/8 维' +
-        (low ? ' · 低覆盖' : '') + (Object.keys(singlesOf(m)).length ? ' · †' : '')));
-      row.appendChild(idd);
-      var bar = el('div', 'lbar');
+      if (sel >= 0) card.style.setProperty('--rc', COLORS[sel % 3]);
+      var ct = el('div', 'card-t');
+      ct.appendChild(el('span', 'rk num', String(i + 1)));
+      ct.appendChild(el('span', 'nm', m.name));
+      if (m.company) ct.appendChild(el('span', 'co', m.company));
+      ct.appendChild(el('span', 'val num', fmt(r.c)));
+      ct.appendChild(el('span', 'un num', '±' + fmt(r.s)));
+      card.appendChild(ct);
+      var mini = el('div', 'card-mini');
       DIMS.forEach(function (d) {
         var i2 = document.createElement('i');
         var hasD = has(m, d);
-        i2.style.height = Math.max(2, (hasD ? sv(m, d) : 3) / 100 * 16) + 'px';
+        i2.style.height = Math.max(2, (hasD ? sv(m, d) : 3) / 100 * 15) + 'px';
         if (!hasD) i2.className = 'off';
-        bar.appendChild(i2);
+        mini.appendChild(i2);
       });
-      row.appendChild(bar);
-      var v = el('div', 'lval');
-      v.appendChild(el('b', 'num', fmt(r.c)));
-      v.appendChild(el('span', 'num', '±' + fmt(r.s)));
-      row.appendChild(v);
-      var det = el('button', 'ldet', '详情');
-      det.addEventListener('click', function (ev) {
+      card.appendChild(mini);
+      var wAll = W(), wCov = 0, wTot = 0;
+      for (var kk in wAll) { wTot += wAll[kk]; if (has(m, kk)) wCov += wAll[kk]; }
+      var covN = coverage(m), low = wTot > 0 && wCov / wTot < LOW_COV;
+      var meta = el('div', 'card-meta',
+        covN + '/8 维' + (low ? ' · 低覆盖' : '') +
+        (Object.keys(singlesOf(m)).length ? ' · †' : '') + ' · ' + (m.company || ''));
+      var info = el('button', 'card-info', '详情');
+      info.addEventListener('click', function (ev) {
         ev.stopPropagation(); openPage('detail', m.name);
       });
-      row.appendChild(det);
-      row.addEventListener('click', function () { select(m.name); });
-      box.appendChild(row);
+      meta.appendChild(info);
+      card.appendChild(meta);
+      /* 点卡片主体 = 选中 */
+      card.addEventListener('click', function () { select(m.name); });
+      box.appendChild(card);
     });
-    if (!rows.length) box.appendChild(el('div', 'lempty', '没有匹配的模型'));
+    if (!rows.length) box.appendChild(el('div', 'card', '没有匹配的模型'));
     $('more').textContent = moreLabel(rows.length);
   }
   function moreLabel(n) {
@@ -898,7 +911,7 @@
   var MONO = 'ui-monospace,Menlo,Consolas,"Courier New",monospace';
   var PAPER = '#F4F1E8', INK = '#17160F', SUB = '#6F6A5C',
       HAIR = 'rgba(23,22,15,0.16)', RED = '#C2391A', REDBG = 'rgba(194,57,26,0.10)';
-  var COLS = ['#C2391A', '#1D5FBF', '#2E7D32'];
+  var COLS = ['#FF6B4A', '#4D8DFF', '#3DDC84'];
   function chipOutline(text, rightX, y, fg, stroke) {
     var c = SHARE.ctx;
     c.font = '600 23px ' + SANS;
@@ -1084,10 +1097,10 @@
     var scene = sceneByName(state.scene);
     var trio = compareTrio();
     var nCols = trio.length;
-    var COLS = ['#C2391A', '#1D5FBF', '#2E7D32'];
+    var COLS = ['#FF6B4A', '#4D8DFF', '#3DDC84'];
     var BH = nCols === 2 ? 486 : 452;
     ctx.fillStyle = INK; ctx.fillRect(0, 0, W, BH);
-    ctx.fillStyle = '#C2391A'; rrPath(ctx, M, 56, 38, 38, 9); ctx.fill();
+    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 56, 38, 38, 9); ctx.fill();
     ctx.fillStyle = PAPER; ctx.font = '800 32px ' + SANS;
     ctx.fillText('模型雷达', M + 52, 84);
     var chipR = W - M;
@@ -1241,7 +1254,7 @@
     var heroCol = COLS[0];
     var BH = 484;
     ctx.fillStyle = INK; ctx.fillRect(0, 0, W, BH);
-    ctx.fillStyle = '#C2391A'; rrPath(ctx, M, 56, 38, 38, 9); ctx.fill();
+    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 56, 38, 38, 9); ctx.fill();
     ctx.fillStyle = PAPER; ctx.font = '800 32px ' + SANS;
     ctx.fillText('模型雷达', M + 52, 84);
     var chipR = W - M;
