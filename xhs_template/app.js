@@ -183,7 +183,7 @@
   function tieThreshold(sa, sb, ref) { return TIE * Math.sqrt(sa * sb) / ref; }
 
   /* ── 4. 关注门控（平台 API，9.51+；降级不锁）────────────────── */
-  var gate = { unlocked: true, status: -9, forceLock: false };
+  var gate = { unlocked: true, status: -9, forceLock: false, apiOK: false, apiState: 'init', buildVersion: 0, busy: false };
   /* 预览开关：?lock=1 强制锁定（会话级记忆，关标签页失效）；?lock=0 显式解除。
      仅影响浏览器预览——真实容器内不会带这个参数，始终按真实关注状态门控 */
   try {
@@ -194,28 +194,44 @@
     }
     if (sessionStorage.getItem('xhs-preview-lock') === '1') gate.forceLock = true;
   } catch (e) { /* 存储不可用则忽略 */ }
-  function clientVersionAtLeast(minVer) {
-    try {
-      var lo = (window.xhs && window.xhs.launchOptions) || null;
-      var bv = lo && lo.miniToolEnv && Number(lo.miniToolEnv.buildVersion) || 0;
-      return Math.floor(bv / 1000) >= minVer;
-    } catch (e) { return false; }
+  function readBV(lo) {
+    var e = lo && lo.miniToolEnv;
+    return Number(e && e.buildVersion) || 0;
   }
   function gateRefresh() {
-    if (gate.forceLock) { gate.unlocked = false; gate.status = 0; renderGate(); return Promise.resolve(); }
+    if (gate.forceLock) { gate.unlocked = false; gate.status = 0; gate.apiState = 'preview-lock'; renderGate(); return Promise.resolve(); }
     var mt = window.xhs && window.xhs.miniTool;
-    var ok = !!(mt && typeof mt.getFollowStatus === 'function' && clientVersionAtLeast(9510));
-    gate.apiOK = ok;
-    if (!ok) { gate.unlocked = true; renderGate(); return Promise.resolve(); }
-    return mt.getFollowStatus().then(function (r) {
-      gate.status = r.follow_status;
-      gate.unlocked = r.follow_status !== 0;   /* -1 查询失败不锁；2 作者本人解锁 */
-      renderGate();
-    }).catch(function () { gate.unlocked = true; renderGate(); });
+    var hasApi = !!(mt && typeof mt.getFollowStatus === 'function');
+    if (!hasApi) {
+      gate.apiOK = false; gate.unlocked = true; gate.apiState = 'no-api';
+      renderGate(); return Promise.resolve();
+    }
+    /* 文档 §3.6：launchOptions / miniToolEnv / buildVersion 都可能缺失，
+       同步值不存在时必须回退异步 mt.getLaunchOptions()——只读同步路径会把
+       新版容器误判成旧版，导致门控整体失效（2026-10-31 真机问题根因）。 */
+    var bv = readBV(window.xhs && window.xhs.launchOptions);
+    var p = (bv || typeof mt.getLaunchOptions !== 'function')
+      ? Promise.resolve(bv)
+      : mt.getLaunchOptions().then(function (lo) { return readBV(lo); }).catch(function () { return 0; });
+    return p.then(function (v) {
+      gate.buildVersion = v;
+      gate.apiOK = Math.floor(v / 1000) >= 9510;
+      gate.apiState = gate.apiOK ? 'ok' : 'old-client(' + v + ')';
+      if (!gate.apiOK) { gate.unlocked = true; renderGate(); return; }
+      return mt.getFollowStatus().then(function (r) {
+        gate.status = r.follow_status;
+        gate.unlocked = r.follow_status !== 0;   /* -1 查询失败不锁；2 作者本人解锁 */
+        gate.apiState = 'ok:f' + r.follow_status;
+        renderGate();
+      }).catch(function () { gate.unlocked = true; gate.apiState = 'query-fail'; renderGate(); });
+    });
   }
   function gateFollow() {
     var mt = window.xhs && window.xhs.miniTool;
     if (!gate.apiOK) { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
+    if (gate.busy) return;
+    gate.busy = true;
+    var done = function () { gate.busy = false; };
     mt.followAuthor().then(function (r) {
       var st = r && r.follow_status;
       if (st === 1 || st === 2) return { follow_status: st };
@@ -223,6 +239,7 @@
          返回值不是明确的 1/2 时一律用 getFollowStatus 复查，杜绝静默无反馈 */
       return mt.getFollowStatus();
     }).then(function (r) {
+      done();
       var st = r && r.follow_status;
       if (st === 1 || st === 2) {
         gate.unlocked = true; state.more = true;
@@ -236,6 +253,7 @@
         toast('还没有完成关注——进阶功能保持锁定');
       }
     }).catch(function (err) {
+      done();
       var code = err && err.errCode;
       if (code === 20002) toast('还没有完成关注——进阶功能保持锁定');
       else if (code === 15404) toast('今日关注引导次数已达上限');
