@@ -51,7 +51,8 @@ def main() -> None:
     (DIST / "app.js").write_bytes(app.encode("utf-8"))
 
     extras = []
-    for name in ("author.png", "author.jpg"):
+    (DIST / "fonts").mkdir(parents=True, exist_ok=True)
+    for name in ("author.png", "author.jpg") + tuple("fonts/" + f for f in ("geist-400.woff2", "geist-500.woff2", "geist-700.woff2", "geistmono-400.woff2")):
         p = TPL / name
         if p.exists():
             (DIST / name).write_bytes(p.read_bytes())
