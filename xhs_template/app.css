@@ -271,3 +271,12 @@ button:focus{outline:2px solid var(--red);outline-offset:1px}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media (min-width:560px){#home,.pgbd{max-width:520px;margin-left:auto;margin-right:auto}
   .pgbd{width:100%}}
+
+/* 分享套图缩略条 */
+.sheet-thumbs{display:flex;overflow-x:auto;margin-top:10px;padding:0 2px}
+.sheet-thumbs .thumb{position:relative;flex:0 0 auto;width:64px;height:85px;margin-right:8px;border-radius:8px;overflow:hidden;border:2px solid var(--line);opacity:.62}
+.sheet-thumbs .thumb.cur{border-color:var(--red)}
+.sheet-thumbs .thumb.pick{opacity:1}
+.sheet-thumbs .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.sheet-thumbs .thumb .pk{position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:var(--red);color:#fff;font-size:10px;line-height:16px;text-align:center}
+.sheet-thumbs .thumb .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);color:#fff;font-size:8px;line-height:1.25;padding:1px 2px;word-break:break-all;max-height:20px;overflow:hidden}
