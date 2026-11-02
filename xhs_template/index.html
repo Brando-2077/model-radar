@@ -20,22 +20,22 @@
     <button data-s="tp">仅第三方</button>
     <button data-s="inf">含推理<span class="lk" id="inf-lk"></span></button>
   </div>
+  <div class="fcta" id="fcta" hidden>
+    <img class="fcta-av" src="author.png" alt="">
+    <div class="fcta-t">
+      <b>关注追更</b>
+      <span id="fcta-sub">新模型发布，同步更新榜单</span>
+      <span class="fcta-hint">两步完成：点「蹲更新」→ 小红书弹窗中再点「关注」</span>
+    </div>
+    <button id="fcta-go">蹲更新</button>
+    <button class="fcta-x" id="fcta-x" aria-label="关闭">✕</button>
+  </div>
 </header>
 
 <div class="chips" id="chips"></div>
 
 <main id="home">
-  <div id="hero"></div>
-  <div class="fcta" id="fcta" hidden>
-    <img class="fcta-av" src="author.png" alt="">
-    <div class="fcta-t">
-      <b>关注作者 · 解锁完整榜单</b>
-      <span id="fcta-sub">全部 33 个模型 · 前 10 名永久免费</span>
-      <span class="fcta-hint">两步完成：点「关注解锁」→ 小红书弹窗中再点「关注」</span>
-    </div>
-    <button id="fcta-go">关注解锁</button>
-    <button class="fcta-x" id="fcta-x" aria-label="关闭">✕</button>
-  </div>
+  <div id="hero" class="hero"></div>
   <div class="search"><input id="q" placeholder="搜索模型 / 厂商…" autocomplete="off"><button id="q-clear" hidden>✕</button></div>
   <div id="cards"></div>
   <button class="more" id="more"></button>
@@ -80,7 +80,7 @@
     <div class="asec"><h3>证据与计分</h3>
       <p>模型详情里同一维度的多条来源<b>并列展示</b>（不同榜单可对照）；计分时同一基准族只取一票（第三方优先、日期新优先），避免同一分数重复计权。</p></div>
     <div class="asec"><h3>关注解锁</h3>
-      <p>默认展示前 10 名模型；<b>关注作者</b>后解锁全部 34 个与「含推理补全」口径。核心功能（榜单 / 雷达对比 / 证据链）始终免费。关注通过小红书官方能力完成（客户端 9.51+），低版本自动跳过锁定。</p></div>
+      <p>默认展示前 10 名模型；<b>关注作者</b>后解锁全部 33 个与「含推理补全」口径。核心功能（榜单 / 雷达对比 / 证据链）始终免费。关注通过小红书官方能力完成（客户端 9.51+），低版本自动跳过锁定。</p></div>
     <div class="asec"><h3>数据</h3><div id="about-data-body"></div></div>
   </div>
 </section>

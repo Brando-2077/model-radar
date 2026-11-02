@@ -228,7 +228,8 @@
   }
   function gateFollow() {
     var mt = window.xhs && window.xhs.miniTool;
-    if (!gate.apiOK) { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
+    /* 实时探测而非缓存 apiOK——预览注入 mock 或启动时序差都不会误走预览分支 */
+    if (!mt || typeof mt.followAuthor !== 'function') { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
     if (gate.busy) return;
     gate.busy = true;
     var done = function () { gate.busy = false; };
@@ -273,11 +274,11 @@
     if (more && !state.page) {
       var n = ranked().length;
       more.textContent = (!gate.unlocked && !state.more && !state.q.trim())
-        ? '🔒 关注解锁全部 ' + n + ' 个模型'
+        ? '🔒 蹲更新 · 解锁全部 ' + n + ' 个模型'
         : (state.more ? '收起' : '展开全部 ' + n + ' 个');
     }
     var sb = document.getElementById('share-btn');
-    if (sb) sb.textContent = gate.unlocked ? '生成分享卡 ⤴' : '🔒 关注后生成分享卡';
+    if (sb) sb.textContent = gate.unlocked ? '生成分享卡 ⤴' : '🔒 蹲更新后可生成分享卡';
     showFcta(!gate.unlocked);
   }
   function showFcta(on) {
@@ -485,7 +486,7 @@
     $('more').textContent = moreLabel(rows.length);
   }
   function moreLabel(n) {
-    if (!gate.unlocked && !state.more && !state.q.trim()) return '🔒 关注解锁全部 ' + n + ' 个模型';
+    if (!gate.unlocked && !state.more && !state.q.trim()) return '🔒 蹲更新 · 解锁全部 ' + n + ' 个模型';
     return state.more ? '收起' : '展开全部 ' + n + ' 个';
   }
   function renderFab() {
@@ -549,7 +550,7 @@
       '点卡片上的「详情」查看单模型 8 维明细与证据链');
     body.appendChild(tip);
     var srow = el('div', 'share-row');
-    var sb = el('button', 'share-cta', gate.unlocked ? '生成分享卡 ⤴' : '🔒 关注后生成分享卡');
+    var sb = el('button', 'share-cta', gate.unlocked ? '生成分享卡 ⤴' : '🔒 蹲更新后可生成分享卡');
     sb.id = 'share-btn';
     sb.addEventListener('click', openShare);
     srow.appendChild(sb);
@@ -1419,7 +1420,7 @@
     sheetEls = { scrim: scrim, sh: sh, img: img, thumbs: thumbs, bp: bp, bc: bc, bs: bs, busy: false, images: [], picked: [], cur: 0 };
   }
   function openShare() {
-    if (!gate.unlocked) { showFcta(true); toast('关注作者后可生成分享卡'); return; }
+    if (!gate.unlocked) { gateFollow(); return; }
     if (!sheetEls) buildSheet();
     sheetEls.images = buildImageSet().map(function (it) {
       var cv = it.draw();
@@ -1584,7 +1585,7 @@
   $('scope').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
     var s = b.getAttribute('data-s');
-    if (s === 'inf' && !gate.unlocked) { showFcta(true); toast('「含推理补全」为关注解锁功能'); return; }
+    if (s === 'inf' && !gate.unlocked) { gateFollow(); return; }
     state.scope = s; POOL = {}; SIGM = {}; syncHash(); renderAll(); storeSave();
   });
   $('about-open').addEventListener('click', function () { openPage('about'); });
@@ -1607,7 +1608,7 @@
     state.hidePending = this.checked; renderCards(); storeSave();
   });
   $('more').addEventListener('click', function () {
-    if (!gate.unlocked && !state.more && !state.q.trim()) { showFcta(true); toast('两步解锁：在小红书弹窗中再点一次「关注」'); return; }
+    if (!gate.unlocked && !state.more && !state.q.trim()) { gateFollow(); return; }
     state.more = !state.more; renderCards(); renderGate();
   });
   $('fcta-go').addEventListener('click', gateFollow);
