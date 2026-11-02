@@ -1105,10 +1105,10 @@
     ctx.fillStyle = PAPER; ctx.fillRect(0, 0, 1200, 1600);
     return c;
   }
-  /* ═══ 分享卡 v11「对比卡」——按真机预览反馈重排：
+  /* ═══ 分享卡 v12「对比卡」——v11 五条反馈修复 + 用户裁决恢复雷达：
          ① 名字放大、分数收小（先抓到"谁"，再看"多少"）；
-         ② 八维表弃用"颜色代模型"，改全宽分组行、每行直写模型名（组内最优标朱红）；
-         ③ 五场景条逐模型一行（名字直写）；④ 雷达从对比卡移除（档案卡保留）；
+         ② 八维表弃用"颜色代模型"，改分组行、每行直写模型名（组内最优标朱红）；
+         ③ 五场景条逐模型一行（名字直写）；④ 雷达保留在左侧（下加色线+模型名图例），右侧分组表；
          ⑤ 页脚头像/账号对齐修正 + 说明口语化。优弱明细/结论行仍全部由账本推导。 ═══ */
   function drawCompareCard() {
     var W = 1200, H = 1600, M = 64;
@@ -1237,7 +1237,7 @@
       }
       if (si) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx0, FY + 8); ctx.lineTo(cx0, FY + FH - 8); ctx.stroke(); }
     }
-    /* 八维分组表：每维一组，组内每模型一行（名字直写；组内最优标朱红） */
+    /* 雷达（左）+ 八维分组表（右）：每维一组，组内每模型一行（名字直写；组内最优标朱红） */
     var PY = FY + FH + 20, PH = 752;
     shFrame(M, PY, W - 2 * M, PH);
     ctx.fillStyle = INK; ctx.font = '700 25px ' + SANS;
@@ -1245,6 +1245,21 @@
     ctx.fillStyle = SUB; ctx.font = '500 18px ' + SANS; ctx.textAlign = 'right';
     ctx.fillText('分数越高越好 · #r/n＝全池名次', W - M - 28, PY + 38);
     ctx.textAlign = 'left';
+    /* 左：雷达叠加 + 图例（色线 + 模型名直写，颜色只作辅助） */
+    var RX = M + 188, RCY = PY + 400, R = 155;
+    shRadarBase(RX, RCY, R, 'rgba(194,57,26,0.55)');
+    for (var ci = nCols - 1; ci >= 1; ci--) shPoly(trio[ci], COLS[ci % 3], 3.5, false, RX, RCY, R);
+    shPoly(trio[0], COLS[0], 5, true, RX, RCY, R);
+    for (var ci = 0; ci < nCols; ci++) {
+      var ly = PY + 636 + ci * 24;
+      ctx.strokeStyle = COLS[ci % 3]; ctx.lineWidth = 4; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(M + 66, ly - 5); ctx.lineTo(M + 88, ly - 5); ctx.stroke();
+      ctx.fillStyle = 'rgba(23,22,15,0.88)'; ctx.font = '600 16px ' + SANS;
+      ctx.fillText(trio[ci].name, M + 98, ly);
+    }
+    ctx.lineCap = 'butt';
+    /* 右：分组表 */
+    var TX = M + 400;
     var lineH = two ? 34 : 26;
     var groupH = lineH * nCols + (two ? 16 : 8);
     var gy = PY + 62;
@@ -1252,9 +1267,9 @@
       var d = DIMS[k];
       var gTop = gy;
       ctx.fillStyle = INK; ctx.font = '600 22px ' + SANS;
-      ctx.fillText(CARD_DIM[d] || d, M + 28, gTop + (two ? 24 : 29));
+      ctx.fillText(CARD_DIM[d] || d, TX, gTop + (two ? 24 : 29));
       ctx.strokeStyle = 'rgba(23,22,15,0.14)'; ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.moveTo(M + 176, gTop + 2); ctx.lineTo(M + 176, gTop + (nCols - 1) * lineH + 8); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(TX + 148, gTop + 2); ctx.lineTo(TX + 148, gTop + (nCols - 1) * lineH + 8); ctx.stroke();
       for (var ci = 0; ci < nCols; ci++) {
         var m = trio[ci];
         var ly = gTop + ci * lineH;
@@ -1263,8 +1278,9 @@
           if (has(trio[cj], d) && sv(trio[cj], d) > best) best = sv(trio[cj], d);
         }
         var isWin = has(m, d) && sv(m, d) >= best;
-        ctx.fillStyle = 'rgba(23,22,15,0.92)'; ctx.font = '600 ' + (two ? 21 : 19) + 'px ' + SANS;
-        ctx.fillText(m.name, M + 200, ly);
+        var nameF2 = two ? 21 : 19;
+        ctx.fillStyle = 'rgba(23,22,15,0.92)'; ctx.font = '600 ' + nameF2 + 'px ' + SANS;
+        ctx.fillText(shFit(m.name, '600 ' + nameF2 + 'px ' + SANS, W - M - 196 - (TX + 172)), TX + 172, ly);
         ctx.textAlign = 'right';
         if (has(m, d)) {
           var dr = shDimRank(m, d);
@@ -1282,7 +1298,7 @@
       if (k < DIMS.length - 1) {
         ctx.strokeStyle = HAIR; ctx.lineWidth = 1;
         var sep = gTop + (nCols - 1) * lineH + (two ? 12 : 6);
-        ctx.beginPath(); ctx.moveTo(M + 16, sep); ctx.lineTo(W - M - 16, sep); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(TX, sep); ctx.lineTo(W - M - 16, sep); ctx.stroke();
       }
       gy = gTop + groupH;
     }
