@@ -871,7 +871,7 @@
          miniToolSnapshotInfo 携带对比状态供评论区重开恢复——引流闭环）/ 保存到相册（循环多张）。
          原创刊物语言：墨带 + 米白纸 + 双线框 + 朱红名次；数字一律黑体。与 v3–v8 零继承。 ═══ */
   /* ★ 作者署名配置：填昵称/小红书号即显示在卡底（留空则不显示）；头像 author.png 放 xhs_template/ 重跑构建 */
-  var AUTHOR = { name: '赛博摆渡人', xhsId: '', avatar: 'author.png' };
+  var AUTHOR = { name: '赛博摆渡人', xhsId: '49224513797', avatar: 'author.png' };
   var authorImg = null;
   (function () { var im = new Image(); im.onload = function () { authorImg = im; }; im.src = AUTHOR.avatar; })();
   var CARD_DIM = { '推理与知识': '推理与知识', '代码': '代码', '指令遵循': '指令遵循', 'Agent与工具调用': '智能体',
@@ -1045,26 +1045,43 @@
     }
     eye(0, 0); eye(n - 7, 0); eye(0, n - 7);
   }
-  function shSignature(rightX, baseY) {
+  /* 页脚作者角（两卡共用）：左＝头像+账号+ID+CTA+免责+版本行，右＝二维码。
+     topY＝页脚块顶；返回块高（QR 156 + 标签行）。 */
+  function shFooter(topY, Wc, Mc) {
     var c = SHARE.ctx;
-    var sig = (AUTHOR.name ? '@' + AUTHOR.name : '') +
-              (AUTHOR.xhsId ? (AUTHOR.name ? ' · ' : '') + '小红书号 ' + AUTHOR.xhsId : '');
-    if (!sig) return;
-    c.font = '700 30px ' + SANS;
-    var tw = c.measureText(sig).width;
-    var avD = authorImg ? 46 : 0, gap2 = authorImg ? 14 : 0;
-    var gx = rightX - tw - avD - gap2;
+    var QS = 156;
+    var qx = Wc - Mc - QS, qy = topY;
+    shQr(qx, qy, QS);
+    c.fillStyle = SUB; c.font = '500 18px ' + SANS; c.textAlign = 'center';
+    c.fillText('扫码 · 小红书找到我', qx + QS / 2, qy + QS + 26);
+    c.textAlign = 'left';
+    var lx = Mc, avD = authorImg ? 54 : 0, ay = qy + 4;
     if (authorImg) {
       c.save();
-      c.beginPath(); c.arc(gx + avD / 2, baseY - 11, avD / 2, 0, Math.PI * 2); c.clip();
-      c.drawImage(authorImg, gx, baseY - 34, avD, avD);
+      c.beginPath(); c.arc(lx + avD / 2, ay + avD / 2, avD / 2, 0, Math.PI * 2); c.clip();
+      c.drawImage(authorImg, lx, ay, avD, avD);
       c.restore();
       c.strokeStyle = 'rgba(23,22,15,0.3)'; c.lineWidth = 2;
-      c.beginPath(); c.arc(gx + avD / 2, baseY - 11, avD / 2, 0, Math.PI * 2); c.stroke();
+      c.beginPath(); c.arc(lx + avD / 2, ay + avD / 2, avD / 2, 0, Math.PI * 2); c.stroke();
     }
-    c.fillStyle = INK; c.font = '700 30px ' + SANS; c.textAlign = 'right';
-    c.fillText(sig, rightX, baseY);
-    c.textAlign = 'left';
+    var tx = lx + (authorImg ? avD + 18 : 0);
+    c.fillStyle = INK; c.font = '800 30px ' + SANS;
+    c.fillText(AUTHOR.name ? '@' + AUTHOR.name : '', tx, ay + 26);
+    c.fillStyle = SUB; c.font = '500 19px ' + SANS;
+    c.fillText('小红书号 ' + AUTHOR.xhsId + ' · 扫码复现本对比 · 关注蹲新模型更新', tx, ay + 55);
+    c.strokeStyle = HAIR; c.lineWidth = 1;
+    c.beginPath(); c.moveTo(lx, qy + 86); c.lineTo(qx - 28, qy + 86); c.stroke();
+    c.fillStyle = SUB; c.font = '400 19px ' + SANS;
+    c.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', lx, qy + 118);
+    c.font = '500 17px ' + MONO;
+    c.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), lx, qy + 148);
+    return QS + 34;
+  }
+  /* 按当前账本推导模型优/弱维度：计分维按位次分降序，取前 want 项 */
+  function shTopDims(m, want) {
+    var scored = DIMS.filter(function (d) { return has(m, d); });
+    scored.sort(function (a, b) { return sv(m, b) - sv(m, a); });
+    return scored.slice(0, want);
   }
   function compareTrio() {
     var scene = sceneByName(state.scene);
@@ -1091,55 +1108,111 @@
     ctx.fillStyle = PAPER; ctx.fillRect(0, 0, 1200, 1600);
     return c;
   }
+  /* ═══ 分享卡 v10「对比卡」——信息密度重排版。
+         墨带＝每模型完整档案列：公司·开源/闭源·覆盖 n/8 + 综合分/名次章/±σ + 优(2)/弱(1)明细行
+         （维度·分值·全池名次；双模型附「较对手」差值；全部由当期账本推导，不写死文案）；
+         结论行数据化（领先幅度 / 噪声级判定）；纸面＝五场景名次条 + 雷达与八维读数双栏；
+         页脚＝作者角（头像·账号·二维码，shFooter 两卡共用）。 ═══ */
   function drawCompareCard() {
-    var W = 1200, H = 1600, M = 72;
+    var W = 1200, H = 1600, M = 64;
     var c = newCard();
     var ctx = SHARE.ctx;
     var scene = sceneByName(state.scene);
     var trio = compareTrio();
     var nCols = trio.length;
-    var COLS = ['#FF6B4A', '#4D8DFF', '#3DDC84'];
-    var BH = nCols === 2 ? 486 : 452;
+    var pool = ranked();
+    var DIMW = nCols === 2 ? 160 : 152;   /* 优/弱行：分值列起点 */
+    var SCW = nCols === 2 ? 236 : 218;    /* 优/弱行：名次列起点 */
+    var DFW = nCols === 2 ? 300 : 0;      /* 优/弱行：「较对手」起点（仅双模型） */
+    /* ── 墨色刊头＝档案带 ── */
+    var BH = 552;
     ctx.fillStyle = INK; ctx.fillRect(0, 0, W, BH);
-    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 56, 38, 38, 9); ctx.fill();
-    ctx.fillStyle = PAPER; ctx.font = '800 32px ' + SANS;
-    ctx.fillText('模型雷达', M + 52, 84);
+    ctx.fillStyle = '#FF6B4A'; rrPath(ctx, M, 48, 36, 36, 9); ctx.fill();
+    ctx.fillStyle = PAPER; ctx.font = '800 30px ' + SANS;
+    ctx.fillText('模型雷达', M + 50, 76);
     var chipR = W - M;
-    chipR = chipOutline(scene.name, chipR, 52, PAPER, 'rgba(244,241,232,0.45)') - 4;
-    chipR = chipOutline(scopeLabel(), chipR, 52, 'rgba(244,241,232,0.72)', 'rgba(244,241,232,0.25)');
-    ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '600 24px ' + SANS;
-    ctx.fillText((nCols === 2 ? '模型对比' : (state.selected.length === 1 ? '自动对比 · 场景第一' : '本期场景 Top 3')) + ' · ' + shSceneShort(scene.name) + '场景加权综合', M, 158);
+    chipR = chipOutline(scene.name, chipR, 44, PAPER, 'rgba(244,241,232,0.45)') - 4;
+    chipR = chipOutline(scopeLabel(), chipR, 44, 'rgba(244,241,232,0.72)', 'rgba(244,241,232,0.25)');
+    ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '600 22px ' + SANS;
+    ctx.fillText((state.selected.length >= 2 ? '模型对比' : (state.selected.length === 1 ? '自动对比 · 场景第一' : '本期场景 Top 3')) + ' · ' + shSceneShort(scene.name) + '场景加权综合', M, 130);
     var colW = (W - 2 * M) / nCols;
     for (var ci = 0; ci < nCols; ci++) {
       var m = trio[ci], col = COLS[ci % 3];
       var x0 = M + ci * colW;
-      ctx.fillStyle = col; ctx.font = '800 30px ' + SANS;
-      ctx.fillText(shFit(m.name, '800 30px ' + SANS, colW - 28), x0, 224);
-      ctx.fillStyle = PAPER; ctx.font = '900 96px ' + SANS;
+      var nameF = nCols === 2 ? 30 : 26;
+      ctx.fillStyle = col; ctx.font = '800 ' + nameF + 'px ' + SANS;
+      ctx.fillText(shFit(m.name, '800 ' + nameF + 'px ' + SANS, colW - 20), x0, 190);
+      ctx.fillStyle = 'rgba(244,241,232,0.58)'; ctx.font = '500 19px ' + SANS;
+      ctx.fillText((m.company || '公司未标注') + ' · ' + (m.open === true ? '开源' : (m.open === false ? '闭源' : '开源未确认')) + ' · 覆盖 ' + coverage(m) + '/8', x0, 224);
+      ctx.fillStyle = PAPER; ctx.font = '900 76px ' + SANS;
       var cTxt = fmt(composite(m, scene));
-      ctx.fillText(cTxt, x0 - 3, 336);
+      ctx.fillText(cTxt, x0 - 2, 316);
       var numW = ctx.measureText(cTxt).width;
-      ctx.font = '800 25px ' + SANS;
+      ctx.font = '800 24px ' + SANS;
       var rkT = '#' + shPoolRank(m);
-      var rkW = ctx.measureText(rkT).width + 28;
-      ctx.fillStyle = RED; rrPath(ctx, x0 + numW + 22, 262, rkW, 46, 9); ctx.fill();
-      ctx.fillStyle = PAPER; ctx.fillText(rkT, x0 + numW + 36, 293);
-      ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '500 21px ' + SANS;
-      ctx.fillText('±' + fmt(shSigmaOf(m)), x0 + numW + 22, 376);
+      var rkW = ctx.measureText(rkT).width + 26;
+      ctx.fillStyle = RED; rrPath(ctx, x0 + numW + 18, 258, rkW, 44, 9); ctx.fill();
+      ctx.fillStyle = PAPER; ctx.fillText(rkT, x0 + numW + 31, 288);
+      ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '500 19px ' + SANS;
+      ctx.fillText('±' + fmt(shSigmaOf(m)), x0 + numW + 18, 344);
+      ctx.strokeStyle = 'rgba(244,241,232,0.22)'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(x0, 372); ctx.lineTo(x0 + colW - 20, 372); ctx.stroke();
+      /* 优(2)/弱(1)明细：维度 · 分值 · 全池名次；双模型附较对手差值 */
+      var tops = shTopDims(m, 2);
+      var allS = DIMS.filter(function (d) { return has(m, d); });
+      var weak = null;
+      if (allS.length > 2) {
+        allS.sort(function (a, b) { return sv(m, a) - sv(m, b); });
+        weak = allS[0];
+      }
+      var yy = 412;
+      function dline(tag, d) {
+        var dr = shDimRank(m, d);
+        ctx.fillStyle = 'rgba(244,241,232,0.5)'; ctx.font = '700 18px ' + SANS;
+        ctx.fillText(tag, x0, yy);
+        ctx.fillStyle = 'rgba(244,241,232,0.92)'; ctx.font = '600 20px ' + SANS;
+        ctx.fillText(CARD_DIM[d] || d, x0 + 30, yy);
+        ctx.fillStyle = col; ctx.font = '800 21px ' + SANS;
+        ctx.fillText(fmt(clamp(sv(m, d))), x0 + DIMW, yy);
+        ctx.fillStyle = 'rgba(244,241,232,0.55)'; ctx.font = '600 17px ' + SANS;
+        ctx.fillText((tag === '弱' && dr.r <= 3 ? '全池 #' + dr.r : '#' + dr.r + '/' + dr.n), x0 + SCW, yy);
+        if (DFW) {
+          var other = trio[1 - ci];
+          if (has(other, d)) {
+            var df = sv(m, d) - sv(other, d);
+            ctx.fillStyle = 'rgba(244,241,232,0.5)'; ctx.font = '500 17px ' + SANS;
+            ctx.fillText('较对手', x0 + DFW, yy);
+            ctx.fillStyle = col; ctx.font = '800 18px ' + SANS;
+            ctx.fillText((df >= 0 ? '+' : '−') + fmt(Math.abs(df)), x0 + DFW + 62, yy);
+          }
+        }
+        yy += 35;
+      }
+      tops.forEach(function (d) { dline('优', d); });
+      if (weak) dline('弱', weak);
     }
+    /* 结论行（数据化） */
+    var verdict = '';
     if (nCols === 2) {
       var aC = composite(trio[0], scene), bC = composite(trio[1], scene);
       var diff = aC - bC;
-      var tied = Math.abs(diff) <= tieThreshold(shSigmaOf(trio[0]), shSigmaOf(trio[1]), sigmaRef(ranked()));
-      var verdict = tied
+      var tied = Math.abs(diff) <= tieThreshold(shSigmaOf(trio[0]), shSigmaOf(trio[1]), sigmaRef(pool));
+      verdict = tied
         ? '综合 ' + fmt(aC) + ' ≈ ' + fmt(bC) + '（差 ' + fmt(Math.abs(diff)) + '，噪声级）——建议两个都试'
         : trio[0].name + ' 领先 +' + fmt(diff);
-      ctx.fillStyle = PAPER; ctx.font = '600 28px ' + SANS;
-      ctx.fillText(shFit(verdict, '600 28px ' + SANS, W - 2 * M), M, BH - 46);
+    } else {
+      var v1 = composite(trio[0], scene), v2 = composite(trio[1], scene), v3 = composite(trio[2], scene);
+      var d12 = v1 - v2;
+      var tie12 = Math.abs(d12) <= tieThreshold(shSigmaOf(trio[0]), shSigmaOf(trio[1]), sigmaRef(pool));
+      verdict = tie12
+        ? '#1 与 #2 分差 ' + fmt(Math.abs(d12)) + '，噪声级（±σ 内）——前二属同一梯队'
+        : trio[0].name + ' 领先 #2 +' + fmt(d12) + ' · 领先 #3 +' + fmt(v1 - v3);
     }
+    ctx.fillStyle = PAPER; ctx.font = '600 27px ' + SANS;
+    ctx.fillText(shFit(verdict, '600 27px ' + SANS, W - 2 * M), M, 522);
     ctx.fillStyle = RED; ctx.fillRect(0, BH - 6, W, 6);
     /* 五场景名次对比条 */
-    var FY = BH + 30, FH = 116;
+    var FY = BH + 26, FH = 108;
     shFrame(M, FY, W - 2 * M, FH);
     var cellW = (W - 2 * M) / 5;
     for (var si = 0; si < SCENES.length && si < 5; si++) {
@@ -1149,7 +1222,7 @@
       if (cur) { ctx.fillStyle = REDBG; ctx.fillRect(cx0 + 6, FY + 6, cellW - 12, FH - 12); }
       ctx.textAlign = 'center';
       ctx.fillStyle = cur ? RED : SUB; ctx.font = '500 22px ' + SANS;
-      ctx.fillText(shSceneShort(scn.name), cx0 + cellW / 2, FY + 42);
+      ctx.fillText(shSceneShort(scn.name), cx0 + cellW / 2, FY + 40);
       var rkFont = nCols === 2 ? '800 32px ' : '800 26px ';
       var gap = nCols === 2 ? 28 : 14;
       var seg = [];
@@ -1165,7 +1238,7 @@
       ctx.font = rkFont + SANS;
       for (var ci = 0; ci < seg.length; ci++) totW += ctx.measureText(seg[ci]).width;
       totW += gap * (seg.length - 1);
-      var sx = cx0 + cellW / 2 - totW / 2, sy = FY + 94;
+      var sx = cx0 + cellW / 2 - totW / 2, sy = FY + 88;
       for (var ci = 0; ci < seg.length; ci++) {
         ctx.fillStyle = COLS[ci % 3]; ctx.font = rkFont + SANS; ctx.textAlign = 'left';
         ctx.fillText(seg[ci], sx, sy);
@@ -1173,30 +1246,32 @@
         sx += ctx.measureText(seg[ci]).width + gap;
       }
       ctx.textAlign = 'left';
-      if (si) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx0, FY + 12); ctx.lineTo(cx0, FY + FH - 12); ctx.stroke(); }
+      if (si) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(cx0, FY + 10); ctx.lineTo(cx0, FY + FH - 10); ctx.stroke(); }
     }
     /* 雷达 + 名次清单 双栏 */
-    var PY = FY + FH + 30, PH = 650;
+    var PY = FY + FH + 26, PH = 628;
     shFrame(M, PY, W - 2 * M, PH);
     ctx.fillStyle = INK; ctx.font = '700 27px ' + SANS;
-    ctx.fillText('八维能力 · 位次分对比', M + 28, PY + 48);
+    ctx.fillText('八维能力 · 位次分对比', M + 28, PY + 46);
     ctx.fillStyle = SUB; ctx.font = '500 21px ' + SANS; ctx.textAlign = 'right';
-    ctx.fillText('0-100 位次分 · 50＝池内中位', W - M - 28, PY + 46);
+    ctx.fillText('0-100 位次分 · 50＝池内中位', W - M - 28, PY + 44);
     ctx.textAlign = 'left';
-    var LX = M + 530, nameW = nCols === 2 ? 170 : 122;
+    var LX = M + 500, nameW = nCols === 2 ? 140 : 122;
     var colW2 = (W - M - 28 - LX - nameW) / nCols;
-    var hdrF = nCols === 2 ? '800 25px ' : '700 13px ';
-    ctx.font = hdrF + SANS;
+    var hdrF = nCols === 2 ? '800 20px ' : '800 18px ';
     for (var ci = 0; ci < nCols; ci++) {
+      var nf = nCols === 2 ? 20 : 18;
+      ctx.font = '800 ' + nf + 'px ' + SANS;
+      while (nf > 13 && ctx.measureText(trio[ci].name).width > colW2 - 8) { nf -= 0.5; ctx.font = '800 ' + nf + 'px ' + SANS; }
       ctx.fillStyle = COLS[ci % 3]; ctx.textAlign = 'right';
-      ctx.fillText(shFit(trio[ci].name, hdrF + SANS, colW2 - 10), LX + nameW + (ci + 1) * colW2 - 8, PY + 108);
+      ctx.fillText(trio[ci].name, LX + nameW + (ci + 1) * colW2 - 8, PY + 104);
     }
     ctx.textAlign = 'left';
-    var RX = M + 264, RCY = PY + 418, R = 192;
+    var RX = M + 250, RCY = PY + 400, R = 185;
     shRadarBase(RX, RCY, R, 'rgba(194,57,26,0.55)');
     for (var ci = nCols - 1; ci >= 1; ci--) shPoly(trio[ci], COLS[ci % 3], 3.5, false, RX, RCY, R);
     shPoly(trio[0], COLS[0], 5.5, true, RX, RCY, R);
-    var rowY = PY + 156, rowH = 60;
+    var rowY = PY + 156, rowH = 58;
     for (var k = 0; k < DIMS.length; k++) {
       var d = DIMS[k];
       ctx.fillStyle = INK; ctx.font = '600 24px ' + SANS;
@@ -1227,24 +1302,8 @@
       if (k < DIMS.length - 1) { ctx.strokeStyle = HAIR; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(LX, rowY + 17); ctx.lineTo(W - M - 28, rowY + 17); ctx.stroke(); }
       rowY += rowH;
     }
-    /* 元信息 + 页脚（左文字 · 右二维码） */
-    var metaY = PY + PH + 34;
-    ctx.fillStyle = SUB; ctx.font = '500 24px ' + SANS;
-    ctx.fillText('数据覆盖 ' + trio.map(function (m) { return coverage(m) + '/8'; }).join(' · ') + '　·　数据截至 ' + (String(META.built || '').slice(0, 10) || '—'), M, metaY);
-    var QS = 176, qx = W - M - QS, qy = metaY - 4;
-    shQr(qx, qy, QS);
-    ctx.fillStyle = SUB; ctx.font = '500 19px ' + SANS; ctx.textAlign = 'center';
-    ctx.fillText('扫码 · 在小红书找到我', qx + QS / 2, qy + QS + 28);
-    ctx.font = '500 18px ' + MONO;
-    ctx.fillText('小红书号 49224513797', qx + QS / 2, qy + QS + 52);
-    ctx.textAlign = 'left';
-    ctx.strokeStyle = HAIR; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(M, metaY + 34); ctx.lineTo(qx - 26, metaY + 34); ctx.stroke();
-    ctx.fillStyle = SUB; ctx.font = '400 20px ' + SANS;
-    ctx.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', M, metaY + 74);
-    ctx.font = '500 18px ' + MONO;
-    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, metaY + 112);
-    shSignature(qx - 26, metaY + 82);
+    /* 页脚作者角（头像·账号·二维码，与档案卡共用） */
+    shFooter(PY + PH + 26, W, M);
     return c;
   }
   function drawProfileCard(m) {
@@ -1348,21 +1407,8 @@
       ctx.fillStyle = INK; ctx.font = '600 24px ' + SANS;
       ctx.fillText(shFit(line, '600 24px ' + SANS, W - 2 * M), M, PY + PH + 44);
     }
-    /* 页脚：左文字 · 右二维码 */
-    var QS = 176, qx = W - M - QS, qy = PY + PH + 72;
-    shQr(qx, qy, QS);
-    ctx.fillStyle = SUB; ctx.font = '500 19px ' + SANS; ctx.textAlign = 'center';
-    ctx.fillText('扫码 · 在小红书找到我', qx + QS / 2, qy + QS + 28);
-    ctx.font = '500 18px ' + MONO;
-    ctx.fillText('小红书号 49224513797', qx + QS / 2, qy + QS + 52);
-    ctx.textAlign = 'left';
-    ctx.strokeStyle = HAIR; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(M, PY + PH + 80); ctx.lineTo(qx - 26, PY + PH + 80); ctx.stroke();
-    ctx.fillStyle = SUB; ctx.font = '400 20px ' + SANS;
-    ctx.fillText('分数为基准族内位次分（0-100，50＝池内中位）· 缺数据 ≠ 0 · 来源：公开榜单聚合', M, PY + PH + 120);
-    ctx.font = '500 18px ' + MONO;
-    ctx.fillText('MODEL RADAR · VOL.' + String(META.built || '').slice(0, 10), M, PY + PH + 158);
-    shSignature(qx - 26, PY + PH + 120);
+    /* 页脚作者角（头像·账号·二维码，与对比卡共用） */
+    shFooter(PY + PH + 72, W, M);
     return c;
   }
   function shareText() {
