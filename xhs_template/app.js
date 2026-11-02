@@ -38,7 +38,7 @@
     '日常综合': '问答、写作、分析'
   };
   var SCENE_SHORT = { '自媒体内容运营': '自媒体', 'Agent与工作流': 'Agent', '代码开发': '代码', 'RAG知识问答': 'RAG', '日常综合': '日常' };
-  var COLORS = ['#C2391A', '#1D5FBF', '#2E7D32'];
+  var COLORS = ['#E23A1E', '#1B5FE0', '#0C8438'];
   var MAX_SELECT = 3, TIE = 2, LOW_COV = 0.6;
   var DIM_SHORT = { '推理与知识': '推理', '代码': '代码', '指令遵循': '指令', 'Agent与工具调用': 'Agent',
                     '长文本': '长文', '可靠性与低幻觉': '可靠', '内容创作': '写作', '图片与制图': '图片' };
@@ -228,8 +228,7 @@
   }
   function gateFollow() {
     var mt = window.xhs && window.xhs.miniTool;
-    /* 实时探测而非缓存 apiOK——预览注入 mock 或启动时序差都不会误走预览分支 */
-    if (!mt || typeof mt.followAuthor !== 'function') { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
+    if (!gate.apiOK) { toast('浏览器预览：真实容器内此处拉起小红书关注面板'); return; }
     if (gate.busy) return;
     gate.busy = true;
     var done = function () { gate.busy = false; };
@@ -396,12 +395,12 @@
       }).join('；') + '。' + (SCENE_HINT[scene.name] ? '场景＝' + SCENE_HINT[scene.name] + '。' : '');
       box.appendChild(why);
       if (coverage(m0) < 6) box.appendChild(el('div', 'hero-warn',
-        '首选仅 ' + coverage(m0) + '/8 维有证据：缺维权重已让位，名次仅供参考'));
+        '⚠ 首选仅 ' + coverage(m0) + '/8 维有证据：缺维权重已让位，名次仅供参考'));
       if ((w['内容创作'] || 0) >= 20) box.appendChild(el('div', 'hero-warn',
-        '内容创作维以英文写作为主，中文选型建议先试稿'));
+        '⚠ 内容创作维以英文写作为主，中文选型建议先试稿'));
       if (top.length > 1 && top[0].c - top[1].c <= tieThreshold(top[0].s, top[1].s, refH))
         box.appendChild(el('div', 'hero-warn',
-          '#1 与 #2 差 ' + fmt(top[0].c - top[1].c) + ' 分，在置信带宽内（≈并列）——建议两个都试'));
+          '⚠ #1 与 #2 差 ' + fmt(top[0].c - top[1].c) + ' 分，在置信带宽内（≈并列）——建议两个都试'));
       /* 权重条 */
       var bar = el('div', 'hero-bar');
       DIMS.forEach(function (d, i) {
@@ -1420,7 +1419,7 @@
     sheetEls = { scrim: scrim, sh: sh, img: img, thumbs: thumbs, bp: bp, bc: bc, bs: bs, busy: false, images: [], picked: [], cur: 0 };
   }
   function openShare() {
-    if (!gate.unlocked) { gateFollow(); return; }
+    if (!gate.unlocked) { showFcta(true); toast('关注作者后可生成分享卡'); return; }
     if (!sheetEls) buildSheet();
     sheetEls.images = buildImageSet().map(function (it) {
       var cv = it.draw();
@@ -1585,7 +1584,7 @@
   $('scope').addEventListener('click', function (ev) {
     var b = ev.target.closest('button'); if (!b) return;
     var s = b.getAttribute('data-s');
-    if (s === 'inf' && !gate.unlocked) { gateFollow(); return; }
+    if (s === 'inf' && !gate.unlocked) { showFcta(true); toast('「含推理补全」为关注解锁功能'); return; }
     state.scope = s; POOL = {}; SIGM = {}; syncHash(); renderAll(); storeSave();
   });
   $('about-open').addEventListener('click', function () { openPage('about'); });
@@ -1608,7 +1607,7 @@
     state.hidePending = this.checked; renderCards(); storeSave();
   });
   $('more').addEventListener('click', function () {
-    if (!gate.unlocked && !state.more && !state.q.trim()) { gateFollow(); return; }
+    if (!gate.unlocked && !state.more && !state.q.trim()) { showFcta(true); toast('两步解锁：在小红书弹窗中再点一次「关注」'); return; }
     state.more = !state.more; renderCards(); renderGate();
   });
   $('fcta-go').addEventListener('click', gateFollow);
