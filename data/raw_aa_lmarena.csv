@@ -349,3 +349,31 @@ Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AutomationBench-AA,0.732977109092
 Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Index,29.516666666666666,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
 Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Index,55.0869210959395,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
 Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.43892480435522285,0-1越低越好,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,HLE,0.529193697868397,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,CritPt,0.317142857142857,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,SciCode,0.541666666666667,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.560606060606061,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-LCR,0.83,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,MMMU-Pro,0.859537572254335,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6486844882398171,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-Index,54.5087338138148,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-Omniscience Index (新基线),42.03333333333333,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,HLE,0.462465245597776,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,CritPt,0.28,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,SciCode,0.550925925925926,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.555555555555556,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-LCR,0.826666666666667,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,MMMU-Pro,0.846820809248555,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6016762327257726,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-Index,50.9765188577015,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-Omniscience Index (新基线),29.566666666666666,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+Gemini 4 Carbon,Google,Artificial-Analysis,Terminal-Bench 4.0,0.651515151515151,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AutomationBench-AA,0.7781660572624064,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AA-Index,59.425738829526,指数,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AA-Omniscience Index (新基线),53.5,指数,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Mistral-Large-4,Mistral AI,Artificial-Analysis,CritPt,0.1,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,Terminal-Bench 4.0,0.247474747474747,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,AutomationBench-AA,0.5783010541628066,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,AA-Index,26.0249946754784,指数,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,AA-Omniscience Index (新基线),5.133333333333334,指数,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
