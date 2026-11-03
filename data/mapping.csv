@@ -129,4 +129,4 @@ Artificial-Analysis,Code2Video-Elo,图片与制图,Code2Video-Elo,v0.28 补全�
 Artificial-Analysis,AA-MLCR,长文本,AA-MLCR,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
 ARC-Prize,ARC-AGI-2,推理与知识,ARC-AGI-2,ARC Prize Foundation 官方 Verified 榜（arcprize.org，v0.28 补全轮接入）
 EQ-Bench,Creative Writing v3,内容创作,EQBench-CW-v3,EQ-Bench Creative Writing v3（Sam Paech 独立盲评，Arena 式 Elo；v0.29 经 DataLearner 定位后回一手 eqbench.com 入账）
-ModelSage,Arena-Agent-综合信号,可靠性与低幻觉,Arena-Agent-Signal,LMArena/Arena.ai Agent 榜 5 行为信号加权（任务确认·好评差评·可操控性·Bash可靠·工具幻觉；57 模型 2.84 亿观测）；一手 arena.ai 本机被墙，经 modelsage.cn 转录（页面明确标注上游与链接），代理可用后回一手核验
+ArenaAI,Arena-Agent-NetImprovement,可靠性与低幻觉,Arena-Agent-Signal,arena.ai Agent 榜官方综合列 Net Improvement（v0.31 一手核验后换轨：ModelSage 合成分系其自有权重二次加工、与官方排序不一致，弃用）；每池内模型取其最高排名档位；DeepSeek-V4-Pro 榜行快照（20260813）与本池口径不符不收

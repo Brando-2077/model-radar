@@ -17,8 +17,8 @@ Claude-Fable-5.1,内容创作,76.2,AIWB·英文写作盲评 原始88.7(指数) @
 Claude-Fable-5.1,内容创作,84.4,EQ-Bench·Creative Writing v3 原始2155.3(Elo) @2026-11-04,EQBench-CW-v3,16
 Claude-Fable-5.1,内容创作,97.1,LiveBench·Language 原始89.5(0-100) @2026-06-25,LB·Language,17
 Claude-Fable-5.1,内容创作,71.9,LiveBench-2.0·Research 原始82(0-100) @2026-10-23,LB2·Research,16
+Claude-Fable-5.1,可靠性与低幻觉,78.8,ArenaAI·Arena-Agent-NetImprovement 原始13.15(0-100) @2026-11-04,Arena-Agent-Signal,26
 Claude-Fable-5.1,可靠性与低幻觉,93.1,Artificial-Analysis·AA-Omniscience Index 原始43.45(指数) @2026-09-28,AA-Omni指数,29
-Claude-Fable-5.1,可靠性与低幻觉,53.7,ModelSage·Arena-Agent-综合信号 原始0.6(指数) @2026-11-03,Arena-Agent-Signal,27
 Claude-Fable-5.1,图片与制图,75.0,Artificial-Analysis·AA-3D-Elo 原始1134.76(Elo) @2026-11-04,AA-3D-Elo,18
 Claude-Fable-5.1,图片与制图,75.0,Artificial-Analysis·Code2Video-Elo 原始1324.83(Elo) @2026-11-04,Code2Video-Elo,18
 Claude-Fable-5.1,图片与制图,71.7,Design-Arena·Website-Elo 原始1308(Elo) @2026-11-03,DesignArena-Elo,23
@@ -56,8 +56,8 @@ Claude-Opus-5.5,内容创作,92.9,AIWB·英文写作盲评 原始94.1(指数) @2
 Claude-Opus-5.5,内容创作,59.4,EQ-Bench·Creative Writing v3 原始2050.9(Elo) @2026-11-04,EQBench-CW-v3,16
 Claude-Opus-5.5,内容创作,85.3,LiveBench·Language 原始86.27(0-100) @2026-06-25,LB·Language,17
 Claude-Opus-5.5,内容创作,90.6,LiveBench-2.0·Research 原始85(0-100) @2026-10-23,LB2·Research,16
+Claude-Opus-5.5,可靠性与低幻觉,98.1,ArenaAI·Arena-Agent-NetImprovement 原始20.04(0-100) @2026-11-04,Arena-Agent-Signal,26
 Claude-Opus-5.5,可靠性与低幻觉,98.3,Artificial-Analysis·AA-Omniscience Index 原始46.4167(指数) @2026-10-07,AA-Omni指数,29
-Claude-Opus-5.5,可靠性与低幻觉,44.4,ModelSage·Arena-Agent-综合信号 原始0.5(指数) @2026-11-03,Arena-Agent-Signal,27
 Claude-Opus-5.5,图片与制图,91.7,Artificial-Analysis·AA-3D-Elo 原始1196.4(Elo) @2026-11-04,AA-3D-Elo,18
 Claude-Opus-5.5,图片与制图,97.2,Artificial-Analysis·Code2Video-Elo 原始1535.57(Elo) @2026-11-04,Code2Video-Elo,18
 Claude-Opus-5.5,图片与制图,97.4,Artificial-Analysis·MMMU-Pro 原始0.8769(0-1) @2026-10-06,MMMU-Pro,19
@@ -91,8 +91,8 @@ Claude-Sonnet-5.5,代码,78.1,LiveBench-2.0·Coding 原始94.7(0-100) @2026-10-2
 Claude-Sonnet-5.5,内容创作,76.2,AIWB·英文写作盲评 原始88.8(指数) @2026-11-04,AIWB写作盲评,21
 Claude-Sonnet-5.5,内容创作,44.1,LiveBench·Language 原始77.98(0-100) @2026-06-25,LB·Language,17
 Claude-Sonnet-5.5,内容创作,84.4,LiveBench-2.0·Research 原始83.6(0-100) @2026-10-23,LB2·Research,16
+Claude-Sonnet-5.5,可靠性与低幻觉,86.5,ArenaAI·Arena-Agent-NetImprovement 原始14.62(0-100) @2026-11-04,Arena-Agent-Signal,26
 Claude-Sonnet-5.5,可靠性与低幻觉,84.5,Artificial-Analysis·AA-Omniscience Index 原始32.3(指数) @2026-10-06,AA-Omni指数,29
-Claude-Sonnet-5.5,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 Claude-Sonnet-5.5,图片与制图,97.2,Artificial-Analysis·AA-3D-Elo 原始1198.83(Elo) @2026-11-04,AA-3D-Elo,18
 Claude-Sonnet-5.5,图片与制图,91.7,Artificial-Analysis·Code2Video-Elo 原始1443.33(Elo) @2026-11-04,Code2Video-Elo,18
 Claude-Sonnet-5.5,图片与制图,84.8,Design-Arena·Website-Elo 原始1320(Elo) @2026-11-03,DesignArena-Elo,23
@@ -164,7 +164,6 @@ DeepSeek-V4.1-Flash,内容创作,42.9,AIWB·英文写作盲评 原始77.4(指数
 DeepSeek-V4.1-Flash,内容创作,3.1,EQ-Bench·Creative Writing v3 原始1539.9(Elo) @2026-11-04,EQBench-CW-v3,16
 DeepSeek-V4.1-Flash,内容创作,61.8,LiveBench·Language 原始81.19(0-100) @2026-06-25,LB·Language,17
 DeepSeek-V4.1-Flash,可靠性与低幻觉,15.5,Artificial-Analysis·AA-Omniscience Index 原始-5.3(指数) @2026-09-28,AA-Omni指数,29
-DeepSeek-V4.1-Flash,可靠性与低幻觉,53.7,ModelSage·Arena-Agent-综合信号 原始0.6(指数) @2026-11-03,Arena-Agent-Signal,27
 DeepSeek-V4.1-Flash,可靠性与低幻觉,95.0,SuperCLUE·总排行榜-幻觉控制 原始87.16(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 DeepSeek-V4.1-Flash,图片与制图,61.1,Artificial-Analysis·Code2Video-Elo 原始1053.11(Elo) @2026-11-04,Code2Video-Elo,18
 DeepSeek-V4.1-Flash,图片与制图,18.4,Artificial-Analysis·MMMU-Pro 原始0.7699(0-1) @2026-09-28,MMMU-Pro,19
@@ -202,8 +201,8 @@ DeepSeek-V4.1-Flash-1017,代码,90.0,DeepSeek官方·NL2Repo-Bench 原始68.2(0-
 DeepSeek-V4.1-Flash-1017,代码,87.5,DeepSeek官方·ProgramBench 原始29.1(0-100) @2026-10-17,ProgramBench,4
 DeepSeek-V4.1-Flash-1017,代码,84.4,LiveBench-2.0·Coding 原始96(0-100) @2026-10-23,LB2·Coding,16
 DeepSeek-V4.1-Flash-1017,内容创作,65.6,LiveBench-2.0·Research 原始79.5(0-100) @2026-10-23,LB2·Research,16
+DeepSeek-V4.1-Flash-1017,可靠性与低幻觉,21.2,ArenaAI·Arena-Agent-NetImprovement 原始2.13(0-100) @2026-11-04,Arena-Agent-Signal,26
 DeepSeek-V4.1-Flash-1017,可靠性与低幻觉,39.7,Artificial-Analysis·AA-Omniscience Index 原始4.7(指数) @2026-10-20,AA-Omni指数,29
-DeepSeek-V4.1-Flash-1017,可靠性与低幻觉,38.9,ModelSage·Arena-Agent-综合信号 原始0.4(指数) @2026-11-03,Arena-Agent-Signal,27
 DeepSeek-V4.1-Flash-1017,图片与制图,55.3,Artificial-Analysis·MMMU-Pro 原始0.806358(0-1) @2026-10-20,MMMU-Pro,19
 DeepSeek-V4.1-Flash-1017,图片与制图,75.0,DeepSeek官方·BabyVision (w/tools) 原始92.5(0-100) @2026-10-17,BabyVision,2
 DeepSeek-V4.1-Flash-1017,图片与制图,75.0,DeepSeek官方·Chartography (w/tools) 原始83(0-100) @2026-10-17,Chartography,2
@@ -288,8 +287,8 @@ GLM-5.2,代码,28.3,Artificial-Analysis·SciCode 原始0.511574(0-1) @2026-10-21
 GLM-5.2,代码,45.0,SuperCLUE·总排行榜-智能体编程 原始64.13(百分制) @2026-07,SC·总排行榜-智能体编程,10
 GLM-5.2,内容创作,31.0,AIWB·英文写作盲评 原始75.3(指数) @2026-11-04,AIWB写作盲评,21
 GLM-5.2,内容创作,53.1,EQ-Bench·Creative Writing v3 原始1759.2(Elo) @2026-11-04,EQBench-CW-v3,16
+GLM-5.2,可靠性与低幻觉,5.8,ArenaAI·Arena-Agent-NetImprovement 原始0.75(0-100) @2026-11-04,Arena-Agent-Signal,26
 GLM-5.2,可靠性与低幻觉,36.2,Artificial-Analysis·AA-Omniscience Index 原始4.43333(指数) @2026-10-21,AA-Omni指数,29
-GLM-5.2,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GLM-5.2,可靠性与低幻觉,45.0,SuperCLUE·总排行榜-幻觉控制 原始80.6591(百分制) @2026-07,SC·总排行榜-幻觉控制,10
 GLM-5.2,图片与制图,45.7,Design-Arena·Website-Elo 原始1283(Elo) @2026-11-03,DesignArena-Elo,23
 GLM-5.2,指令遵循,31.2,Artificial-Analysis·IFBench 原始0.733333(0-1) @2026-10-21,IFBench,8
@@ -334,8 +333,8 @@ GLM-5.3,代码,75.0,Z.ai官方·SWE-Marathon v1.1 原始42.5(0-100) @2026-08-14,
 GLM-5.3,内容创作,69.0,AIWB·英文写作盲评 原始87.7(指数) @2026-11-04,AIWB写作盲评,21
 GLM-5.3,内容创作,65.6,EQ-Bench·Creative Writing v3 原始2076.4(Elo) @2026-11-04,EQBench-CW-v3,16
 GLM-5.3,内容创作,55.9,LiveBench·Language 原始79.86(0-100) @2026-06-25,LB·Language,17
+GLM-5.3,可靠性与低幻觉,17.3,ArenaAI·Arena-Agent-NetImprovement 原始1.17(0-100) @2026-11-04,Arena-Agent-Signal,26
 GLM-5.3,可靠性与低幻觉,60.3,Artificial-Analysis·AA-Omniscience Index 原始14.3(指数) @2026-09-28,AA-Omni指数,29
-GLM-5.3,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GLM-5.3,可靠性与低幻觉,35.0,SuperCLUE·总排行榜-幻觉控制 原始79.35(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 GLM-5.3,图片与制图,13.9,Artificial-Analysis·AA-3D-Elo 原始783.01(Elo) @2026-11-04,AA-3D-Elo,18
 GLM-5.3,图片与制图,47.2,Artificial-Analysis·Code2Video-Elo 原始1033.51(Elo) @2026-11-04,Code2Video-Elo,18
@@ -375,8 +374,8 @@ GLM-5.3 Flash,代码,55.0,SuperCLUE·总排行榜-智能体编程 原始67.37(�
 GLM-5.3 Flash,内容创作,54.8,AIWB·英文写作盲评 原始79.7(指数) @2026-11-04,AIWB写作盲评,21
 GLM-5.3 Flash,内容创作,32.4,LiveBench·Language 原始77.31(0-100) @2026-06-25,LB·Language,17
 GLM-5.3 Flash,内容创作,21.9,LiveBench-2.0·Research 原始70.1(0-100) @2026-10-23,LB2·Research,16
+GLM-5.3 Flash,可靠性与低幻觉,30.8,ArenaAI·Arena-Agent-NetImprovement 原始2.49(0-100) @2026-11-04,Arena-Agent-Signal,26
 GLM-5.3 Flash,可靠性与低幻觉,50.0,Artificial-Analysis·AA-Omniscience Index 原始7.47(指数) @2026-09-28,AA-Omni指数,29
-GLM-5.3 Flash,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GLM-5.3 Flash,可靠性与低幻觉,55.0,SuperCLUE·总排行榜-幻觉控制 原始81.81(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 GLM-5.3 Flash,图片与制图,25.0,Artificial-Analysis·AA-3D-Elo 原始936.615(Elo) @2026-11-04,AA-3D-Elo,18
 GLM-5.3 Flash,图片与制图,30.6,Artificial-Analysis·Code2Video-Elo 原始974.54(Elo) @2026-11-04,Code2Video-Elo,18
@@ -430,8 +429,8 @@ GPT-6-Astra,内容创作,83.3,AIWB·英文写作盲评 原始91.2(指数) @2026-
 GPT-6-Astra,内容创作,96.9,EQ-Bench·Creative Writing v3 原始2176.9(Elo) @2026-11-04,EQBench-CW-v3,16
 GPT-6-Astra,内容创作,91.2,LiveBench·Language 原始89.43(0-100) @2026-06-25,LB·Language,17
 GPT-6-Astra,内容创作,96.9,LiveBench-2.0·Research 原始85.2(0-100) @2026-10-23,LB2·Research,16
+GPT-6-Astra,可靠性与低幻觉,82.7,ArenaAI·Arena-Agent-NetImprovement 原始13.68(0-100) @2026-11-04,Arena-Agent-Signal,26
 GPT-6-Astra,可靠性与低幻觉,93.1,Artificial-Analysis·AA-Omniscience Index 原始43.4(指数) @2026-09-28,AA-Omni指数,29
-GPT-6-Astra,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GPT-6-Astra,图片与制图,86.1,Artificial-Analysis·AA-3D-Elo 原始1164.13(Elo) @2026-11-04,AA-3D-Elo,18
 GPT-6-Astra,图片与制图,86.1,Artificial-Analysis·Code2Video-Elo 原始1426.78(Elo) @2026-11-04,Code2Video-Elo,18
 GPT-6-Astra,图片与制图,92.1,Artificial-Analysis·MMMU-Pro 原始0.8688(0-1) @2026-09-28,MMMU-Pro,19
@@ -467,8 +466,8 @@ GPT-6-Luna,代码,46.9,LiveBench-2.0·Coding 原始84.5(0-100) @2026-10-23,LB2·
 GPT-6-Luna,内容创作,50.0,AIWB·英文写作盲评 原始78.1(指数) @2026-11-04,AIWB写作盲评,21
 GPT-6-Luna,内容创作,8.8,LiveBench·Language 原始73.83(0-100) @2026-06-25,LB·Language,17
 GPT-6-Luna,内容创作,3.1,LiveBench-2.0·Research 原始43.5(0-100) @2026-10-23,LB2·Research,16
+GPT-6-Luna,可靠性与低幻觉,51.9,ArenaAI·Arena-Agent-NetImprovement 原始5.87(0-100) @2026-11-04,Arena-Agent-Signal,26
 GPT-6-Luna,可靠性与低幻觉,22.4,Artificial-Analysis·AA-Omniscience Index 原始0.65(指数) @2026-09-28,AA-Omni指数,29
-GPT-6-Luna,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GPT-6-Luna,图片与制图,52.8,Artificial-Analysis·AA-3D-Elo 原始1000(Elo) @2026-11-04,AA-3D-Elo,18
 GPT-6-Luna,图片与制图,41.7,Artificial-Analysis·Code2Video-Elo 原始1029.65(Elo) @2026-11-04,Code2Video-Elo,18
 GPT-6-Luna,图片与制图,44.7,Artificial-Analysis·MMMU-Pro 原始0.7965(0-1) @2026-09-28,MMMU-Pro,19
@@ -497,8 +496,8 @@ GPT-6-Sol,代码,79.4,LiveBench·Coding 原始81.77(0-100) @2026-06-25,LB·Codin
 GPT-6-Sol,内容创作,64.3,AIWB·英文写作盲评 原始87.6(指数) @2026-11-04,AIWB写作盲评,21
 GPT-6-Sol,内容创作,78.1,EQ-Bench·Creative Writing v3 原始2126(Elo) @2026-11-04,EQBench-CW-v3,16
 GPT-6-Sol,内容创作,73.5,LiveBench·Language 原始85.3(0-100) @2026-06-25,LB·Language,17
+GPT-6-Sol,可靠性与低幻觉,59.6,ArenaAI·Arena-Agent-NetImprovement 原始6.95(0-100) @2026-11-04,Arena-Agent-Signal,26
 GPT-6-Sol,可靠性与低幻觉,74.1,Artificial-Analysis·AA-Omniscience Index 原始27.12(指数) @2026-09-28,AA-Omni指数,29
-GPT-6-Sol,可靠性与低幻觉,72.2,ModelSage·Arena-Agent-综合信号 原始0.7(指数) @2026-11-03,Arena-Agent-Signal,27
 GPT-6-Sol,图片与制图,69.4,Artificial-Analysis·AA-3D-Elo 原始1120.99(Elo) @2026-11-04,AA-3D-Elo,18
 GPT-6-Sol,图片与制图,65.8,Artificial-Analysis·MMMU-Pro 原始0.8329(0-1) @2026-09-28,MMMU-Pro,19
 GPT-6-Sol,图片与制图,71.9,LMArena·WebDev-Elo 原始1689(Elo) @2026-10-06,WebDev-Elo,16
@@ -521,7 +520,7 @@ GPT-6.1-Sol,代码,93.5,Artificial-Analysis·FrontierCode 原始0.491209(0-1) @2
 GPT-6.1-Sol,代码,79.2,Artificial-Analysis·FrontierCode-2.0 原始0.406263(0-1) @2026-11-04,FrontierCode-2.0,24
 GPT-6.1-Sol,代码,48.3,Artificial-Analysis·SciCode 原始0.541667(0-1) @2026-11-03,SciCode,30
 GPT-6.1-Sol,内容创作,97.6,AIWB·英文写作盲评 原始95.4(指数) @2026-11-04,AIWB写作盲评,21
-GPT-6.1-Sol,可靠性与低幻觉,92.6,ModelSage·Arena-Agent-综合信号 原始0.8(指数) @2026-11-03,Arena-Agent-Signal,27
+GPT-6.1-Sol,可靠性与低幻觉,75.0,ArenaAI·Arena-Agent-NetImprovement 原始12.24(0-100) @2026-11-04,Arena-Agent-Signal,26
 GPT-6.1-Sol,图片与制图,63.9,Artificial-Analysis·AA-3D-Elo 原始1119.35(Elo) @2026-11-04,AA-3D-Elo,18
 GPT-6.1-Sol,图片与制图,80.6,Artificial-Analysis·Code2Video-Elo 原始1369.3(Elo) @2026-11-04,Code2Video-Elo,18
 GPT-6.1-Sol,图片与制图,86.8,Artificial-Analysis·MMMU-Pro 原始0.859538(0-1) @2026-11-03,MMMU-Pro,19
@@ -540,7 +539,7 @@ GPT-6.1-Terra,代码,15.2,Artificial-Analysis·FrontierCode 原始0.36025(0-1) @
 GPT-6.1-Terra,代码,89.6,Artificial-Analysis·FrontierCode-2.0 原始0.423201(0-1) @2026-11-04,FrontierCode-2.0,24
 GPT-6.1-Terra,代码,55.0,Artificial-Analysis·SciCode 原始0.550926(0-1) @2026-11-03,SciCode,30
 GPT-6.1-Terra,内容创作,59.5,AIWB·英文写作盲评 原始83.1(指数) @2026-11-04,AIWB写作盲评,21
-GPT-6.1-Terra,可靠性与低幻觉,92.6,ModelSage·Arena-Agent-综合信号 原始0.8(指数) @2026-11-03,Arena-Agent-Signal,27
+GPT-6.1-Terra,可靠性与低幻觉,63.5,ArenaAI·Arena-Agent-NetImprovement 原始10.19(0-100) @2026-11-04,Arena-Agent-Signal,26
 GPT-6.1-Terra,图片与制图,76.3,Artificial-Analysis·MMMU-Pro 原始0.846821(0-1) @2026-11-03,MMMU-Pro,19
 GPT-6.1-Terra,推理与知识,80.3,Artificial-Analysis·CritPt 原始0.28(0-1) @2026-11-03,CritPt,33
 GPT-6.1-Terra,推理与知识,57.8,Artificial-Analysis·HLE 原始0.462465(0-1) @2026-11-03,HLE,32
@@ -577,8 +576,8 @@ Gemini 3.8 Flash,代码,65.0,Artificial-Analysis·SciCode 原始0.565972(0-1) @2
 Gemini 3.8 Flash,代码,34.4,LiveBench-2.0·Coding 原始82.2(0-100) @2026-10-23,LB2·Coding,16
 Gemini 3.8 Flash,内容创作,40.6,EQ-Bench·Creative Writing v3 原始1744.4(Elo) @2026-11-04,EQBench-CW-v3,16
 Gemini 3.8 Flash,内容创作,59.4,LiveBench-2.0·Research 原始79.1(0-100) @2026-10-23,LB2·Research,16
+Gemini 3.8 Flash,可靠性与低幻觉,36.5,ArenaAI·Arena-Agent-NetImprovement 原始2.56(0-100) @2026-11-04,Arena-Agent-Signal,26
 Gemini 3.8 Flash,可靠性与低幻觉,79.3,Artificial-Analysis·AA-Omniscience Index 原始29.55(指数) @2026-10-21,AA-Omni指数,29
-Gemini 3.8 Flash,可靠性与低幻觉,33.3,ModelSage·Arena-Agent-综合信号 原始0.3(指数) @2026-11-03,Arena-Agent-Signal,27
 Gemini 3.8 Flash,图片与制图,36.1,Artificial-Analysis·AA-3D-Elo 原始966.128(Elo) @2026-11-04,AA-3D-Elo,18
 Gemini 3.8 Flash,图片与制图,19.4,Artificial-Analysis·Code2Video-Elo 原始899.09(Elo) @2026-11-04,Code2Video-Elo,18
 Gemini 3.8 Flash,图片与制图,81.6,Artificial-Analysis·MMMU-Pro 原始0.856069(0-1) @2026-10-21,MMMU-Pro,19
@@ -606,8 +605,8 @@ Gemini 4 Argon,代码,91.7,Artificial-Analysis·SciCode 原始0.618056(0-1) @202
 Gemini 4 Argon,代码,65.6,LiveBench-2.0·Coding 原始89.7(0-100) @2026-10-23,LB2·Coding,16
 Gemini 4 Argon,内容创作,46.9,EQ-Bench·Creative Writing v3 原始1757.8(Elo) @2026-11-04,EQBench-CW-v3,16
 Gemini 4 Argon,内容创作,78.1,LiveBench-2.0·Research 原始83.1(0-100) @2026-10-23,LB2·Research,16
+Gemini 4 Argon,可靠性与低幻觉,71.2,ArenaAI·Arena-Agent-NetImprovement 原始10.61(0-100) @2026-11-04,Arena-Agent-Signal,26
 Gemini 4 Argon,可靠性与低幻觉,87.9,Artificial-Analysis·AA-Omniscience Index 原始42.35(指数) @2026-10-21,AA-Omni指数,29
-Gemini 4 Argon,可靠性与低幻觉,33.3,ModelSage·Arena-Agent-综合信号 原始0.3(指数) @2026-11-03,Arena-Agent-Signal,27
 Gemini 4 Argon,图片与制图,80.6,Artificial-Analysis·AA-3D-Elo 原始1152.64(Elo) @2026-11-04,AA-3D-Elo,18
 Gemini 4 Argon,图片与制图,69.4,Artificial-Analysis·Code2Video-Elo 原始1259.4(Elo) @2026-11-04,Code2Video-Elo,18
 Gemini 4 Argon,图片与制图,80.4,Design-Arena·Website-Elo 原始1315(Elo) @2026-11-03,DesignArena-Elo,23
@@ -626,7 +625,7 @@ Gemini 4 Carbon,Agent与工具调用,82.3,Artificial-Analysis·GDPval-AA 原始1
 Gemini 4 Carbon,Agent与工具调用,98.1,Artificial-Analysis·TB-Science 原始0.647619(0-1) @2026-11-04,TB-Science,27
 Gemini 4 Carbon,Agent与工具调用,95.3,Artificial-Analysis·Terminal-Bench 4.0 原始0.651515(0-1) @2026-11-03,TB4.0,32
 Gemini 4 Carbon,代码,79.2,Artificial-Analysis·FrontierCode-2.0 原始0.405606(0-1) @2026-11-04,FrontierCode-2.0,24
-Gemini 4 Carbon,可靠性与低幻觉,44.4,ModelSage·Arena-Agent-综合信号 原始0.5(指数) @2026-11-03,Arena-Agent-Signal,27
+Gemini 4 Carbon,可靠性与低幻觉,94.2,ArenaAI·Arena-Agent-NetImprovement 原始16.56(0-100) @2026-11-04,Arena-Agent-Signal,26
 Gemini 4 Carbon,长文本,22.7,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-11-03,AA-LCR,33
 Hunyuan-Hy3,Agent与工具调用,7.8,Artificial-Analysis·AutomationBench-AA 原始0.1841(0-1) @2026-10-07,AutomationBench,32
 Hunyuan-Hy3,Agent与工具调用,14.5,Artificial-Analysis·GDPval-AA 原始1070.64(指数) @2026-11-04,GDPval-AA,31
@@ -664,7 +663,7 @@ Hy4 preview,代码,82.9,腾讯官方·SWE-Bench Multilingual 原始82.9(0-100) @
 Hy4 preview,代码,75.0,腾讯官方·SWE-Bench Pro 原始65.7(0-100) @2026-08-28,SWE-bench Pro,2
 Hy4 preview,代码,25.0,腾讯官方·SWE-Marathon 原始31.9(0-100) @2026-08-28,SWE-Marathon,2
 Hy4 preview,内容创作,21.4,AIWB·英文写作盲评 原始68.8(指数) @2026-11-04,AIWB写作盲评,21
-Hy4 preview,可靠性与低幻觉,24.1,ModelSage·Arena-Agent-综合信号 原始0.1(指数) @2026-11-03,Arena-Agent-Signal,27
+Hy4 preview,可靠性与低幻觉,11.5,ArenaAI·Arena-Agent-NetImprovement 原始0.94(0-100) @2026-11-04,Arena-Agent-Signal,26
 Hy4 preview,图片与制图,33.8,"推理补全·M2 池内k近邻(Pearson剖面相似度,k=5) 原始33.8(推理值) @2026-10-18",,
 Hy4 preview,指令遵循,9.4,AI产品狙击手·Q1强约束指令遵循 原始5(10分制) @2026-09-14,TGG·Q1指令遵循,16
 Hy4 preview,推理与知识,37.9,腾讯官方·CritPt 原始16.9(0-100) @2026-08-28,CritPt,33
@@ -741,8 +740,8 @@ Kimi-K3,内容创作,88.1,AIWB·英文写作盲评 原始91.3(指数) @2026-11-0
 Kimi-K3,内容创作,71.9,EQ-Bench·Creative Writing v3 原始2083.3(Elo) @2026-11-04,EQBench-CW-v3,16
 Kimi-K3,内容创作,79.4,LiveBench·Language 原始85.53(0-100) @2026-06-25,LB·Language,17
 Kimi-K3,内容创作,53.1,LiveBench-2.0·Research 原始79(0-100) @2026-10-23,LB2·Research,16
+Kimi-K3,可靠性与低幻觉,11.5,ArenaAI·Arena-Agent-NetImprovement 原始0.86(0-100) @2026-11-04,Arena-Agent-Signal,26
 Kimi-K3,可靠性与低幻觉,70.7,Artificial-Analysis·AA-Omniscience Index 原始19.7(指数) @2026-09-28,AA-Omni指数,29
-Kimi-K3,可靠性与低幻觉,92.6,ModelSage·Arena-Agent-综合信号 原始0.8(指数) @2026-11-03,Arena-Agent-Signal,27
 Kimi-K3,可靠性与低幻觉,75.0,SuperCLUE·总排行榜-幻觉控制 原始83.85(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 Kimi-K3,图片与制图,41.7,Artificial-Analysis·AA-3D-Elo 原始981.775(Elo) @2026-11-04,AA-3D-Elo,18
 Kimi-K3,图片与制图,52.8,Artificial-Analysis·Code2Video-Elo 原始1041.34(Elo) @2026-11-04,Code2Video-Elo,18
@@ -780,8 +779,8 @@ Kimi-K3.1-Pro,代码,81.7,Artificial-Analysis·SciCode 原始0.607639(0-1) @2026
 Kimi-K3.1-Pro,代码,28.1,LiveBench-2.0·Coding 原始81.8(0-100) @2026-10-23,LB2·Coding,16
 Kimi-K3.1-Pro,内容创作,90.6,EQ-Bench·Creative Writing v3 原始2172.6(Elo) @2026-11-04,EQBench-CW-v3,16
 Kimi-K3.1-Pro,内容创作,46.9,LiveBench-2.0·Research 原始77.9(0-100) @2026-10-23,LB2·Research,16
+Kimi-K3.1-Pro,可靠性与低幻觉,48.1,ArenaAI·Arena-Agent-NetImprovement 原始4.7(0-100) @2026-11-04,Arena-Agent-Signal,26
 Kimi-K3.1-Pro,可靠性与低幻觉,79.3,Artificial-Analysis·AA-Omniscience Index 原始29.5167(指数) @2026-10-25,AA-Omni指数,29
-Kimi-K3.1-Pro,可靠性与低幻觉,92.6,ModelSage·Arena-Agent-综合信号 原始0.8(指数) @2026-11-03,Arena-Agent-Signal,27
 Kimi-K3.1-Pro,图片与制图,58.3,Artificial-Analysis·AA-3D-Elo 原始1110.16(Elo) @2026-11-04,AA-3D-Elo,18
 Kimi-K3.1-Pro,图片与制图,71.1,Artificial-Analysis·MMMU-Pro 原始0.838728(0-1) @2026-10-25,MMMU-Pro,19
 Kimi-K3.1-Pro,图片与制图,93.5,Design-Arena·Website-Elo 原始1326(Elo) @2026-11-03,DesignArena-Elo,23
@@ -804,8 +803,8 @@ MiMo-V2.6-Pro,代码,52.1,Artificial-Analysis·FrontierCode-2.0 原始0.239701(0
 MiMo-V2.6-Pro,代码,85.0,Artificial-Analysis·SciCode 原始0.608796(0-1) @2026-10-21,SciCode,30
 MiMo-V2.6-Pro,代码,21.9,LiveBench-2.0·Coding 原始81.5(0-100) @2026-10-23,LB2·Coding,16
 MiMo-V2.6-Pro,内容创作,40.6,LiveBench-2.0·Research 原始76.7(0-100) @2026-10-23,LB2·Research,16
+MiMo-V2.6-Pro,可靠性与低幻觉,25.0,ArenaAI·Arena-Agent-NetImprovement 原始2.44(0-100) @2026-11-04,Arena-Agent-Signal,26
 MiMo-V2.6-Pro,可靠性与低幻觉,53.4,Artificial-Analysis·AA-Omniscience Index 原始8.38333(指数) @2026-10-21,AA-Omni指数,29
-MiMo-V2.6-Pro,可靠性与低幻觉,16.7,ModelSage·Arena-Agent-综合信号 原始-0.2(指数) @2026-11-03,Arena-Agent-Signal,27
 MiMo-V2.6-Pro,图片与制图,47.2,Artificial-Analysis·AA-3D-Elo 原始983.14(Elo) @2026-11-04,AA-3D-Elo,18
 MiMo-V2.6-Pro,图片与制图,61.1,Artificial-Analysis·Code2Video-Elo 原始1051.51(Elo) @2026-11-04,Code2Video-Elo,18
 MiMo-V2.6-Pro,图片与制图,67.4,Design-Arena·Website-Elo 原始1307(Elo) @2026-11-03,DesignArena-Elo,23
@@ -834,8 +833,8 @@ MiniMax-M3,代码,2.9,LiveBench·Coding 原始68.2(0-100) @2026-06-25,LB·Coding
 MiniMax-M3,代码,15.0,SuperCLUE·总排行榜-智能体编程 原始46.32(百分制) @2026-07(补测),SC·总排行榜-智能体编程,10
 MiniMax-M3,内容创作,42.9,AIWB·英文写作盲评 原始77.4(指数) @2026-11-04,AIWB写作盲评,21
 MiniMax-M3,内容创作,26.5,LiveBench·Language 原始76.84(0-100) @2026-06-25,LB·Language,17
+MiniMax-M3,可靠性与低幻觉,67.3,ArenaAI·Arena-Agent-NetImprovement 原始10.42(0-100) @2026-11-04,Arena-Agent-Signal,26
 MiniMax-M3,可靠性与低幻觉,32.8,Artificial-Analysis·AA-Omniscience Index 原始1.35(指数) @2026-09-28,AA-Omni指数,29
-MiniMax-M3,可靠性与低幻觉,5.6,ModelSage·Arena-Agent-综合信号 原始-1.7(指数) @2026-11-03,Arena-Agent-Signal,27
 MiniMax-M3,可靠性与低幻觉,5.0,SuperCLUE·总排行榜-幻觉控制 原始70.44(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 MiniMax-M3,图片与制图,8.3,Artificial-Analysis·AA-3D-Elo 原始740.236(Elo) @2026-11-04,AA-3D-Elo,18
 MiniMax-M3,图片与制图,8.3,Artificial-Analysis·Code2Video-Elo 原始724.33(Elo) @2026-11-04,Code2Video-Elo,18
@@ -869,8 +868,8 @@ MiniMax-M3.1-Flash,代码,35.4,Artificial-Analysis·FrontierCode-2.0 原始0.208
 MiniMax-M3.1-Flash,代码,45.0,Artificial-Analysis·SciCode 原始0.533565(0-1) @2026-10-21,SciCode,30
 MiniMax-M3.1-Flash,代码,40.6,LiveBench-2.0·Coding 原始83.9(0-100) @2026-10-23,LB2·Coding,16
 MiniMax-M3.1-Flash,内容创作,28.1,LiveBench-2.0·Research 原始72.7(0-100) @2026-10-23,LB2·Research,16
+MiniMax-M3.1-Flash,可靠性与低幻觉,40.4,ArenaAI·Arena-Agent-NetImprovement 原始3.22(0-100) @2026-11-04,Arena-Agent-Signal,26
 MiniMax-M3.1-Flash,可靠性与低幻觉,63.8,Artificial-Analysis·AA-Omniscience Index 原始15.55(指数) @2026-10-21,AA-Omni指数,29
-MiniMax-M3.1-Flash,可靠性与低幻觉,27.8,ModelSage·Arena-Agent-综合信号 原始0.2(指数) @2026-11-03,Arena-Agent-Signal,27
 MiniMax-M3.1-Flash,图片与制图,34.2,Artificial-Analysis·MMMU-Pro 原始0.791329(0-1) @2026-10-21,MMMU-Pro,19
 MiniMax-M3.1-Flash,图片与制图,15.6,LiveBench-2.0·Design 原始74(0-100) @2026-10-23,LB2·Design,16
 MiniMax-M3.1-Flash,指令遵循,25.0,AI产品狙击手·Q1强约束指令遵循 原始8(10分制) @2026-10-20,TGG·Q1指令遵循,16
@@ -885,7 +884,7 @@ Mistral-Large-4,Agent与工具调用,24.1,Artificial-Analysis·TB-Science 原始
 Mistral-Large-4,Agent与工具调用,42.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.247475(0-1) @2026-11-03,TB4.0,32
 Mistral-Large-4,代码,18.8,Artificial-Analysis·FrontierCode-2.0 原始0.149581(0-1) @2026-11-04,FrontierCode-2.0,24
 Mistral-Large-4,内容创作,16.7,AIWB·英文写作盲评 原始59.1(指数) @2026-11-04,AIWB写作盲评,21
-Mistral-Large-4,可靠性与低幻觉,1.9,ModelSage·Arena-Agent-综合信号 原始-19.3(指数) @2026-11-03,Arena-Agent-Signal,27
+Mistral-Large-4,可靠性与低幻觉,55.8,ArenaAI·Arena-Agent-NetImprovement 原始6.41(0-100) @2026-11-04,Arena-Agent-Signal,26
 Mistral-Large-4,图片与制图,21.7,Design-Arena·Website-Elo 原始1256(Elo) @2026-11-03,DesignArena-Elo,23
 Mistral-Large-4,推理与知识,27.3,Artificial-Analysis·CritPt 原始0.1(0-1) @2026-11-03,CritPt,33
 Nemotron-3-Ultra,Agent与工具调用,1.6,Artificial-Analysis·AutomationBench-AA 原始0.0299(0-1) @2026-09-28,AutomationBench,32
@@ -902,8 +901,8 @@ Nemotron-3-Ultra,代码,1.7,Artificial-Analysis·SciCode 原始0.4028(0-1) @2026
 Nemotron-3-Ultra,代码,8.8,LiveBench·Coding 原始70.7(0-100) @2026-06-25,LB·Coding,17
 Nemotron-3-Ultra,内容创作,2.4,AIWB·英文写作盲评 原始42.2(指数) @2026-11-04,AIWB写作盲评,21
 Nemotron-3-Ultra,内容创作,2.9,LiveBench·Language 原始70.81(0-100) @2026-06-25,LB·Language,17
+Nemotron-3-Ultra,可靠性与低幻觉,90.4,ArenaAI·Arena-Agent-NetImprovement 原始15.6(0-100) @2026-11-04,Arena-Agent-Signal,26
 Nemotron-3-Ultra,可靠性与低幻觉,19.0,Artificial-Analysis·AA-Omniscience Index 原始-0.4(指数) @2026-09-28,AA-Omni指数,29
-Nemotron-3-Ultra,可靠性与低幻觉,13.0,ModelSage·Arena-Agent-综合信号 原始-0.6(指数) @2026-11-03,Arena-Agent-Signal,27
 Nemotron-3-Ultra,图片与制图,2.8,Artificial-Analysis·AA-3D-Elo 原始572.548(Elo) @2026-11-04,AA-3D-Elo,18
 Nemotron-3-Ultra,图片与制图,2.8,Artificial-Analysis·Code2Video-Elo 原始303.58(Elo) @2026-11-04,Code2Video-Elo,18
 Nemotron-3-Ultra,图片与制图,2.2,Design-Arena·Website-Elo 原始1144(Elo) @2026-11-03,DesignArena-Elo,23
@@ -935,8 +934,8 @@ Qwen3.8-27B,内容创作,7.1,AIWB·英文写作盲评 原始56.5(指数) @2026-1
 Qwen3.8-27B,内容创作,28.1,EQ-Bench·Creative Writing v3 原始1670.5(Elo) @2026-11-04,EQBench-CW-v3,16
 Qwen3.8-27B,内容创作,14.7,LiveBench·Language 原始74.35(0-100) @2026-06-25,LB·Language,17
 Qwen3.8-27B,内容创作,9.4,LiveBench-2.0·Research 原始59.4(0-100) @2026-10-23,LB2·Research,16
+Qwen3.8-27B,可靠性与低幻觉,44.2,ArenaAI·Arena-Agent-NetImprovement 原始4.3(0-100) @2026-11-04,Arena-Agent-Signal,26
 Qwen3.8-27B,可靠性与低幻觉,12.1,Artificial-Analysis·AA-Omniscience Index 原始-9.9833(指数) @2026-10-07,AA-Omni指数,29
-Qwen3.8-27B,可靠性与低幻觉,20.4,ModelSage·Arena-Agent-综合信号 原始-0.1(指数) @2026-11-03,Arena-Agent-Signal,27
 Qwen3.8-27B,图片与制图,25.0,Artificial-Analysis·Code2Video-Elo 原始949.04(Elo) @2026-11-04,Code2Video-Elo,18
 Qwen3.8-27B,图片与制图,7.9,Artificial-Analysis·MMMU-Pro 原始0.763(0-1) @2026-10-06,MMMU-Pro,19
 Qwen3.8-27B,图片与制图,21.4,LMArena·Vision-Elo 原始1243(Elo) @2026-10-06,Vision-Elo,7
@@ -976,8 +975,8 @@ Qwen3.8-Max,代码,65.0,SuperCLUE·总排行榜-智能体编程 原始70.53(百�
 Qwen3.8-Max,内容创作,26.2,AIWB·英文写作盲评 原始71.3(指数) @2026-11-04,AIWB写作盲评,21
 Qwen3.8-Max,内容创作,50.0,LiveBench·Language 原始79.69(0-100) @2026-06-25,LB·Language,17
 Qwen3.8-Max,内容创作,15.6,LiveBench-2.0·Research 原始69.9(0-100) @2026-10-23,LB2·Research,16
+Qwen3.8-Max,可靠性与低幻觉,1.9,ArenaAI·Arena-Agent-NetImprovement 原始0.4(0-100) @2026-11-04,Arena-Agent-Signal,26
 Qwen3.8-Max,可靠性与低幻觉,56.9,Artificial-Analysis·AA-Omniscience Index 原始11.98(指数) @2026-09-28,AA-Omni指数,29
-Qwen3.8-Max,可靠性与低幻觉,9.3,ModelSage·Arena-Agent-综合信号 原始-0.8(指数) @2026-11-03,Arena-Agent-Signal,27
 Qwen3.8-Max,可靠性与低幻觉,85.0,SuperCLUE·总排行榜-幻觉控制 原始86.19(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
 Qwen3.8-Max,图片与制图,30.6,Artificial-Analysis·AA-3D-Elo 原始944.768(Elo) @2026-11-04,AA-3D-Elo,18
 Qwen3.8-Max,图片与制图,36.1,Artificial-Analysis·Code2Video-Elo 原始1020.76(Elo) @2026-11-04,Code2Video-Elo,18
@@ -1014,8 +1013,8 @@ Step-5-Preview,代码,10.4,Artificial-Analysis·FrontierCode-2.0 原始0.12001(0
 Step-5-Preview,代码,71.7,Artificial-Analysis·SciCode 原始0.58912(0-1) @2026-10-17,SciCode,30
 Step-5-Preview,代码,53.1,LiveBench-2.0·Coding 原始85.6(0-100) @2026-10-23,LB2·Coding,16
 Step-5-Preview,内容创作,34.4,LiveBench-2.0·Research 原始72.8(0-100) @2026-10-23,LB2·Research,16
+Step-5-Preview,可靠性与低幻觉,30.8,ArenaAI·Arena-Agent-NetImprovement 原始2.53(0-100) @2026-11-04,Arena-Agent-Signal,26
 Step-5-Preview,可靠性与低幻觉,67.2,Artificial-Analysis·AA-Omniscience Index 原始16.3833(指数) @2026-10-17,AA-Omni指数,29
-Step-5-Preview,可靠性与低幻觉,53.7,ModelSage·Arena-Agent-综合信号 原始0.6(指数) @2026-11-03,Arena-Agent-Signal,27
 Step-5-Preview,图片与制图,19.4,Artificial-Analysis·AA-3D-Elo 原始853.515(Elo) @2026-11-04,AA-3D-Elo,18
 Step-5-Preview,图片与制图,13.9,Artificial-Analysis·Code2Video-Elo 原始820.57(Elo) @2026-11-04,Code2Video-Elo,18
 Step-5-Preview,图片与制图,13.2,Artificial-Analysis·MMMU-Pro 原始0.763584(0-1) @2026-10-17,MMMU-Pro,19
