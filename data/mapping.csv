@@ -103,7 +103,7 @@ DeepSeek官方,ZeroBench-main (w/tools),图片与制图,ZeroBench,视觉推理�
 酥悠沫,TextArena,内容创作,TextArena,酥悠沫转录 text-arena.com 人评 Elo；本池 4 个模型有该基准，Elo 做池内 min-max 60~100
 酥悠沫-官方,IFEval,指令遵循,IFEval,酥悠沫转录厂商自报表（news.qq.com/dots3-note 发布对比表）
 酥悠沫-官方,IFBench,指令遵循,IFBench,同上
-酥悠沫-官方,GDPval-AA v2,,,"GDPval-AA v2 = agentic 真实工作任务基准，不是写作/内容创作（外部评审与 v0.16 复核双确认）；v0.27.1 起有意不映射，仅留档 raw。全池仅 Step-5 一条转录行、族内 n=1 从未计分，修正不影响任何分数"
+酥悠沫-官方,GDPval-AA v2,,,GDPval-AA v2 = agentic 真实工作任务基准，不是写作/内容创作（外部评审与 v0.16 复核双确认）；v0.27.1 起有意不映射，仅留档 raw。全池仅 Step-5 一条转录行、族内 n=1 从未计分，修正不影响任何分数
 酥悠沫-官方,AA-LCR,长文本,AA-LCR,酥悠沫转录腾讯混元 3 发布页对比表（AA-LCR 口径同 AA）
 SuperCLUE,Writing总榜-总分,内容创作,SC·Writing总榜-总分,SuperCLUE 官网 2026年5月 Writing xlsx（中文原生创意写作：内容质量/风格/创意/主流题材/约束创作）；与 AIWB 英文写作盲评分族
 LiveBench-2.0,Long Agentic,Agent与工具调用,LB2·Long Agentic,LiveBench 2.0 官方表 data/20261023/table.csv（release 2026-10-23；长时程多轮工程任务；2026-10-25 全池迁自 20261014，Long Agentic/Browser 两套件被官方重测）
@@ -115,3 +115,18 @@ LiveBench-2.0,Research,内容创作,LB2·Research,同上（开放式研究简报
 LiveBench-2.0,Design,图片与制图,LB2·Design,同上（演示稿/PDF/文档的版式与设计产出，视觉+结构检查）
 AI产品狙击手,Q1强约束指令遵循,指令遵循,TGG·Q1指令遵循,techgogogo.com「AI产品狙击手」v2.x 评测榜 Q1（中文强约束指令遵循，10 句各 1 分，单题主观判分；每模型取最近一次测评；接入渠道/思考档各异，仅作参考）
 Kimi官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,厂商官方技术博客自报（与 AA 同族同票，第三方优先）
+Artificial-Analysis,AA-Omniscience Index (新基线),,,AA 2026-10-31 全局改基线后的新量纲（0-100），与旧基线 AA-Omni指数 族不可混；全池统一刷新前仅留档不入分
+Artificial-Analysis,FrontierCode,代码,FrontierCode,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,FrontierCode-2.0,代码,FrontierCode-2.0,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,TB-Science,Agent与工具调用,TB-Science,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,tau2-Banking,Agent与工具调用,tau2-banking,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,ITBench-SRE,Agent与工具调用,itbench-sre,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,EnterpriseOpsGym,Agent与工具调用,enterprise-ops-gym,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,GDPval-AA,Agent与工具调用,GDPval-AA,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,HealthBench,推理与知识,HealthBench,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,AA-3D-Elo,图片与制图,AA-3D-Elo,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,Code2Video-Elo,图片与制图,Code2Video-Elo,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,AA-MLCR,长文本,AA-MLCR,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+ARC-Prize,ARC-AGI-2,推理与知识,ARC-AGI-2,ARC Prize Foundation 官方 Verified 榜（arcprize.org，v0.28 补全轮接入）
+EQ-Bench,Creative Writing v3,内容创作,EQBench-CW-v3,EQ-Bench Creative Writing v3（Sam Paech 独立盲评，Arena 式 Elo；v0.29 经 DataLearner 定位后回一手 eqbench.com 入账）
+ModelSage,Arena-Agent-综合信号,可靠性与低幻觉,Arena-Agent-Signal,LMArena/Arena.ai Agent 榜 5 行为信号加权（任务确认·好评差评·可操控性·Bash可靠·工具幻觉；57 模型 2.84 亿观测）；一手 arena.ai 本机被墙，经 modelsage.cn 转录（页面明确标注上游与链接），代理可用后回一手核验

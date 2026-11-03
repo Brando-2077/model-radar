@@ -15,7 +15,7 @@ GPT-6-Astra,,否,,
 GPT-6-Luna,,否,,
 GPT-6-Sol,,否,,
 Hunyuan-Hy3,,是,,
-Hy4 preview,,是,,
+Hy4 preview,,是,,；纯文本模型（官方模态=文本→文本），图片与制图维为结构性缺失
 Kimi-K2.6,,是,,
 Kimi-K2.7-Code,,是,,
 Kimi-K3,,是,,
@@ -32,3 +32,7 @@ Gemini 4 Argon,Google,否,2026-09-30,Google 最新旗舰（AA 记 2026-09-30；A
 Gemini 3.8 Flash,Google,否,2026-09-02,Google 主力（2026-09-02）；1M 上下文；纯文本输出；AA 有 GPQA / HLE / CritPt / SciCode / TB4.0 / TB2.1 / LCR / MMMU-Pro / Automation / Omni；TB4.0 19.7 与 TB2.1 87.6 差距大（同族只取 TB4.0）；LiveBench 2.0 七套件；Design Arena 1299 Elo；Q1 10/10
 Gemini 3.5 Flash-Lite,Google,否,2026-07-21,Google 轻量（2026-07-21）；1M 上下文；纯文本输出；AA 有 GPQA / HLE / CritPt / SciCode / TB4.0 / TB2.1 / LCR / MMMU-Pro / Automation / Omni；TB4.0 1.0 与 TB2.1 53.6 差距大（同族只取 TB4.0）；无 LiveBench 2.0 / Design Arena / Q1，指令遵循与内容创作待定
 Kimi-K3.1-Pro,,否,2026-10-23,K3 的后训练加强版（2.8T MoE、激活 104B、1M 上下文）；2026-10-23 API 上线（K3.1 系列首款，另有 Highspeed 快速版未单列），官方宣布 2026-11-04 前发布完整权重、届时复核开源状态；AA slug kimi-k3-1-pro；LiveBench 2.0 七套件（全池已统一 20261023 release）；TGG 10-24 测评为定性描述、无分题评分，未入账；指令遵循暂无公开证据（AA ifbench=null）
+GPT-6.1-Sol,OpenAI,否,2026-09-29,GPT-6.1 代旗舰（Max 档），取代 GPT-6 Sol；AA 页 ifbench/gpqa 为空，指令遵循/可靠性暂无公开证据
+GPT-6.1-Terra,OpenAI,否,2026-10-26,GPT-6.1 代中端旗舰（Max 档），取代 GPT-5.6 Terra；AA 评测陆续补充中
+Gemini 4 Carbon,Google,否,2026-10-28,Gemini 4 代新旗舰（High 档），AA Index v5.0 59 分列第一；发布仅数日，AA 仅上线部分评测，覆盖暂 2/8
+Mistral-Large-4,Mistral AI,是,2026-10-29,Mistral 旗舰，1050B-A52B MoE 开源权重（Mistral Ecosystem License），1M 上下文

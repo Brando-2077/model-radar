@@ -2,6 +2,24 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.31.0] - 2026-11-04
+
+### Added
+
+- **四轮数据大更新（v0.28–v0.31）**：账本 33 → **37 个模型**（新入 GPT-6.1-Sol / GPT-6.1-Terra / Gemini 4 Carbon / Mistral-Large-4）；证据 722 → **1028 条**；基准族 55 → **69 个**；计分覆盖 247 → **274 格**（296 格中待定 22）。
+- **新数据源**：ARC Prize 官方榜（arcprize.org，ARC-AGI-2 × 16 模型）、EQ-Bench Creative Writing v3（eqbench.com 全表 147 行、16 池内模型）、Arena AI Agent 行为信号综合（经 ModelSage 转录，5 信号加权 · 57 模型 · 2.84 亿次观测）、AIWB 英文写作盲评刷新。DataLearner / ModelSage 收录为**定位与交叉核对源**（不直接入分）。
+- **AA 基准新开 11 族**：FrontierCode（×2 版本）→代码、TB-Science / tau2-Banking / ITBench-SRE / EnterpriseOpsGym / GDPval-AA →Agent、HealthBench →推理、AA-3D-Elo / Code2Video-Elo →图片、AA-MLCR（医疗长上下文）→长文本。
+
+### Changed
+
+- **排名大洗牌（真实池效应）**：自媒体场景 Top3 变为 GPT-6.1-Sol / GPT-6-Astra / Claude-Fable-5.1；各场景前五随新大族全面重排。
+- AA「Omniscience 指数」全局改基线（含负值量纲），旧口径族冻结留档、不混算；「幻觉率」经方法学评估不单独开族。
+- 提取工具 `extract_aa.py` 重写为 O(N) 括号配对（修复大页面 O(N×M) 扫描卡死）。
+
+### Closed
+
+- 数据完整度补全：缺口 34 → **22 格**（闭环 12：Dots-3 推理、Carbon/Mistral 代码、Sol/Terra/Mistral/Flash-Lite 内容、Sol/Terra/Carbon/Mistral/Hy4 可靠性）；Hy4 图片维确认为结构性缺失（纯文本模型）。
+
 ## [Unreleased]
 
 - 持续补充公开证据、修正数据错误、改进可读性。暂无破坏性变更计划。
