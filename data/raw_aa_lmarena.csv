@@ -617,3 +617,19 @@ Gemini 3.8 Flash,Google,ARC-Prize,ARC-AGI-2,98.5,0-100,2026-11-04,https://arcpri
 Gemini 4 Argon,Google,ARC-Prize,ARC-AGI-2,98.5,0-100,2026-11-04,https://arcprize.org/leaderboard
 Kimi-K3,月之暗面,ARC-Prize,ARC-AGI-2,94.5,0-100,2026-11-04,https://arcprize.org/leaderboard
 Qwen3.8-27B,,ARC-Prize,ARC-AGI-2,87.5,0-100,2026-11-04,https://arcprize.org/leaderboard
+Claude-Fable-5.1,Anthropic,EQ-Bench,Creative Writing v3,2155.3,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Claude-Opus-5.5,Anthropic,EQ-Bench,Creative Writing v3,2050.9,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+DeepSeek-V4-Pro,DeepSeek,EQ-Bench,Creative Writing v3,1552.6,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+DeepSeek-V4.1-Flash,DeepSeek,EQ-Bench,Creative Writing v3,1539.9,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+GLM-5.1,智谱,EQ-Bench,Creative Writing v3,1593.9,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+GLM-5.2,智谱,EQ-Bench,Creative Writing v3,1759.2,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+GLM-5.3,智谱,EQ-Bench,Creative Writing v3,2076.4,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+GPT-6-Astra,OpenAI,EQ-Bench,Creative Writing v3,2176.9,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+GPT-6-Sol,OpenAI,EQ-Bench,Creative Writing v3,2126.0,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Gemini 3.5 Flash-Lite,Google,EQ-Bench,Creative Writing v3,1559.3,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Gemini 3.8 Flash,Google,EQ-Bench,Creative Writing v3,1744.4,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Gemini 4 Argon,Google,EQ-Bench,Creative Writing v3,1757.8,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Kimi-K2.6,月之暗面,EQ-Bench,Creative Writing v3,1721.0,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Kimi-K3,月之暗面,EQ-Bench,Creative Writing v3,2083.3,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Kimi-K3.1-Pro,月之暗面,EQ-Bench,Creative Writing v3,2172.6,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Qwen3.8-27B,,EQ-Bench,Creative Writing v3,1670.5,Elo,2026-11-04,https://eqbench.com/creative_writing.html

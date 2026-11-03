@@ -15,7 +15,7 @@ GPT-6-Astra,,否,,
 GPT-6-Luna,,否,,
 GPT-6-Sol,,否,,
 Hunyuan-Hy3,,是,,
-Hy4 preview,,是,,
+Hy4 preview,,是,,；纯文本模型（官方模态=文本→文本），图片与制图维为结构性缺失
 Kimi-K2.6,,是,,
 Kimi-K2.7-Code,,是,,
 Kimi-K3,,是,,

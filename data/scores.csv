@@ -14,6 +14,7 @@ Claude-Fable-5.1,代码,95.0,Artificial-Analysis·SciCode 原始0.6308(0-1) @202
 Claude-Fable-5.1,代码,85.3,LiveBench·Coding 原始86.38(0-100) @2026-06-25,LB·Coding,17
 Claude-Fable-5.1,代码,96.9,LiveBench-2.0·Coding 原始97.7(0-100) @2026-10-23,LB2·Coding,16
 Claude-Fable-5.1,内容创作,76.2,AIWB·英文写作盲评 原始88.7(指数) @2026-11-04,AIWB写作盲评,21
+Claude-Fable-5.1,内容创作,84.4,EQ-Bench·Creative Writing v3 原始2155.3(Elo) @2026-11-04,EQBench-CW-v3,16
 Claude-Fable-5.1,内容创作,97.1,LiveBench·Language 原始89.5(0-100) @2026-06-25,LB·Language,17
 Claude-Fable-5.1,内容创作,71.9,LiveBench-2.0·Research 原始82(0-100) @2026-10-23,LB2·Research,16
 Claude-Fable-5.1,可靠性与低幻觉,93.1,Artificial-Analysis·AA-Omniscience Index 原始43.45(指数) @2026-09-28,AA-Omni指数,29
@@ -51,6 +52,7 @@ Claude-Opus-5.5,代码,98.3,Artificial-Analysis·SciCode 原始0.669(0-1) @2026-
 Claude-Opus-5.5,代码,91.2,LiveBench·Coding 原始89.25(0-100) @2026-06-25,LB·Coding,17
 Claude-Opus-5.5,代码,90.6,LiveBench-2.0·Coding 原始96.3(0-100) @2026-10-23,LB2·Coding,16
 Claude-Opus-5.5,内容创作,92.9,AIWB·英文写作盲评 原始94.1(指数) @2026-11-04,AIWB写作盲评,21
+Claude-Opus-5.5,内容创作,59.4,EQ-Bench·Creative Writing v3 原始2050.9(Elo) @2026-11-04,EQBench-CW-v3,16
 Claude-Opus-5.5,内容创作,85.3,LiveBench·Language 原始86.27(0-100) @2026-06-25,LB·Language,17
 Claude-Opus-5.5,内容创作,90.6,LiveBench-2.0·Research 原始85(0-100) @2026-10-23,LB2·Research,16
 Claude-Opus-5.5,可靠性与低幻觉,98.3,Artificial-Analysis·AA-Omniscience Index 原始46.4167(指数) @2026-10-07,AA-Omni指数,29
@@ -121,6 +123,7 @@ DeepSeek-V4-Pro,代码,25.0,Artificial-Analysis·SciCode 原始0.5104(0-1) @2026
 DeepSeek-V4-Pro,代码,32.4,LiveBench·Coding 原始77.16(0-100) @2026-06-25,LB·Coding,17
 DeepSeek-V4-Pro,代码,30.0,SuperCLUE·SWE-Agent总榜-通过率 原始62(百分制) @2026-09,SC·SWE-Agent总榜-通过率,5
 DeepSeek-V4-Pro,内容创作,11.9,AIWB·英文写作盲评 原始57.9(指数) @2026-11-04,AIWB写作盲评,21
+DeepSeek-V4-Pro,内容创作,9.4,EQ-Bench·Creative Writing v3 原始1552.6(Elo) @2026-11-04,EQBench-CW-v3,16
 DeepSeek-V4-Pro,内容创作,67.6,LiveBench·Language 原始82.07(0-100) @2026-06-25,LB·Language,17
 DeepSeek-V4-Pro,内容创作,30.0,SuperCLUE·Writing总榜-总分 原始80.89(百分制) @2026-05-18,SC·Writing总榜-总分,5
 DeepSeek-V4-Pro,可靠性与低幻觉,25.9,Artificial-Analysis·AA-Omniscience Index 原始0.83(指数) @2026-09-28,AA-Omni指数,29
@@ -155,6 +158,7 @@ DeepSeek-V4.1-Flash,代码,61.8,LiveBench·Coding 原始80.04(0-100) @2026-06-25
 DeepSeek-V4.1-Flash,代码,90.0,SuperCLUE·SWE-Agent总榜-通过率 原始72(百分制) @2026-09,SC·SWE-Agent总榜-通过率,5
 DeepSeek-V4.1-Flash,代码,75.0,SuperCLUE·总排行榜-智能体编程 原始71.58(百分制) @2026-07(补测),SC·总排行榜-智能体编程,10
 DeepSeek-V4.1-Flash,内容创作,42.9,AIWB·英文写作盲评 原始77.4(指数) @2026-11-04,AIWB写作盲评,21
+DeepSeek-V4.1-Flash,内容创作,3.1,EQ-Bench·Creative Writing v3 原始1539.9(Elo) @2026-11-04,EQBench-CW-v3,16
 DeepSeek-V4.1-Flash,内容创作,61.8,LiveBench·Language 原始81.19(0-100) @2026-06-25,LB·Language,17
 DeepSeek-V4.1-Flash,可靠性与低幻觉,15.5,Artificial-Analysis·AA-Omniscience Index 原始-5.3(指数) @2026-09-28,AA-Omni指数,29
 DeepSeek-V4.1-Flash,可靠性与低幻觉,95.0,SuperCLUE·总排行榜-幻觉控制 原始87.16(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
@@ -256,6 +260,7 @@ GLM-5.1,Agent与工具调用,21.9,Artificial-Analysis·Terminal-Bench 4.0 原始
 GLM-5.1,Agent与工具调用,2.9,Artificial-Analysis·tau2-Banking 原始0.136082(0-1) @2026-11-04,tau2-banking,17
 GLM-5.1,Agent与工具调用,64.3,Artificial-Analysis·τ²-bench 原始0.976608(0-1) @2026-10-21,tau2-bench,7
 GLM-5.1,代码,8.3,Artificial-Analysis·SciCode 原始0.447917(0-1) @2026-10-21,SciCode,30
+GLM-5.1,内容创作,21.9,EQ-Bench·Creative Writing v3 原始1593.9(Elo) @2026-11-04,EQBench-CW-v3,16
 GLM-5.1,内容创作,50.0,SuperCLUE·Writing总榜-总分 原始85.71(百分制) @2026-05-18,SC·Writing总榜-总分,5
 GLM-5.1,可靠性与低幻觉,29.3,Artificial-Analysis·AA-Omniscience Index 原始0.85(指数) @2026-10-21,AA-Omni指数,29
 GLM-5.1,图片与制图,52.2,Design-Arena·Website-Elo 原始1290(Elo) @2026-11-03,DesignArena-Elo,23
@@ -277,6 +282,7 @@ GLM-5.2,Agent与工具调用,5.0,SuperCLUE·总排行榜-智能体任务规划 �
 GLM-5.2,代码,28.3,Artificial-Analysis·SciCode 原始0.511574(0-1) @2026-10-21,SciCode,30
 GLM-5.2,代码,45.0,SuperCLUE·总排行榜-智能体编程 原始64.13(百分制) @2026-07,SC·总排行榜-智能体编程,10
 GLM-5.2,内容创作,31.0,AIWB·英文写作盲评 原始75.3(指数) @2026-11-04,AIWB写作盲评,21
+GLM-5.2,内容创作,53.1,EQ-Bench·Creative Writing v3 原始1759.2(Elo) @2026-11-04,EQBench-CW-v3,16
 GLM-5.2,可靠性与低幻觉,36.2,Artificial-Analysis·AA-Omniscience Index 原始4.43333(指数) @2026-10-21,AA-Omni指数,29
 GLM-5.2,可靠性与低幻觉,45.0,SuperCLUE·总排行榜-幻觉控制 原始80.6591(百分制) @2026-07,SC·总排行榜-幻觉控制,10
 GLM-5.2,图片与制图,45.7,Design-Arena·Website-Elo 原始1283(Elo) @2026-11-03,DesignArena-Elo,23
@@ -320,6 +326,7 @@ GLM-5.3,代码,75.0,Z.ai官方·PostTrainBench 原始39.8(0-100) @2026-08-14,Pos
 GLM-5.3,代码,37.5,Z.ai官方·ProgramBench 原始19(0-100) @2026-08-14,ProgramBench,4
 GLM-5.3,代码,75.0,Z.ai官方·SWE-Marathon v1.1 原始42.5(0-100) @2026-08-14,SWE-Marathon,2
 GLM-5.3,内容创作,69.0,AIWB·英文写作盲评 原始87.7(指数) @2026-11-04,AIWB写作盲评,21
+GLM-5.3,内容创作,65.6,EQ-Bench·Creative Writing v3 原始2076.4(Elo) @2026-11-04,EQBench-CW-v3,16
 GLM-5.3,内容创作,55.9,LiveBench·Language 原始79.86(0-100) @2026-06-25,LB·Language,17
 GLM-5.3,可靠性与低幻觉,60.3,Artificial-Analysis·AA-Omniscience Index 原始14.3(指数) @2026-09-28,AA-Omni指数,29
 GLM-5.3,可靠性与低幻觉,35.0,SuperCLUE·总排行榜-幻觉控制 原始79.35(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,10
@@ -412,6 +419,7 @@ GPT-6-Astra,代码,61.7,Artificial-Analysis·SciCode 原始0.5648(0-1) @2026-09-
 GPT-6-Astra,代码,67.6,LiveBench·Coding 原始80.36(0-100) @2026-06-25,LB·Coding,17
 GPT-6-Astra,代码,71.9,LiveBench-2.0·Coding 原始93.7(0-100) @2026-10-23,LB2·Coding,16
 GPT-6-Astra,内容创作,83.3,AIWB·英文写作盲评 原始91.2(指数) @2026-11-04,AIWB写作盲评,21
+GPT-6-Astra,内容创作,96.9,EQ-Bench·Creative Writing v3 原始2176.9(Elo) @2026-11-04,EQBench-CW-v3,16
 GPT-6-Astra,内容创作,91.2,LiveBench·Language 原始89.43(0-100) @2026-06-25,LB·Language,17
 GPT-6-Astra,内容创作,96.9,LiveBench-2.0·Research 原始85.2(0-100) @2026-10-23,LB2·Research,16
 GPT-6-Astra,可靠性与低幻觉,93.1,Artificial-Analysis·AA-Omniscience Index 原始43.4(指数) @2026-09-28,AA-Omni指数,29
@@ -477,6 +485,7 @@ GPT-6-Sol,Agent与工具调用,32.4,LiveBench·Agentic Coding 原始52.88(0-100)
 GPT-6-Sol,代码,68.3,Artificial-Analysis·SciCode 原始0.5764(0-1) @2026-09-28,SciCode,30
 GPT-6-Sol,代码,79.4,LiveBench·Coding 原始81.77(0-100) @2026-06-25,LB·Coding,17
 GPT-6-Sol,内容创作,64.3,AIWB·英文写作盲评 原始87.6(指数) @2026-11-04,AIWB写作盲评,21
+GPT-6-Sol,内容创作,78.1,EQ-Bench·Creative Writing v3 原始2126(Elo) @2026-11-04,EQBench-CW-v3,16
 GPT-6-Sol,内容创作,73.5,LiveBench·Language 原始85.3(0-100) @2026-06-25,LB·Language,17
 GPT-6-Sol,可靠性与低幻觉,74.1,Artificial-Analysis·AA-Omniscience Index 原始27.12(指数) @2026-09-28,AA-Omni指数,29
 GPT-6-Sol,图片与制图,69.4,Artificial-Analysis·AA-3D-Elo 原始1120.99(Elo) @2026-11-04,AA-3D-Elo,18
@@ -532,6 +541,7 @@ Gemini 3.5 Flash-Lite,Agent与工具调用,14.1,Artificial-Analysis·Terminal-Be
 Gemini 3.5 Flash-Lite,Agent与工具调用,20.6,Artificial-Analysis·tau2-Banking 原始0.175258(0-1) @2026-11-04,tau2-banking,17
 Gemini 3.5 Flash-Lite,代码,6.2,Artificial-Analysis·FrontierCode-2.0 原始0.0602982(0-1) @2026-11-04,FrontierCode-2.0,24
 Gemini 3.5 Flash-Lite,代码,5.0,Artificial-Analysis·SciCode 原始0.413194(0-1) @2026-10-21,SciCode,30
+Gemini 3.5 Flash-Lite,内容创作,15.6,EQ-Bench·Creative Writing v3 原始1559.3(Elo) @2026-11-04,EQBench-CW-v3,16
 Gemini 3.5 Flash-Lite,可靠性与低幻觉,43.1,Artificial-Analysis·AA-Omniscience Index 原始5.23333(指数) @2026-10-21,AA-Omni指数,29
 Gemini 3.5 Flash-Lite,图片与制图,28.9,Artificial-Analysis·MMMU-Pro 原始0.790173(0-1) @2026-10-21,MMMU-Pro,19
 Gemini 3.5 Flash-Lite,推理与知识,2.9,ARC-Prize·ARC-AGI-2 原始53.5(0-100) @2026-11-04,ARC-AGI-2,17
@@ -552,6 +562,7 @@ Gemini 3.8 Flash,代码,19.6,Artificial-Analysis·FrontierCode 原始0.363585(0-
 Gemini 3.8 Flash,代码,31.2,Artificial-Analysis·FrontierCode-2.0 原始0.187428(0-1) @2026-11-04,FrontierCode-2.0,24
 Gemini 3.8 Flash,代码,65.0,Artificial-Analysis·SciCode 原始0.565972(0-1) @2026-10-21,SciCode,30
 Gemini 3.8 Flash,代码,34.4,LiveBench-2.0·Coding 原始82.2(0-100) @2026-10-23,LB2·Coding,16
+Gemini 3.8 Flash,内容创作,40.6,EQ-Bench·Creative Writing v3 原始1744.4(Elo) @2026-11-04,EQBench-CW-v3,16
 Gemini 3.8 Flash,内容创作,59.4,LiveBench-2.0·Research 原始79.1(0-100) @2026-10-23,LB2·Research,16
 Gemini 3.8 Flash,可靠性与低幻觉,79.3,Artificial-Analysis·AA-Omniscience Index 原始29.55(指数) @2026-10-21,AA-Omni指数,29
 Gemini 3.8 Flash,图片与制图,36.1,Artificial-Analysis·AA-3D-Elo 原始966.128(Elo) @2026-11-04,AA-3D-Elo,18
@@ -579,6 +590,7 @@ Gemini 4 Argon,代码,54.3,Artificial-Analysis·FrontierCode 原始0.434532(0-1)
 Gemini 4 Argon,代码,64.6,Artificial-Analysis·FrontierCode-2.0 原始0.257076(0-1) @2026-11-04,FrontierCode-2.0,24
 Gemini 4 Argon,代码,91.7,Artificial-Analysis·SciCode 原始0.618056(0-1) @2026-10-21,SciCode,30
 Gemini 4 Argon,代码,65.6,LiveBench-2.0·Coding 原始89.7(0-100) @2026-10-23,LB2·Coding,16
+Gemini 4 Argon,内容创作,46.9,EQ-Bench·Creative Writing v3 原始1757.8(Elo) @2026-11-04,EQBench-CW-v3,16
 Gemini 4 Argon,内容创作,78.1,LiveBench-2.0·Research 原始83.1(0-100) @2026-10-23,LB2·Research,16
 Gemini 4 Argon,可靠性与低幻觉,87.9,Artificial-Analysis·AA-Omniscience Index 原始42.35(指数) @2026-10-21,AA-Omni指数,29
 Gemini 4 Argon,图片与制图,80.6,Artificial-Analysis·AA-3D-Elo 原始1152.64(Elo) @2026-11-04,AA-3D-Elo,18
@@ -653,6 +665,7 @@ Kimi-K2.6,Agent与工具调用,50.0,Artificial-Analysis·τ²-bench 原始0.9591
 Kimi-K2.6,Agent与工具调用,20.6,LiveBench·Agentic Coding 原始46.92(0-100) @2026-06-25,LB·Agentic Coding,17
 Kimi-K2.6,代码,31.7,Artificial-Analysis·SciCode 原始0.515046(0-1) @2026-10-17,SciCode,30
 Kimi-K2.6,代码,38.2,LiveBench·Coding 原始78.57(0-100) @2026-06-25,LB·Coding,17
+Kimi-K2.6,内容创作,34.4,EQ-Bench·Creative Writing v3 原始1721(Elo) @2026-11-04,EQBench-CW-v3,16
 Kimi-K2.6,内容创作,20.6,LiveBench·Language 原始75.14(0-100) @2026-06-25,LB·Language,17
 Kimi-K2.6,内容创作,70.0,SuperCLUE·Writing总榜-总分 原始86.65(百分制) @2026-05-18,SC·Writing总榜-总分,5
 Kimi-K2.6,可靠性与低幻觉,46.6,Artificial-Analysis·AA-Omniscience Index 原始5.3(指数) @2026-10-17,AA-Omni指数,29
@@ -709,6 +722,7 @@ Kimi-K3,代码,3.1,LiveBench-2.0·Coding 原始59.3(0-100) @2026-10-23,LB2·Codi
 Kimi-K3,代码,70.0,SuperCLUE·SWE-Agent总榜-通过率 原始68(百分制) @2026-09,SC·SWE-Agent总榜-通过率,5
 Kimi-K3,代码,85.0,SuperCLUE·总排行榜-智能体编程 原始75.79(百分制) @2026-07(补测),SC·总排行榜-智能体编程,10
 Kimi-K3,内容创作,88.1,AIWB·英文写作盲评 原始91.3(指数) @2026-11-04,AIWB写作盲评,21
+Kimi-K3,内容创作,71.9,EQ-Bench·Creative Writing v3 原始2083.3(Elo) @2026-11-04,EQBench-CW-v3,16
 Kimi-K3,内容创作,79.4,LiveBench·Language 原始85.53(0-100) @2026-06-25,LB·Language,17
 Kimi-K3,内容创作,53.1,LiveBench-2.0·Research 原始79(0-100) @2026-10-23,LB2·Research,16
 Kimi-K3,可靠性与低幻觉,70.7,Artificial-Analysis·AA-Omniscience Index 原始19.7(指数) @2026-09-28,AA-Omni指数,29
@@ -747,6 +761,7 @@ Kimi-K3.1-Pro,代码,84.8,Artificial-Analysis·FrontierCode 原始0.470664(0-1) 
 Kimi-K3.1-Pro,代码,60.4,Artificial-Analysis·FrontierCode-2.0 原始0.254519(0-1) @2026-11-04,FrontierCode-2.0,24
 Kimi-K3.1-Pro,代码,81.7,Artificial-Analysis·SciCode 原始0.607639(0-1) @2026-10-25,SciCode,30
 Kimi-K3.1-Pro,代码,28.1,LiveBench-2.0·Coding 原始81.8(0-100) @2026-10-23,LB2·Coding,16
+Kimi-K3.1-Pro,内容创作,90.6,EQ-Bench·Creative Writing v3 原始2172.6(Elo) @2026-11-04,EQBench-CW-v3,16
 Kimi-K3.1-Pro,内容创作,46.9,LiveBench-2.0·Research 原始77.9(0-100) @2026-10-23,LB2·Research,16
 Kimi-K3.1-Pro,可靠性与低幻觉,79.3,Artificial-Analysis·AA-Omniscience Index 原始29.5167(指数) @2026-10-25,AA-Omni指数,29
 Kimi-K3.1-Pro,图片与制图,58.3,Artificial-Analysis·AA-3D-Elo 原始1110.16(Elo) @2026-11-04,AA-3D-Elo,18
@@ -894,6 +909,7 @@ Qwen3.8-27B,代码,11.7,Artificial-Analysis·SciCode 原始0.4664(0-1) @2026-10-
 Qwen3.8-27B,代码,26.5,LiveBench·Coding 原始75.69(0-100) @2026-06-25,LB·Coding,17
 Qwen3.8-27B,代码,59.4,LiveBench-2.0·Coding 原始86.8(0-100) @2026-10-23,LB2·Coding,16
 Qwen3.8-27B,内容创作,7.1,AIWB·英文写作盲评 原始56.5(指数) @2026-10-25,AIWB写作盲评,21
+Qwen3.8-27B,内容创作,28.1,EQ-Bench·Creative Writing v3 原始1670.5(Elo) @2026-11-04,EQBench-CW-v3,16
 Qwen3.8-27B,内容创作,14.7,LiveBench·Language 原始74.35(0-100) @2026-06-25,LB·Language,17
 Qwen3.8-27B,内容创作,9.4,LiveBench-2.0·Research 原始59.4(0-100) @2026-10-23,LB2·Research,16
 Qwen3.8-27B,可靠性与低幻觉,12.1,Artificial-Analysis·AA-Omniscience Index 原始-9.9833(指数) @2026-10-07,AA-Omni指数,29
