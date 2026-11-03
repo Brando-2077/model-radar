@@ -116,3 +116,15 @@ LiveBench-2.0,Design,图片与制图,LB2·Design,同上（演示稿/PDF/文档�
 AI产品狙击手,Q1强约束指令遵循,指令遵循,TGG·Q1指令遵循,techgogogo.com「AI产品狙击手」v2.x 评测榜 Q1（中文强约束指令遵循，10 句各 1 分，单题主观判分；每模型取最近一次测评；接入渠道/思考档各异，仅作参考）
 Kimi官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,厂商官方技术博客自报（与 AA 同族同票，第三方优先）
 Artificial-Analysis,AA-Omniscience Index (新基线),,,AA 2026-10-31 全局改基线后的新量纲（0-100），与旧基线 AA-Omni指数 族不可混；全池统一刷新前仅留档不入分
+Artificial-Analysis,FrontierCode,代码,FrontierCode,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,FrontierCode-2.0,代码,FrontierCode-2.0,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,TB-Science,Agent与工具调用,TB-Science,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,tau2-Banking,Agent与工具调用,tau2-banking,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,ITBench-SRE,Agent与工具调用,itbench-sre,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,EnterpriseOpsGym,Agent与工具调用,enterprise-ops-gym,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,GDPval-AA,Agent与工具调用,GDPval-AA,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,HealthBench,推理与知识,HealthBench,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,AA-3D-Elo,图片与制图,AA-3D-Elo,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,Code2Video-Elo,图片与制图,Code2Video-Elo,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+Artificial-Analysis,AA-MLCR,长文本,AA-MLCR,v0.28 补全轮新增（AA 页字段池内 n≥12 开族）
+ARC-Prize,ARC-AGI-2,推理与知识,ARC-AGI-2,ARC Prize Foundation 官方 Verified 榜（arcprize.org，v0.28 补全轮接入）

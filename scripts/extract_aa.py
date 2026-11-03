@@ -25,83 +25,84 @@ META_KEYS = ["slug", "name", "releaseDate", "isOpenWeights", "contextWindowToken
              "intelligenceIndex"]
 
 
+def bracket_pairs(blob):
+    """O(N) 单遍扫描：记录每个 '{' 与 '[' 的闭合位置（返回 (对象对, 数组对)）。
+    2026-11-04 重写：旧实现按匹配起点逐字符向前找闭合，AA 页面变大后
+    尾部块不闭合就是 O(N×M) 天文数字（33 页提取曾跑 10 分钟不出）。
+    字符串内的括号不计（in_str/esc 语义与旧实现一致）。"""
+    obj, arr = {}, {}
+    ostack, astack = [], []
+    in_str = esc = False
+    for i, c in enumerate(blob):
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        else:
+            if c == '"':
+                in_str = True
+            elif c == "{":
+                ostack.append(i)
+            elif c == "}":
+                if ostack:
+                    obj[ostack.pop()] = i
+            elif c == "[":
+                astack.append(i)
+            elif c == "]":
+                if astack:
+                    arr[astack.pop()] = i
+    return obj, arr
+
+
 def load_payload(path):
     html = open(path, encoding="utf-8").read()
+    _, arr_pairs = bracket_pairs(html)
     texts = []
-    for m in re.finditer(r'self\.__next_f\.push\(\[', html):
-        start = m.end() - 1
-        depth, i, in_str, esc = 0, start, False, False
-        while i < len(html):
-            c = html[i]
-            if in_str:
-                if esc:
-                    esc = False
-                elif c == "\\":
-                    esc = True
-                elif c == '"':
-                    in_str = False
-            else:
-                if c == '"':
-                    in_str = True
-                elif c == "[":
-                    depth += 1
-                elif c == "]":
-                    depth -= 1
-                    if depth == 0:
-                        try:
-                            arr = json.loads(html[start:i + 1])
-                        except Exception:
-                            arr = None
-                        if arr:
-                            for el in arr[1:]:
-                                if isinstance(el, str):
-                                    texts.append(el)
-                        break
-            i += 1
+    for m in re.finditer(r'self\.__next_f\.push\(', html):
+        ob = html.find("[", m.end() - 1)
+        close = arr_pairs.get(ob)
+        if close is None:
+            continue
+        try:
+            arr = json.loads(html[ob:close + 1])
+        except Exception:
+            continue
+        for el in arr[1:]:
+            if isinstance(el, str):
+                texts.append(el)
     return "\n".join(texts)
 
 
 def find_all_records(blob):
     """找出 payload 里全部「含 gpqa + 价格字段」的模型记录，按 slug 归并。
     AA 单模型页会内嵌一串对比模型的完整记录，谁排在 payload 最前就看谁——
-    所以必须按页面本尊的 slug 归属，不能取第一条（2026-10-31 修复的归属隐患）。"""
+    所以必须按页面本尊的 slug 归属，不能取第一条（2026-10-31 修复的归属隐患）。
+    2026-11-04 改 O(N) 括号配对查表：每个 gpqa 命中 → bisect 找所属 '{' → 直接查闭合位置。"""
     import bisect
-    braces = [mm.start() for mm in re.finditer(r"\{", blob)]
+    obj_pairs, _ = bracket_pairs(blob)
+    braces = sorted(obj_pairs)
     recs = {}
     for m in re.finditer(r'"gpqa"', blob):
         i = m.start()
         k = bisect.bisect_left(braces, i)
         for idx in range(k - 1, -1, -1):
             start = braces[idx]
-            depth, j, in_str, esc = 0, start, False, False
-            while j < len(blob):
-                c = blob[j]
-                if in_str:
-                    if esc:
-                        esc = False
-                    elif c == "\\":
-                        esc = True
-                    elif c == '"':
-                        in_str = False
-                else:
-                    if c == '"':
-                        in_str = True
-                    elif c == "{":
-                        depth += 1
-                    elif c == "}":
-                        depth -= 1
-                        if depth == 0:
-                            chunk = blob[start:j + 1]
-                            if '"price1mInputTokens"' in chunk:
-                                try:
-                                    rec = json.loads(chunk)
-                                    sl = rec.get("slug")
-                                    if sl and sl not in recs:
-                                        recs[sl] = rec
-                                except Exception:
-                                    pass  # 该起点不是合法 JSON，继续向更早的起点找
-                            break
-                j += 1
+            close = obj_pairs.get(start)
+            if close is None:
+                continue
+            chunk = blob[start:close + 1]
+            if '"price1mInputTokens"' in chunk:
+                try:
+                    rec = json.loads(chunk)
+                    sl = rec.get("slug")
+                    if sl and sl not in recs:
+                        recs[sl] = rec
+                    break  # 该 gpqa 的所属对象已处理，无需再向更早起点找
+                except Exception:
+                    pass  # 该起点不是合法 JSON，继续向更早的起点找
         if len(recs) >= 60:  # 安全阀：页内对比集不会无限大
             break
     return recs
