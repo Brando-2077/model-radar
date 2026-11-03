@@ -633,3 +633,30 @@ Kimi-K2.6,月之暗面,EQ-Bench,Creative Writing v3,1721.0,Elo,2026-11-04,https:
 Kimi-K3,月之暗面,EQ-Bench,Creative Writing v3,2083.3,Elo,2026-11-04,https://eqbench.com/creative_writing.html
 Kimi-K3.1-Pro,月之暗面,EQ-Bench,Creative Writing v3,2172.6,Elo,2026-11-04,https://eqbench.com/creative_writing.html
 Qwen3.8-27B,,EQ-Bench,Creative Writing v3,1670.5,Elo,2026-11-04,https://eqbench.com/creative_writing.html
+Claude-Fable-5.1,Anthropic,ModelSage,Arena-Agent-综合信号,+0.6,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Claude-Opus-5.5,Anthropic,ModelSage,Arena-Agent-综合信号,+0.5,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Claude-Sonnet-5.5,Anthropic,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+DeepSeek-V4.1-Flash,DeepSeek,ModelSage,Arena-Agent-综合信号,+0.6,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+DeepSeek-V4.1-Flash-1017,DeepSeek,ModelSage,Arena-Agent-综合信号,+0.4,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GLM-5.2,智谱,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GLM-5.3,智谱,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GLM-5.3 Flash,智谱,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GPT-6-Astra,OpenAI,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GPT-6-Luna,OpenAI,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GPT-6-Sol,OpenAI,ModelSage,Arena-Agent-综合信号,+0.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GPT-6.1-Sol,OpenAI,ModelSage,Arena-Agent-综合信号,+0.8,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+GPT-6.1-Terra,OpenAI,ModelSage,Arena-Agent-综合信号,+0.8,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Gemini 3.8 Flash,Google,ModelSage,Arena-Agent-综合信号,+0.3,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Gemini 4 Argon,Google,ModelSage,Arena-Agent-综合信号,+0.3,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Gemini 4 Carbon,Google,ModelSage,Arena-Agent-综合信号,+0.5,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Hy4 preview,腾讯,ModelSage,Arena-Agent-综合信号,+0.1,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Kimi-K3,月之暗面,ModelSage,Arena-Agent-综合信号,+0.8,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Kimi-K3.1-Pro,月之暗面,ModelSage,Arena-Agent-综合信号,+0.8,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+MiMo-V2.6-Pro,小米集团,ModelSage,Arena-Agent-综合信号,-0.2,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+MiniMax-M3,MiniMax,ModelSage,Arena-Agent-综合信号,-1.7,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+MiniMax-M3.1-Flash,MiniMax,ModelSage,Arena-Agent-综合信号,+0.2,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Mistral-Large-4,Mistral AI,ModelSage,Arena-Agent-综合信号,-19.3,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Nemotron-3-Ultra,NVIDIA,ModelSage,Arena-Agent-综合信号,-0.6,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Qwen3.8-27B,,ModelSage,Arena-Agent-综合信号,-0.1,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Qwen3.8-Max,阿里,ModelSage,Arena-Agent-综合信号,-0.8,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
+Step-5-Preview,阶跃星辰,ModelSage,Arena-Agent-综合信号,+0.6,指数,2026-11-03,https://modelsage.cn/leaderboards/arena/agent/tool_hallucination
