@@ -20,6 +20,17 @@
 
 - 数据完整度补全：缺口 34 → **22 格**（闭环 12：Dots-3 推理、Carbon/Mistral 代码、Sol/Terra/Mistral/Flash-Lite 内容、Sol/Terra/Carbon/Mistral/Hy4 可靠性）；Hy4 图片维确认为结构性缺失（纯文本模型）。
 
+## [0.32.0] - 2026-11-07
+
+### Added
+
+- **腾讯 Hy4 正式版入库**（`Hunyuan-Hy4`，2026-11-03 发布）：Hy4 preview（08-28 开源 Apache）的正式化版本，转闭源 API，按「新版本单列」先例与 preview 并列成行。
+- 证据 5 行全一手：AA Terminal-Bench 4.0 / AutomationBench → Agent 维；**Arena AI Agent 榜官方 NetImpr 5.39%（#13，上榜即抓）** → 可靠性维。Arena 同场对照：正式版 #13 (5.39%) vs preview #26 (0.75%)。
+
+### Changed
+
+- 账本 37 → **38 个模型**；证据 1027 → **1030 条**；覆盖 274 → **275 格**。Hunyuan-Hy4 自媒体场景 #14（2/8 覆盖低置信起步，AA 与中文榜分项待补）。
+
 ## [Unreleased]
 
 - 持续补充公开证据、修正数据错误、改进可读性。暂无破坏性变更计划。
