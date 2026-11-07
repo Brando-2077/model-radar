@@ -138,3 +138,6 @@ ArenaAI,Arena-Agent-NetImprovement,可靠性与低幻觉,Arena-Agent-Signal,aren
 腾讯官方,TB-Science,Agent与工具调用,TB-Science,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
 腾讯官方,MMMU-Pro,图片与制图,MMMU-Pro,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
 腾讯官方,ZeroBench-main (w/tools),图片与制图,ZeroBench,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+ArenaAI,Instruction Following,指令遵循,Arena-IF,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
+ArenaAI,Creative Writing,内容创作,Arena-Creative,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
+ArenaAI,Vision,图片与制图,Vision-Elo,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）

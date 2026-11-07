@@ -664,3 +664,54 @@ Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1
 Hunyuan-Hy4,腾讯,Artificial-Analysis,AA-Index,34.5552385392508,指数,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
 Hunyuan-Hy4,腾讯,Artificial-Analysis,AA-Omniscience Index (新基线),5.4,指数,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
 Hunyuan-Hy4,腾讯,ArenaAI,Arena-Agent-NetImprovement,5.39,0-100,2026-11-07,https://arena.ai/leaderboard/agent
+Claude-Fable-5.1,Anthropic,ArenaAI,Instruction Following,1502.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Claude-Opus-5.5,Anthropic,ArenaAI,Instruction Following,1518.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Claude-Sonnet-5.5,Anthropic,ArenaAI,Instruction Following,1481.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+DeepSeek-V4-Pro,DeepSeek,ArenaAI,Instruction Following,1462.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GLM-5.1,智谱,ArenaAI,Instruction Following,1462.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GLM-5.2,智谱,ArenaAI,Instruction Following,1469.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GLM-5.3,智谱,ArenaAI,Instruction Following,1480.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GLM-5.3 Flash,智谱,ArenaAI,Instruction Following,1474.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GPT-6-Astra,OpenAI,ArenaAI,Instruction Following,1473.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GPT-6-Sol,OpenAI,ArenaAI,Instruction Following,1449.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+GPT-6.1-Sol,OpenAI,ArenaAI,Instruction Following,1485.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Gemini 3.8 Flash,Google,ArenaAI,Instruction Following,1493.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Gemini 4 Argon,Google,ArenaAI,Instruction Following,1528.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Gemini 4 Carbon,Google,ArenaAI,Instruction Following,1524.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Kimi-K2.6,月之暗面,ArenaAI,Instruction Following,1456.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Kimi-K3,月之暗面,ArenaAI,Instruction Following,1489.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+MiMo-V2.6-Pro,小米集团,ArenaAI,Instruction Following,1471.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Qwen3.8-Max,阿里,ArenaAI,Instruction Following,1475.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Step-5-Preview,阶跃星辰,ArenaAI,Instruction Following,1449.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/instruction-following
+Claude-Fable-5.1,Anthropic,ArenaAI,Creative Writing,1490.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Claude-Opus-5.5,Anthropic,ArenaAI,Creative Writing,1518.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Claude-Sonnet-5.5,Anthropic,ArenaAI,Creative Writing,1463.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+DeepSeek-V4-Pro,DeepSeek,ArenaAI,Creative Writing,1446.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GLM-5.1,智谱,ArenaAI,Creative Writing,1446.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GLM-5.2,智谱,ArenaAI,Creative Writing,1451.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GLM-5.3,智谱,ArenaAI,Creative Writing,1457.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GLM-5.3 Flash,智谱,ArenaAI,Creative Writing,1437.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GPT-6-Astra,OpenAI,ArenaAI,Creative Writing,1449.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GPT-6-Sol,OpenAI,ArenaAI,Creative Writing,1429.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+GPT-6.1-Sol,OpenAI,ArenaAI,Creative Writing,1450.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Gemini 3.5 Flash-Lite,Google,ArenaAI,Creative Writing,1437.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Gemini 3.8 Flash,Google,ArenaAI,Creative Writing,1489.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Gemini 4 Argon,Google,ArenaAI,Creative Writing,1525.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Gemini 4 Carbon,Google,ArenaAI,Creative Writing,1514.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Kimi-K2.6,月之暗面,ArenaAI,Creative Writing,1431.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Kimi-K3,月之暗面,ArenaAI,Creative Writing,1461.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+MiMo-V2.6-Pro,小米集团,ArenaAI,Creative Writing,1446.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Qwen3.8-Max,阿里,ArenaAI,Creative Writing,1470.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/text/creative-writing
+Claude-Fable-5.1,Anthropic,ArenaAI,Vision,1288.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Claude-Opus-5.5,Anthropic,ArenaAI,Vision,1296.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Claude-Sonnet-5.5,Anthropic,ArenaAI,Vision,1261.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+GLM-5.3 Flash,智谱,ArenaAI,Vision,1272.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+GPT-6-Astra,OpenAI,ArenaAI,Vision,1285.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+GPT-6-Sol,OpenAI,ArenaAI,Vision,1260.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+GPT-6.1-Sol,OpenAI,ArenaAI,Vision,1293.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Gemini 3.5 Flash-Lite,Google,ArenaAI,Vision,1266.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Gemini 3.8 Flash,Google,ArenaAI,Vision,1293.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Kimi-K2.6,月之暗面,ArenaAI,Vision,1264.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+MiMo-V2.6-Pro,小米集团,ArenaAI,Vision,1248.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Qwen3.8-Max,阿里,ArenaAI,Vision,1300.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Step-5-Preview,阶跃星辰,ArenaAI,Vision,1247.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
