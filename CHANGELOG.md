@@ -33,6 +33,18 @@
 
 ## [Unreleased]
 
+### Added（0.32.0 发布后，2026-11-04 ~ 11-07）
+
+- **腾讯 Hy4 正式版证据补全**：发布页附录公开基准 13 项（HLE w/ Tools 59.1、TB4.0 44.4、DeepSWE 74.9、FrontierCode 2.0 31.0、APEX-Agents 75.2、MMMU-Pro 78.6、ZeroBench 55.4 等）→ Agent/代码/图片三维闭环；正式版确认为多模态（图片维结构缺失判定失效）。
+- **Arena AI 分项榜三大金矿**（浏览器渲染一手）：Instruction Following（838 模型 × 19 池内）→指令遵循、Creative Writing（417 × 19）→内容创作、Vision（167 × 13）→图片第二源。闭环 4 格（GPT-6.1-Sol / Step-5-Preview / Gemini 4 Carbon 指令、Carbon 内容）。
+- **推理补全全池重训**：25 条估值（M2 池内 k 近邻 k=3，各带留一 MAE 15–23 标注）——38 个模型在「含推理补全」口径下雷达全部闭合（全池 304 格仅 1 格结构性待定）。
+
+### Fixed
+
+- Arena-Agent 族换轨 arena.ai 官方 NetImpr 列（ModelSage 合成分系二次加工，排名与官方不一致）。
+- 实测优先不变量多次触发：被实测取代的旧推理估值行自动清退（累计 9 条）。
+
+
 - 持续补充公开证据、修正数据错误、改进可读性。暂无破坏性变更计划。
 
 ## [0.27.2] - 2026-10-31
