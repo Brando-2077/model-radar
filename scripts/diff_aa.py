@@ -30,6 +30,8 @@ LEDGER_TO_SLUG = {
     "GPT-6-Astra": "gpt-6-astra",
     "GPT-6-Sol": "gpt-6-sol",
     "GPT-6.1-Sol": "gpt-6-1-sol",
+    "Hunyuan-Hy4": "tencent-hy4",
+    "Hy4 preview": "hy4-preview",
     "GPT-6.1-Terra": "gpt-6-1-terra",
     "Gemini 4 Carbon": "gemini-4-carbon",
     "Mistral-Large-4": "mistral-large-4",

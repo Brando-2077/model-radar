@@ -659,3 +659,8 @@ Nemotron-3-Ultra,NVIDIA,ArenaAI,Arena-Agent-NetImprovement,15.6,0-100,2026-11-04
 Qwen3.8-27B,,ArenaAI,Arena-Agent-NetImprovement,4.3,0-100,2026-11-04,https://arena.ai/leaderboard/agent
 Qwen3.8-Max,阿里,ArenaAI,Arena-Agent-NetImprovement,0.4,0-100,2026-11-04,https://arena.ai/leaderboard/agent
 Step-5-Preview,阶跃星辰,ArenaAI,Arena-Agent-NetImprovement,2.53,0-100,2026-11-04,https://arena.ai/leaderboard/agent
+Hunyuan-Hy4,腾讯,Artificial-Analysis,Terminal-Bench 4.0,0.373737373737374,0-1,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,AA-Index,34.5552385392508,指数,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,AA-Omniscience Index (新基线),5.4,指数,2026-11-07,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,ArenaAI,Arena-Agent-NetImprovement,5.39,0-100,2026-11-07,https://arena.ai/leaderboard/agent
