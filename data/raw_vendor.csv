@@ -63,3 +63,16 @@ DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,Chartography (w/tools),78.9,0-100,20
 DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,BabyVision (w/tools),89.6,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 DeepSeek-V4.1-Flash,DeepSeek,DeepSeek官方,ZeroBench-main (w/tools),49.0,0-100,2026-10-17,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 Kimi-K3.1-Pro,月之暗面,Kimi官方,Terminal-Bench 4.0,65.7,百分制,2026-10-23,https://www.kimi.ai/blog/kimi-k3-1-pro
+Hunyuan-Hy4,腾讯,腾讯官方,HLE w/ Tools,59.1,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,Terminal-Bench 4.0,44.4,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,DeepSWE v1.1,74.9,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,SWE-Marathon,43.8,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,ProgramBench,30.0,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,FrontierCode 2.0,31.0,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,APEX-Agents,75.2,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,Agents' Last Exam,41.0,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,Automation-Bench v1.0.6,56.2,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,PostTrainBench,35.2,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,TB-Science,19.8,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,MMMU-Pro,78.6,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4
+Hunyuan-Hy4,腾讯,腾讯官方,ZeroBench-main (w/tools),55.4,0-100,2026-11-04,https://www.datalearner.com/ai-models/pretrained-models/hy4

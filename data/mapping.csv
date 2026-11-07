@@ -130,3 +130,11 @@ Artificial-Analysis,AA-MLCR,长文本,AA-MLCR,v0.28 补全轮新增（AA 页字�
 ARC-Prize,ARC-AGI-2,推理与知识,ARC-AGI-2,ARC Prize Foundation 官方 Verified 榜（arcprize.org，v0.28 补全轮接入）
 EQ-Bench,Creative Writing v3,内容创作,EQBench-CW-v3,EQ-Bench Creative Writing v3（Sam Paech 独立盲评，Arena 式 Elo；v0.29 经 DataLearner 定位后回一手 eqbench.com 入账）
 ArenaAI,Arena-Agent-NetImprovement,可靠性与低幻觉,Arena-Agent-Signal,arena.ai Agent 榜官方综合列 Net Improvement（v0.31 一手核验后换轨：ModelSage 合成分系其自有权重二次加工、与官方排序不一致，弃用）；每池内模型取其最高排名档位；DeepSeek-V4-Pro 榜行快照（20260813）与本池口径不符不收
+腾讯官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,FrontierCode 2.0,代码,FrontierCode-2.0,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,Agents' Last Exam,Agent与工具调用,Agents' Last Exam,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,Automation-Bench v1.0.6,Agent与工具调用,AutomationBench,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,DeepSWE v1.1,代码,DeepSWE,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,TB-Science,Agent与工具调用,TB-Science,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,MMMU-Pro,图片与制图,MMMU-Pro,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）
+腾讯官方,ZeroBench-main (w/tools),图片与制图,ZeroBench,Hy4 正式版发布页附录（v0.33 经 DataLearner 转录定位）

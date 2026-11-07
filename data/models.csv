@@ -36,4 +36,4 @@ GPT-6.1-Sol,OpenAI,否,2026-09-29,GPT-6.1 代旗舰（Max 档），取代 GPT-6 
 GPT-6.1-Terra,OpenAI,否,2026-10-26,GPT-6.1 代中端旗舰（Max 档），取代 GPT-5.6 Terra；AA 评测陆续补充中
 Gemini 4 Carbon,Google,否,2026-10-28,Gemini 4 代新旗舰（High 档），AA Index v5.0 59 分列第一；发布仅数日，AA 仅上线部分评测，覆盖暂 2/8
 Mistral-Large-4,Mistral AI,是,2026-10-29,Mistral 旗舰，1050B-A52B MoE 开源权重（Mistral Ecosystem License），1M 上下文
-Hunyuan-Hy4,腾讯,否,2026-11-03,Hy4 preview（08-28 开源 Apache）的正式发布版（11-03），转闭源 API；AA 分项陆续补充中，覆盖暂 3/8
+Hunyuan-Hy4,腾讯,否,2026-11-03,Hy4 preview（08-28 开源）的正式发布版（11-03 转闭源 API）；多模态（图文输入）；证据=发布页附录 34 项中的公开基准 13 项（DataLearner 转录定位）+ Arena 官方榜
