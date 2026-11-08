@@ -1,4 +1,4 @@
-﻿来源,类别,维度,族,备注
+来源,类别,维度,族,备注
 LiveBench,Agentic Coding,Agent与工具调用,LB·Agentic Coding,LiveBench 官方 table_2026_06_25.csv（类内均值）
 LiveBench,Coding,代码,LB·Coding,LiveBench 官方 table_2026_06_25.csv（类内均值）
 LiveBench,Data Analysis,推理与知识,LB·Data Analysis,LiveBench 官方 table_2026_06_25.csv（类内均值）
@@ -141,3 +141,5 @@ ArenaAI,Arena-Agent-NetImprovement,可靠性与低幻觉,Arena-Agent-Signal,aren
 ArenaAI,Instruction Following,指令遵循,Arena-IF,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
 ArenaAI,Creative Writing,内容创作,Arena-Creative,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
 ArenaAI,Vision,图片与制图,Vision-Elo,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
+SuperCLUE,总排行榜-数理推理,推理与知识,SC·总排行榜-数学推理,2026-11 通用榜列名「数理推理」，与 7 月「数学推理」同系列同族（官网 generalpage）
+SuperCLUE,总排行榜-超长上下文,长文本,SC·总排行榜-超长上下文,2026-11 通用榜新增列，非 256K/1M 专项榜（官网 generalpage）
