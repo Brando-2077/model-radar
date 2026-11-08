@@ -95,3 +95,68 @@ GLM-5.2(max),智谱,SuperCLUE,长上下文256K-总分,53.71,百分制,2026-07,ht
 GLM-5.2(max),智谱,SuperCLUE,长上下文1M-总分,47.71,百分制,2026-07,https://www.superclueai.com/data/specialized_list/LongContext/2026年7月.xlsx
 GLM-5.2(max),智谱,SuperCLUE,Terminal总榜-总分,48.48,百分制,2026-10,https://www.superclueai.com/data/agent_list/Terminal/2026年10月.xlsx
 MiMo-V2.6-Pro,小米集团,SuperCLUE,Terminal总榜-总分,64.65,百分制,2026-10,https://www.superclueai.com/data/agent_list/Terminal/2026年10月.xlsx
+Gemini 4 Argon,Google,SuperCLUE,总排行榜-智能体编程,65.38,0-100,2026-11,https://www.superclueai.com/generalpage
+Gemini 4 Argon,Google,SuperCLUE,总排行榜-数理推理,71.05,0-100,2026-11,https://www.superclueai.com/generalpage
+Gemini 4 Argon,Google,SuperCLUE,总排行榜-幻觉控制,83.19,0-100,2026-11,https://www.superclueai.com/generalpage
+Gemini 4 Argon,Google,SuperCLUE,总排行榜-精确指令遵循,68.97,0-100,2026-11,https://www.superclueai.com/generalpage
+Gemini 4 Argon,Google,SuperCLUE,总排行榜-超长上下文,95.63,0-100,2026-11,https://www.superclueai.com/generalpage
+GPT-6.1-Sol,OpenAI,SuperCLUE,总排行榜-智能体编程,69.23,0-100,2026-11,https://www.superclueai.com/generalpage
+GPT-6.1-Sol,OpenAI,SuperCLUE,总排行榜-数理推理,76.32,0-100,2026-11,https://www.superclueai.com/generalpage
+GPT-6.1-Sol,OpenAI,SuperCLUE,总排行榜-幻觉控制,63.61,0-100,2026-11,https://www.superclueai.com/generalpage
+GPT-6.1-Sol,OpenAI,SuperCLUE,总排行榜-精确指令遵循,68.97,0-100,2026-11,https://www.superclueai.com/generalpage
+GPT-6.1-Sol,OpenAI,SuperCLUE,总排行榜-超长上下文,88.14,0-100,2026-11,https://www.superclueai.com/generalpage
+Kimi-K3.1-Pro,月之暗面,SuperCLUE,总排行榜-智能体编程,57.69,0-100,2026-11,https://www.superclueai.com/generalpage
+Kimi-K3.1-Pro,月之暗面,SuperCLUE,总排行榜-数理推理,63.16,0-100,2026-11,https://www.superclueai.com/generalpage
+Kimi-K3.1-Pro,月之暗面,SuperCLUE,总排行榜-幻觉控制,67.78,0-100,2026-11,https://www.superclueai.com/generalpage
+Kimi-K3.1-Pro,月之暗面,SuperCLUE,总排行榜-精确指令遵循,44.83,0-100,2026-11,https://www.superclueai.com/generalpage
+Kimi-K3.1-Pro,月之暗面,SuperCLUE,总排行榜-超长上下文,87.25,0-100,2026-11,https://www.superclueai.com/generalpage
+DeepSeek-V4.1-Flash-1017,深度求索,SuperCLUE,总排行榜-智能体编程,65.38,0-100,2026-11,https://www.superclueai.com/generalpage
+DeepSeek-V4.1-Flash-1017,深度求索,SuperCLUE,总排行榜-数理推理,71.05,0-100,2026-11,https://www.superclueai.com/generalpage
+DeepSeek-V4.1-Flash-1017,深度求索,SuperCLUE,总排行榜-幻觉控制,43.89,0-100,2026-11,https://www.superclueai.com/generalpage
+DeepSeek-V4.1-Flash-1017,深度求索,SuperCLUE,总排行榜-精确指令遵循,43.1,0-100,2026-11,https://www.superclueai.com/generalpage
+DeepSeek-V4.1-Flash-1017,深度求索,SuperCLUE,总排行榜-超长上下文,66.25,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3,智谱AI,SuperCLUE,总排行榜-智能体编程,53.85,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3,智谱AI,SuperCLUE,总排行榜-数理推理,65.79,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3,智谱AI,SuperCLUE,总排行榜-幻觉控制,43.61,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3,智谱AI,SuperCLUE,总排行榜-精确指令遵循,17.24,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3,智谱AI,SuperCLUE,总排行榜-超长上下文,77.6,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3 Flash,智谱AI,SuperCLUE,总排行榜-智能体编程,50,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3 Flash,智谱AI,SuperCLUE,总排行榜-数理推理,57.89,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3 Flash,智谱AI,SuperCLUE,总排行榜-幻觉控制,48.89,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3 Flash,智谱AI,SuperCLUE,总排行榜-精确指令遵循,20.69,0-100,2026-11,https://www.superclueai.com/generalpage
+GLM-5.3 Flash,智谱AI,SuperCLUE,总排行榜-超长上下文,57.61,0-100,2026-11,https://www.superclueai.com/generalpage
+Qwen3.8-Max,阿里巴巴,SuperCLUE,总排行榜-智能体编程,42.31,0-100,2026-11,https://www.superclueai.com/generalpage
+Qwen3.8-Max,阿里巴巴,SuperCLUE,总排行榜-数理推理,68.42,0-100,2026-11,https://www.superclueai.com/generalpage
+Qwen3.8-Max,阿里巴巴,SuperCLUE,总排行榜-幻觉控制,33.05,0-100,2026-11,https://www.superclueai.com/generalpage
+Qwen3.8-Max,阿里巴巴,SuperCLUE,总排行榜-精确指令遵循,20.69,0-100,2026-11,https://www.superclueai.com/generalpage
+Qwen3.8-Max,阿里巴巴,SuperCLUE,总排行榜-超长上下文,44.38,0-100,2026-11,https://www.superclueai.com/generalpage
+Hy4 preview,腾讯,SuperCLUE,总排行榜-智能体编程,42.31,0-100,2026-11,https://www.superclueai.com/generalpage
+Hy4 preview,腾讯,SuperCLUE,总排行榜-数理推理,57.89,0-100,2026-11,https://www.superclueai.com/generalpage
+Hy4 preview,腾讯,SuperCLUE,总排行榜-幻觉控制,33.34,0-100,2026-11,https://www.superclueai.com/generalpage
+Hy4 preview,腾讯,SuperCLUE,总排行榜-精确指令遵循,31.03,0-100,2026-11,https://www.superclueai.com/generalpage
+Hy4 preview,腾讯,SuperCLUE,总排行榜-超长上下文,47.87,0-100,2026-11,https://www.superclueai.com/generalpage
+Doubao-Seed-2.1-Pro,字节跳动,SuperCLUE,总排行榜-智能体编程,38.46,0-100,2026-11,https://www.superclueai.com/generalpage
+Doubao-Seed-2.1-Pro,字节跳动,SuperCLUE,总排行榜-数理推理,60.53,0-100,2026-11,https://www.superclueai.com/generalpage
+Doubao-Seed-2.1-Pro,字节跳动,SuperCLUE,总排行榜-幻觉控制,42.09,0-100,2026-11,https://www.superclueai.com/generalpage
+Doubao-Seed-2.1-Pro,字节跳动,SuperCLUE,总排行榜-精确指令遵循,25.86,0-100,2026-11,https://www.superclueai.com/generalpage
+Doubao-Seed-2.1-Pro,字节跳动,SuperCLUE,总排行榜-超长上下文,37.68,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3.1-Flash,稀宇科技,SuperCLUE,总排行榜-智能体编程,46.15,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3.1-Flash,稀宇科技,SuperCLUE,总排行榜-数理推理,65.79,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3.1-Flash,稀宇科技,SuperCLUE,总排行榜-幻觉控制,31.11,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3.1-Flash,稀宇科技,SuperCLUE,总排行榜-精确指令遵循,5.17,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3.1-Flash,稀宇科技,SuperCLUE,总排行榜-超长上下文,51.86,0-100,2026-11,https://www.superclueai.com/generalpage
+Step-5-Preview,阶跃星辰,SuperCLUE,总排行榜-智能体编程,46.15,0-100,2026-11,https://www.superclueai.com/generalpage
+Step-5-Preview,阶跃星辰,SuperCLUE,总排行榜-数理推理,57.89,0-100,2026-11,https://www.superclueai.com/generalpage
+Step-5-Preview,阶跃星辰,SuperCLUE,总排行榜-幻觉控制,38.89,0-100,2026-11,https://www.superclueai.com/generalpage
+Step-5-Preview,阶跃星辰,SuperCLUE,总排行榜-精确指令遵循,8.62,0-100,2026-11,https://www.superclueai.com/generalpage
+Step-5-Preview,阶跃星辰,SuperCLUE,总排行榜-超长上下文,49.39,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3,稀宇科技,SuperCLUE,总排行榜-智能体编程,42.31,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3,稀宇科技,SuperCLUE,总排行榜-数理推理,63.16,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3,稀宇科技,SuperCLUE,总排行榜-幻觉控制,39.86,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3,稀宇科技,SuperCLUE,总排行榜-精确指令遵循,10.34,0-100,2026-11,https://www.superclueai.com/generalpage
+MiniMax-M3,稀宇科技,SuperCLUE,总排行榜-超长上下文,42.88,0-100,2026-11,https://www.superclueai.com/generalpage
+MiMo-V2.6-Pro,小米集团,SuperCLUE,总排行榜-智能体编程,38.46,0-100,2026-11,https://www.superclueai.com/generalpage
+MiMo-V2.6-Pro,小米集团,SuperCLUE,总排行榜-数理推理,50,0-100,2026-11,https://www.superclueai.com/generalpage
+MiMo-V2.6-Pro,小米集团,SuperCLUE,总排行榜-幻觉控制,25.28,0-100,2026-11,https://www.superclueai.com/generalpage
+MiMo-V2.6-Pro,小米集团,SuperCLUE,总排行榜-精确指令遵循,15.52,0-100,2026-11,https://www.superclueai.com/generalpage
+MiMo-V2.6-Pro,小米集团,SuperCLUE,总排行榜-超长上下文,36.83,0-100,2026-11,https://www.superclueai.com/generalpage

@@ -1,4 +1,4 @@
-﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
+模型,公司,来源,类别,原始分,量纲,数据日期,URL
 GLM-5.3,智谱,LMArena,Arena-Overall,1472.5,Elo,2026-09-25,https://arena.ai/leaderboard/text
 GLM-5.3 Flash,智谱,LMArena,Arena-Overall,1470.9,Elo,2026-09-25,https://arena.ai/leaderboard/text
 DeepSeek-V4-Pro,DeepSeek,LMArena,Arena-Overall,1450.8,Elo,2026-09-25,https://arena.ai/leaderboard/text
@@ -715,3 +715,6 @@ Kimi-K2.6,月之暗面,ArenaAI,Vision,1264.0,Elo,2026-11-07,https://arena.ai/lea
 MiMo-V2.6-Pro,小米集团,ArenaAI,Vision,1248.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
 Qwen3.8-Max,阿里,ArenaAI,Vision,1300.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
 Step-5-Preview,阶跃星辰,ArenaAI,Vision,1247.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
+Hunyuan-Hy4,腾讯,Artificial-Analysis,Terminal-Bench 4.0,0.373737373737374,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4

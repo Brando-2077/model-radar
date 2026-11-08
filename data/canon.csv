@@ -1,4 +1,4 @@
-﻿榜单名,统一名,备注
+榜单名,统一名,备注
 Claude Fable 5.1,Claude-Fable-5.1,
 Claude Fable 5.1 (max with fallback),Claude-Fable-5.1,带 fallback 的榜单档位，按产品线合并
 Claude Fable 5.1 (max),Claude-Fable-5.1,
@@ -93,3 +93,14 @@ Gemini 3.8 Flash（DSH）,Gemini 3.8 Flash,AI产品狙击手 榜名
 Gemini 3.5 Flash Lite,Gemini 3.5 Flash-Lite,榜名连字符缺失时的统一写法
 Kimi K3.1 Pro,Kimi-K3.1-Pro,
 kimi-k3.1-pro,Kimi-K3.1-Pro,LiveBench 2.0 官方表模型键
+Gemini-4-Argon,Gemini 4 Argon,SuperCLUE 2026-11 通用榜
+GPT-6.1-Sol,GPT-6.1-Sol,SuperCLUE 2026-11 通用榜
+Kimi-K3.1-Pro,Kimi-K3.1-Pro,SuperCLUE 2026-11 通用榜
+Qwen3.8-Max-0902,Qwen3.8-Max,SuperCLUE 2026-11 通用榜
+Hy4-Preview,Hy4 preview,SuperCLUE 2026-11 通用榜
+Doubao-Seed-2.1-Pro-260915,Doubao-Seed-2.1-Pro,SuperCLUE 2026-11 通用榜
+MiniMax M3.1-Flash,MiniMax-M3.1-Flash,SuperCLUE 2026-11 通用榜
+Step-5-Preview,Step-5-Preview,SuperCLUE 2026-11 通用榜
+MiniMax-M3,MiniMax-M3,SuperCLUE 2026-11 通用榜
+MiMo-V2.6-Pro,MiMo-V2.6-Pro,SuperCLUE 2026-11 通用榜
+Tencent Hy4,Hunyuan-Hy4,AA 单模型页（tencent-hy4）
