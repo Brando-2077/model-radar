@@ -2,6 +2,21 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.36.0] - 2026-11-16
+
+### Added
+
+- **缺口清剿轮**：Gemini 4 Carbon 的 Google 官方模型卡对照表（全列池内模型）批量入账 41 行——新开四族 **RiemannBench**（推理，n=5）/ **GraphWalks**（长文本，n=5）/ **FrontierSWE-2**（代码，n=5）/ **Blueprint-Bench-2**（图片，n=5）；SWE-sweep 扩至 n=8、Agents' Last Exam 扩至 n=9、Chartography-no-tools 扩至 n=7。
+- **缺口 25 → 23 格**（覆盖 289/312）：Carbon 推理与知识、图片与制图两格闭环；实测优先不变量删除 2 条被取代的旧估值。证据 1154 → **1186**，基准族 76 → **80**。
+
+### Changed
+
+- AA 波零增量确认（6 个缺口模型页重抓，可对比行全部与账本同值）；Doubao / ERNIE / Dots-3 确认不在 AA。
+
+### Closed
+
+- Mistral FrontierCode 2.0 19.7% 拒收：Cognition 一手榜（10-27）无 Mistral，无法核验（与 v0.35 Hydrogen 同案）。
+
 ## [0.35.0] - 2026-11-16
 
 ### Added

@@ -152,3 +152,13 @@ Google官方,HLE-Diamond,,,有意不映射：母基准 HLE 的子集，§2.2 防
 Google官方,OSWorld-2.1 Offline subset,,,有意不映射：OSWorld Full 的 offline 子集口径，与 K3.1-Pro Full 行不混族
 Google官方,Vending-Bench 2 (bank balance),,,有意不映射：美元余额量纲，非 0-100 可比
 Google官方,MKA (Climb WSR),,,有意不映射：Google 自家新基准，方法学未核验（§2.6）
+Google官方,RiemannBench,推理与知识,RiemannBench,Science/math 新基准（Carbon 卡对照表 n=5 全池内）
+Google官方,"GraphWalks (BFS, F1)",长文本,GraphWalks,Google 归 Long context 类（256K-1M BFS F1）；新族 n=5
+Google官方,FrontierSWE 2,代码,FrontierSWE-2,agentic coding（Proximal 榜一手）；新族 n=5
+Google官方,Blueprint-Bench 2,图片与制图,Blueprint-Bench-2,multimodal understanding（similarity score）；新族 n=5
+Google官方,AA Index v5.0,,,有意不映射：综合指数新基线，2026-10-28 决议留档
+Google官方,Vals Index v2.2,,,有意不映射：聚合站合成分，§1.3
+Google官方,OSWorld-2.1 (Offline subset),,,有意不映射：OSWorld Full 的 offline 子集口径
+Google官方,CWE-bench,,,有意不映射：网络安全类无对应维度
+Google官方,ExploitGym,,,有意不映射：网络安全类无对应维度
+Google官方,SEC-bench Pro,,,有意不映射：网络安全类无对应维度
