@@ -1,4 +1,4 @@
-﻿模型,公司,开源,数据日期,备注
+模型,公司,开源,数据日期,备注
 Claude-Fable-5.1,,否,,
 Claude-Opus-5.5,,否,,
 Claude-Sonnet-5.5,,否,,
@@ -37,3 +37,4 @@ GPT-6.1-Terra,OpenAI,否,2026-10-26,GPT-6.1 代中端旗舰（Max 档），取�
 Gemini 4 Carbon,Google,否,2026-10-28,Gemini 4 代新旗舰（High 档），AA Index v5.0 59 分列第一；发布仅数日，AA 仅上线部分评测，覆盖暂 2/8
 Mistral-Large-4,Mistral AI,是,2026-10-29,Mistral 旗舰，1050B-A52B MoE 开源权重（Mistral Ecosystem License），1M 上下文
 Hunyuan-Hy4,腾讯,否,2026-11-03,Hy4 preview（08-28 开源）的正式发布版（11-03 转闭源 API）；多模态（图文输入）；证据=发布页附录 34 项中的公开基准 13 项（DataLearner 转录定位）+ Arena 官方榜
+Gemini 4 Hydrogen,Google,否,2026-11-12,Gemini 4 系快速执行档（官方明示由 Carbon 派生）；首周证据=Agent+图片碎片，AA 分项以周计陆续补充；AA-Index 53.9/Omni 46.3 新基线留档不映射

@@ -143,3 +143,12 @@ ArenaAI,Creative Writing,内容创作,Arena-Creative,arena.ai 分项榜（v0.33 
 ArenaAI,Vision,图片与制图,Vision-Elo,arena.ai 分项榜（v0.33 全网搜补全轮，浏览器渲染一手）
 SuperCLUE,总排行榜-数理推理,推理与知识,SC·总排行榜-数学推理,2026-11 通用榜列名「数理推理」，与 7 月「数学推理」同系列同族（官网 generalpage）
 SuperCLUE,总排行榜-超长上下文,长文本,SC·总排行榜-超长上下文,2026-11 通用榜新增列，非 256K/1M 专项榜（官网 generalpage）
+Google官方,Agents' Last Exam v1.1,Agent与工具调用,Agents' Last Exam,Google 卡标注 v1.1，与既有 ALE 族同系列（Hy4/K3.1-Pro 同表对照）
+Google官方,Terminal-Bench 4.1,Agent与工具调用,TB4.1,TB4.1 Cheating-adjusted，与 TB4.0 版本代际分族（§2.2 TB 先例）；新族
+Google官方,SWE-sweep,代码,SWE-sweep,agentic coding 新基准（Google 卡对照表含 Sonnet/Terra）；新族
+Google官方,Chartography (no tools),图片与制图,Chartography-no-tools,既有 Chartography 族均为 w/tools（1017/0910），no-tools 口径单独成族不混算；新族
+Google官方,Terminal-Bench-Science 0.1,Agent与工具调用,TB-Science,
+Google官方,HLE-Diamond,,,有意不映射：母基准 HLE 的子集，§2.2 防双计不开族
+Google官方,OSWorld-2.1 Offline subset,,,有意不映射：OSWorld Full 的 offline 子集口径，与 K3.1-Pro Full 行不混族
+Google官方,Vending-Bench 2 (bank balance),,,有意不映射：美元余额量纲，非 0-100 可比
+Google官方,MKA (Climb WSR),,,有意不映射：Google 自家新基准，方法学未核验（§2.6）
