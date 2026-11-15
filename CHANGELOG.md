@@ -2,6 +2,23 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.37.0] - 2026-11-16
+
+### Added
+
+- **Claude-Fable-5.2**（Anthropic，2026-11-09）与 **Agnes 2.5 Pro Theta**（Agnes AI，2026-11-07）入库：39 → **41 个模型**，均 5/8 维有分。
+- 新厂商渠道 **Anthropic 官方**（发布文对照表全池内列）：FrontierCode 2.0 / FrontierSWE v2 / OSWorld 2.1 / Chartography-no-tools / HLE-w/tools / **Remote Labor Index**（Scale AI 新族）/ **BenchCAD 2.1**（新族）。
+- **OSWorld-2.1-Offline 开族**（修正 v0.35/36 的不映射判定）：Anthropic 卡与 Google 卡同值确认同口径，池内 n=6 全厂商渠道。
+
+### Changed
+
+- **五场景排名全面换王（§四.7 重大池效应）**：**Claude-Fable-5.2 全部 #1**（自媒体 87.5 / Agent 91.1 / 代码 92.4 / RAG 87.1 / 日常 91.1）；Gemini 4 Carbon 全线 #2；Claude-Opus-5.5 退 #3-#4；GPT-6.1-Sol / GPT-6-Astra 跌出前四。
+- 缺口 23 → 29 格（新增两模型各缺指令遵循 / 可靠性 / 内容创作）；证据 1186 → **1216**，基准族 80 → **83**。
+
+### Closed
+
+- 扫描漏网根因修复：diff_aa 单向差集缺陷以独立双向扫描器（releaseDate 窗口）补位；暂不入池记录在案（Claude Mythos 5.2 / JT-4.1 Flash / Inkling 2 Small / Muse Ember）。
+
 ## [0.36.0] - 2026-11-16
 
 ### Added

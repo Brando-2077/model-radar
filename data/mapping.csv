@@ -149,7 +149,7 @@ Google官方,SWE-sweep,代码,SWE-sweep,agentic coding 新基准（Google 卡对
 Google官方,Chartography (no tools),图片与制图,Chartography-no-tools,既有 Chartography 族均为 w/tools（1017/0910），no-tools 口径单独成族不混算；新族
 Google官方,Terminal-Bench-Science 0.1,Agent与工具调用,TB-Science,
 Google官方,HLE-Diamond,,,有意不映射：母基准 HLE 的子集，§2.2 防双计不开族
-Google官方,OSWorld-2.1 Offline subset,,,有意不映射：OSWorld Full 的 offline 子集口径，与 K3.1-Pro Full 行不混族
+Google官方,OSWorld-2.1 Offline subset,Agent与工具调用,OSWorld-2.1-Offline,有意不映射：OSWorld Full 的 offline 子集口径，与 K3.1-Pro Full 行不混族；2026-11-16 改判：池内 offline 口径 n=6（Anthropic/Google 对照表），子集口径自成一族（类比 TB 代际分族）
 Google官方,Vending-Bench 2 (bank balance),,,有意不映射：美元余额量纲，非 0-100 可比
 Google官方,MKA (Climb WSR),,,有意不映射：Google 自家新基准，方法学未核验（§2.6）
 Google官方,RiemannBench,推理与知识,RiemannBench,Science/math 新基准（Carbon 卡对照表 n=5 全池内）
@@ -158,7 +158,14 @@ Google官方,FrontierSWE 2,代码,FrontierSWE-2,agentic coding（Proximal 榜一
 Google官方,Blueprint-Bench 2,图片与制图,Blueprint-Bench-2,multimodal understanding（similarity score）；新族 n=5
 Google官方,AA Index v5.0,,,有意不映射：综合指数新基线，2026-10-28 决议留档
 Google官方,Vals Index v2.2,,,有意不映射：聚合站合成分，§1.3
-Google官方,OSWorld-2.1 (Offline subset),,,有意不映射：OSWorld Full 的 offline 子集口径
+Google官方,OSWorld-2.1 (Offline subset),Agent与工具调用,OSWorld-2.1-Offline,有意不映射：OSWorld Full 的 offline 子集口径；2026-11-16 改判：池内 offline 口径 n=6（Anthropic/Google 对照表），子集口径自成一族（类比 TB 代际分族）
 Google官方,CWE-bench,,,有意不映射：网络安全类无对应维度
 Google官方,ExploitGym,,,有意不映射：网络安全类无对应维度
 Google官方,SEC-bench Pro,,,有意不映射：网络安全类无对应维度
+Anthropic官方,FrontierCode 2.0 (Xhigh),代码,FrontierCode-2.0,Anthropic 发布文对照表（Xhigh 档；Carbon 行为 Medium 档未收）
+Anthropic官方,FrontierSWE v2,代码,FrontierSWE-2,对照值与 Google 卡同源一致
+Anthropic官方,OSWorld 2.1,Agent与工具调用,OSWorld-2.1-Offline,OSWorld 2.1 的 offline 口径（与 Google 卡 Carbon 81.5 同值确认）；池内 n=6 全厂商渠道
+Anthropic官方,Chartography (no tools),图片与制图,Chartography-no-tools,
+Anthropic官方,Humanity's Last Exam (tools),Agent与工具调用,HLE-w/tools,
+Anthropic官方,Remote Labor Index,Agent与工具调用,Remote-Labor-Index,Scale AI 真实工作任务基准（Anthropic 卡对照表）；新族
+Anthropic官方,BenchCAD 2.1,图片与制图,BenchCAD-2-1,Max effort 口径；新族

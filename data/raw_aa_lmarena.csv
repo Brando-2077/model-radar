@@ -721,3 +721,16 @@ Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1
 Gemini 4 Hydrogen,Google,Artificial-Analysis,Terminal-Bench 4.0,0.535353535353535,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
 Gemini 4 Hydrogen,Google,Artificial-Analysis,TB-Science,0.495238095238095,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
 Gemini 4 Hydrogen,Google,Artificial-Analysis,AutomationBench-AA,0.7614416852922641,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Claude-Fable-5.2,,Artificial-Analysis,CritPt,0.354285714285714,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,SciCode,0.677083333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,Terminal-Bench 4.0,0.595959595959596,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,TB-Science,0.733333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AA-LCR,0.833333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AutomationBench-AA,0.7642233832611831,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
+Agnes 2.5 Pro Theta,,Artificial-Analysis,CritPt,0.151428571428571,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,SciCode,0.560185185185185,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,Terminal-Bench 4.0,0.101010101010101,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,TB-Science,0.0380952380952381,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-LCR,0.846666666666667,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,MMMU-Pro,0.784393063583815,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,AutomationBench-AA,0.48822600284971035,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
