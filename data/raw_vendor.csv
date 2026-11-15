@@ -92,3 +92,44 @@ GPT-6.1-Terra,Google,Google官方,Terminal-Bench-Science 0.1,58.3,0-100,2026-11-
 Gemini 4 Hydrogen,Google,Google官方,HLE-Diamond,58.8,0-100,2026-11-12,https://deepmind.google/models/model-cards/gemini-4-hydrogen/
 Gemini 4 Hydrogen,Google,Google官方,OSWorld-2.1 Offline subset,77.6,0-100,2026-11-12,https://deepmind.google/models/model-cards/gemini-4-hydrogen/
 Gemini 4 Hydrogen,Google,Google官方,MKA (Climb WSR),53.4,0-100,2026-11-12,https://deepmind.google/models/model-cards/gemini-4-hydrogen/
+Gemini 4 Carbon,Google,Google官方,RiemannBench,80,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,RiemannBench,76,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,RiemannBench,72,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,RiemannBench,69.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,RiemannBench,65.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,Chartography (no tools),72.5,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,Chartography (no tools),71.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,Chartography (no tools),71,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,Chartography (no tools),66.3,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,Chartography (no tools),46.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,"GraphWalks (BFS, F1)",96.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,"GraphWalks (BFS, F1)",84.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,"GraphWalks (BFS, F1)",71.8,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,"GraphWalks (BFS, F1)",66.8,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,"GraphWalks (BFS, F1)",65,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,SWE-sweep,9.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,SWE-sweep,4.3,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,SWE-sweep,9.5,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,SWE-sweep,3.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,SWE-sweep,2.9,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,FrontierSWE 2,61.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,FrontierSWE 2,55,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,FrontierSWE 2,65.5,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,FrontierSWE 2,62.3,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,FrontierSWE 2,56.3,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,Agents' Last Exam v1.1,77.4,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,Agents' Last Exam v1.1,69,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,Agents' Last Exam v1.1,73.1,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,Agents' Last Exam v1.1,71.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,Blueprint-Bench 2,58.6,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Argon,Google,Google官方,Blueprint-Bench 2,54.4,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+GPT-6-Astra,Google,Google官方,Blueprint-Bench 2,49.7,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Opus-5.5,Google,Google官方,Blueprint-Bench 2,51.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.1,Google,Google官方,Blueprint-Bench 2,41.9,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,AA Index v5.0,59,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,Vals Index v2.2,70.4,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,Vending-Bench 2 (bank balance),16484,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,OSWorld-2.1 (Offline subset),81.5,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,CWE-bench,71,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,ExploitGym,54.8,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Gemini 4 Carbon,Google,Google官方,SEC-bench Pro,88.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
