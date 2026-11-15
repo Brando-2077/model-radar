@@ -133,3 +133,24 @@ Gemini 4 Carbon,Google,Google官方,OSWorld-2.1 (Offline subset),81.5,0-100,2026
 Gemini 4 Carbon,Google,Google官方,CWE-bench,71,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
 Gemini 4 Carbon,Google,Google官方,ExploitGym,54.8,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
 Gemini 4 Carbon,Google,Google官方,SEC-bench Pro,88.2,0-100,2026-10-28,https://deepmind.google/models/model-cards/gemini-4-carbon/
+Claude-Fable-5.2,Anthropic,Anthropic官方,FrontierCode 2.0 (Xhigh),49.1,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.1,Anthropic,Anthropic官方,FrontierCode 2.0 (Xhigh),32.4,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Opus-5.5,Anthropic,Anthropic官方,FrontierCode 2.0 (Xhigh),45.5,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GPT-6-Astra,Anthropic,Anthropic官方,FrontierCode 2.0 (Xhigh),42.8,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,FrontierSWE v2,69.9,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,OSWorld 2.1,89.3,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.1,Anthropic,Anthropic官方,OSWorld 2.1,83.5,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Opus-5.5,Anthropic,Anthropic官方,OSWorld 2.1,87.2,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GPT-6-Astra,Anthropic,Anthropic官方,OSWorld 2.1,79.5,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,Chartography (no tools),73.4,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.1,Anthropic,Anthropic官方,Chartography (no tools),44.8,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Opus-5.5,Anthropic,Anthropic官方,Chartography (no tools),64.4,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GPT-6-Astra,Anthropic,Anthropic官方,Chartography (no tools),71,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,Humanity's Last Exam (tools),74.2,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,Remote Labor Index,41.3,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.1,Anthropic,Anthropic官方,Remote Labor Index,17.9,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Opus-5.5,Anthropic,Anthropic官方,Remote Labor Index,21.3,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+GPT-6-Astra,Anthropic,Anthropic官方,Remote Labor Index,20.8,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.2,Anthropic,Anthropic官方,BenchCAD 2.1,83.5,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Opus-5.5,Anthropic,Anthropic官方,BenchCAD 2.1,65.3,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
+Claude-Fable-5.1,Anthropic,Anthropic官方,BenchCAD 2.1,44.4,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
