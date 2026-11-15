@@ -2,9 +2,9 @@
 Claude-Fable-5.1,,否,,
 Claude-Opus-5.5,,否,,
 Claude-Sonnet-5.5,,否,,
-DeepSeek-V4-Pro,,是,,
-DeepSeek-V4.1-Flash,,是,2026-09-10,0910 版；同代新版 DeepSeek-V4.1-Flash-1017（2026-10-17）已单列一册
-DeepSeek-V4.1-Flash-1017,,是,2026-10-17,552B MoE（输入激活 8B / 输出激活 16B；384 路由专家 + 1 共享，每 token 6 个）· 上下文 1M tokens（max_tokens ≥256K）· fp8 权值 / fp4 专家 · MIT 开源；reasoning_effort 1–100 连续可调 · API 名 deepseek-flash；2026-10-20 补入 AA 第三方 8 项（HLE / CritPt / SciCode / TB4.0 / LCR / MMMU-Pro / Automation / Omni）；2026-10-21 补入 LiveBench 2.0 七套件（Research→内容创作、Design→图片与制图、Coding/Browser/Long Agentic/Reasoning/Data Analysis）与「AI产品狙击手」Q1 强约束指令遵循（10/10），**8 维全部有实测证据、不再依赖推理值**；Design Arena 1309 Elo（2026-10-25 补）
+DeepSeek-V4-Pro,深度求索,是,2026-08-13,1600B MoE（激活 49B）· 上下文 1M · MIT 开源（参数自 AA 单模型页 2026-11-16 核对）
+DeepSeek-V4.1-Flash,深度求索,是,2026-09-10,0910 版；同代新版 DeepSeek-V4.1-Flash-1017（2026-10-17）已单列一册；552B MoE（激活 16B）· 上下文 1M · MIT 开源（2026-11-16 AA 核对）
+DeepSeek-V4.1-Flash-1017,深度求索,是,2026-10-17,552B MoE（输入激活 8B / 输出激活 16B；384 路由专家 + 1 共享，每 token 6 个）· 上下文 1M tokens（max_tokens ≥256K）· fp8 权值 / fp4 专家 · MIT 开源；reasoning_effort 1–100 连续可调 · API 名 deepseek-flash；2026-10-20 补入 AA 第三方 8 项（HLE / CritPt / SciCode / TB4.0 / LCR / MMMU-Pro / Automation / Omni）；2026-10-21 补入 LiveBench 2.0 七套件（Research→内容创作、Design→图片与制图、Coding/Browser/Long Agentic/Reasoning/Data Analysis）与「AI产品狙击手」Q1 强约束指令遵循（10/10），**8 维全部有实测证据、不再依赖推理值**；Design Arena 1309 Elo（2026-10-25 补）
 Dots-3-Note-Preview,,是,,
 Doubao-Seed-2.1-Pro,,否,,
 ERNIE-5.1,,否,,
