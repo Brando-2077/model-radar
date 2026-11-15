@@ -2,6 +2,21 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.35.0] - 2026-11-16
+
+### Added
+
+- **Gemini 4 Hydrogen**（Google，2026-11-12，Gemini 4 系快速执行档）入库：38 → **39 个模型**。AA 自跑三项（Terminal-Bench 4.0 / TB-Science / AutomationBench，全落 Agent 维）+ 新厂商渠道 **Google 官方模型卡**（对照表含 Claude-Sonnet-5.5 / GPT-6.1-Terra 行）：新开三族 TB4.1（n=2）/ SWE-sweep（n=3）/ Chartography-no-tools（n=2）。首周证据 3/8 维（Agent / 代码 / 图片），AA 分项以周计陆续补充。
+- 两周窗口扫描：AA 主榜 526 slug 账本外零新增；Qwen4-Max Preview（11-11）暂不入名册（0 公开证据，预览期 11-25 结束后复查）。
+
+### Changed
+
+- 缺口 20 → 25 格（覆盖 287/312）：Hydrogen 首周 5 缺格暂无公开数据、kNN 因共同实测维不足无法补值；实测优先不变量删除 2 条覆盖既有计分实测的遗留推理行（Dots-3 / Hy4 preview 的 Agent 维）。证据 1141 → **1154**，基准族 73 → **76**。
+
+### Closed
+
+- benchlm「FrontierCode 2.0 38.2%」拒收：一手 Cognition 榜（10-27 快照）无 Hydrogen，无法核验。
+
 ## [0.34.0] - 2026-11-08
 
 ### Added

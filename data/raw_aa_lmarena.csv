@@ -718,3 +718,6 @@ Step-5-Preview,阶跃星辰,ArenaAI,Vision,1247.0,Elo,2026-11-07,https://arena.a
 Hunyuan-Hy4,腾讯,Artificial-Analysis,Terminal-Bench 4.0,0.373737373737374,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
 Hunyuan-Hy4,腾讯,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
 Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
+Gemini 4 Hydrogen,Google,Artificial-Analysis,Terminal-Bench 4.0,0.535353535353535,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,Google,Artificial-Analysis,TB-Science,0.495238095238095,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,Google,Artificial-Analysis,AutomationBench-AA,0.7614416852922641,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
