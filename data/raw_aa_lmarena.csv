@@ -734,3 +734,9 @@ Agnes 2.5 Pro Theta,,Artificial-Analysis,TB-Science,0.0380952380952381,0-1,2026-
 Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-LCR,0.846666666666667,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
 Agnes 2.5 Pro Theta,,Artificial-Analysis,MMMU-Pro,0.784393063583815,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
 Agnes 2.5 Pro Theta,,Artificial-Analysis,AutomationBench-AA,0.48822600284971035,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Qwen4-Max,,Artificial-Analysis,Terminal-Bench 4.0,0.484848484848485,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,TB-Science,0.233333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,AutomationBench-AA,0.7256119376604481,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,EnterpriseOpsGym,0.4852282900626679,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,APEX-Agents,0.591445427728614,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,AA-MLCR,0.194444444444444,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max

@@ -169,3 +169,4 @@ Anthropic官方,Chartography (no tools),图片与制图,Chartography-no-tools,
 Anthropic官方,Humanity's Last Exam (tools),Agent与工具调用,HLE-w/tools,
 Anthropic官方,Remote Labor Index,Agent与工具调用,Remote-Labor-Index,Scale AI 真实工作任务基准（Anthropic 卡对照表）；新族
 Anthropic官方,BenchCAD 2.1,图片与制图,BenchCAD-2-1,Max effort 口径；新族
+Artificial-Analysis,APEX-Agents,Agent与工具调用,APEX-Agents,v0.38 Qwen4-Max 补入：AA 一手同名字段；与腾讯官方 APEX-Agents 同族，第三方优先
