@@ -2,6 +2,23 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.38.0] - 2026-11-17
+
+### Added
+
+- **Qwen4-Max**（阿里，2026-11-16）入库：Qwen4 代首款旗舰，2.4T MoE/71B 激活、1M 上下文、原生图文视频输入；Qwen 旗舰**首次不开放权重**（API-only），开源列记「否」。41 → **42 个模型**。
+- AA 一手（`artificialanalysis.ai/models/qwen4-max`，2026-11-16）6 项可映射实测入账：TB4.0 0.4848 / TB-Science 0.2333 / AutomationBench-AA 0.7256 / EnterpriseOpsGym 0.4852 / APEX-Agents 0.5914 / AA-MLCR 0.1944。证据 1216 → **1222**，计分格 299 → **301**。
+- `mapping.csv` 补 `Artificial-Analysis / APEX-Agents → Agent与工具调用 / APEX-Agents`（与腾讯官方同族，第三方优先；该族 n 2→3）。
+
+### Changed
+
+- Qwen4-Max 画像 = Agent 72.3 / 长文本 51.8（单基准标记），其余 6 维无公开实测、留白不记 0。AA-Index 42.9 与 Omni 27.7（新基线）按纪律留档不映射；`critptAgenticHard` 0.43 / `hleDiamond` 0.449 按 §2.2 母基准子集不开族、不映射；`gpqa/hle/critpt/scicode/lcr/ifbench/mmmuPro` 在 AA 一手记录里均为 null，未入账。
+- 版本 → v0.38.0。validate 0/0、pytest 26 绿。
+
+### Not changed
+
+- **Kimi-K3.1-Pro 开源状态未改**：搜索摘要称 11-04/05 权重上架 HuggingFace，但 HF 一手页本机代理 502 / WebFetch 失败，CNESA 11-14 分级速报亦未确认 → 按「宁缺勿假」不改 `models.csv`，留待一手可访问时复核。
+
 ## [0.37.0] - 2026-11-16
 
 ### Added

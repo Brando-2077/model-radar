@@ -40,3 +40,4 @@ Hunyuan-Hy4,腾讯,否,2026-11-03,Hy4 preview（08-28 开源）的正式发布�
 Gemini 4 Hydrogen,Google,否,2026-11-12,Gemini 4 系快速执行档（官方明示由 Carbon 派生）；首周证据=Agent+图片碎片，AA 分项以周计陆续补充；AA-Index 53.9/Omni 46.3 新基线留档不映射
 Claude-Fable-5.2,Anthropic,否,2026-11-09,Fable 5.1 下一代（$8/$40 每百万 tokens）；与 Mythos 5.2 同期双发（Mythos=无安全防护版，AA 未单列不入池）；官方发布文对照表 2026-11-09
 Agnes 2.5 Pro Theta,Agnes AI,否,2026-11-07,Agnes 2.5 Pro 系 Theta 档；1M 上下文；AA 分项以周计陆续补充
+Qwen4-Max,阿里,否,2026-11-16,Qwen4 代首款旗舰（API-only，Qwen 旗舰首次不开放权重；2.4T MoE/71B 激活·328B N-gram 嵌入·1M 上下文·原生图文视频输入）；官方 11-11 预览/11-16 正式。AA 一手 2026-11-16 仅 6 项可映射实测：TB4.0 0.4848/TB-Science 0.2333/AutomationBench 0.7256/EnterpriseOpsGym 0.4852/APEX-Agents 0.5914/AA-MLCR 0.1944；gpqa/hle/critpt/scicode/lcr/ifbench/mmmuPro 均为 null，推理/代码/指令遵循/图片维暂缺。AA-Index 42.9 与 Omni 27.7（新基线）留档不映射；critptAgenticHard 0.43/hleDiamond 0.449 按 §2.2 子集不开族、不映射
