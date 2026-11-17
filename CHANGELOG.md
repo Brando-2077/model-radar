@@ -2,6 +2,22 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.39.0] - 2026-11-17
+
+### Changed
+
+- **AA 全池一手重刷（用户指令"彻底更新一轮"）**：重新抓取 38 个模型的 `artificialanalysis.ai/models/<slug>` 一手页（4 个模型不在 AA，404），用当前一手 JSON 覆盖 455 行 AA 证据的原始分与数据日期，精度从 4 位小数提升到完整值；新增 29 行此前未入账的一手字段。证据 1222 → **1247**（实测 1232 + 推理 15），计分格 301 → **309**。
+- **测评集基线变化清洗**：23 条真数值漂移中 22 条为 `AA-Omniscience Index`（AA 换基线，旧值停在 9-28～10-21）；本轮全池统一为当前一手值，消除旧基线/「新基线」并存的分裂状态。GPT-6-Sol MMMU-Pro 0.8329→0.82948 属重测漂移。其余 97 条"变化"为精度差（非错误）。
+- **池效应（§4.7）**：Omni 基线刷新致 Top3 变化——Agent 与工作流、代码开发场景由 GPT-6.1-Sol 上位 Claude-Opus-5.5；Top1/Top2（Fable 5.2 / Gemini 4 Carbon）稳定。
+- 实测优先不变量触发：删除 Hunyuan-Hy4 / Mistral-Large-4 的「长文本」推理补全行（现已有 AA 一手实测）。推理补全 17 → **15**。
+- 版本 → v0.39.0。validate 0/0、pytest 26 绿、幂等 OK、浏览器复核通过。
+
+### Notes
+
+- 4 个模型无 AA 页（Hy4 preview / Dots-3-Note-Preview / Doubao-Seed-2.1-Pro / ERNIE-5.1）：账本里本就无 AA 证据，不受影响。
+- `hleDiamond` / `critptAgenticHard` 等母基准子集按 §2.2 仍不映射；AA-Index 新基线留档不映射。
+- Kimi-K3.1-Pro 开源状态仍未改（HuggingFace 一手不可达，宁缺勿假），见 v0.38.0 Notes。
+
 ## [0.38.0] - 2026-11-17
 
 ### Added

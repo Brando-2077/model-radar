@@ -1,4 +1,4 @@
-模型,公司,来源,类别,原始分,量纲,数据日期,URL
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
 GLM-5.3,智谱,LMArena,Arena-Overall,1472.5,Elo,2026-09-25,https://arena.ai/leaderboard/text
 GLM-5.3 Flash,智谱,LMArena,Arena-Overall,1470.9,Elo,2026-09-25,https://arena.ai/leaderboard/text
 DeepSeek-V4-Pro,DeepSeek,LMArena,Arena-Overall,1450.8,Elo,2026-09-25,https://arena.ai/leaderboard/text
@@ -9,144 +9,144 @@ Claude-Fable-5.1,Anthropic,LMArena,Arena-Overall,1510.8,Elo,2026-09-25,https://a
 GPT-6-Sol,OpenAI,LMArena,Arena-Overall,1395.8,Elo,2026-09-25,https://arena.ai/leaderboard/text
 GPT-6-Luna,OpenAI,LMArena,Arena-Overall,1392.4,Elo,2026-09-25,https://arena.ai/leaderboard/text
 GLM-5.3,智谱,Artificial-Analysis,AA-Index,44.78,指数,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,GPQA,0.9172,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,HLE,0.4226,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.4192,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,AA-LCR,0.7967,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,SciCode,0.5903,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,CritPt,0.1914,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,AA-Omniscience Index,14.3,指数,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,GPQA,0.917171717171717,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,HLE,0.422613531047266,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.419191919191919,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,AA-LCR,0.796666666666667,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,SciCode,0.590277777777778,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,CritPt,0.191428571428571,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,AA-Omniscience Index,6.033333333333333,指数,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
 GLM-5.3,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.2955,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3,智谱,Artificial-Analysis,AutomationBench-AA,0.622,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3,智谱,Artificial-Analysis,AutomationBench-AA,0.622028649962642,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
 GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Index,27.75,指数,2026-10-31,https://artificialanalysis.ai/models/glm-5-3-flash（1031 复核：子分与 0928 逐位一致，AA 全局改基线致指数 41.81→27.75；该行仅留档不映射）
-GLM-5.3 Flash,智谱,Artificial-Analysis,GPQA,0.9121,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,HLE,0.3985,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.3283,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,AA-LCR,0.8,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,SciCode,0.5162,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,CritPt,0.1543,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Omniscience Index,7.47,指数,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,GPQA,0.912121212121212,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,HLE,0.398517145505097,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.328282828282828,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,AA-LCR,0.8,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,SciCode,0.516203703703704,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,CritPt,0.154285714285714,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Omniscience Index,0.6666666666666666,指数,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
 GLM-5.3 Flash,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.2763,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
-GLM-5.3 Flash,智谱,Artificial-Analysis,AutomationBench-AA,0.6037,0-1,2026-09-28,https://artificialanalysis.ai/models/glm-5-3-flash
+GLM-5.3 Flash,智谱,Artificial-Analysis,AutomationBench-AA,0.6036862782167782,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
 DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-Index,36.0,指数,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,GPQA,0.9283,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,HLE,0.4101,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.1414,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-LCR,0.8033,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,SciCode,0.5104,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,CritPt,0.18,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-Omniscience Index,0.83,指数,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,GPQA,0.928282828282828,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,HLE,0.410101946246525,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.141414141414141,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-LCR,0.803333333333333,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,SciCode,0.510416666666667,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,CritPt,0.18,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-Omniscience Index,-6.366666666666666,指数,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
 DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.9483,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.5671,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-pro
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.5671165546344002,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
 DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-Index,39.46,指数,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,HLE,0.3925,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.2677,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-LCR,0.84,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,SciCode,0.5185,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,MMMU-Pro,0.7699,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,CritPt,0.1429,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,HLE,0.392493049119555,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.267676767676768,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-LCR,0.84,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,SciCode,0.518518518518518,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,MMMU-Pro,0.769942196531792,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,CritPt,0.142857142857143,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
 DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-Omniscience Index,-5.3,指数,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
 DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.9646,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.6889,0-1,2026-09-28,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.6889097769674057,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
 Qwen3.8-Max,阿里,Artificial-Analysis,AA-Index,45.42,指数,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,GPQA,0.9283,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,HLE,0.431,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,Terminal-Bench 4.0,0.3889,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,AA-LCR,0.8033,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,SciCode,0.5208,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,MMMU-Pro,0.8277,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,CritPt,0.1771,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,AA-Omniscience Index,11.98,指数,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,GPQA,0.928282828282828,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,HLE,0.430954587581094,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,Terminal-Bench 4.0,0.388888888888889,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,AA-LCR,0.803333333333333,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,SciCode,0.520833333333333,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,MMMU-Pro,0.827745664739884,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,CritPt,0.177142857142857,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,AA-Omniscience Index,10.466666666666667,指数,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
 Qwen3.8-Max,阿里,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.2884,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-Max,阿里,Artificial-Analysis,AutomationBench-AA,0.5619,0-1,2026-09-28,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-Max,阿里,Artificial-Analysis,AutomationBench-AA,0.561905381087678,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
 Kimi-K3,月之暗面,Artificial-Analysis,AA-Index,43.59,指数,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,GPQA,0.9354,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,HLE,0.469,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.1263,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,AA-LCR,0.8867,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,SciCode,0.5949,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,MMMU-Pro,0.8052,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,CritPt,0.2343,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,GPQA,0.935353535353535,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,HLE,0.468952734012975,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.126262626262626,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,AA-LCR,0.886666666666667,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,SciCode,0.594907407407407,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,MMMU-Pro,0.805202312138728,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,CritPt,0.234285714285714,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
 Kimi-K3,月之暗面,Artificial-Analysis,AA-Omniscience Index,19.7,指数,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
 Kimi-K3,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.532,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3,月之暗面,Artificial-Analysis,AutomationBench-AA,0.5827,0-1,2026-09-28,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3,月之暗面,Artificial-Analysis,AutomationBench-AA,0.5827297780015204,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
 MiniMax-M3,MiniMax,Artificial-Analysis,AA-Index,29.22,指数,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,GPQA,0.9293,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,HLE,0.3897,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,Terminal-Bench 4.0,0.0202,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,AA-LCR,0.83,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,IFBench,0.8286,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,SciCode,0.4711,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,MMMU-Pro,0.7855,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,CritPt,0.0371,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,AA-Omniscience Index,1.35,指数,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,GPQA,0.929292929292929,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,HLE,0.389712696941613,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,Terminal-Bench 4.0,0.0202020202020202,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,AA-LCR,0.83,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,IFBench,0.828571428571429,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,SciCode,0.471064814814815,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,MMMU-Pro,0.785549132947977,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,CritPt,0.0371428571428571,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,AA-Omniscience Index,-5.5,指数,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
 MiniMax-M3,MiniMax,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.1843,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3,MiniMax,Artificial-Analysis,AutomationBench-AA,0.2125,0-1,2026-09-28,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3,MiniMax,Artificial-Analysis,AutomationBench-AA,0.21251257600749407,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
 GPT-6-Astra,OpenAI,Artificial-Analysis,AA-Index,52.67,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,GPQA,0.9606,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,HLE,0.5468,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.5909,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,AA-LCR,0.8067,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,SciCode,0.5648,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,MMMU-Pro,0.8688,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,CritPt,0.3171,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,AA-Omniscience Index,43.4,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,GPQA,0.960606060606061,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,HLE,0.546802594995366,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.590909090909091,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,AA-LCR,0.806666666666667,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,SciCode,0.564814814814815,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,MMMU-Pro,0.86878612716763,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,CritPt,0.317142857142857,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,AA-Omniscience Index,42.43333333333333,指数,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
 GPT-6-Astra,OpenAI,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.5134,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Astra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6849,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Astra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6849174806688876,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
 GPT-6-Sol,OpenAI,Artificial-Analysis,AA-Index,47.53,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,HLE,0.4791,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.4394,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,AA-LCR,0.8367,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,SciCode,0.5764,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,MMMU-Pro,0.8329,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,CritPt,0.3086,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,AA-Omniscience Index,27.12,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,HLE,0.479147358665431,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.439393939393939,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,AA-LCR,0.836666666666667,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,SciCode,0.576388888888889,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,MMMU-Pro,0.829479768786127,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,CritPt,0.308571428571429,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,AA-Omniscience Index,21.4,指数,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
 GPT-6-Sol,OpenAI,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.6012,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
-GPT-6-Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6163,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6-Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6163369295959864,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
 GPT-6-Luna,OpenAI,Artificial-Analysis,AA-Index,37.26,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,HLE,0.3851,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.1263,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,AA-LCR,0.8333,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,SciCode,0.5463,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,MMMU-Pro,0.7965,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,CritPt,0.1943,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,AA-Omniscience Index,0.65,指数,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,HLE,0.385078776645042,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.126262626262626,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,AA-LCR,0.833333333333333,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,SciCode,0.546296296296296,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,MMMU-Pro,0.796531791907514,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,CritPt,0.194285714285714,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,AA-Omniscience Index,-8.266666666666667,指数,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
 GPT-6-Luna,OpenAI,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.7673,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Luna,OpenAI,Artificial-Analysis,AutomationBench-AA,0.5317,0-1,2026-09-28,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Luna,OpenAI,Artificial-Analysis,AutomationBench-AA,0.5316814034483175,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
 Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-Index,53.35,指数,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,GPQA,0.9374,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,HLE,0.5913,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,Terminal-Bench 4.0,0.5202,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-LCR,0.8533,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,SciCode,0.6308,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,CritPt,0.2971,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-Omniscience Index,43.45,指数,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,GPQA,0.937373737373737,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,HLE,0.591288229842447,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,Terminal-Bench 4.0,0.52020202020202,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-LCR,0.853333333333333,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,SciCode,0.630787037037037,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,CritPt,0.297142857142857,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-Omniscience Index,46.266666666666666,指数,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
 Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.7258,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,AutomationBench-AA,0.5938,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,AutomationBench-AA,0.5937591715646424,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
 Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-Index,22.93,指数,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,GPQA,0.8667,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,HLE,0.2841,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,Terminal-Bench 4.0,0.0051,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-LCR,0.7933,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,IFBench,0.8136,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,SciCode,0.4028,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,CritPt,0.0314,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-Omniscience Index,-0.4,指数,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,GPQA,0.866666666666667,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,HLE,0.284059314179796,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,Terminal-Bench 4.0,0.00505050505050505,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,IFBench,0.813605442176871,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,SciCode,0.402777777777778,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,CritPt,0.0314285714285714,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-Omniscience Index,3.433333333333333,指数,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
 Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.2969,0-1越低越好,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AutomationBench-AA,0.0299,0-1,2026-09-28,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AutomationBench-AA,0.02986349541593992,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
 Qwen3.8-27B,,LMArena,Arena-Overall,1438.0,Elo,2026-09-25,https://arena.ai/leaderboard/text（qwen3.8-27b，总榜留档不映射）
 Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-Index,56.0,指数,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,HLE,0.5496,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,CritPt,0.3143,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,SciCode,0.61,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,Terminal-Bench 4.0,0.6364,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AutomationBench-AA,0.7177,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-LCR,0.8267,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-Omniscience Index,32.3,指数,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,HLE,0.549582947173309,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,CritPt,0.314285714285714,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,SciCode,0.609953703703704,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,Terminal-Bench 4.0,0.636363636363636,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AutomationBench-AA,0.7176882128193995,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-LCR,0.826666666666667,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-Omniscience Index,30.466666666666665,指数,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
 Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.4701,0-1越低越好,2026-10-06,https://artificialanalysis.ai/models/claude-sonnet-5-5
 Claude-Sonnet-5.5,Anthropic,LMArena,Arena-Overall,1471.0,Elo,2026-10-06,https://arena.ai/leaderboard/text
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,MMMU-Pro,0.8769,0-1,2026-10-06,https://artificialanalysis.ai/models/claude-opus-5-5
-Qwen3.8-27B,阿里,Artificial-Analysis,MMMU-Pro,0.763,0-1,2026-10-06,https://artificialanalysis.ai/models/qwen3-8-27b
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,MMMU-Pro,0.876878612716763,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Qwen3.8-27B,阿里,Artificial-Analysis,MMMU-Pro,0.763005780346821,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
 Claude-Opus-5.5,Anthropic,LMArena,WebDev-Elo,1815.0,Elo,2026-10-06,https://arena.ai/leaderboard/code（WebDev Arena 实体 claude-opus-5.5-max）
 Claude-Fable-5.1,Anthropic,LMArena,WebDev-Elo,1749.0,Elo,2026-10-06,https://arena.ai/leaderboard/code（WebDev Arena 实体 claude-fable-5.1-max）
 Claude-Sonnet-5.5,Anthropic,LMArena,WebDev-Elo,1786.0,Elo,2026-10-06,https://arena.ai/leaderboard/code（WebDev Arena 实体 claude-sonnet-5.5-xhigh）
@@ -170,331 +170,331 @@ GLM-5.3 Flash,智谱,LMArena,Vision-Elo,1278.0,Elo,2026-10-06,https://arena.ai/l
 MiniMax-M3,MiniMax,LMArena,Vision-Elo,1237.0,Elo,2026-10-06,https://arena.ai/leaderboard/vision（Vision Arena 实体 minimax-m3）
 Qwen3.8-Max,阿里,LMArena,Vision-Elo,1301.0,Elo,2026-10-06,https://arena.ai/leaderboard/vision（Vision Arena 实体 qwen3.8-max）
 Qwen3.8-27B,阿里,LMArena,Vision-Elo,1243.0,Elo,2026-10-06,https://arena.ai/leaderboard/vision（Vision Arena 实体 qwen3.8-27b）
-Claude-Opus-5.5,,Artificial-Analysis,HLE,0.6135,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,CritPt,0.3171,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,SciCode,0.669,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,Terminal-Bench 4.0,0.596,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,AutomationBench-AA,0.6954,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,AA-LCR,0.8467,0-1,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Opus-5.5,,Artificial-Analysis,AA-Omniscience Index,46.4167,指数,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,HLE,0.613531047265987,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,CritPt,0.317142857142857,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,SciCode,0.668981481481482,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,Terminal-Bench 4.0,0.595959595959596,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,AutomationBench-AA,0.6953868128636069,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,AA-LCR,0.846666666666667,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Opus-5.5,,Artificial-Analysis,AA-Omniscience Index,48.13333333333333,指数,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
 Claude-Opus-5.5,,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.5861,0-1越低越好,2026-10-07,https://artificialanalysis.ai/models/claude-opus-5-5
-Qwen3.8-27B,,Artificial-Analysis,GPQA,0.9051,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,HLE,0.3392,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,CritPt,0.0543,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,SciCode,0.4664,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,Terminal-Bench 4.0,0.0556,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,AutomationBench-AA,0.4824,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,AA-LCR,0.82,0-1,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-27B,,Artificial-Analysis,AA-Omniscience Index,-9.9833,指数,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,GPQA,0.905050505050505,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,HLE,0.33920296570899,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,CritPt,0.0542857142857143,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,SciCode,0.466435185185185,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,Terminal-Bench 4.0,0.0555555555555556,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,AutomationBench-AA,0.48242443682241926,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,AA-LCR,0.82,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-27B,,Artificial-Analysis,AA-Omniscience Index,-6.366666666666666,指数,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
 Qwen3.8-27B,,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.3029,0-1越低越好,2026-10-07,https://artificialanalysis.ai/models/qwen3-8-27b
-Hunyuan-Hy3,,Artificial-Analysis,GPQA,0.897,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,HLE,0.3346,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,CritPt,0.0486,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,SciCode,0.4861,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,Terminal-Bench 4.0,0.0051,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,AutomationBench-AA,0.1841,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,AA-LCR,0.79,0-1,2026-10-07,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,GPQA,0.896969696969697,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,HLE,0.334569045412419,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,CritPt,0.0485714285714286,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,SciCode,0.486111111111111,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,Terminal-Bench 4.0,0.00505050505050505,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,AutomationBench-AA,0.18409128371172395,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Hunyuan-Hy3,,Artificial-Analysis,AA-LCR,0.79,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
 Hunyuan-Hy3,,Artificial-Analysis,AA-Omniscience Index,-18.4667,指数,2026-10-07,https://artificialanalysis.ai/models/hy3
 Hunyuan-Hy3,,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.7413,0-1越低越好,2026-10-07,https://artificialanalysis.ai/models/hy3
-Hunyuan-Hy3,,Artificial-Analysis,Terminal-Bench 2.1,0.644194756554307,0-1,2026-10-08,https://artificialanalysis.ai/models/hy3
-Claude-Fable-5.1,,Artificial-Analysis,Terminal-Bench 2.1,0.913857677902622,0-1,2026-10-08,https://artificialanalysis.ai/models/claude-fable-5-1
-GPT-6-Astra,,Artificial-Analysis,Terminal-Bench 2.1,0.883895131086142,0-1,2026-10-08,https://artificialanalysis.ai/models/gpt-6-astra
-GLM-5.3,,Artificial-Analysis,Terminal-Bench 2.1,0.838951310861423,0-1,2026-10-08,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,,Artificial-Analysis,Terminal-Bench 2.1,0.842696629213483,0-1,2026-10-08,https://artificialanalysis.ai/models/glm-5-3-flash
-DeepSeek-V4-Pro,,Artificial-Analysis,Terminal-Bench 2.1,0.786516853932584,0-1,2026-10-08,https://artificialanalysis.ai/models/deepseek-v4-pro
-Qwen3.8-Max,,Artificial-Analysis,Terminal-Bench 2.1,0.887640449438202,0-1,2026-10-08,https://artificialanalysis.ai/models/qwen3-8-max
-Qwen3.8-27B,,Artificial-Analysis,Terminal-Bench 2.1,0.797752808988764,0-1,2026-10-08,https://artificialanalysis.ai/models/qwen3-8-27b
-Kimi-K3,,Artificial-Analysis,Terminal-Bench 2.1,0.850187265917603,0-1,2026-10-08,https://artificialanalysis.ai/models/kimi-k3
-MiniMax-M3,,Artificial-Analysis,Terminal-Bench 2.1,0.651685393258427,0-1,2026-10-08,https://artificialanalysis.ai/models/minimax-m3
-Nemotron-3-Ultra,,Artificial-Analysis,Terminal-Bench 2.1,0.539325842696629,0-1,2026-10-08,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Kimi-K2.6,月之暗面,Artificial-Analysis,GPQA,0.911111111111111,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,HLE,0.374884151992586,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,CritPt,0.08,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,SciCode,0.515046296296296,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,Terminal-Bench 2.1,0.659176029962547,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.005050505050505,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,AA-LCR,0.81,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,IFBench,0.759863945578231,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,MMMU-Pro,0.79364161849711,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.6,月之暗面,Artificial-Analysis,AutomationBench-AA,0.1302075985638627,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
+Hunyuan-Hy3,,Artificial-Analysis,Terminal-Bench 2.1,0.644194756554307,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Claude-Fable-5.1,,Artificial-Analysis,Terminal-Bench 2.1,0.913857677902622,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+GPT-6-Astra,,Artificial-Analysis,Terminal-Bench 2.1,0.883895131086142,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GLM-5.3,,Artificial-Analysis,Terminal-Bench 2.1,0.838951310861423,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,,Artificial-Analysis,Terminal-Bench 2.1,0.842696629213483,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+DeepSeek-V4-Pro,,Artificial-Analysis,Terminal-Bench 2.1,0.786516853932584,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Qwen3.8-Max,,Artificial-Analysis,Terminal-Bench 2.1,0.887640449438202,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Qwen3.8-27B,,Artificial-Analysis,Terminal-Bench 2.1,0.797752808988764,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Kimi-K3,,Artificial-Analysis,Terminal-Bench 2.1,0.850187265917603,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+MiniMax-M3,,Artificial-Analysis,Terminal-Bench 2.1,0.651685393258427,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+Nemotron-3-Ultra,,Artificial-Analysis,Terminal-Bench 2.1,0.539325842696629,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Kimi-K2.6,月之暗面,Artificial-Analysis,GPQA,0.911111111111111,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,HLE,0.374884151992586,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,CritPt,0.08,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,SciCode,0.515046296296296,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,Terminal-Bench 2.1,0.659176029962547,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.00505050505050505,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,AA-LCR,0.81,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,IFBench,0.759863945578231,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,MMMU-Pro,0.79364161849711,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.6,月之暗面,Artificial-Analysis,AutomationBench-AA,0.1302075985638627,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
 Kimi-K2.6,月之暗面,Artificial-Analysis,AA-Omniscience Index,5.3,指数,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
 Kimi-K2.6,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.4050445103857567,0-1越低越好,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,GPQA,0.895959595959596,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,HLE,0.35032437442076,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,CritPt,0.1,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,SciCode,0.478009259259259,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,Terminal-Bench 2.1,0.674157303370786,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.0101010101010101,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,IFBench,0.631292517006803,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AutomationBench-AA,0.2445430461521671,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,GPQA,0.895959595959596,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,HLE,0.35032437442076,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,CritPt,0.1,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,SciCode,0.478009259259259,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,Terminal-Bench 2.1,0.674157303370786,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.0101010101010101,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,IFBench,0.631292517006803,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AutomationBench-AA,0.24454304615216713,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
 Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-Omniscience Index,-10.216666666666669,指数,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
 Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.8237727523441809,0-1越低越好,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-Step-5-Preview,阶跃星辰,Artificial-Analysis,HLE,0.464782205746061,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,CritPt,0.208571428571429,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,SciCode,0.58912037037037,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,Terminal-Bench 4.0,0.333333333333333,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-LCR,0.883333333333333,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,MMMU-Pro,0.763583815028902,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,AutomationBench-AA,0.5095659419096288,0-1,2026-10-17,https://artificialanalysis.ai/models/step-5
-Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-Omniscience Index,16.383333333333333,指数,2026-10-17,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,HLE,0.464782205746061,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,CritPt,0.208571428571429,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,SciCode,0.58912037037037,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,Terminal-Bench 4.0,0.333333333333333,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-LCR,0.883333333333333,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,MMMU-Pro,0.763583815028902,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,AutomationBench-AA,0.5095659419096288,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-Omniscience Index,16.433333333333334,指数,2026-09-18,https://artificialanalysis.ai/models/step-5
 Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.4301596351197263,0-1越低越好,2026-10-17,https://artificialanalysis.ai/models/step-5
-GLM-5v-Turbo,智谱,Artificial-Analysis,GPQA,0.809090909090909,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,HLE,0.171455050973123,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,CritPt,0.0057142857142857,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,AA-LCR,0.703333333333333,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,IFBench,0.610884353741497,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,MMMU-Pro,0.727745664739884,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,GPQA,0.809090909090909,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,HLE,0.171455050973123,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,CritPt,0.00571428571428571,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,AA-LCR,0.703333333333333,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,IFBench,0.610884353741497,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+GLM-5v-Turbo,智谱,Artificial-Analysis,MMMU-Pro,0.727745664739884,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
 GLM-5v-Turbo,智谱,Artificial-Analysis,AA-Omniscience Index,-19.28333333333333,指数,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
 GLM-5v-Turbo,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.6879716981132076,0-1越低越好,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-GLM-5v-Turbo,智谱,Artificial-Analysis,τ²-bench,0.9854,0-1,2026-10-17,https://artificialanalysis.ai/models/glm-5v-turbo
-Kimi-K2.6,月之暗面,Artificial-Analysis,τ²-bench,0.9591,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,τ²-bench,0.9006,0-1,2026-10-17,https://artificialanalysis.ai/models/kimi-k2-7-code
-MiniMax-M3,MiniMax,Artificial-Analysis,τ²-bench,0.8889,0-1,2026-10-17,https://artificialanalysis.ai/models/minimax-m3
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,τ²-bench,0.8333,0-1,2026-10-17,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,HLE,0.433272,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,CritPt,0.24,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,SciCode,0.559028,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.338384,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-LCR,0.826667,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,MMMU-Pro,0.806358,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.66641,0-1,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-Omniscience Index,4.7,指数,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+GLM-5v-Turbo,智谱,Artificial-Analysis,τ²-bench,0.985380116959064,0-1,2026-04-01,https://artificialanalysis.ai/models/glm-5v-turbo
+Kimi-K2.6,月之暗面,Artificial-Analysis,τ²-bench,0.95906432748538,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,τ²-bench,0.900584795321637,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+MiniMax-M3,MiniMax,Artificial-Analysis,τ²-bench,0.888888888888889,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,τ²-bench,0.833333333333333,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,HLE,0.433271547729379,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,CritPt,0.24,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,SciCode,0.559027777777778,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,Terminal-Bench 4.0,0.338383838383838,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-LCR,0.826666666666667,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,MMMU-Pro,0.80635838150289,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AutomationBench-AA,0.6664095364949257,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-Omniscience Index,0.9,指数,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
 DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-Index,45.096505,指数,2026-10-20,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-GLM-5.1,智谱,Artificial-Analysis,GPQA,0.867677,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,HLE,0.300741,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,CritPt,0.045714,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,SciCode,0.447917,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,Terminal-Bench 2.1,0.617978,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.020202,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,AA-LCR,0.736667,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,IFBench,0.762585,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,AutomationBench-AA,0.203084,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,GPQA,0.867676767676768,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,HLE,0.300741427247451,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,CritPt,0.0457142857142857,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,SciCode,0.447916666666667,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,Terminal-Bench 2.1,0.617977528089888,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.0202020202020202,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,AA-LCR,0.736666666666667,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,IFBench,0.762585034013605,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,AutomationBench-AA,0.20308354687857075,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
 GLM-5.1,智谱,Artificial-Analysis,AA-Omniscience Index,0.85,指数,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.1,智谱,Artificial-Analysis,τ²-bench,0.976608,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.1,智谱,Artificial-Analysis,τ²-bench,0.976608187134503,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
 GLM-5.1,智谱,Artificial-Analysis,AA-Index,26.058591,指数,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
 GLM-5.1,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.299476,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.2,智谱,Artificial-Analysis,GPQA,0.894949,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,HLE,0.411492,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,CritPt,0.208571,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,SciCode,0.511574,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,Terminal-Bench 2.1,0.779026,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.010101,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,AA-LCR,0.783333,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,IFBench,0.733333,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,AutomationBench-AA,0.28399,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,AA-Omniscience Index,4.433333,指数,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.2,智谱,Artificial-Analysis,τ²-bench,0.991228,0-1,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,GPQA,0.894949494949495,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,HLE,0.411492122335496,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,CritPt,0.208571428571429,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,SciCode,0.511574074074074,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,Terminal-Bench 2.1,0.779026217228464,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,Terminal-Bench 4.0,0.0101010101010101,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,AA-LCR,0.783333333333333,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,IFBench,0.733333333333333,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,AutomationBench-AA,0.2839897721005435,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,AA-Omniscience Index,0.6333333333333333,指数,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.2,智谱,Artificial-Analysis,τ²-bench,0.991228070175439,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
 GLM-5.2,智谱,Artificial-Analysis,AA-Index,33.705457,指数,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
 GLM-5.2,智谱,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.262996,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/glm-5-2
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,HLE,0.479611,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,CritPt,0.222857,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,SciCode,0.533565,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,Terminal-Bench 4.0,0.257576,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-LCR,0.796667,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,MMMU-Pro,0.791329,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AutomationBench-AA,0.725218,0-1,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-Omniscience Index,15.55,指数,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,HLE,0.479610750695088,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,CritPt,0.222857142857143,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,SciCode,0.533564814814815,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,Terminal-Bench 4.0,0.257575757575758,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-LCR,0.796666666666667,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,MMMU-Pro,0.791329479768786,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AutomationBench-AA,0.7252180957532544,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-Omniscience Index,-6.4,指数,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
 MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-Index,42.705748,指数,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
 MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.928082,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/minimax-m3-1-flash
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,HLE,0.493513,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,CritPt,0.265714,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,SciCode,0.608796,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,Terminal-Bench 4.0,0.348485,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-LCR,0.863333,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AutomationBench-AA,0.586234,0-1,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-Omniscience Index,8.383333,指数,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,HLE,0.493512511584801,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,CritPt,0.265714285714286,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,SciCode,0.608796296296296,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,Terminal-Bench 4.0,0.348484848484849,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-LCR,0.863333333333333,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AutomationBench-AA,0.5862340943419085,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-Omniscience Index,-4.466666666666667,指数,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
 MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-Index,46.324207,指数,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
 MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.406242,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
 Gemini 4 Argon,Google,Artificial-Analysis,AA-Index,52.56,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,HLE,0.570898980537535,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,CritPt,0.271428571428571,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,SciCode,0.618055555555556,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,Terminal-Bench 4.0,0.570707070707071,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,AA-LCR,0.796666666666667,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,AutomationBench-AA,0.7751346945899195,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Argon,Google,Artificial-Analysis,AA-Omniscience Index,42.35,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,HLE,0.570898980537535,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,CritPt,0.271428571428571,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,SciCode,0.618055555555556,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,Terminal-Bench 4.0,0.570707070707071,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,AA-LCR,0.796666666666667,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,AutomationBench-AA,0.7751346945899195,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Argon,Google,Artificial-Analysis,AA-Omniscience Index,46.1,指数,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
 Gemini 4 Argon,Google,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.1506986027944112,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/gemini-4-argon
 Gemini 3.8 Flash,Google,Artificial-Analysis,AA-Index,40.93,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,GPQA,0.952525252525253,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,HLE,0.478220574606117,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,CritPt,0.182857142857143,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,SciCode,0.565972222222222,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,Terminal-Bench 4.0,0.196969696969697,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,Terminal-Bench 2.1,0.876404494382023,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,AA-LCR,0.813333333333333,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,MMMU-Pro,0.85606936416185,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,AutomationBench-AA,0.5993009432118243,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,AA-Omniscience Index,29.55,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,GPQA,0.952525252525253,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,HLE,0.478220574606117,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,CritPt,0.182857142857143,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,SciCode,0.565972222222222,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,Terminal-Bench 4.0,0.196969696969697,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,Terminal-Bench 2.1,0.876404494382023,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,AA-LCR,0.813333333333333,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,MMMU-Pro,0.85606936416185,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,AutomationBench-AA,0.5993009432118243,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,AA-Omniscience Index,23.266666666666666,指数,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
 Gemini 3.8 Flash,Google,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.551762114537445,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/gemini-3-8-flash
 Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Index,22.17,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,GPQA,0.838383838383838,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,HLE,0.188137164040778,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,CritPt,0,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,SciCode,0.413194444444444,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,Terminal-Bench 4.0,0.0101010101010101,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,Terminal-Bench 2.1,0.535580524344569,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-LCR,0.76,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,MMMU-Pro,0.790173410404624,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AutomationBench-AA,0.25011270511840955,0-1,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Omniscience Index,5.233333333333333,指数,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,GPQA,0.838383838383838,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,HLE,0.188137164040778,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,CritPt,0,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,SciCode,0.413194444444444,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,Terminal-Bench 4.0,0.0101010101010101,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,Terminal-Bench 2.1,0.535580524344569,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-LCR,0.76,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,MMMU-Pro,0.790173410404624,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AutomationBench-AA,0.25011270511840955,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Omniscience Index,6.866666666666666,指数,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
 Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.3435727788279773,0-1越低越好,2026-10-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,HLE,0.524559777571826,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,CritPt,0.245714285714286,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,SciCode,0.607638888888889,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.671717171717172,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-LCR,0.863333333333333,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,MMMU-Pro,0.838728323699422,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AutomationBench-AA,0.7329771090921112,0-1,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Index,29.516666666666666,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,HLE,0.524559777571826,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,CritPt,0.245714285714286,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,SciCode,0.607638888888889,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,Terminal-Bench 4.0,0.671717171717172,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-LCR,0.863333333333333,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,MMMU-Pro,0.838728323699422,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AutomationBench-AA,0.7329771090921112,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Index,29.866666666666667,指数,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
 Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Index,55.0869210959395,指数,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
 Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-Omniscience Hallucination Rate,0.43892480435522285,0-1越低越好,2026-10-25,https://artificialanalysis.ai/models/kimi-k3-1-pro
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,HLE,0.529193697868397,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,CritPt,0.317142857142857,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,SciCode,0.541666666666667,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.560606060606061,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-LCR,0.83,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,MMMU-Pro,0.859537572254335,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6486844882398171,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,HLE,0.529193697868397,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,CritPt,0.317142857142857,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,SciCode,0.541666666666667,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.560606060606061,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-LCR,0.83,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,MMMU-Pro,0.859537572254335,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6486844882398171,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
 GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-Index,54.5087338138148,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
 GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-Omniscience Index (新基线),42.03333333333333,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,HLE,0.462465245597776,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,CritPt,0.28,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,SciCode,0.550925925925926,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.555555555555556,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-LCR,0.826666666666667,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,MMMU-Pro,0.846820809248555,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6016762327257726,0-1,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,HLE,0.462465245597776,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,CritPt,0.28,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,SciCode,0.550925925925926,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.555555555555556,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-LCR,0.826666666666667,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,MMMU-Pro,0.846820809248555,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.6016762327257726,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
 GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-Index,50.9765188577015,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
 GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-Omniscience Index (新基线),29.566666666666666,指数,2026-11-03,https://artificialanalysis.ai/models/gpt-6-1-terra
-Gemini 4 Carbon,Google,Artificial-Analysis,Terminal-Bench 4.0,0.651515151515151,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
-Gemini 4 Carbon,Google,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
-Gemini 4 Carbon,Google,Artificial-Analysis,AutomationBench-AA,0.7781660572624064,0-1,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,Terminal-Bench 4.0,0.651515151515151,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AA-LCR,0.793333333333333,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,Google,Artificial-Analysis,AutomationBench-AA,0.7781660572624064,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
 Gemini 4 Carbon,Google,Artificial-Analysis,AA-Index,59.425738829526,指数,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
 Gemini 4 Carbon,Google,Artificial-Analysis,AA-Omniscience Index (新基线),53.5,指数,2026-11-03,https://artificialanalysis.ai/models/gemini-4-carbon
-Mistral-Large-4,Mistral AI,Artificial-Analysis,CritPt,0.1,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
-Mistral-Large-4,Mistral AI,Artificial-Analysis,Terminal-Bench 4.0,0.247474747474747,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
-Mistral-Large-4,Mistral AI,Artificial-Analysis,AutomationBench-AA,0.5783010541628066,0-1,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,CritPt,0.1,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,Terminal-Bench 4.0,0.247474747474747,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,Mistral AI,Artificial-Analysis,AutomationBench-AA,0.5783010541628066,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
 Mistral-Large-4,Mistral AI,Artificial-Analysis,AA-Index,26.0249946754784,指数,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
 Mistral-Large-4,Mistral AI,Artificial-Analysis,AA-Omniscience Index (新基线),5.133333333333334,指数,2026-11-03,https://artificialanalysis.ai/models/mistral-large-4
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,FrontierCode,0.489732333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,FrontierCode,0.521731,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,FrontierCode,0.458291333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,FrontierCode,0.440335333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,FrontierCode,0.436605666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,FrontierCode,0.388022666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-pro
-Gemini 3.8 Flash,Google,Artificial-Analysis,FrontierCode,0.363585,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 4 Argon,Google,Artificial-Analysis,FrontierCode,0.434532,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-argon
-GLM-5.3,智谱,Artificial-Analysis,FrontierCode,0.400752,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,FrontierCode,0.409957333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,FrontierCode,0.491209333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,FrontierCode,0.36025,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6-Astra,OpenAI,Artificial-Analysis,FrontierCode,0.469827666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Luna,OpenAI,Artificial-Analysis,FrontierCode,0.419269666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-luna
-Kimi-K3,月之暗面,Artificial-Analysis,FrontierCode,0.436099333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,FrontierCode,0.470664,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3-1-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,FrontierCode,0.454153333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiniMax-M3,MiniMax,Artificial-Analysis,FrontierCode,0.230037666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,FrontierCode,0.385759,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3-1-flash
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,FrontierCode,0.105152333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,FrontierCode,0.342324,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,FrontierCode,0.431563,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,FrontierCode,0.384270666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.316248737373737,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.464359595959596,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.416993434343434,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,FrontierCode-2.0,0.284711616161616,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,FrontierCode-2.0,0.170742929292929,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-pro
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,FrontierCode-2.0,0.0602982323232323,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.8 Flash,Google,Artificial-Analysis,FrontierCode-2.0,0.187427777777778,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 4 Argon,Google,Artificial-Analysis,FrontierCode-2.0,0.257076262626263,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Carbon,Google,Artificial-Analysis,FrontierCode-2.0,0.405606060606061,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-carbon
-GLM-5.3,智谱,Artificial-Analysis,FrontierCode-2.0,0.21587095959596,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,FrontierCode-2.0,0.176070454545455,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.406262878787879,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.423200505050505,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6-Astra,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.42374797979798,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Luna,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.251747727272727,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-luna
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,FrontierCode-2.0,0.254519444444444,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3-1-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,FrontierCode-2.0,0.239701262626263,0-1,2026-11-04,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiniMax-M3,MiniMax,Artificial-Analysis,FrontierCode-2.0,0.219031313131313,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,FrontierCode-2.0,0.208218181818182,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3-1-flash
-Mistral-Large-4,Mistral AI,Artificial-Analysis,FrontierCode-2.0,0.149581313131313,0-1,2026-11-04,https://artificialanalysis.ai/models/mistral-large-4
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,FrontierCode-2.0,0.0109007575757576,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,FrontierCode-2.0,0.149142929292929,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,FrontierCode-2.0,0.234232323232323,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,FrontierCode-2.0,0.120010101010101,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,TB-Science,0.433333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,TB-Science,0.59047619047619,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,TB-Science,0.533333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,TB-Science,0.0904761904761905,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,TB-Science,0.0571428571428571,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-pro
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,TB-Science,0.0,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.8 Flash,Google,Artificial-Analysis,TB-Science,0.1,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 4 Argon,Google,Artificial-Analysis,TB-Science,0.528571428571429,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-argon
-Gemini 4 Carbon,Google,Artificial-Analysis,TB-Science,0.647619047619048,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-carbon
-GLM-5.3,智谱,Artificial-Analysis,TB-Science,0.0952380952380952,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,TB-Science,0.0476190476190476,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,TB-Science,0.580952380952381,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,TB-Science,0.576190476190476,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6-Astra,OpenAI,Artificial-Analysis,TB-Science,0.633333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Luna,OpenAI,Artificial-Analysis,TB-Science,0.0857142857142857,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Sol,OpenAI,Artificial-Analysis,TB-Science,0.3,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-sol
-Kimi-K3,月之暗面,Artificial-Analysis,TB-Science,0.080952380952381,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,TB-Science,0.342857142857143,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3-1-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,TB-Science,0.0571428571428571,0-1,2026-11-04,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiniMax-M3,MiniMax,Artificial-Analysis,TB-Science,0.00476190476190476,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,TB-Science,0.0333333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3-1-flash
-Mistral-Large-4,Mistral AI,Artificial-Analysis,TB-Science,0.0428571428571429,0-1,2026-11-04,https://artificialanalysis.ai/models/mistral-large-4
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,TB-Science,0.0,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,TB-Science,0.00476190476190476,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,TB-Science,0.119047619047619,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,TB-Science,0.0238095238095238,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,tau2-Banking,0.472164948453608,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,tau2-Banking,0.395876288659794,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-pro
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,tau2-Banking,0.175257731958763,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.8 Flash,Google,Artificial-Analysis,tau2-Banking,0.449484536082474,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-GLM-5.1,智谱,Artificial-Analysis,tau2-Banking,0.136082474226804,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.2,智谱,Artificial-Analysis,tau2-Banking,0.34639175257732,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.3,智谱,Artificial-Analysis,tau2-Banking,0.503092783505155,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,tau2-Banking,0.472164948453608,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6-Astra,OpenAI,Artificial-Analysis,tau2-Banking,0.414432989690722,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-Hunyuan-Hy3,,Artificial-Analysis,tau2-Banking,0.228865979381443,0-1,2026-11-04,https://artificialanalysis.ai/models/hy3
-Kimi-K2.6,月之暗面,Artificial-Analysis,tau2-Banking,0.232989690721649,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,tau2-Banking,0.202061855670103,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K3,月之暗面,Artificial-Analysis,tau2-Banking,0.45979381443299,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-MiniMax-M3,MiniMax,Artificial-Analysis,tau2-Banking,0.152577319587629,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,tau2-Banking,0.142268041237113,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,tau2-Banking,0.480412371134021,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,tau2-Banking,0.478350515463918,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,ITBench-SRE,0.495291902071563,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,ITBench-SRE,0.382297551789077,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,ITBench-SRE,0.469161958568738,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,ITBench-SRE,0.525423728813559,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-GLM-5.1,智谱,Artificial-Analysis,ITBench-SRE,0.402542372881356,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-1
-GLM-5.2,智谱,Artificial-Analysis,ITBench-SRE,0.426553672316384,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.3,智谱,Artificial-Analysis,ITBench-SRE,0.460828625235405,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,ITBench-SRE,0.512429378531074,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6-Astra,OpenAI,Artificial-Analysis,ITBench-SRE,0.485875706214689,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Sol,OpenAI,Artificial-Analysis,ITBench-SRE,0.494350282485876,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-sol
-Kimi-K2.6,月之暗面,Artificial-Analysis,ITBench-SRE,0.311864406779661,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K3,月之暗面,Artificial-Analysis,ITBench-SRE,0.476930320150659,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-Qwen3.8-Max,阿里,Artificial-Analysis,ITBench-SRE,0.402542372881356,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,ITBench-SRE,0.555555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
-DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,EnterpriseOpsGym,0.4959713518352731,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-pro
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,EnterpriseOpsGym,0.423455684870188,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-GLM-5.2,智谱,Artificial-Analysis,EnterpriseOpsGym,0.42733512384362876,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.3,智谱,Artificial-Analysis,EnterpriseOpsGym,0.36436884512085943,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,EnterpriseOpsGym,0.3321396598030439,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-Kimi-K2.6,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.3852581319009251,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.40226797970754996,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K3,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.45329752312742466,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-MiniMax-M3,MiniMax,Artificial-Analysis,EnterpriseOpsGym,0.3210981796478663,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,EnterpriseOpsGym,0.28886899433005075,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,EnterpriseOpsGym,0.4422560429722471,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,EnterpriseOpsGym,0.4762757385854969,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,EnterpriseOpsGym,0.4717994628469114,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,FrontierCode,0.489732333333333,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,FrontierCode,0.521731,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,FrontierCode,0.458291333333333,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,FrontierCode,0.440335333333333,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,FrontierCode,0.436605666666667,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,FrontierCode,0.388022666666667,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Gemini 3.8 Flash,Google,Artificial-Analysis,FrontierCode,0.363585,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 4 Argon,Google,Artificial-Analysis,FrontierCode,0.434532,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+GLM-5.3,智谱,Artificial-Analysis,FrontierCode,0.400752,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,FrontierCode,0.409957333333333,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,FrontierCode,0.491209333333333,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,FrontierCode,0.36025,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6-Astra,OpenAI,Artificial-Analysis,FrontierCode,0.469827666666667,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Luna,OpenAI,Artificial-Analysis,FrontierCode,0.419269666666667,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+Kimi-K3,月之暗面,Artificial-Analysis,FrontierCode,0.436099333333333,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,FrontierCode,0.470664,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,FrontierCode,0.454153333333333,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiniMax-M3,MiniMax,Artificial-Analysis,FrontierCode,0.230037666666667,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,FrontierCode,0.385759,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,FrontierCode,0.105152333333333,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,FrontierCode,0.342324,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,FrontierCode,0.431563,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,FrontierCode,0.384270666666667,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.316248737373737,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.464359595959596,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,FrontierCode-2.0,0.416993434343434,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,FrontierCode-2.0,0.284711616161616,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,FrontierCode-2.0,0.170742929292929,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,FrontierCode-2.0,0.0602982323232323,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.8 Flash,Google,Artificial-Analysis,FrontierCode-2.0,0.187427777777778,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 4 Argon,Google,Artificial-Analysis,FrontierCode-2.0,0.257076262626263,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Carbon,Google,Artificial-Analysis,FrontierCode-2.0,0.405606060606061,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+GLM-5.3,智谱,Artificial-Analysis,FrontierCode-2.0,0.21587095959596,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,FrontierCode-2.0,0.176070454545455,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.406262878787879,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.423200505050505,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6-Astra,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.42374797979798,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Luna,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.251747727272727,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,FrontierCode-2.0,0.254519444444444,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,FrontierCode-2.0,0.239701262626263,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiniMax-M3,MiniMax,Artificial-Analysis,FrontierCode-2.0,0.219031313131313,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,FrontierCode-2.0,0.208218181818182,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+Mistral-Large-4,Mistral AI,Artificial-Analysis,FrontierCode-2.0,0.149581313131313,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,FrontierCode-2.0,0.0109007575757576,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,FrontierCode-2.0,0.149142929292929,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,FrontierCode-2.0,0.234232323232323,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,FrontierCode-2.0,0.120010101010101,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,TB-Science,0.433333333333333,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,TB-Science,0.59047619047619,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,TB-Science,0.533333333333333,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,TB-Science,0.0904761904761905,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,TB-Science,0.0571428571428571,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,TB-Science,0,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.8 Flash,Google,Artificial-Analysis,TB-Science,0.1,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 4 Argon,Google,Artificial-Analysis,TB-Science,0.528571428571429,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+Gemini 4 Carbon,Google,Artificial-Analysis,TB-Science,0.647619047619048,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+GLM-5.3,智谱,Artificial-Analysis,TB-Science,0.0952380952380952,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,TB-Science,0.0476190476190476,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,TB-Science,0.580952380952381,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,TB-Science,0.576190476190476,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6-Astra,OpenAI,Artificial-Analysis,TB-Science,0.633333333333333,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Luna,OpenAI,Artificial-Analysis,TB-Science,0.0857142857142857,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Sol,OpenAI,Artificial-Analysis,TB-Science,0.3,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+Kimi-K3,月之暗面,Artificial-Analysis,TB-Science,0.080952380952381,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,TB-Science,0.342857142857143,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,TB-Science,0.0571428571428571,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiniMax-M3,MiniMax,Artificial-Analysis,TB-Science,0.00476190476190476,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,TB-Science,0.0333333333333333,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+Mistral-Large-4,Mistral AI,Artificial-Analysis,TB-Science,0.0428571428571429,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,TB-Science,0,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,TB-Science,0.00476190476190476,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,TB-Science,0.119047619047619,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,TB-Science,0.0238095238095238,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,tau2-Banking,0.472164948453608,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,tau2-Banking,0.395876288659794,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,tau2-Banking,0.175257731958763,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.8 Flash,Google,Artificial-Analysis,tau2-Banking,0.449484536082474,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+GLM-5.1,智谱,Artificial-Analysis,tau2-Banking,0.136082474226804,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.2,智谱,Artificial-Analysis,tau2-Banking,0.34639175257732,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.3,智谱,Artificial-Analysis,tau2-Banking,0.503092783505155,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,tau2-Banking,0.472164948453608,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6-Astra,OpenAI,Artificial-Analysis,tau2-Banking,0.414432989690722,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+Hunyuan-Hy3,,Artificial-Analysis,tau2-Banking,0.228865979381443,0-1,2026-07-06,https://artificialanalysis.ai/models/hy3
+Kimi-K2.6,月之暗面,Artificial-Analysis,tau2-Banking,0.232989690721649,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,tau2-Banking,0.202061855670103,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K3,月之暗面,Artificial-Analysis,tau2-Banking,0.45979381443299,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+MiniMax-M3,MiniMax,Artificial-Analysis,tau2-Banking,0.152577319587629,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,tau2-Banking,0.142268041237113,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,tau2-Banking,0.480412371134021,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,tau2-Banking,0.478350515463918,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,ITBench-SRE,0.495291902071563,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,ITBench-SRE,0.382297551789077,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,ITBench-SRE,0.469161958568738,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,ITBench-SRE,0.525423728813559,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+GLM-5.1,智谱,Artificial-Analysis,ITBench-SRE,0.402542372881356,0-1,2026-04-07,https://artificialanalysis.ai/models/glm-5-1
+GLM-5.2,智谱,Artificial-Analysis,ITBench-SRE,0.426553672316384,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.3,智谱,Artificial-Analysis,ITBench-SRE,0.460828625235405,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,ITBench-SRE,0.512429378531074,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6-Astra,OpenAI,Artificial-Analysis,ITBench-SRE,0.485875706214689,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Sol,OpenAI,Artificial-Analysis,ITBench-SRE,0.494350282485876,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+Kimi-K2.6,月之暗面,Artificial-Analysis,ITBench-SRE,0.311864406779661,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K3,月之暗面,Artificial-Analysis,ITBench-SRE,0.476930320150659,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Qwen3.8-Max,阿里,Artificial-Analysis,ITBench-SRE,0.402542372881356,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,ITBench-SRE,0.555555555555556,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+DeepSeek-V4-Pro,DeepSeek,Artificial-Analysis,EnterpriseOpsGym,0.4959713518352731,0-1,2026-08-13,https://artificialanalysis.ai/models/deepseek-v4-pro
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,EnterpriseOpsGym,0.423455684870188,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+GLM-5.2,智谱,Artificial-Analysis,EnterpriseOpsGym,0.42733512384362876,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.3,智谱,Artificial-Analysis,EnterpriseOpsGym,0.36436884512085943,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,EnterpriseOpsGym,0.3321396598030439,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+Kimi-K2.6,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.3852581319009251,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.40226797970754996,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K3,月之暗面,Artificial-Analysis,EnterpriseOpsGym,0.45329752312742466,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+MiniMax-M3,MiniMax,Artificial-Analysis,EnterpriseOpsGym,0.3210981796478663,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,EnterpriseOpsGym,0.28886899433005075,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,EnterpriseOpsGym,0.4422560429722471,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,EnterpriseOpsGym,0.4762757385854969,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,EnterpriseOpsGym,0.4717994628469114,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
 Claude-Fable-5.1,Anthropic,Artificial-Analysis,GDPval-AA,1763.29,指数,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
 Claude-Opus-5.5,Anthropic,Artificial-Analysis,GDPval-AA,1866.27,指数,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
 Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,GDPval-AA,1837.82,指数,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
@@ -526,18 +526,18 @@ Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,GDPval-AA,1020.69,指数,2026-11-04,
 Qwen3.8-27B,阿里,Artificial-Analysis,GDPval-AA,1426.73,指数,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
 Qwen3.8-Max,阿里,Artificial-Analysis,GDPval-AA,1673.9,指数,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
 Step-5-Preview,阶跃星辰,Artificial-Analysis,GDPval-AA,1593.99,指数,2026-11-04,https://artificialanalysis.ai/models/step-5
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,HealthBench,0.5721725564919435,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,HealthBench,0.5698718859725104,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,HealthBench,0.620657287652967,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,HealthBench,0.6088631027372047,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-Gemini 3.8 Flash,Google,Artificial-Analysis,HealthBench,0.48378515868589594,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 4 Argon,Google,Artificial-Analysis,HealthBench,0.4905451024738078,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-argon
-GLM-5.3,智谱,Artificial-Analysis,HealthBench,0.5452947563714743,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,HealthBench,0.5851711351185636,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6-Astra,OpenAI,Artificial-Analysis,HealthBench,0.5822174183894343,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Luna,OpenAI,Artificial-Analysis,HealthBench,0.5457844450559368,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Sol,OpenAI,Artificial-Analysis,HealthBench,0.5417750874280344,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-sol
-Kimi-K3,月之暗面,Artificial-Analysis,HealthBench,0.5472420823039508,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,HealthBench,0.5721725564919435,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,HealthBench,0.5698718859725104,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,HealthBench,0.620657287652967,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,HealthBench,0.6088631027372047,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+Gemini 3.8 Flash,Google,Artificial-Analysis,HealthBench,0.48378515868589594,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 4 Argon,Google,Artificial-Analysis,HealthBench,0.4905451024738078,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+GLM-5.3,智谱,Artificial-Analysis,HealthBench,0.5452947563714743,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,HealthBench,0.5851711351185636,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6-Astra,OpenAI,Artificial-Analysis,HealthBench,0.5822174183894343,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Luna,OpenAI,Artificial-Analysis,HealthBench,0.5457844450559368,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Sol,OpenAI,Artificial-Analysis,HealthBench,0.5417750874280344,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+Kimi-K3,月之暗面,Artificial-Analysis,HealthBench,0.5472420823039508,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
 Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-3D-Elo,1134.7573,Elo,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
 Claude-Opus-5.5,Anthropic,Artificial-Analysis,AA-3D-Elo,1196.3999,Elo,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
 Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-3D-Elo,1198.8306,Elo,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
@@ -574,33 +574,33 @@ Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,Code2Video-Elo,303.58,Elo,2026-11-04
 Qwen3.8-27B,阿里,Artificial-Analysis,Code2Video-Elo,949.04,Elo,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
 Qwen3.8-Max,阿里,Artificial-Analysis,Code2Video-Elo,1020.76,Elo,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
 Step-5-Preview,阶跃星辰,Artificial-Analysis,Code2Video-Elo,820.57,Elo,2026-11-04,https://artificialanalysis.ai/models/step-5
-Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-MLCR,0.155555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-fable-5-1
-Claude-Opus-5.5,Anthropic,Artificial-Analysis,AA-MLCR,0.277777777777778,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-opus-5-5
-Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-MLCR,0.416666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/claude-sonnet-5-5
-DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-MLCR,0.238888888888889,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash
-DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-MLCR,0.266666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
-Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-MLCR,0.105555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
-Gemini 3.8 Flash,Google,Artificial-Analysis,AA-MLCR,0.105555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-3-8-flash
-Gemini 4 Argon,Google,Artificial-Analysis,AA-MLCR,0.138888888888889,0-1,2026-11-04,https://artificialanalysis.ai/models/gemini-4-argon
-GLM-5.2,智谱,Artificial-Analysis,AA-MLCR,0.127777777777778,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-2
-GLM-5.3,智谱,Artificial-Analysis,AA-MLCR,0.172222222222222,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3
-GLM-5.3 Flash,智谱,Artificial-Analysis,AA-MLCR,0.116666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/glm-5-3-flash
-GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-MLCR,0.383333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-sol
-GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-MLCR,0.305555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-1-terra
-GPT-6-Astra,OpenAI,Artificial-Analysis,AA-MLCR,0.416666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-astra
-GPT-6-Luna,OpenAI,Artificial-Analysis,AA-MLCR,0.261111111111111,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-luna
-GPT-6-Sol,OpenAI,Artificial-Analysis,AA-MLCR,0.338888888888889,0-1,2026-11-04,https://artificialanalysis.ai/models/gpt-6-sol
-Kimi-K2.6,月之暗面,Artificial-Analysis,AA-MLCR,0.111111111111111,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-6
-Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-MLCR,0.122222222222222,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k2-7-code
-Kimi-K3,月之暗面,Artificial-Analysis,AA-MLCR,0.216666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3
-Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-MLCR,0.383333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/kimi-k3-1-pro
-MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-MLCR,0.127777777777778,0-1,2026-11-04,https://artificialanalysis.ai/models/mimo-v2-6-pro
-MiniMax-M3,MiniMax,Artificial-Analysis,AA-MLCR,0.0444444444444444,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3
-MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-MLCR,0.166666666666667,0-1,2026-11-04,https://artificialanalysis.ai/models/minimax-m3-1-flash
-Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-MLCR,0.0555555555555556,0-1,2026-11-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
-Qwen3.8-27B,阿里,Artificial-Analysis,AA-MLCR,0.227777777777778,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-27b
-Qwen3.8-Max,阿里,Artificial-Analysis,AA-MLCR,0.2,0-1,2026-11-04,https://artificialanalysis.ai/models/qwen3-8-max
-Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-MLCR,0.183333333333333,0-1,2026-11-04,https://artificialanalysis.ai/models/step-5
+Claude-Fable-5.1,Anthropic,Artificial-Analysis,AA-MLCR,0.155555555555556,0-1,2026-09-01,https://artificialanalysis.ai/models/claude-fable-5-1
+Claude-Opus-5.5,Anthropic,Artificial-Analysis,AA-MLCR,0.277777777777778,0-1,2026-09-22,https://artificialanalysis.ai/models/claude-opus-5-5
+Claude-Sonnet-5.5,Anthropic,Artificial-Analysis,AA-MLCR,0.416666666666667,0-1,2026-09-28,https://artificialanalysis.ai/models/claude-sonnet-5-5
+DeepSeek-V4.1-Flash,DeepSeek,Artificial-Analysis,AA-MLCR,0.238888888888889,0-1,2026-09-10,https://artificialanalysis.ai/models/deepseek-v4-1-flash
+DeepSeek-V4.1-Flash-1017,DeepSeek,Artificial-Analysis,AA-MLCR,0.266666666666667,0-1,2026-10-17,https://artificialanalysis.ai/models/deepseek-v4-1-flash-1017
+Gemini 3.5 Flash-Lite,Google,Artificial-Analysis,AA-MLCR,0.105555555555556,0-1,2026-07-21,https://artificialanalysis.ai/models/gemini-3-5-flash-lite
+Gemini 3.8 Flash,Google,Artificial-Analysis,AA-MLCR,0.105555555555556,0-1,2026-09-02,https://artificialanalysis.ai/models/gemini-3-8-flash
+Gemini 4 Argon,Google,Artificial-Analysis,AA-MLCR,0.138888888888889,0-1,2026-09-30,https://artificialanalysis.ai/models/gemini-4-argon
+GLM-5.2,智谱,Artificial-Analysis,AA-MLCR,0.127777777777778,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+GLM-5.3,智谱,Artificial-Analysis,AA-MLCR,0.172222222222222,0-1,2026-08-18,https://artificialanalysis.ai/models/glm-5-3
+GLM-5.3 Flash,智谱,Artificial-Analysis,AA-MLCR,0.116666666666667,0-1,2026-08-26,https://artificialanalysis.ai/models/glm-5-3-flash
+GPT-6.1-Sol,OpenAI,Artificial-Analysis,AA-MLCR,0.383333333333333,0-1,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+GPT-6.1-Terra,OpenAI,Artificial-Analysis,AA-MLCR,0.305555555555556,0-1,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+GPT-6-Astra,OpenAI,Artificial-Analysis,AA-MLCR,0.416666666666667,0-1,2026-09-03,https://artificialanalysis.ai/models/gpt-6-astra
+GPT-6-Luna,OpenAI,Artificial-Analysis,AA-MLCR,0.261111111111111,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-luna
+GPT-6-Sol,OpenAI,Artificial-Analysis,AA-MLCR,0.338888888888889,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+Kimi-K2.6,月之暗面,Artificial-Analysis,AA-MLCR,0.111111111111111,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Kimi-K2.7-Code,月之暗面,Artificial-Analysis,AA-MLCR,0.122222222222222,0-1,2026-06-12,https://artificialanalysis.ai/models/kimi-k2-7-code
+Kimi-K3,月之暗面,Artificial-Analysis,AA-MLCR,0.216666666666667,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+Kimi-K3.1-Pro,月之暗面,Artificial-Analysis,AA-MLCR,0.383333333333333,0-1,2026-10-23,https://artificialanalysis.ai/models/kimi-k3-1-pro
+MiMo-V2.6-Pro,小米集团,Artificial-Analysis,AA-MLCR,0.127777777777778,0-1,2026-09-21,https://artificialanalysis.ai/models/mimo-v2-6-pro
+MiniMax-M3,MiniMax,Artificial-Analysis,AA-MLCR,0.0444444444444444,0-1,2026-06-01,https://artificialanalysis.ai/models/minimax-m3
+MiniMax-M3.1-Flash,MiniMax,Artificial-Analysis,AA-MLCR,0.166666666666667,0-1,2026-10-19,https://artificialanalysis.ai/models/minimax-m3-1-flash
+Nemotron-3-Ultra,NVIDIA,Artificial-Analysis,AA-MLCR,0.0555555555555556,0-1,2026-06-04,https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b
+Qwen3.8-27B,阿里,Artificial-Analysis,AA-MLCR,0.227777777777778,0-1,2026-08-14,https://artificialanalysis.ai/models/qwen3-8-27b
+Qwen3.8-Max,阿里,Artificial-Analysis,AA-MLCR,0.2,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Step-5-Preview,阶跃星辰,Artificial-Analysis,AA-MLCR,0.183333333333333,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
 Claude-Fable-5.1,Anthropic,ARC-Prize,ARC-AGI-2,97.5,0-100,2026-11-04,https://arcprize.org/leaderboard
 Claude-Opus-5.5,Anthropic,ARC-Prize,ARC-AGI-2,97.5,0-100,2026-11-04,https://arcprize.org/leaderboard
 Claude-Sonnet-5.5,Anthropic,ARC-Prize,ARC-AGI-2,96.5,0-100,2026-11-04,https://arcprize.org/leaderboard
@@ -715,28 +715,57 @@ Kimi-K2.6,月之暗面,ArenaAI,Vision,1264.0,Elo,2026-11-07,https://arena.ai/lea
 MiMo-V2.6-Pro,小米集团,ArenaAI,Vision,1248.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
 Qwen3.8-Max,阿里,ArenaAI,Vision,1300.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
 Step-5-Preview,阶跃星辰,ArenaAI,Vision,1247.0,Elo,2026-11-07,https://arena.ai/leaderboard/chat/vision
-Hunyuan-Hy4,腾讯,Artificial-Analysis,Terminal-Bench 4.0,0.373737373737374,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
-Hunyuan-Hy4,腾讯,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
-Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1,2026-11-08,https://artificialanalysis.ai/models/tencent-hy4
-Gemini 4 Hydrogen,Google,Artificial-Analysis,Terminal-Bench 4.0,0.535353535353535,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
-Gemini 4 Hydrogen,Google,Artificial-Analysis,TB-Science,0.495238095238095,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
-Gemini 4 Hydrogen,Google,Artificial-Analysis,AutomationBench-AA,0.7614416852922641,0-1,2026-11-16,https://artificialanalysis.ai/models/gemini-4-hydrogen
-Claude-Fable-5.2,,Artificial-Analysis,CritPt,0.354285714285714,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Claude-Fable-5.2,,Artificial-Analysis,SciCode,0.677083333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Claude-Fable-5.2,,Artificial-Analysis,Terminal-Bench 4.0,0.595959595959596,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Claude-Fable-5.2,,Artificial-Analysis,TB-Science,0.733333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Claude-Fable-5.2,,Artificial-Analysis,AA-LCR,0.833333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Claude-Fable-5.2,,Artificial-Analysis,AutomationBench-AA,0.7642233832611831,0-1,2026-11-16,https://artificialanalysis.ai/models/claude-fable-5-2
-Agnes 2.5 Pro Theta,,Artificial-Analysis,CritPt,0.151428571428571,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,SciCode,0.560185185185185,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,Terminal-Bench 4.0,0.101010101010101,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,TB-Science,0.0380952380952381,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-LCR,0.846666666666667,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,MMMU-Pro,0.784393063583815,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
-Agnes 2.5 Pro Theta,,Artificial-Analysis,AutomationBench-AA,0.48822600284971035,0-1,2026-11-16,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Hunyuan-Hy4,腾讯,Artificial-Analysis,Terminal-Bench 4.0,0.373737373737374,0-1,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,TB-Science,0.128571428571429,0-1,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,腾讯,Artificial-Analysis,AutomationBench-AA,0.6561018180201071,0-1,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+Gemini 4 Hydrogen,Google,Artificial-Analysis,Terminal-Bench 4.0,0.535353535353535,0-1,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,Google,Artificial-Analysis,TB-Science,0.495238095238095,0-1,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,Google,Artificial-Analysis,AutomationBench-AA,0.7614416852922641,0-1,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Claude-Fable-5.2,,Artificial-Analysis,CritPt,0.354285714285714,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,SciCode,0.677083333333333,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,Terminal-Bench 4.0,0.595959595959596,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,TB-Science,0.733333333333333,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AA-LCR,0.833333333333333,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AutomationBench-AA,0.7642233832611831,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Agnes 2.5 Pro Theta,,Artificial-Analysis,CritPt,0.151428571428571,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,SciCode,0.560185185185185,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,Terminal-Bench 4.0,0.101010101010101,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,TB-Science,0.0380952380952381,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-LCR,0.846666666666667,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,MMMU-Pro,0.784393063583815,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,AutomationBench-AA,0.48822600284971035,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
 Qwen4-Max,,Artificial-Analysis,Terminal-Bench 4.0,0.484848484848485,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,TB-Science,0.233333333333333,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,AutomationBench-AA,0.7256119376604481,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,EnterpriseOpsGym,0.4852282900626679,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,APEX-Agents,0.591445427728614,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,AA-MLCR,0.194444444444444,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+GPT-6-Sol,,Artificial-Analysis,FrontierCode-2.0,0.355770707070707,0-1,2026-09-22,https://artificialanalysis.ai/models/gpt-6-sol
+GPT-6.1-Sol,,Artificial-Analysis,AA-Omniscience Index,42.03333333333333,指数,2026-09-29,https://artificialanalysis.ai/models/gpt-6-1-sol
+Hunyuan-Hy4,,Artificial-Analysis,AA-Omniscience Index,5.4,指数,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,,Artificial-Analysis,AA-MLCR,0.327777777777778,0-1,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+Hunyuan-Hy4,,Artificial-Analysis,FrontierCode-2.0,0.31447601010101,0-1,2026-11-03,https://artificialanalysis.ai/models/tencent-hy4
+GPT-6.1-Terra,,Artificial-Analysis,AA-Omniscience Index,29.566666666666666,指数,2026-10-26,https://artificialanalysis.ai/models/gpt-6-1-terra
+Gemini 4 Carbon,,Artificial-Analysis,AA-Omniscience Index,53.5,指数,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+Gemini 4 Carbon,,Artificial-Analysis,AA-MLCR,0.194444444444444,0-1,2026-10-28,https://artificialanalysis.ai/models/gemini-4-carbon
+Mistral-Large-4,,Artificial-Analysis,AA-Omniscience Index,5.133333333333334,指数,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Mistral-Large-4,,Artificial-Analysis,AA-MLCR,0.177777777777778,0-1,2026-10-29,https://artificialanalysis.ai/models/mistral-large-4
+Qwen3.8-Max,,Artificial-Analysis,APEX-Agents,0.424041297935103,0-1,2026-09-02,https://artificialanalysis.ai/models/qwen3-8-max
+Kimi-K3,,Artificial-Analysis,APEX-Agents,0.412979351032448,0-1,2026-07-16,https://artificialanalysis.ai/models/kimi-k3
+GLM-5.2,,Artificial-Analysis,APEX-Agents,0.337020648967552,0-1,2026-06-16,https://artificialanalysis.ai/models/glm-5-2
+Kimi-K2.6,,Artificial-Analysis,APEX-Agents,0.284660766961652,0-1,2026-04-20,https://artificialanalysis.ai/models/kimi-k2-6
+Step-5-Preview,,Artificial-Analysis,APEX-Agents,0.379793510324484,0-1,2026-09-18,https://artificialanalysis.ai/models/step-5
+Gemini 4 Hydrogen,,Artificial-Analysis,AA-Omniscience Index,46.266666666666666,指数,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,,Artificial-Analysis,AA-MLCR,0.211111111111111,0-1,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Gemini 4 Hydrogen,,Artificial-Analysis,FrontierCode-2.0,0.389591919191919,0-1,2026-11-12,https://artificialanalysis.ai/models/gemini-4-hydrogen
+Claude-Fable-5.2,,Artificial-Analysis,HLE,0.742817423540315,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AA-Omniscience Index,66.76666666666667,指数,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,AA-MLCR,0.438888888888889,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,HealthBench,0.5955742028993666,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,FrontierCode,0.562128333333333,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Claude-Fable-5.2,,Artificial-Analysis,FrontierCode-2.0,0.487597222222222,0-1,2026-11-09,https://artificialanalysis.ai/models/claude-fable-5-2
+Agnes 2.5 Pro Theta,,Artificial-Analysis,HLE,0.371640407784986,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-Omniscience Index,-11.233333333333333,指数,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Agnes 2.5 Pro Theta,,Artificial-Analysis,FrontierCode-2.0,0.16554898989899,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
+Qwen4-Max,,Artificial-Analysis,AA-Omniscience Index,27.7,指数,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+Qwen4-Max,,Artificial-Analysis,FrontierCode-2.0,0.264534595959596,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
