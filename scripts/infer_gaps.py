@@ -31,7 +31,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = DATA / "raw_inferred.csv"
-TODAY = "2026-10-18"  # 本次推理快照日期；重跑时改为新的数据日期
+TODAY = "2026-11-17"  # 本次推理快照日期；重跑时改为新的数据日期（v0.40 全格补全轮）
 
 DIMS = ["推理与知识", "代码", "指令遵循", "Agent与工具调用", "长文本",
         "可靠性与低幻觉", "内容创作", "图片与制图"]
@@ -218,22 +218,32 @@ def main():
                 "URL": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
             })
             m1_done.add((NEW_VER, d))
-    # M2：池内 kNN（其余空格；结构性不适用的不推；M1 已覆盖的跳过）
+    # M2/M3：池内 kNN（其余空格；M1 已覆盖的跳过）
+    # v0.40（用户 2026-11-17 拍板「有信息优先于信息准」）：结构性不适用的格子也不再留空——
+    # 仍按 kNN 出值，但方法标「M3 结构性估值」、依据写明为何是结构性，避免把估值冒充实测。
     for m, sc in sorted(mat.items()):
         for d in DIMS:
             if d in sc or (m, d) in m1_done:
                 continue
-            if d == "图片与制图" and m in TEXT_ONLY:
-                continue
+            structural = (d == "图片与制图" and m in TEXT_ONLY)
             p = knn_predict(mat, m, d, k=K, simfn=sim_fn)
             if p is None:
                 continue
             n_d, dm = per_loo.get(d, (0, mae_knn))
+            if structural:
+                method = f"M3 结构性估值(kNN兜底,{sim_name},k={K})"
+                reason = (f"该模型被登记为纯文本、图片与制图维结构性不适用（无公开多模态实测）；"
+                          f"按用户 2026-11-17「有信息优先」口径仍给估值：用本池 {n_loo} 个已知格"
+                          f"留一验证（总体 MAE {mae_knn:.1f}、本维 MAE {dm:.1f}）的{sim_name}"
+                          f"取最接近 {K} 个模型加权，属结构性下限估计、不可当实测解读")
+            else:
+                method = f"M2 池内k近邻({sim_name},k={K})"
+                reason = (f"本维公开榜查不到可核分数（宁缺勿假）；改用本池 {n_loo} 个已知格做留一验证、"
+                          f"总体 MAE {mae_knn:.1f} 位次分（本维 MAE {dm:.1f}），按 8 维实测剖面的{sim_name}"
+                          f"取最接近的 {K} 个模型，对其本维实测位次分做相似度加权平均")
             rows.append({
-                "模型": m, "维度": d, "推理分": round(p, 1), "推理方法": f"M2 池内k近邻({sim_name},k={K})",
-                "依据": (f"本维公开榜查不到可核分数（宁缺勿假）；改用本池 {n_loo} 个已知格做留一验证、"
-                        f"总体 MAE {mae_knn:.1f} 位次分（本维 MAE {dm:.1f}），按 8 维实测剖面的{sim_name}"
-                        f"取最接近的 {K} 个模型，对其本维实测位次分做相似度加权平均"),
+                "模型": m, "维度": d, "推理分": round(p, 1), "推理方法": method,
+                "依据": reason,
                 "留一MAE": round(dm, 1), "数据日期": TODAY,
                 "URL": "https://suyoumo.github.io/llm-leaderboard/",
             })
@@ -249,8 +259,7 @@ def main():
     print(f"\n已写出 {OUT}：{len(out)} 条推理值")
     print(out[["模型", "维度", "推理分", "推理方法", "留一MAE"]].to_string(index=False))
     left = [(m, d) for m, sc in mat.items() for d in DIMS
-            if d not in sc and not (d == "图片与制图" and m in TEXT_ONLY)
-            and not ((out["模型"] == m) & (out["维度"] == d)).any()]
+            if d not in sc and not ((out["模型"] == m) & (out["维度"] == d)).any()]
     print("\n仍未填（留「待定」，宁缺勿假）：")
     for m, d in left:
         why = "零覆盖模型（无任何实测可作锚点）" if not mat.get(m) else (
