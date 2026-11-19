@@ -769,3 +769,18 @@ Agnes 2.5 Pro Theta,,Artificial-Analysis,AA-Omniscience Index,-11.23333333333333
 Agnes 2.5 Pro Theta,,Artificial-Analysis,FrontierCode-2.0,0.16554898989899,0-1,2026-11-07,https://artificialanalysis.ai/models/agnes-2-5-pro-theta
 Qwen4-Max,,Artificial-Analysis,AA-Omniscience Index,27.7,指数,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
 Qwen4-Max,,Artificial-Analysis,FrontierCode-2.0,0.264534595959596,0-1,2026-11-16,https://artificialanalysis.ai/models/qwen4-max
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.641414141414141,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,TB-Science,0.780952380952381,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,MMMU-Pro,0.894797687861272,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,AutomationBench-AA,0.7724838304241671,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,AA-Omniscience Index,50,指数,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,AA-MLCR,0.394444444444444,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.453801767676768,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Astra,OpenAI,Artificial-Analysis,EnterpriseOpsGym,0.2990152193375112,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-astra
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,Terminal-Bench 4.0,0.601010101010101,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,TB-Science,0.676190476190476,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,AutomationBench-AA,0.7127833267998683,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,AA-Omniscience Index,40.36666666666667,指数,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,AA-MLCR,0.372222222222222,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,FrontierCode-2.0,0.443797727272727,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol
+GPT-6.2 Sol,OpenAI,Artificial-Analysis,EnterpriseOpsGym,0.2891674127126231,0-1,2026-11-18,https://artificialanalysis.ai/models/gpt-6-2-sol

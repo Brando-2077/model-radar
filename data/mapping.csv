@@ -170,3 +170,4 @@ Anthropic官方,Humanity's Last Exam (tools),Agent与工具调用,HLE-w/tools,
 Anthropic官方,Remote Labor Index,Agent与工具调用,Remote-Labor-Index,Scale AI 真实工作任务基准（Anthropic 卡对照表）；新族
 Anthropic官方,BenchCAD 2.1,图片与制图,BenchCAD-2-1,Max effort 口径；新族
 Artificial-Analysis,APEX-Agents,Agent与工具调用,APEX-Agents,v0.38 Qwen4-Max 补入：AA 一手同名字段；与腾讯官方 APEX-Agents 同族，第三方优先
+腾讯官方,OSWorld 2.1,Agent与工具调用,OSWorld-2.1-Full,v0.42 Hy4 flash 补入：官方附录 Full set 108 tasks partial score 口径，与既有 OSWorld-2.1-Offline 子集分族（§2.3 口径不同不混族）

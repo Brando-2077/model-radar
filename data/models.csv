@@ -1,4 +1,4 @@
-模型,公司,开源,数据日期,备注
+﻿模型,公司,开源,数据日期,备注
 Claude-Fable-5.1,,否,,
 Claude-Opus-5.5,,否,,
 Claude-Sonnet-5.5,,否,,
@@ -41,3 +41,6 @@ Gemini 4 Hydrogen,Google,否,2026-11-12,Gemini 4 系快速执行档（官方明�
 Claude-Fable-5.2,Anthropic,否,2026-11-09,Fable 5.1 下一代（$8/$40 每百万 tokens）；与 Mythos 5.2 同期双发（Mythos=无安全防护版，AA 未单列不入池）；官方发布文对照表 2026-11-09
 Agnes 2.5 Pro Theta,Agnes AI,否,2026-11-07,Agnes 2.5 Pro 系 Theta 档；1M 上下文；AA 分项以周计陆续补充
 Qwen4-Max,阿里,否,2026-11-16,Qwen4 代首款旗舰（API-only，Qwen 旗舰首次不开放权重；2.4T MoE/71B 激活·328B N-gram 嵌入·1M 上下文·原生图文视频输入）；官方 11-11 预览/11-16 正式。AA 一手 2026-11-16 仅 6 项可映射实测：TB4.0 0.4848/TB-Science 0.2333/AutomationBench 0.7256/EnterpriseOpsGym 0.4852/APEX-Agents 0.5914/AA-MLCR 0.1944；gpqa/hle/critpt/scicode/lcr/ifbench/mmmuPro 均为 null，推理/代码/指令遵循/图片维暂缺。AA-Index 42.9 与 Omni 27.7（新基线）留档不映射；critptAgenticHard 0.43/hleDiamond 0.449 按 §2.2 子集不开族、不映射
+Hy4 flash,腾讯,否,2026-11-16,Hy4 轻量多模态档（224B 总参含 64B Engram / 12B 激活·1M 上下文·原生图文输入·>150tps）；官方 11-16 发布，权重计划开源但未放出、开源列暂记「否」。证据=腾讯官方发布页附录 9 项公开基准（HLE-w/tools 55.2 / TB4.0 19.2 / DeepSWE 64.6 / ProgramBench 16.0 / APEX-Agents 63.1 / AutomationBench 52.2 / OSWorld 2.1 68.1 / MMMU-Pro 75.8 / ZeroBench-main 45.8），全部厂商自报渠道、「仅第三方」口径整体排除；WorkIndex 内部任务集无公开基准口径、不映射
+GPT-6.2 Astra,OpenAI,否,2026-11-18,GPT-6.2 代旗舰（Max 档）；AA 一手页正文写 Released November 17 2026（JSON releaseDate=2026-11-18 为上游异常占位、不采用）；AA 8 项实测：TB4.0 0.6414/TB-Science 0.7810/MMMU-Pro 0.8948/AutomationBench 0.7725/Omni 50/AA-MLCR 0.3944/FrontierCode-2.0 0.4538/EnterpriseOpsGym 0.2990；isOpenWeights=False
+GPT-6.2 Sol,OpenAI,否,2026-11-18,GPT-6.2 代次旗舰（Max 档）；AA 一手页正文写 Released November 17 2026（JSON releaseDate 同上异常、不采用）；AA 8 项实测：TB4.0 0.6010/TB-Science 0.6762/AutomationBench 0.7128/Omni 40.37/AA-MLCR 0.3722/FrontierCode-2.0 0.4438/EnterpriseOpsGym 0.2892；isOpenWeights=False
