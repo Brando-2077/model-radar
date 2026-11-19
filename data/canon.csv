@@ -111,3 +111,6 @@ Claude Opus 5.5,Claude-Opus-5.5,Google 官方 Carbon 模型卡对照列（2026-1
 Claude Fable 5.2,Claude-Fable-5.2,Anthropic Fable/Mythos 5.2 发布文对照列（2026-11-16）
 Opus 5.5,Claude-Opus-5.5,Anthropic Fable/Mythos 5.2 发布文对照列（2026-11-16）
 Qwen4 Max,Qwen4-Max,AA 单模型页 name 字段（2026-11-16 入库）
+Hy4 Flash,Hy4 flash,腾讯官方发布页/llmlearner 模型名（2026-11-19 入库）
+GPT-6.2 Astra (Max),GPT-6.2 Astra,AA 单模型页 name 字段（2026-11-19 入库）
+GPT-6.2 Sol (Max),GPT-6.2 Sol,AA 单模型页 name 字段（2026-11-19 入库）
