@@ -1,4 +1,4 @@
-模型,公司,来源,类别,原始分,量纲,数据日期,URL
+﻿模型,公司,来源,类别,原始分,量纲,数据日期,URL
 GLM-5.3,智谱,Z.ai官方,DeepSWE v1.1,66.9,0-100,2026-08-14,https://z.ai/blog/glm-5.3
 GLM-5.3,智谱,Z.ai官方,NL2Repo,58.0,0-100,2026-08-14,https://z.ai/blog/glm-5.3
 GLM-5.3,智谱,Z.ai官方,FrontierSWE,78.1,0-100,2026-08-14,https://z.ai/blog/glm-5.3
@@ -154,12 +154,12 @@ GPT-6-Astra,Anthropic,Anthropic官方,Remote Labor Index,20.8,0-100,2026-11-09,h
 Claude-Fable-5.2,Anthropic,Anthropic官方,BenchCAD 2.1,83.5,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
 Claude-Opus-5.5,Anthropic,Anthropic官方,BenchCAD 2.1,65.3,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
 Claude-Fable-5.1,Anthropic,Anthropic官方,BenchCAD 2.1,44.4,0-100,2026-11-09,https://www.anthropic.com/claude-fable-and-mythos-5-2
-Hy4 flash,腾讯,腾讯官方,HLE w/ Tools,55.2,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,Terminal-Bench 4.0,19.2,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,DeepSWE v1.1,64.6,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,ProgramBench,16.0,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,APEX-Agents,63.1,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,Automation-Bench v1.0.6,52.2,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,OSWorld 2.1,68.1,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,MMMU-Pro,75.8,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
-Hy4 flash,腾讯,腾讯官方,ZeroBench-main (w/tools),45.8,0-100,2026-11-16,https://hy.tencent.ai/research/hy4
+Hy4 flash,腾讯,腾讯官方,HLE w/ Tools,55.2,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,Terminal-Bench 4.0,19.2,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,DeepSWE v1.1,64.6,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,ProgramBench,16.0,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,APEX-Agents,63.1,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,Automation-Bench v1.0.6,52.2,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,OSWorld 2.1,68.1,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,MMMU-Pro,75.8,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+Hy4 flash,腾讯,腾讯官方,ZeroBench-main (w/tools),45.8,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
