@@ -295,17 +295,17 @@ Dots-3-Note-Preview,Agent与工具调用,61.7,dots官方·WildClawBench 原始61
 Dots-3-Note-Preview,代码,10.0,dots官方·NL2repo 原始49.8(0-100) @2026-10-07,NL2Repo,5
 Dots-3-Note-Preview,代码,25.0,dots官方·SWE-bench-pro 原始61(0-100) @2026-10-07,SWE-bench Pro,2
 Dots-3-Note-Preview,内容创作,26.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始26.3(推理值) @2026-11-18",,
-Dots-3-Note-Preview,可靠性与低幻觉,61.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始61.6(推理值) @2026-11-18",,
+Dots-3-Note-Preview,可靠性与低幻觉,60.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.3(推理值) @2026-11-18",,
 Dots-3-Note-Preview,图片与制图,83.1,dots官方·Charxiv-RQ 原始83.1(0-100) @2026-10-07,Charxiv-RQ,1
 Dots-3-Note-Preview,图片与制图,53.4,dots官方·PerceptionBench 原始53.4(0-100) @2026-10-07,PerceptionBench,1
 Dots-3-Note-Preview,图片与制图,72.5,dots官方·SimpleVQA 原始72.5(0-100) @2026-10-07,SimpleVQA,1
 Dots-3-Note-Preview,图片与制图,42.7,dots官方·WorldVQA 原始42.7(0-100) @2026-10-07,WorldVQA,1
-Dots-3-Note-Preview,图片与制图,34.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始34.3(推理值) @2026-11-18",,
+Dots-3-Note-Preview,图片与制图,33.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始33.5(推理值) @2026-11-18",,
 Dots-3-Note-Preview,指令遵循,68.8,酥悠沫-官方·IFBench 原始80.4(0-100) @2026-08-14,IFBench,8
 Dots-3-Note-Preview,指令遵循,93.9,酥悠沫-官方·IFEval 原始93.9(0-100) @2026-08-14,IFEval,1
 Dots-3-Note-Preview,推理与知识,14.7,dots官方·ARC-AGI-2 原始81.4(0-100) @2026-10-07,ARC-AGI-2,17
 Dots-3-Note-Preview,推理与知识,32.1,dots官方·ARC-AGI-3 原始32.1(0-100) @2026-10-07,ARC-AGI-3,1
-Dots-3-Note-Preview,长文本,40.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始40.6(推理值) @2026-11-18",,
+Dots-3-Note-Preview,长文本,39.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始39.1(推理值) @2026-11-18",,
 Doubao-Seed-2.1-Pro,Agent与工具调用,15.0,SuperCLUE·Terminal总榜-总分 原始35.35(百分制) @2026-09,SC·Terminal总榜-总分,10
 Doubao-Seed-2.1-Pro,Agent与工具调用,65.0,SuperCLUE·总排行榜-智能体任务规划 原始84.95(百分制) @2026-07(补测),SC·总排行榜-智能体任务规划,10
 Doubao-Seed-2.1-Pro,代码,11.1,SuperCLUE·总排行榜-智能体编程 原始38.46(0-100) @2026-11,SC·总排行榜-智能体编程,18
@@ -323,11 +323,11 @@ ERNIE-5.1,代码,2.8,SuperCLUE·总排行榜-智能体编程 原始27.37(百分�
 ERNIE-5.1,内容创作,90.0,SuperCLUE·Writing总榜-总分 原始87.57(百分制) @2026-05-18,SC·Writing总榜-总分,5
 ERNIE-5.1,内容创作,80.0,酥悠沫·TextArena 原始1468(Elo) @2026-05-09,TextArena,1
 ERNIE-5.1,可靠性与低幻觉,80.6,SuperCLUE·总排行榜-幻觉控制 原始83.02(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,18
-ERNIE-5.1,图片与制图,37.6,"推理补全·M3 结构性估值(kNN兜底,余弦相似度,k=3) 原始37.6(推理值) @2026-11-18",,
+ERNIE-5.1,图片与制图,25.2,"推理补全·M3 结构性估值(kNN兜底,余弦相似度,k=3) 原始25.2(推理值) @2026-11-18",,
 ERNIE-5.1,指令遵循,75.0,SuperCLUE·总排行榜-精确指令遵循 原始41.9(百分制) @2026-07(补测),SC·总排行榜-精确指令遵循,18
 ERNIE-5.1,推理与知识,41.7,SuperCLUE·总排行榜-数学推理 原始64.91(百分制) @2026-07(补测),SC·总排行榜-数学推理,18
 ERNIE-5.1,推理与知识,5.0,SuperCLUE·总排行榜-科学推理 原始59.65(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-ERNIE-5.1,长文本,21.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始21.1(推理值) @2026-11-18",,
+ERNIE-5.1,长文本,21.0,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始21(推理值) @2026-11-18",,
 GLM-5.1,Agent与工具调用,8.8,Artificial-Analysis·AutomationBench-AA 原始0.203084(0-1) @2026-04-07,AutomationBench,40
 GLM-5.1,Agent与工具调用,17.7,Artificial-Analysis·GDPval-AA 原始1125.15(指数) @2026-11-04,GDPval-AA,31
 GLM-5.1,Agent与工具调用,21.4,Artificial-Analysis·ITBench-SRE 原始0.402542(0-1) @2026-04-07,itbench-sre,14
@@ -483,8 +483,8 @@ GLM-5.3 Flash,长文本,15.7,Artificial-Analysis·AA-MLCR 原始0.116667(0-1) @2
 GLM-5.3 Flash,长文本,57.7,SuperCLUE·总排行榜-超长上下文 原始57.61(0-100) @2026-11,SC·总排行榜-超长上下文,13
 GLM-5v-Turbo,Agent与工具调用,78.6,Artificial-Analysis·τ²-bench 原始0.98538(0-1) @2026-04-01,tau2-bench,7
 GLM-5v-Turbo,代码,72.2,Z.ai官方·CC-Bench-V2 Repo Exploration 原始72.2(0-100) @2026-04-29,CC-Bench-V2,1
-GLM-5v-Turbo,代码,34.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始34.8(推理值) @2026-11-18",,
-GLM-5v-Turbo,内容创作,41.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始41.4(推理值) @2026-11-18",,
+GLM-5v-Turbo,代码,24.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始24.3(推理值) @2026-11-18",,
+GLM-5v-Turbo,内容创作,41.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始41.5(推理值) @2026-11-18",,
 GLM-5v-Turbo,可靠性与低幻觉,1.2,Artificial-Analysis·AA-Omniscience Index 原始-19.2833(指数) @2026-10-17,AA-Omni指数,40
 GLM-5v-Turbo,图片与制图,2.2,Artificial-Analysis·MMMU-Pro 原始0.727746(0-1) @2026-04-01,MMMU-Pro,23
 GLM-5v-Turbo,图片与制图,10.9,Design-Arena·Website-Elo 原始1229(Elo) @2026-11-03,DesignArena-Elo,23
@@ -661,15 +661,22 @@ GPT-6.2 Astra,Agent与工具调用,15.6,Artificial-Analysis·EnterpriseOpsGym �
 GPT-6.2 Astra,Agent与工具调用,98.5,Artificial-Analysis·TB-Science 原始0.780952(0-1) @2026-11-18,TB-Science,34
 GPT-6.2 Astra,Agent与工具调用,93.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.641414(0-1) @2026-11-18,TB4.0,40
 GPT-6.2 Astra,代码,92.2,Artificial-Analysis·FrontierCode-2.0 原始0.453802(0-1) @2026-11-18,FrontierCode-2.0,32
+GPT-6.2 Astra,内容创作,73.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始73.4(推理值) @2026-11-18",,
 GPT-6.2 Astra,可靠性与低幻觉,93.8,Artificial-Analysis·AA-Omniscience Index 原始50(指数) @2026-11-18,AA-Omni指数,40
 GPT-6.2 Astra,图片与制图,97.8,Artificial-Analysis·MMMU-Pro 原始0.894798(0-1) @2026-11-18,MMMU-Pro,23
+GPT-6.2 Astra,指令遵循,61.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始61.7(推理值) @2026-11-18",,
+GPT-6.2 Astra,推理与知识,78.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始78.8(推理值) @2026-11-18",,
 GPT-6.2 Astra,长文本,90.0,Artificial-Analysis·AA-MLCR 原始0.394444(0-1) @2026-11-18,AA-MLCR,35
 GPT-6.2 Sol,Agent与工具调用,76.2,Artificial-Analysis·AutomationBench-AA 原始0.712783(0-1) @2026-11-18,AutomationBench,40
 GPT-6.2 Sol,Agent与工具调用,6.2,Artificial-Analysis·EnterpriseOpsGym 原始0.289167(0-1) @2026-11-18,enterprise-ops-gym,16
 GPT-6.2 Sol,Agent与工具调用,92.6,Artificial-Analysis·TB-Science 原始0.67619(0-1) @2026-11-18,TB-Science,34
 GPT-6.2 Sol,Agent与工具调用,88.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.60101(0-1) @2026-11-18,TB4.0,40
 GPT-6.2 Sol,代码,89.1,Artificial-Analysis·FrontierCode-2.0 原始0.443798(0-1) @2026-11-18,FrontierCode-2.0,32
+GPT-6.2 Sol,内容创作,53.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始53.7(推理值) @2026-11-18",,
 GPT-6.2 Sol,可靠性与低幻觉,76.2,Artificial-Analysis·AA-Omniscience Index 原始40.3667(指数) @2026-11-18,AA-Omni指数,40
+GPT-6.2 Sol,图片与制图,66.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始66.2(推理值) @2026-11-18",,
+GPT-6.2 Sol,指令遵循,59.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始59.2(推理值) @2026-11-18",,
+GPT-6.2 Sol,推理与知识,60.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.8(推理值) @2026-11-18",,
 GPT-6.2 Sol,长文本,81.4,Artificial-Analysis·AA-MLCR 原始0.372222(0-1) @2026-11-18,AA-MLCR,35
 Gemini 3.5 Flash-Lite,Agent与工具调用,16.2,Artificial-Analysis·AutomationBench-AA 原始0.250113(0-1) @2026-07-21,AutomationBench,40
 Gemini 3.5 Flash-Lite,Agent与工具调用,53.1,Artificial-Analysis·EnterpriseOpsGym 原始0.423456(0-1) @2026-07-21,enterprise-ops-gym,16
@@ -684,7 +691,7 @@ Gemini 3.5 Flash-Lite,内容创作,15.6,EQ-Bench·Creative Writing v3 原始1559
 Gemini 3.5 Flash-Lite,可靠性与低幻觉,51.2,Artificial-Analysis·AA-Omniscience Index 原始6.86667(指数) @2026-07-21,AA-Omni指数,40
 Gemini 3.5 Flash-Lite,图片与制图,50.0,ArenaAI·Vision 原始1266(Elo) @2026-11-07,Vision-Elo,15
 Gemini 3.5 Flash-Lite,图片与制图,37.0,Artificial-Analysis·MMMU-Pro 原始0.790173(0-1) @2026-07-21,MMMU-Pro,23
-Gemini 3.5 Flash-Lite,指令遵循,46.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始46.5(推理值) @2026-11-18",,
+Gemini 3.5 Flash-Lite,指令遵循,60.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.5(推理值) @2026-11-18",,
 Gemini 3.5 Flash-Lite,推理与知识,2.9,ARC-Prize·ARC-AGI-2 原始53.5(0-100) @2026-11-04,ARC-AGI-2,17
 Gemini 3.5 Flash-Lite,推理与知识,1.4,Artificial-Analysis·CritPt 原始0(0-1) @2026-07-21,CritPt,35
 Gemini 3.5 Flash-Lite,推理与知识,7.9,Artificial-Analysis·GPQA 原始0.838384(0-1) @2026-07-21,GPQA-Diamond,19
@@ -831,13 +838,13 @@ Hunyuan-Hy4,代码,75.0,腾讯官方·DeepSWE v1.1 原始74.9(0-100) @2026-11-04
 Hunyuan-Hy4,代码,16.7,腾讯官方·PostTrainBench 原始35.2(0-100) @2026-11-04,PostTrainBench,3
 Hunyuan-Hy4,代码,91.7,腾讯官方·ProgramBench 原始30(0-100) @2026-11-04,ProgramBench,6
 Hunyuan-Hy4,代码,83.3,腾讯官方·SWE-Marathon 原始43.8(0-100) @2026-11-04,SWE-Marathon,3
-Hunyuan-Hy4,内容创作,30.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始30.6(推理值) @2026-11-18",,
+Hunyuan-Hy4,内容创作,63.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始63.6(推理值) @2026-11-18",,
 Hunyuan-Hy4,可靠性与低幻觉,50.0,ArenaAI·Arena-Agent-NetImprovement 原始5.39(0-100) @2026-11-07,Arena-Agent-Signal,27
 Hunyuan-Hy4,可靠性与低幻觉,46.2,Artificial-Analysis·AA-Omniscience Index 原始5.4(指数) @2026-11-03,AA-Omni指数,40
 Hunyuan-Hy4,图片与制图,30.4,腾讯官方·MMMU-Pro 原始78.6(0-100) @2026-11-04,MMMU-Pro,23
 Hunyuan-Hy4,图片与制图,87.5,腾讯官方·ZeroBench-main (w/tools) 原始55.4(0-100) @2026-11-04,ZeroBench,4
-Hunyuan-Hy4,指令遵循,34.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始34.6(推理值) @2026-11-18",,
-Hunyuan-Hy4,推理与知识,45.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始45.3(推理值) @2026-11-18",,
+Hunyuan-Hy4,指令遵循,62.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始62.7(推理值) @2026-11-18",,
+Hunyuan-Hy4,推理与知识,60.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.8(推理值) @2026-11-18",,
 Hunyuan-Hy4,长文本,75.7,Artificial-Analysis·AA-MLCR 原始0.327778(0-1) @2026-11-03,AA-MLCR,35
 Hy4 flash,Agent与工具调用,83.3,腾讯官方·APEX-Agents 原始63.1(0-100) @2026-11-16,APEX-Agents,9
 Hy4 flash,Agent与工具调用,28.7,腾讯官方·Automation-Bench v1.0.6 原始52.2(0-100) @2026-11-16,AutomationBench,40
@@ -846,8 +853,13 @@ Hy4 flash,Agent与工具调用,68.1,腾讯官方·OSWorld 2.1 原始68.1(0-100) 
 Hy4 flash,Agent与工具调用,33.8,腾讯官方·Terminal-Bench 4.0 原始19.2(0-100) @2026-11-16,TB4.0,40
 Hy4 flash,代码,25.0,腾讯官方·DeepSWE v1.1 原始64.6(0-100) @2026-11-16,DeepSWE,6
 Hy4 flash,代码,8.3,腾讯官方·ProgramBench 原始16(0-100) @2026-11-16,ProgramBench,6
+Hy4 flash,内容创作,40.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始40.7(推理值) @2026-11-18",,
+Hy4 flash,可靠性与低幻觉,17.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始17.8(推理值) @2026-11-18",,
 Hy4 flash,图片与制图,6.5,腾讯官方·MMMU-Pro 原始75.8(0-100) @2026-11-16,MMMU-Pro,23
 Hy4 flash,图片与制图,12.5,腾讯官方·ZeroBench-main (w/tools) 原始45.8(0-100) @2026-11-16,ZeroBench,4
+Hy4 flash,指令遵循,26.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始26.8(推理值) @2026-11-18",,
+Hy4 flash,推理与知识,39.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始39.6(推理值) @2026-11-18",,
+Hy4 flash,长文本,27.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始27.4(推理值) @2026-11-18",,
 Hy4 preview,Agent与工具调用,27.8,腾讯官方·APEX-Agents 原始37.1(0-100) @2026-08-28,APEX-Agents,9
 Hy4 preview,Agent与工具调用,30.0,腾讯官方·HLE w/ Tools 原始55.4(0-100) @2026-08-28,HLE-w/tools,5
 Hy4 preview,Agent与工具调用,83.7,腾讯官方·MCP Atlas 原始83.7(0-100) @2026-08-28,MCP Atlas,1
@@ -866,7 +878,7 @@ Hy4 preview,代码,16.7,腾讯官方·SWE-Marathon 原始31.9(0-100) @2026-08-28
 Hy4 preview,内容创作,21.4,AIWB·英文写作盲评 原始68.8(指数) @2026-11-04,AIWB写作盲评,21
 Hy4 preview,可靠性与低幻觉,11.1,ArenaAI·Arena-Agent-NetImprovement 原始0.94(0-100) @2026-11-04,Arena-Agent-Signal,27
 Hy4 preview,可靠性与低幻觉,19.4,SuperCLUE·总排行榜-幻觉控制 原始33.34(0-100) @2026-11,SC·总排行榜-幻觉控制,18
-Hy4 preview,图片与制图,42.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始42.5(推理值) @2026-11-18",,
+Hy4 preview,图片与制图,52.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始52.6(推理值) @2026-11-18",,
 Hy4 preview,指令遵循,9.4,AI产品狙击手·Q1强约束指令遵循 原始5(10分制) @2026-09-14,TGG·Q1指令遵循,16
 Hy4 preview,指令遵循,52.8,SuperCLUE·总排行榜-精确指令遵循 原始31.03(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Hy4 preview,推理与知识,13.9,SuperCLUE·总排行榜-数理推理 原始57.89(0-100) @2026-11,SC·总排行榜-数学推理,18
@@ -1117,7 +1129,7 @@ Mistral-Large-4,内容创作,16.7,AIWB·英文写作盲评 原始59.1(指数) @2
 Mistral-Large-4,可靠性与低幻觉,57.4,ArenaAI·Arena-Agent-NetImprovement 原始6.41(0-100) @2026-11-04,Arena-Agent-Signal,27
 Mistral-Large-4,可靠性与低幻觉,41.2,Artificial-Analysis·AA-Omniscience Index 原始5.13333(指数) @2026-10-29,AA-Omni指数,40
 Mistral-Large-4,图片与制图,21.7,Design-Arena·Website-Elo 原始1256(Elo) @2026-11-03,DesignArena-Elo,23
-Mistral-Large-4,指令遵循,69.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始69.4(推理值) @2026-11-18",,
+Mistral-Large-4,指令遵循,59.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始59.4(推理值) @2026-11-18",,
 Mistral-Large-4,推理与知识,25.7,Artificial-Analysis·CritPt 原始0.1(0-1) @2026-10-29,CritPt,35
 Mistral-Large-4,长文本,38.6,Artificial-Analysis·AA-MLCR 原始0.177778(0-1) @2026-10-29,AA-MLCR,35
 Nemotron-3-Ultra,Agent与工具调用,1.2,Artificial-Analysis·AutomationBench-AA 原始0.0298635(0-1) @2026-06-04,AutomationBench,40

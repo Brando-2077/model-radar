@@ -2,6 +2,19 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.43.0] - 2026-11-23
+
+### Fixed（Hy4 flash 数据核查与订正）
+
+- 用户反馈"Hy4 flash 数据不全面、好像都是错的"，逐项核查结论：
+  - **开源状态错**：账本记「否」，实际 **11-19 已在 Hugging Face 开源**（Tencent Hy License，据 Plotly 11-19/20 实测文及 HF 报道）→ 改「是」。
+  - **参数笔误**：账本 224B，一手为 **220B 总参 / 64B Engram / 12B 激活** → 备注订正。
+  - **证据来源死链**：9 项证据 URL 原指向 `hy.tencent.ai/research/hy4`，实测返回 567 不可达 → 全部改为可达的 `hunyuan.tencent.com/research/hy4-flash`（200）。
+  - **推理补全缺失**：v0.42 补入该模型后未重跑推理脚本，8 维里只有 3 维实测、5 维空着 → 重跑 `infer_gaps.py` 补入 5 条推理（内容创作 40.7 / 可靠性 17.8 / 指令遵循 26.8 / 推理与知识 39.6 / 长文本 27.4），画像补齐 8/8；实测优先删 1 条冲突行。
+- **核实无误的项**：9 项原始分（HLE 55.2 / TB4.0 19.2 / DeepSWE 64.6 / ProgramBench 16.0 / APEX 63.1 / AutomationBench 52.2 / OSWorld 68.1 / MMMU-Pro 75.8 / ZeroBench 45.8）与腾讯官方附录逐项一致，二次核对未发现抄错。
+- **说明（非错误）**：页面分数低是「池内位次分 + 仅厂商自报、无第三方数据」的结果——AA / LiveBench 均未收录 Hy4 flash，其自报分与池内 AA 数据混族导致位次偏低；同门 Hy4 preview 呈同一模式。第三方数据可得时按 §来源分级替换。
+- 证据 1296 → **1295**（冲突推理行清理），推理 40 → **39**；validate 0/0、pytest 26 绿。
+
 ## [0.42.0] - 2026-11-18
 
 ### Added
