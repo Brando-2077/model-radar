@@ -18,7 +18,7 @@ ROSTER_CSV = DATA / "models.csv"
 INFERRED_CSV = DATA / "raw_inferred.csv"
 
 # ── 版本 ────────────────────────────────────────────────────────────
-VERSION = "v0.43.0"
+VERSION = "v0.44.0"
 
 # ── 基准族计分（v0.26 分级入分；v0.27 公式化）───────────────────────
 # 入分门槛：族内至少 2 个模型才有排名（n=1 单模型无对手，位次分恒为 50、零信息量）。
@@ -42,7 +42,7 @@ def fam_weight(n: int) -> float:
 # 判定按来源渠道、不按「是不是自家模型」：NVIDIA 官方页给非自家模型报的分也排除。
 VENDOR_SRC = frozenset({
     "Z.ai官方", "dots官方", "腾讯官方", "NVIDIA官方", "DeepSeek官方",
-    "酥悠沫-官方", "Kimi官方", "Google官方", "Anthropic官方",
+    "酥悠沫-官方", "Kimi官方", "Google官方", "Anthropic官方", "百度官方",
 })
 # 渠道 → 官方地址（只服务展示：页脚/抽屉写明「排除了什么」，避免口径变黑箱）
 VENDOR_SRC_PAGES = {
@@ -53,6 +53,7 @@ VENDOR_SRC_PAGES = {
     "Kimi官方": "kimi.ai/blog（技术博客，只收自家型号）",
     "Google官方": "deepmind.google/models/model-cards（官方模型卡含同表对照列，NVIDIA 卡先例）",
     "Anthropic官方": "anthropic.com 官方发布文对照表（Fable/Mythos 5.2，2026-11-09）",
+    "百度官方": "ernie.baidu.com/release/ernie-5-5-flash-preview（发布页附录评测表，2026-11-11）",
 }
 
 # ── 开源判定兜底 ────────────────────────────────────────────────────

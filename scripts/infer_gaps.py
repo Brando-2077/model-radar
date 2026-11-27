@@ -31,7 +31,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = DATA / "raw_inferred.csv"
-TODAY = "2026-11-18"  # 本次推理快照日期；重跑时改为新的数据日期（v0.40 全格补全轮）
+TODAY = "2026-11-27"  # 本次推理快照日期；重跑时改为新的数据日期（v0.44 ERNIE 5.5 全池重训）
 
 DIMS = ["推理与知识", "代码", "指令遵循", "Agent与工具调用", "长文本",
         "可靠性与低幻觉", "内容创作", "图片与制图"]
@@ -62,7 +62,7 @@ NEW_VER, OLD_VER = "DeepSeek-V4.1-Flash-1017", "DeepSeek-V4.1-Flash"
 
 # 结构性「本维不适用」：纯文本模型的多模态维（图片与制图）—— 不是缺数据，是维度不对
 TEXT_ONLY = {
-    "Nemotron-3-Ultra", "ERNIE-5.1",
+    "Nemotron-3-Ultra", "ERNIE-5.1", "ERNIE-5.5-Flash-Preview",
 }
 
 

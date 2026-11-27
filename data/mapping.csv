@@ -171,3 +171,23 @@ Anthropic官方,Remote Labor Index,Agent与工具调用,Remote-Labor-Index,Scale
 Anthropic官方,BenchCAD 2.1,图片与制图,BenchCAD-2-1,Max effort 口径；新族
 Artificial-Analysis,APEX-Agents,Agent与工具调用,APEX-Agents,v0.38 Qwen4-Max 补入：AA 一手同名字段；与腾讯官方 APEX-Agents 同族，第三方优先
 腾讯官方,OSWorld 2.1,Agent与工具调用,OSWorld-2.1-Full,v0.42 Hy4 flash 补入：官方附录 Full set 108 tasks partial score 口径，与既有 OSWorld-2.1-Offline 子集分族（§2.3 口径不同不混族）
+百度官方,Terminal-Bench 4.0,Agent与工具调用,TB4.0,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；与 AA 同族，第三方优先
+百度官方,DeepSWE v1.1,代码,DeepSWE,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,ProgramBench (Almost Solved),代码,ProgramBench,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；Almost Solved 变体与母基准同族（§2.2）
+百度官方,NL2Repo-Bench,代码,NL2Repo,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,Terminal-Bench-Science 0.1,Agent与工具调用,TB-Science,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,Cookbook,Agent与工具调用,Cookbook,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；新族 n=1 留档：100 题 IT 工具 agent 任务（AppWorld 子集）
+百度官方,BlenderWorld (text-only),代码,BlenderWorld,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；新族 n=1 留档：text-only Blender Python 建模脚本（官方归 Agentic Coding）
+百度官方,AutomationBench,Agent与工具调用,AutomationBench,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,APEX-Agents 1.1,Agent与工具调用,APEX-Agents,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,DRACO,Agent与工具调用,DRACO,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；新族 n=1 留档：长时程 agent 任务
+百度官方,SpreadsheetBench V2,Agent与工具调用,SpreadsheetBench-V2,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；新族 n=1 留档：表格 agent 任务
+百度官方,OfficeQA Pro V2,Agent与工具调用,OfficeQA-Pro-V2,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；新族 n=1 留档：办公文档 agent 问答
+百度官方,Agents' Last Exam (CLI),Agent与工具调用,Agents' Last Exam,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,SkillBench 1.1 (text-only),Agent与工具调用,SkillBench-1.1-text,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；text-only 78 题子集，与 SkillsBench 全量口径不同，分族；n=1 留档
+百度官方,Toolathlon-Verified,Agent与工具调用,Toolathlon,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,MCP-Atlas,Agent与工具调用,MCP Atlas,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,BrowseComp,Agent与工具调用,BrowseComp,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收
+百度官方,HLE w/ (no tools),推理与知识,HLE,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；† test-only 子集，与 HLE 同族（参照 DeepSeek官方 †44.0 取主值先例）
+百度官方,AA-Omniscience-Public,,,有意不映射：AA-Omniscience 新基线 public 子集 + 百度自跑 harness，与 AA-Omni指数 旧基线量纲不可混（§2.5 冻结）；留档不入族
+百度官方,AA-LCR v1.1,长文本,AA-LCR,百度官方发布页附录评测表 2026-11-11；只收自家型号，对比列竞品分不收；v1.1 held-out 200 子集，与 AA-LCR 同族（参照酥悠沫转录先例）

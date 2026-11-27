@@ -2,6 +2,21 @@
 
 本项目的主要变更记录。格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)；版本号遵循语义化版本。
 
+## [0.44.0] - 2026-11-27
+
+### Added
+
+- **ERNIE-5.5-Flash-Preview 入库**（用户指令「baidu/ernie-5.5-flash-preview，把这个模型的数据和图表补上去」）：45→46 个模型。百度官方发布页附录评测表一手逐字转录 20 项基准，**只收自家列**（同表 6 个竞品列系百度自跑分，按厂商自报只收自家型号的红线不收）。280B/14B 激活 MoE、1M 上下文、Apache 2.0 开源、纯文本。
+- **新厂商渠道「百度官方」**：注册进 `VENDOR_SRC` + `VENDOR_SRC_PAGES`（名单 9→10）。该模型实测全为厂商自报，故「仅第三方榜单」口径下 0/8 维（空图），默认口径 8/8。
+- 19 项证据入账：并入 TB4.0 / TB-Science / DeepSWE / ProgramBench / NL2Repo / AutomationBench / APEX-Agents / Agents' Last Exam / Toolathlon / MCP Atlas / BrowseComp / HLE / AA-LCR 共 13 个既有族；新开 Cookbook / BlenderWorld / DRACO / SpreadsheetBench-V2 / OfficeQA-Pro-V2 / SkillBench-1.1-text 共 6 族（各 n=1 留档不计分）。AA-Omniscience-Public 按新基线冻结规则有意不映射留档。
+
+### Changed
+
+- 全池重训推理补全（`infer_gaps.py`）：k 3→5，324 格 LOO、MAE 20.36；新模型 8 维补齐（4 实测 + 4 推理）。`TEXT_ONLY` 名单增 ERNIE-5.5-Flash-Preview，图片维按 M3 结构性估值。
+- 池效应：BrowseComp 与 MCP Atlas 由 n=1→n=2 开始计分，Dots-3-Note-Preview 的 Agent 维出现实测 → validate 实测优先拦截并删其 1 条过时推理行。
+- 规模：证据 1295→1318（实测 1275 + 推理 43）；计分 1249；族 83→85；计分覆盖 325 格；厂商自报 142→160。
+- 验证：validate 0/0、pytest 26 绿、构建幂等（MD5 两次一致）、CDP 逐顶点核对雷达与账本一致、两档口径实测均符合预期。
+
 ## [0.43.0] - 2026-11-23
 
 ### Fixed（Hy4 flash 数据核查与订正）

@@ -114,3 +114,5 @@ Qwen4 Max,Qwen4-Max,AA 单模型页 name 字段（2026-11-16 入库）
 Hy4 Flash,Hy4 flash,腾讯官方发布页/llmlearner 模型名（2026-11-19 入库）
 GPT-6.2 Astra (Max),GPT-6.2 Astra,AA 单模型页 name 字段（2026-11-19 入库）
 GPT-6.2 Sol (Max),GPT-6.2 Sol,AA 单模型页 name 字段（2026-11-19 入库）
+ERNIE 5.5 Flash Preview,ERNIE-5.5-Flash-Preview,百度官方发布页名
+baidu/ernie-5.5-flash-preview,ERNIE-5.5-Flash-Preview,OpenRouter ID（用户提供的模型标识）

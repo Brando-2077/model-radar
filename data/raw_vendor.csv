@@ -163,3 +163,23 @@ Hy4 flash,腾讯,腾讯官方,Automation-Bench v1.0.6,52.2,0-100,2026-11-16,http
 Hy4 flash,腾讯,腾讯官方,OSWorld 2.1,68.1,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
 Hy4 flash,腾讯,腾讯官方,MMMU-Pro,75.8,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
 Hy4 flash,腾讯,腾讯官方,ZeroBench-main (w/tools),45.8,0-100,2026-11-16,https://hunyuan.tencent.com/research/hy4-flash
+ERNIE-5.5-Flash-Preview,百度,百度官方,Terminal-Bench 4.0,46.5,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,DeepSWE v1.1,71.2,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,ProgramBench (Almost Solved),29.5,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,NL2Repo-Bench,64.8,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,Terminal-Bench-Science 0.1,21.0,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,Cookbook,88.2,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,BlenderWorld (text-only),79.0,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,AutomationBench,61.9,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,APEX-Agents 1.1,64.2,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,DRACO,84.9,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,SpreadsheetBench V2,36.4,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,OfficeQA Pro V2,67.9,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,Agents' Last Exam (CLI),29.0,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,SkillBench 1.1 (text-only),73.5,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,Toolathlon-Verified,75.0,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,MCP-Atlas,84.6,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,BrowseComp,87.4,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,HLE w/ (no tools),46.4,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,AA-Omniscience-Public,25.2,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/
+ERNIE-5.5-Flash-Preview,百度,百度官方,AA-LCR v1.1,79.0,0-100,2026-11-11,https://ernie.baidu.com/release/ernie-5-5-flash-preview/

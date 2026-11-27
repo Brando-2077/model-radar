@@ -1,23 +1,23 @@
 ﻿模型,维度,榜单分,备注,族,族内n
-Agnes 2.5 Pro Theta,Agent与工具调用,23.8,Artificial-Analysis·AutomationBench-AA 原始0.488226(0-1) @2026-11-07,AutomationBench,40
-Agnes 2.5 Pro Theta,Agent与工具调用,19.1,Artificial-Analysis·TB-Science 原始0.0380952(0-1) @2026-11-07,TB-Science,34
-Agnes 2.5 Pro Theta,Agent与工具调用,23.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.10101(0-1) @2026-11-07,TB4.0,40
+Agnes 2.5 Pro Theta,Agent与工具调用,23.2,Artificial-Analysis·AutomationBench-AA 原始0.488226(0-1) @2026-11-07,AutomationBench,41
+Agnes 2.5 Pro Theta,Agent与工具调用,18.6,Artificial-Analysis·TB-Science 原始0.0380952(0-1) @2026-11-07,TB-Science,35
+Agnes 2.5 Pro Theta,Agent与工具调用,23.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.10101(0-1) @2026-11-07,TB4.0,41
 Agnes 2.5 Pro Theta,代码,17.2,Artificial-Analysis·FrontierCode-2.0 原始0.165549(0-1) @2026-11-07,FrontierCode-2.0,32
 Agnes 2.5 Pro Theta,代码,57.8,Artificial-Analysis·SciCode 原始0.560185(0-1) @2026-11-07,SciCode,32
-Agnes 2.5 Pro Theta,内容创作,21.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始21.7(推理值) @2026-11-18",,
+Agnes 2.5 Pro Theta,内容创作,33.2,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始33.2(推理值) @2026-11-27",,
 Agnes 2.5 Pro Theta,可靠性与低幻觉,6.2,Artificial-Analysis·AA-Omniscience Index 原始-11.2333(指数) @2026-11-07,AA-Omni指数,40
 Agnes 2.5 Pro Theta,图片与制图,23.9,Artificial-Analysis·MMMU-Pro 原始0.784393(0-1) @2026-11-07,MMMU-Pro,23
-Agnes 2.5 Pro Theta,指令遵循,41.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始41.2(推理值) @2026-11-18",,
+Agnes 2.5 Pro Theta,指令遵循,40.7,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始40.7(推理值) @2026-11-27",,
 Agnes 2.5 Pro Theta,推理与知识,32.9,Artificial-Analysis·CritPt 原始0.151429(0-1) @2026-11-07,CritPt,35
-Agnes 2.5 Pro Theta,推理与知识,22.1,Artificial-Analysis·HLE 原始0.37164(0-1) @2026-11-07,HLE,34
-Agnes 2.5 Pro Theta,长文本,82.9,Artificial-Analysis·AA-LCR 原始0.846667(0-1) @2026-11-07,AA-LCR,35
+Agnes 2.5 Pro Theta,推理与知识,21.4,Artificial-Analysis·HLE 原始0.37164(0-1) @2026-11-07,HLE,35
+Agnes 2.5 Pro Theta,长文本,83.3,Artificial-Analysis·AA-LCR 原始0.846667(0-1) @2026-11-07,AA-LCR,36
 Claude-Fable-5.1,Agent与工具调用,58.3,Anthropic官方·OSWorld 2.1 原始83.5(0-100) @2026-11-09,OSWorld-2.1-Offline,6
 Claude-Fable-5.1,Agent与工具调用,12.5,Anthropic官方·Remote Labor Index 原始17.9(0-100) @2026-11-09,Remote-Labor-Index,4
-Claude-Fable-5.1,Agent与工具调用,46.2,Artificial-Analysis·AutomationBench-AA 原始0.593759(0-1) @2026-09-01,AutomationBench,40
+Claude-Fable-5.1,Agent与工具调用,45.1,Artificial-Analysis·AutomationBench-AA 原始0.593759(0-1) @2026-09-01,AutomationBench,41
 Claude-Fable-5.1,Agent与工具调用,88.7,Artificial-Analysis·GDPval-AA 原始1763.29(指数) @2026-11-04,GDPval-AA,31
 Claude-Fable-5.1,Agent与工具调用,75.0,Artificial-Analysis·ITBench-SRE 原始0.495292(0-1) @2026-09-01,itbench-sre,14
-Claude-Fable-5.1,Agent与工具调用,66.2,Artificial-Analysis·TB-Science 原始0.433333(0-1) @2026-09-01,TB-Science,34
-Claude-Fable-5.1,Agent与工具调用,68.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.520202(0-1) @2026-09-01,TB4.0,40
+Claude-Fable-5.1,Agent与工具调用,67.1,Artificial-Analysis·TB-Science 原始0.433333(0-1) @2026-09-01,TB-Science,35
+Claude-Fable-5.1,Agent与工具调用,69.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.520202(0-1) @2026-09-01,TB4.0,41
 Claude-Fable-5.1,Agent与工具调用,76.5,Artificial-Analysis·tau2-Banking 原始0.472165(0-1) @2026-09-01,tau2-banking,17
 Claude-Fable-5.1,Agent与工具调用,85.3,LiveBench·Agentic Coding 原始66.06(0-100) @2026-06-25,LB·Agentic Coding,17
 Claude-Fable-5.1,Agent与工具调用,90.6,LiveBench-2.0·Browser 原始89.8(0-100) @2026-10-23,LB2·Browser,16
@@ -51,7 +51,7 @@ Claude-Fable-5.1,指令遵循,79.4,LiveBench·IF (Instruction Following) 原始7
 Claude-Fable-5.1,推理与知识,79.4,ARC-Prize·ARC-AGI-2 原始97.5(0-100) @2026-11-04,ARC-AGI-2,17
 Claude-Fable-5.1,推理与知识,81.4,Artificial-Analysis·CritPt 原始0.297143(0-1) @2026-09-01,CritPt,35
 Claude-Fable-5.1,推理与知识,86.8,Artificial-Analysis·GPQA 原始0.937374(0-1) @2026-09-01,GPQA-Diamond,19
-Claude-Fable-5.1,推理与知识,92.6,Artificial-Analysis·HLE 原始0.591288(0-1) @2026-09-01,HLE,34
+Claude-Fable-5.1,推理与知识,92.9,Artificial-Analysis·HLE 原始0.591288(0-1) @2026-09-01,HLE,35
 Claude-Fable-5.1,推理与知识,57.7,Artificial-Analysis·HealthBench 原始0.572173(0-1) @2026-09-01,HealthBench,13
 Claude-Fable-5.1,推理与知识,10.0,Google官方·RiemannBench 原始65.6(0-100) @2026-10-28,RiemannBench,5
 Claude-Fable-5.1,推理与知识,82.4,LiveBench·Data Analysis 原始80.28(0-100) @2026-06-25,LB·Data Analysis,17
@@ -59,37 +59,37 @@ Claude-Fable-5.1,推理与知识,91.2,LiveBench·Mathematics 原始97.01(0-100) 
 Claude-Fable-5.1,推理与知识,85.3,LiveBench·Reasoning 原始91.69(0-100) @2026-06-25,LB·Reasoning,17
 Claude-Fable-5.1,推理与知识,81.2,LiveBench-2.0·Data Analysis 原始80.3(0-100) @2026-10-23,LB2·Data Analysis,16
 Claude-Fable-5.1,推理与知识,78.1,LiveBench-2.0·Reasoning 原始91.7(0-100) @2026-10-23,LB2·Reasoning,16
-Claude-Fable-5.1,长文本,87.1,Artificial-Analysis·AA-LCR 原始0.853333(0-1) @2026-09-01,AA-LCR,35
+Claude-Fable-5.1,长文本,87.5,Artificial-Analysis·AA-LCR 原始0.853333(0-1) @2026-09-01,AA-LCR,36
 Claude-Fable-5.1,长文本,30.0,Artificial-Analysis·AA-MLCR 原始0.155556(0-1) @2026-09-01,AA-MLCR,35
 Claude-Fable-5.1,长文本,10.0,"Google官方·GraphWalks (BFS, F1) 原始65(0-100) @2026-10-28",GraphWalks,5
 Claude-Fable-5.2,Agent与工具调用,90.0,Anthropic官方·Humanity's Last Exam (tools) 原始74.2(0-100) @2026-11-09,HLE-w/tools,5
 Claude-Fable-5.2,Agent与工具调用,91.7,Anthropic官方·OSWorld 2.1 原始89.3(0-100) @2026-11-09,OSWorld-2.1-Offline,6
 Claude-Fable-5.2,Agent与工具调用,87.5,Anthropic官方·Remote Labor Index 原始41.3(0-100) @2026-11-09,Remote-Labor-Index,4
-Claude-Fable-5.2,Agent与工具调用,91.2,Artificial-Analysis·AutomationBench-AA 原始0.764223(0-1) @2026-11-09,AutomationBench,40
-Claude-Fable-5.2,Agent与工具调用,95.6,Artificial-Analysis·TB-Science 原始0.733333(0-1) @2026-11-09,TB-Science,34
-Claude-Fable-5.2,Agent与工具调用,85.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.59596(0-1) @2026-11-09,TB4.0,40
+Claude-Fable-5.2,Agent与工具调用,91.5,Artificial-Analysis·AutomationBench-AA 原始0.764223(0-1) @2026-11-09,AutomationBench,41
+Claude-Fable-5.2,Agent与工具调用,95.7,Artificial-Analysis·TB-Science 原始0.733333(0-1) @2026-11-09,TB-Science,35
+Claude-Fable-5.2,Agent与工具调用,85.4,Artificial-Analysis·Terminal-Bench 4.0 原始0.59596(0-1) @2026-11-09,TB4.0,41
 Claude-Fable-5.2,代码,91.7,Anthropic官方·FrontierSWE v2 原始69.9(0-100) @2026-11-09,FrontierSWE-2,6
 Claude-Fable-5.2,代码,97.9,Artificial-Analysis·FrontierCode 原始0.562128(0-1) @2026-11-09,FrontierCode,24
 Claude-Fable-5.2,代码,98.4,Artificial-Analysis·FrontierCode-2.0 原始0.487597(0-1) @2026-11-09,FrontierCode-2.0,32
 Claude-Fable-5.2,代码,98.4,Artificial-Analysis·SciCode 原始0.677083(0-1) @2026-11-09,SciCode,32
-Claude-Fable-5.2,内容创作,77.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始77.7(推理值) @2026-11-18",,
+Claude-Fable-5.2,内容创作,72.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始72.8(推理值) @2026-11-27",,
 Claude-Fable-5.2,可靠性与低幻觉,98.8,Artificial-Analysis·AA-Omniscience Index 原始66.7667(指数) @2026-11-09,AA-Omni指数,40
 Claude-Fable-5.2,图片与制图,83.3,Anthropic官方·BenchCAD 2.1 原始83.5(0-100) @2026-11-09,BenchCAD-2-1,3
 Claude-Fable-5.2,图片与制图,93.8,Anthropic官方·Chartography (no tools) 原始73.4(0-100) @2026-11-09,Chartography-no-tools,8
-Claude-Fable-5.2,指令遵循,55.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始55.8(推理值) @2026-11-18",,
+Claude-Fable-5.2,指令遵循,63.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始63.4(推理值) @2026-11-27",,
 Claude-Fable-5.2,推理与知识,98.6,Artificial-Analysis·CritPt 原始0.354286(0-1) @2026-11-09,CritPt,35
-Claude-Fable-5.2,推理与知识,98.5,Artificial-Analysis·HLE 原始0.742817(0-1) @2026-11-09,HLE,34
+Claude-Fable-5.2,推理与知识,98.6,Artificial-Analysis·HLE 原始0.742817(0-1) @2026-11-09,HLE,35
 Claude-Fable-5.2,推理与知识,80.8,Artificial-Analysis·HealthBench 原始0.595574(0-1) @2026-11-09,HealthBench,13
-Claude-Fable-5.2,长文本,71.4,Artificial-Analysis·AA-LCR 原始0.833333(0-1) @2026-11-09,AA-LCR,35
+Claude-Fable-5.2,长文本,72.2,Artificial-Analysis·AA-LCR 原始0.833333(0-1) @2026-11-09,AA-LCR,36
 Claude-Fable-5.2,长文本,98.6,Artificial-Analysis·AA-MLCR 原始0.438889(0-1) @2026-11-09,AA-MLCR,35
 Claude-Opus-5.5,Agent与工具调用,75.0,Anthropic官方·OSWorld 2.1 原始87.2(0-100) @2026-11-09,OSWorld-2.1-Offline,6
 Claude-Opus-5.5,Agent与工具调用,62.5,Anthropic官方·Remote Labor Index 原始21.3(0-100) @2026-11-09,Remote-Labor-Index,4
-Claude-Opus-5.5,Agent与工具调用,73.8,Artificial-Analysis·AutomationBench-AA 原始0.695387(0-1) @2026-09-22,AutomationBench,40
+Claude-Opus-5.5,Agent与工具调用,74.4,Artificial-Analysis·AutomationBench-AA 原始0.695387(0-1) @2026-09-22,AutomationBench,41
 Claude-Opus-5.5,Agent与工具调用,98.4,Artificial-Analysis·GDPval-AA 原始1866.27(指数) @2026-11-04,GDPval-AA,31
 Claude-Opus-5.5,Agent与工具调用,10.7,Artificial-Analysis·ITBench-SRE 原始0.382298(0-1) @2026-09-22,itbench-sre,14
-Claude-Opus-5.5,Agent与工具调用,83.8,Artificial-Analysis·TB-Science 原始0.590476(0-1) @2026-09-22,TB-Science,34
-Claude-Opus-5.5,Agent与工具调用,85.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.59596(0-1) @2026-09-22,TB4.0,40
-Claude-Opus-5.5,Agent与工具调用,70.0,Google官方·Agents' Last Exam v1.1 原始71.6(0-100) @2026-10-28,Agents' Last Exam,10
+Claude-Opus-5.5,Agent与工具调用,84.3,Artificial-Analysis·TB-Science 原始0.590476(0-1) @2026-09-22,TB-Science,35
+Claude-Opus-5.5,Agent与工具调用,85.4,Artificial-Analysis·Terminal-Bench 4.0 原始0.59596(0-1) @2026-09-22,TB4.0,41
+Claude-Opus-5.5,Agent与工具调用,72.7,Google官方·Agents' Last Exam v1.1 原始71.6(0-100) @2026-10-28,Agents' Last Exam,11
 Claude-Opus-5.5,Agent与工具调用,91.2,LiveBench·Agentic Coding 原始71.72(0-100) @2026-06-25,LB·Agentic Coding,17
 Claude-Opus-5.5,Agent与工具调用,78.1,LiveBench-2.0·Browser 原始88.4(0-100) @2026-10-23,LB2·Browser,16
 Claude-Opus-5.5,Agent与工具调用,84.4,LiveBench-2.0·Long Agentic 原始72.8(0-100) @2026-10-23,LB2·Long Agentic,16
@@ -121,7 +121,7 @@ Claude-Opus-5.5,指令遵循,86.8,ArenaAI·Instruction Following 原始1518(Elo)
 Claude-Opus-5.5,指令遵循,38.2,LiveBench·IF (Instruction Following) 原始65.74(0-100) @2026-06-25,LB·IF (Instruction Following),17
 Claude-Opus-5.5,推理与知识,79.4,ARC-Prize·ARC-AGI-2 原始97.5(0-100) @2026-11-04,ARC-AGI-2,17
 Claude-Opus-5.5,推理与知识,92.9,Artificial-Analysis·CritPt 原始0.317143(0-1) @2026-09-22,CritPt,35
-Claude-Opus-5.5,推理与知识,95.6,Artificial-Analysis·HLE 原始0.613531(0-1) @2026-09-22,HLE,34
+Claude-Opus-5.5,推理与知识,95.7,Artificial-Analysis·HLE 原始0.613531(0-1) @2026-09-22,HLE,35
 Claude-Opus-5.5,推理与知识,50.0,Artificial-Analysis·HealthBench 原始0.569872(0-1) @2026-09-22,HealthBench,13
 Claude-Opus-5.5,推理与知识,30.0,Google官方·RiemannBench 原始69.6(0-100) @2026-10-28,RiemannBench,5
 Claude-Opus-5.5,推理与知识,82.4,LiveBench·Data Analysis 原始80.31(0-100) @2026-06-25,LB·Data Analysis,17
@@ -129,14 +129,14 @@ Claude-Opus-5.5,推理与知识,97.1,LiveBench·Mathematics 原始97.08(0-100) @
 Claude-Opus-5.5,推理与知识,91.2,LiveBench·Reasoning 原始92.15(0-100) @2026-06-25,LB·Reasoning,17
 Claude-Opus-5.5,推理与知识,81.2,LiveBench-2.0·Data Analysis 原始80.3(0-100) @2026-10-23,LB2·Data Analysis,16
 Claude-Opus-5.5,推理与知识,84.4,LiveBench-2.0·Reasoning 原始92.2(0-100) @2026-10-23,LB2·Reasoning,16
-Claude-Opus-5.5,长文本,82.9,Artificial-Analysis·AA-LCR 原始0.846667(0-1) @2026-09-22,AA-LCR,35
+Claude-Opus-5.5,长文本,83.3,Artificial-Analysis·AA-LCR 原始0.846667(0-1) @2026-09-22,AA-LCR,36
 Claude-Opus-5.5,长文本,70.0,Artificial-Analysis·AA-MLCR 原始0.277778(0-1) @2026-09-22,AA-MLCR,35
 Claude-Opus-5.5,长文本,30.0,"Google官方·GraphWalks (BFS, F1) 原始66.8(0-100) @2026-10-28",GraphWalks,5
-Claude-Sonnet-5.5,Agent与工具调用,78.8,Artificial-Analysis·AutomationBench-AA 原始0.717688(0-1) @2026-09-28,AutomationBench,40
+Claude-Sonnet-5.5,Agent与工具调用,79.3,Artificial-Analysis·AutomationBench-AA 原始0.717688(0-1) @2026-09-28,AutomationBench,41
 Claude-Sonnet-5.5,Agent与工具调用,91.9,Artificial-Analysis·GDPval-AA 原始1837.82(指数) @2026-11-04,GDPval-AA,31
-Claude-Sonnet-5.5,Agent与工具调用,75.0,Artificial-Analysis·TB-Science 原始0.533333(0-1) @2026-09-28,TB-Science,34
-Claude-Sonnet-5.5,Agent与工具调用,91.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.636364(0-1) @2026-09-28,TB4.0,40
-Claude-Sonnet-5.5,Agent与工具调用,35.0,Google官方·Agents' Last Exam v1.1 原始60.4(0-100) @2026-11-12,Agents' Last Exam,10
+Claude-Sonnet-5.5,Agent与工具调用,75.7,Artificial-Analysis·TB-Science 原始0.533333(0-1) @2026-09-28,TB-Science,35
+Claude-Sonnet-5.5,Agent与工具调用,91.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.636364(0-1) @2026-09-28,TB4.0,41
+Claude-Sonnet-5.5,Agent与工具调用,40.9,Google官方·Agents' Last Exam v1.1 原始60.4(0-100) @2026-11-12,Agents' Last Exam,11
 Claude-Sonnet-5.5,Agent与工具调用,75.0,Google官方·Terminal-Bench 4.1 原始63.9(0-100) @2026-11-12,TB4.1,2
 Claude-Sonnet-5.5,Agent与工具调用,44.1,LiveBench·Agentic Coding 原始56.31(0-100) @2026-06-25,LB·Agentic Coding,17
 Claude-Sonnet-5.5,Agent与工具调用,84.4,LiveBench-2.0·Browser 原始89.3(0-100) @2026-10-23,LB2·Browser,16
@@ -165,20 +165,20 @@ Claude-Sonnet-5.5,指令遵循,60.5,ArenaAI·Instruction Following 原始1481(El
 Claude-Sonnet-5.5,指令遵循,20.6,LiveBench·IF (Instruction Following) 原始56.79(0-100) @2026-06-25,LB·IF (Instruction Following),17
 Claude-Sonnet-5.5,推理与知识,64.7,ARC-Prize·ARC-AGI-2 原始96.5(0-100) @2026-11-04,ARC-AGI-2,17
 Claude-Sonnet-5.5,推理与知识,87.1,Artificial-Analysis·CritPt 原始0.314286(0-1) @2026-09-28,CritPt,35
-Claude-Sonnet-5.5,推理与知识,86.8,Artificial-Analysis·HLE 原始0.549583(0-1) @2026-09-28,HLE,34
+Claude-Sonnet-5.5,推理与知识,87.1,Artificial-Analysis·HLE 原始0.549583(0-1) @2026-09-28,HLE,35
 Claude-Sonnet-5.5,推理与知识,96.2,Artificial-Analysis·HealthBench 原始0.620657(0-1) @2026-09-28,HealthBench,13
 Claude-Sonnet-5.5,推理与知识,8.8,LiveBench·Data Analysis 原始59.49(0-100) @2026-06-25,LB·Data Analysis,17
 Claude-Sonnet-5.5,推理与知识,73.5,LiveBench·Mathematics 原始96.13(0-100) @2026-06-25,LB·Mathematics,17
 Claude-Sonnet-5.5,推理与知识,79.4,LiveBench·Reasoning 原始91.63(0-100) @2026-06-25,LB·Reasoning,17
 Claude-Sonnet-5.5,推理与知识,9.4,LiveBench-2.0·Data Analysis 原始59.5(0-100) @2026-10-23,LB2·Data Analysis,16
 Claude-Sonnet-5.5,推理与知识,71.9,LiveBench-2.0·Reasoning 原始91.6(0-100) @2026-10-23,LB2·Reasoning,16
-Claude-Sonnet-5.5,长文本,58.6,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-09-28,AA-LCR,35
+Claude-Sonnet-5.5,长文本,59.7,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-09-28,AA-LCR,36
 Claude-Sonnet-5.5,长文本,94.3,Artificial-Analysis·AA-MLCR 原始0.416667(0-1) @2026-09-28,AA-MLCR,35
-DeepSeek-V4-Pro,Agent与工具调用,36.2,Artificial-Analysis·AutomationBench-AA 原始0.567117(0-1) @2026-08-13,AutomationBench,40
+DeepSeek-V4-Pro,Agent与工具调用,35.4,Artificial-Analysis·AutomationBench-AA 原始0.567117(0-1) @2026-08-13,AutomationBench,41
 DeepSeek-V4-Pro,Agent与工具调用,96.9,Artificial-Analysis·EnterpriseOpsGym 原始0.495971(0-1) @2026-08-13,enterprise-ops-gym,16
 DeepSeek-V4-Pro,Agent与工具调用,37.1,Artificial-Analysis·GDPval-AA 原始1457.37(指数) @2026-11-04,GDPval-AA,31
-DeepSeek-V4-Pro,Agent与工具调用,29.4,Artificial-Analysis·TB-Science 原始0.0571429(0-1) @2026-08-13,TB-Science,34
-DeepSeek-V4-Pro,Agent与工具调用,31.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.141414(0-1) @2026-08-13,TB4.0,40
+DeepSeek-V4-Pro,Agent与工具调用,28.6,Artificial-Analysis·TB-Science 原始0.0571429(0-1) @2026-08-13,TB-Science,35
+DeepSeek-V4-Pro,Agent与工具调用,30.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.141414(0-1) @2026-08-13,TB4.0,41
 DeepSeek-V4-Pro,Agent与工具调用,50.0,Artificial-Analysis·tau2-Banking 原始0.395876(0-1) @2026-08-13,tau2-banking,17
 DeepSeek-V4-Pro,Agent与工具调用,38.2,LiveBench·Agentic Coding 原始54.95(0-100) @2026-06-25,LB·Agentic Coding,17
 DeepSeek-V4-Pro,Agent与工具调用,65.0,SuperCLUE·Terminal总榜-总分 原始51.52(百分制) @2026-09,SC·Terminal总榜-总分,10
@@ -200,27 +200,27 @@ DeepSeek-V4-Pro,指令遵循,21.1,ArenaAI·Instruction Following 原始1462(Elo)
 DeepSeek-V4-Pro,指令遵循,44.1,LiveBench·IF (Instruction Following) 原始67.7(0-100) @2026-06-25,LB·IF (Instruction Following),17
 DeepSeek-V4-Pro,推理与知识,44.3,Artificial-Analysis·CritPt 原始0.18(0-1) @2026-08-13,CritPt,35
 DeepSeek-V4-Pro,推理与知识,68.4,Artificial-Analysis·GPQA 原始0.928283(0-1) @2026-08-13,GPQA-Diamond,19
-DeepSeek-V4-Pro,推理与知识,39.7,Artificial-Analysis·HLE 原始0.410102(0-1) @2026-08-13,HLE,34
+DeepSeek-V4-Pro,推理与知识,38.6,Artificial-Analysis·HLE 原始0.410102(0-1) @2026-08-13,HLE,35
 DeepSeek-V4-Pro,推理与知识,70.6,LiveBench·Data Analysis 原始79.24(0-100) @2026-06-25,LB·Data Analysis,17
 DeepSeek-V4-Pro,推理与知识,67.6,LiveBench·Mathematics 原始95.09(0-100) @2026-06-25,LB·Mathematics,17
 DeepSeek-V4-Pro,推理与知识,47.1,LiveBench·Reasoning 原始85.84(0-100) @2026-06-25,LB·Reasoning,17
-DeepSeek-V4-Pro,长文本,40.0,Artificial-Analysis·AA-LCR 原始0.803333(0-1) @2026-08-13,AA-LCR,35
+DeepSeek-V4-Pro,长文本,41.7,Artificial-Analysis·AA-LCR 原始0.803333(0-1) @2026-08-13,AA-LCR,36
 DeepSeek-V4-Pro,长文本,87.5,SuperCLUE·长上下文1M-总分 原始64.67(百分制) @2026-07,SC·长上下文1M-总分,4
 DeepSeek-V4-Pro,长文本,87.5,SuperCLUE·长上下文256K-总分 原始74.54(百分制) @2026-07,SC·长上下文256K-总分,4
-DeepSeek-V4.1-Flash,Agent与工具调用,71.2,Artificial-Analysis·AutomationBench-AA 原始0.68891(0-1) @2026-09-10,AutomationBench,40
+DeepSeek-V4.1-Flash,Agent与工具调用,72.0,Artificial-Analysis·AutomationBench-AA 原始0.68891(0-1) @2026-09-10,AutomationBench,41
 DeepSeek-V4.1-Flash,Agent与工具调用,59.7,Artificial-Analysis·GDPval-AA 原始1600(指数) @2026-11-04,GDPval-AA,31
 DeepSeek-V4.1-Flash,Agent与工具调用,46.4,Artificial-Analysis·ITBench-SRE 原始0.469162(0-1) @2026-09-10,itbench-sre,14
-DeepSeek-V4.1-Flash,Agent与工具调用,39.7,Artificial-Analysis·TB-Science 原始0.0904762(0-1) @2026-09-10,TB-Science,34
-DeepSeek-V4.1-Flash,Agent与工具调用,43.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.267677(0-1) @2026-09-10,TB4.0,40
-DeepSeek-V4.1-Flash,Agent与工具调用,5.0,DeepSeek官方·Agents' Last Exam 原始31.8(0-100) @2026-10-17,Agents' Last Exam,10
+DeepSeek-V4.1-Flash,Agent与工具调用,38.6,Artificial-Analysis·TB-Science 原始0.0904762(0-1) @2026-09-10,TB-Science,35
+DeepSeek-V4.1-Flash,Agent与工具调用,42.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.267677(0-1) @2026-09-10,TB4.0,41
+DeepSeek-V4.1-Flash,Agent与工具调用,13.6,DeepSeek官方·Agents' Last Exam 原始31.8(0-100) @2026-10-17,Agents' Last Exam,11
 DeepSeek-V4.1-Flash,Agent与工具调用,25.0,DeepSeek官方·Apex Bench v1.1 原始64.6(0-100) @2026-10-17,Apex Bench v1.1,2
 DeepSeek-V4.1-Flash,Agent与工具调用,97.1,LiveBench·Agentic Coding 原始77.27(0-100) @2026-06-25,LB·Agentic Coding,17
 DeepSeek-V4.1-Flash,Agent与工具调用,45.0,SuperCLUE·总排行榜-智能体任务规划 原始79.84(百分制) @2026-07(补测),SC·总排行榜-智能体任务规划,10
 DeepSeek-V4.1-Flash,代码,64.6,Artificial-Analysis·FrontierCode 原始0.440335(0-1) @2026-09-10,FrontierCode,24
 DeepSeek-V4.1-Flash,代码,35.9,Artificial-Analysis·SciCode 原始0.518519(0-1) @2026-09-10,SciCode,32
-DeepSeek-V4.1-Flash,代码,58.3,DeepSeek官方·DeepSWE v1.1 原始74.2(0-100) @2026-10-17,DeepSWE,6
-DeepSeek-V4.1-Flash,代码,70.0,DeepSeek官方·NL2Repo-Bench 原始65.4(0-100) @2026-10-17,NL2Repo,5
-DeepSeek-V4.1-Flash,代码,58.3,DeepSeek官方·ProgramBench 原始20.3(0-100) @2026-10-17,ProgramBench,6
+DeepSeek-V4.1-Flash,代码,64.3,DeepSeek官方·DeepSWE v1.1 原始74.2(0-100) @2026-10-17,DeepSWE,7
+DeepSeek-V4.1-Flash,代码,75.0,DeepSeek官方·NL2Repo-Bench 原始65.4(0-100) @2026-10-17,NL2Repo,6
+DeepSeek-V4.1-Flash,代码,50.0,DeepSeek官方·ProgramBench 原始20.3(0-100) @2026-10-17,ProgramBench,7
 DeepSeek-V4.1-Flash,代码,61.8,LiveBench·Coding 原始80.04(0-100) @2026-06-25,LB·Coding,17
 DeepSeek-V4.1-Flash,代码,90.0,SuperCLUE·SWE-Agent总榜-通过率 原始72(百分制) @2026-09,SC·SWE-Agent总榜-通过率,5
 DeepSeek-V4.1-Flash,代码,91.7,SuperCLUE·总排行榜-智能体编程 原始71.58(百分制) @2026-07(补测),SC·总排行榜-智能体编程,18
@@ -240,29 +240,29 @@ DeepSeek-V4.1-Flash,指令遵循,61.8,LiveBench·IF (Instruction Following) 原�
 DeepSeek-V4.1-Flash,指令遵循,63.9,SuperCLUE·总排行榜-精确指令遵循 原始40(百分制) @2026-07(补测),SC·总排行榜-精确指令遵循,18
 DeepSeek-V4.1-Flash,推理与知识,47.1,ARC-Prize·ARC-AGI-2 原始94.5(0-100) @2026-11-04,ARC-AGI-2,17
 DeepSeek-V4.1-Flash,推理与知识,30.0,Artificial-Analysis·CritPt 原始0.142857(0-1) @2026-09-10,CritPt,35
-DeepSeek-V4.1-Flash,推理与知识,33.8,Artificial-Analysis·HLE 原始0.392493(0-1) @2026-09-10,HLE,34
+DeepSeek-V4.1-Flash,推理与知识,32.9,Artificial-Analysis·HLE 原始0.392493(0-1) @2026-09-10,HLE,35
 DeepSeek-V4.1-Flash,推理与知识,88.5,Artificial-Analysis·HealthBench 原始0.608863(0-1) @2026-09-10,HealthBench,13
 DeepSeek-V4.1-Flash,推理与知识,70.6,LiveBench·Data Analysis 原始79.25(0-100) @2026-06-25,LB·Data Analysis,17
 DeepSeek-V4.1-Flash,推理与知识,61.8,LiveBench·Mathematics 原始93.29(0-100) @2026-06-25,LB·Mathematics,17
 DeepSeek-V4.1-Flash,推理与知识,55.9,LiveBench·Reasoning 原始86.69(0-100) @2026-06-25,LB·Reasoning,17
 DeepSeek-V4.1-Flash,推理与知识,97.2,SuperCLUE·总排行榜-数学推理 原始84.21(百分制) @2026-07(补测),SC·总排行榜-数学推理,18
 DeepSeek-V4.1-Flash,推理与知识,35.0,SuperCLUE·总排行榜-科学推理 原始70.18(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-DeepSeek-V4.1-Flash,长文本,78.6,Artificial-Analysis·AA-LCR 原始0.84(0-1) @2026-09-10,AA-LCR,35
+DeepSeek-V4.1-Flash,长文本,79.2,Artificial-Analysis·AA-LCR 原始0.84(0-1) @2026-09-10,AA-LCR,36
 DeepSeek-V4.1-Flash,长文本,61.4,Artificial-Analysis·AA-MLCR 原始0.238889(0-1) @2026-09-10,AA-MLCR,35
-DeepSeek-V4.1-Flash-1017,Agent与工具调用,66.2,Artificial-Analysis·AutomationBench-AA 原始0.66641(0-1) @2026-10-17,AutomationBench,40
+DeepSeek-V4.1-Flash-1017,Agent与工具调用,67.1,Artificial-Analysis·AutomationBench-AA 原始0.66641(0-1) @2026-10-17,AutomationBench,41
 DeepSeek-V4.1-Flash-1017,Agent与工具调用,85.5,Artificial-Analysis·GDPval-AA 原始1745.77(指数) @2026-11-04,GDPval-AA,31
-DeepSeek-V4.1-Flash-1017,Agent与工具调用,52.9,Artificial-Analysis·TB-Science 原始0.128571(0-1) @2026-10-17,TB-Science,34
-DeepSeek-V4.1-Flash-1017,Agent与工具调用,51.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.338384(0-1) @2026-10-17,TB4.0,40
-DeepSeek-V4.1-Flash-1017,Agent与工具调用,15.0,DeepSeek官方·Agents' Last Exam 原始35.4(0-100) @2026-10-17,Agents' Last Exam,10
+DeepSeek-V4.1-Flash-1017,Agent与工具调用,51.4,Artificial-Analysis·TB-Science 原始0.128571(0-1) @2026-10-17,TB-Science,35
+DeepSeek-V4.1-Flash-1017,Agent与工具调用,50.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.338384(0-1) @2026-10-17,TB4.0,41
+DeepSeek-V4.1-Flash-1017,Agent与工具调用,22.7,DeepSeek官方·Agents' Last Exam 原始35.4(0-100) @2026-10-17,Agents' Last Exam,11
 DeepSeek-V4.1-Flash-1017,Agent与工具调用,75.0,DeepSeek官方·Apex Bench v1.1 原始72.1(0-100) @2026-10-17,Apex Bench v1.1,2
 DeepSeek-V4.1-Flash-1017,Agent与工具调用,34.4,LiveBench-2.0·Browser 原始67.2(0-100) @2026-10-23,LB2·Browser,16
 DeepSeek-V4.1-Flash-1017,Agent与工具调用,65.6,LiveBench-2.0·Long Agentic 原始40.9(0-100) @2026-10-23,LB2·Long Agentic,16
 DeepSeek-V4.1-Flash-1017,代码,60.4,Artificial-Analysis·FrontierCode 原始0.436606(0-1) @2026-10-17,FrontierCode,24
 DeepSeek-V4.1-Flash-1017,代码,57.8,Artificial-Analysis·FrontierCode-2.0 原始0.284712(0-1) @2026-10-17,FrontierCode-2.0,32
 DeepSeek-V4.1-Flash-1017,代码,54.7,Artificial-Analysis·SciCode 原始0.559028(0-1) @2026-10-17,SciCode,32
-DeepSeek-V4.1-Flash-1017,代码,91.7,DeepSeek官方·DeepSWE v1.1 原始77(0-100) @2026-10-17,DeepSWE,6
-DeepSeek-V4.1-Flash-1017,代码,90.0,DeepSeek官方·NL2Repo-Bench 原始68.2(0-100) @2026-10-17,NL2Repo,5
-DeepSeek-V4.1-Flash-1017,代码,75.0,DeepSeek官方·ProgramBench 原始29.1(0-100) @2026-10-17,ProgramBench,6
+DeepSeek-V4.1-Flash-1017,代码,92.9,DeepSeek官方·DeepSWE v1.1 原始77(0-100) @2026-10-17,DeepSWE,7
+DeepSeek-V4.1-Flash-1017,代码,91.7,DeepSeek官方·NL2Repo-Bench 原始68.2(0-100) @2026-10-17,NL2Repo,6
+DeepSeek-V4.1-Flash-1017,代码,64.3,DeepSeek官方·ProgramBench 原始29.1(0-100) @2026-10-17,ProgramBench,7
 DeepSeek-V4.1-Flash-1017,代码,84.4,LiveBench-2.0·Coding 原始96(0-100) @2026-10-23,LB2·Coding,16
 DeepSeek-V4.1-Flash-1017,代码,77.8,SuperCLUE·总排行榜-智能体编程 原始65.38(0-100) @2026-11,SC·总排行榜-智能体编程,18
 DeepSeek-V4.1-Flash-1017,内容创作,65.6,LiveBench-2.0·Research 原始79.5(0-100) @2026-10-23,LB2·Research,16
@@ -279,37 +279,37 @@ DeepSeek-V4.1-Flash-1017,指令遵循,71.9,AI产品狙击手·Q1强约束指令�
 DeepSeek-V4.1-Flash-1017,指令遵循,80.6,SuperCLUE·总排行榜-精确指令遵循 原始43.1(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 DeepSeek-V4.1-Flash-1017,推理与知识,38.2,ARC-Prize·ARC-AGI-2 原始93.5(0-100) @2026-11-04,ARC-AGI-2,17
 DeepSeek-V4.1-Flash-1017,推理与知识,67.1,Artificial-Analysis·CritPt 原始0.24(0-1) @2026-10-17,CritPt,35
-DeepSeek-V4.1-Flash-1017,推理与知识,51.5,Artificial-Analysis·HLE 原始0.433272(0-1) @2026-10-17,HLE,34
+DeepSeek-V4.1-Flash-1017,推理与知识,50.0,Artificial-Analysis·HLE 原始0.433272(0-1) @2026-10-17,HLE,35
 DeepSeek-V4.1-Flash-1017,推理与知识,71.9,LiveBench-2.0·Data Analysis 原始79.5(0-100) @2026-10-23,LB2·Data Analysis,16
 DeepSeek-V4.1-Flash-1017,推理与知识,46.9,LiveBench-2.0·Reasoning 原始89.1(0-100) @2026-10-23,LB2·Reasoning,16
 DeepSeek-V4.1-Flash-1017,推理与知识,72.2,SuperCLUE·总排行榜-数理推理 原始71.05(0-100) @2026-11,SC·总排行榜-数学推理,18
-DeepSeek-V4.1-Flash-1017,长文本,58.6,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-10-17,AA-LCR,35
+DeepSeek-V4.1-Flash-1017,长文本,59.7,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-10-17,AA-LCR,36
 DeepSeek-V4.1-Flash-1017,长文本,67.1,Artificial-Analysis·AA-MLCR 原始0.266667(0-1) @2026-10-17,AA-MLCR,35
 DeepSeek-V4.1-Flash-1017,长文本,65.4,SuperCLUE·总排行榜-超长上下文 原始66.25(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Dots-3-Note-Preview,Agent与工具调用,83.3,dots官方·BrowseComp 原始83.3(0-100) @2026-10-07,BrowseComp,1
+Dots-3-Note-Preview,Agent与工具调用,25.0,dots官方·BrowseComp 原始83.3(0-100) @2026-10-07,BrowseComp,2
 Dots-3-Note-Preview,Agent与工具调用,73.4,dots官方·Claw-Eval 原始73.4(0-100) @2026-10-07,Claw-Eval,1
 Dots-3-Note-Preview,Agent与工具调用,16.7,dots官方·Terminal-Bench 2.1 原始75.1(0-100) @2026-10-07,TB2.1,3
 Dots-3-Note-Preview,Agent与工具调用,28.1,dots官方·VibeLifeBench 原始28.1(0-100) @2026-10-07,VibeLifeBench,1
 Dots-3-Note-Preview,Agent与工具调用,25.7,dots官方·VibeSearchBench 原始25.7(0-100) @2026-10-07,VibeSearchBench,1
 Dots-3-Note-Preview,Agent与工具调用,61.7,dots官方·WildClawBench 原始61.7(0-100) @2026-10-07,WildClawBench,1
-Dots-3-Note-Preview,代码,10.0,dots官方·NL2repo 原始49.8(0-100) @2026-10-07,NL2Repo,5
+Dots-3-Note-Preview,代码,8.3,dots官方·NL2repo 原始49.8(0-100) @2026-10-07,NL2Repo,6
 Dots-3-Note-Preview,代码,25.0,dots官方·SWE-bench-pro 原始61(0-100) @2026-10-07,SWE-bench Pro,2
-Dots-3-Note-Preview,内容创作,26.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始26.3(推理值) @2026-11-18",,
-Dots-3-Note-Preview,可靠性与低幻觉,60.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.3(推理值) @2026-11-18",,
+Dots-3-Note-Preview,内容创作,40.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始40.4(推理值) @2026-11-27",,
+Dots-3-Note-Preview,可靠性与低幻觉,59.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始59.3(推理值) @2026-11-27",,
 Dots-3-Note-Preview,图片与制图,83.1,dots官方·Charxiv-RQ 原始83.1(0-100) @2026-10-07,Charxiv-RQ,1
 Dots-3-Note-Preview,图片与制图,53.4,dots官方·PerceptionBench 原始53.4(0-100) @2026-10-07,PerceptionBench,1
 Dots-3-Note-Preview,图片与制图,72.5,dots官方·SimpleVQA 原始72.5(0-100) @2026-10-07,SimpleVQA,1
 Dots-3-Note-Preview,图片与制图,42.7,dots官方·WorldVQA 原始42.7(0-100) @2026-10-07,WorldVQA,1
-Dots-3-Note-Preview,图片与制图,33.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始33.5(推理值) @2026-11-18",,
+Dots-3-Note-Preview,图片与制图,31.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始31.8(推理值) @2026-11-27",,
 Dots-3-Note-Preview,指令遵循,68.8,酥悠沫-官方·IFBench 原始80.4(0-100) @2026-08-14,IFBench,8
 Dots-3-Note-Preview,指令遵循,93.9,酥悠沫-官方·IFEval 原始93.9(0-100) @2026-08-14,IFEval,1
 Dots-3-Note-Preview,推理与知识,14.7,dots官方·ARC-AGI-2 原始81.4(0-100) @2026-10-07,ARC-AGI-2,17
 Dots-3-Note-Preview,推理与知识,32.1,dots官方·ARC-AGI-3 原始32.1(0-100) @2026-10-07,ARC-AGI-3,1
-Dots-3-Note-Preview,长文本,39.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始39.1(推理值) @2026-11-18",,
+Dots-3-Note-Preview,长文本,26.6,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始26.6(推理值) @2026-11-27",,
 Doubao-Seed-2.1-Pro,Agent与工具调用,15.0,SuperCLUE·Terminal总榜-总分 原始35.35(百分制) @2026-09,SC·Terminal总榜-总分,10
 Doubao-Seed-2.1-Pro,Agent与工具调用,65.0,SuperCLUE·总排行榜-智能体任务规划 原始84.95(百分制) @2026-07(补测),SC·总排行榜-智能体任务规划,10
 Doubao-Seed-2.1-Pro,代码,11.1,SuperCLUE·总排行榜-智能体编程 原始38.46(0-100) @2026-11,SC·总排行榜-智能体编程,18
-Doubao-Seed-2.1-Pro,内容创作,81.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始81.1(推理值) @2026-11-18",,
+Doubao-Seed-2.1-Pro,内容创作,76.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始76.8(推理值) @2026-11-27",,
 Doubao-Seed-2.1-Pro,可靠性与低幻觉,36.1,SuperCLUE·总排行榜-幻觉控制 原始42.09(0-100) @2026-11,SC·总排行榜-幻觉控制,18
 Doubao-Seed-2.1-Pro,图片与制图,15.6,LMArena·WebDev-Elo 原始1517(Elo) @2026-10-06,WebDev-Elo,16
 Doubao-Seed-2.1-Pro,指令遵循,15.6,AI产品狙击手·Q1强约束指令遵循 原始7(10分制) @2026-09-17,TGG·Q1指令遵循,16
@@ -317,21 +317,44 @@ Doubao-Seed-2.1-Pro,指令遵循,41.7,SuperCLUE·总排行榜-精确指令遵循
 Doubao-Seed-2.1-Pro,推理与知识,25.0,SuperCLUE·总排行榜-数理推理 原始60.53(0-100) @2026-11,SC·总排行榜-数学推理,18
 Doubao-Seed-2.1-Pro,推理与知识,95.0,SuperCLUE·总排行榜-科学推理 原始77.19(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
 Doubao-Seed-2.1-Pro,长文本,11.5,SuperCLUE·总排行榜-超长上下文 原始37.68(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Doubao-Seed-2.1-Pro,长文本,1.4,酥悠沫-官方·AA-LCR 原始70(0-100) @2026-06-30,AA-LCR,35
+Doubao-Seed-2.1-Pro,长文本,1.4,酥悠沫-官方·AA-LCR 原始70(0-100) @2026-06-30,AA-LCR,36
 ERNIE-5.1,Agent与工具调用,25.0,SuperCLUE·总排行榜-智能体任务规划 原始72.21(百分制) @2026-07(补测),SC·总排行榜-智能体任务规划,10
 ERNIE-5.1,代码,2.8,SuperCLUE·总排行榜-智能体编程 原始27.37(百分制) @2026-07(补测),SC·总排行榜-智能体编程,18
 ERNIE-5.1,内容创作,90.0,SuperCLUE·Writing总榜-总分 原始87.57(百分制) @2026-05-18,SC·Writing总榜-总分,5
 ERNIE-5.1,内容创作,80.0,酥悠沫·TextArena 原始1468(Elo) @2026-05-09,TextArena,1
 ERNIE-5.1,可靠性与低幻觉,80.6,SuperCLUE·总排行榜-幻觉控制 原始83.02(百分制) @2026-07(补测),SC·总排行榜-幻觉控制,18
-ERNIE-5.1,图片与制图,25.2,"推理补全·M3 结构性估值(kNN兜底,余弦相似度,k=3) 原始25.2(推理值) @2026-11-18",,
+ERNIE-5.1,图片与制图,36.5,"推理补全·M3 结构性估值(kNN兜底,余弦相似度,k=5) 原始36.5(推理值) @2026-11-27",,
 ERNIE-5.1,指令遵循,75.0,SuperCLUE·总排行榜-精确指令遵循 原始41.9(百分制) @2026-07(补测),SC·总排行榜-精确指令遵循,18
 ERNIE-5.1,推理与知识,41.7,SuperCLUE·总排行榜-数学推理 原始64.91(百分制) @2026-07(补测),SC·总排行榜-数学推理,18
 ERNIE-5.1,推理与知识,5.0,SuperCLUE·总排行榜-科学推理 原始59.65(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-ERNIE-5.1,长文本,21.0,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始21(推理值) @2026-11-18",,
-GLM-5.1,Agent与工具调用,8.8,Artificial-Analysis·AutomationBench-AA 原始0.203084(0-1) @2026-04-07,AutomationBench,40
+ERNIE-5.1,长文本,29.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始29.8(推理值) @2026-11-27",,
+ERNIE-5.5-Flash-Preview,Agent与工具调用,85.0,百度官方·APEX-Agents 1.1 原始64.2(0-100) @2026-11-11,APEX-Agents,10
+ERNIE-5.5-Flash-Preview,Agent与工具调用,4.5,百度官方·Agents' Last Exam (CLI) 原始29(0-100) @2026-11-11,Agents' Last Exam,11
+ERNIE-5.5-Flash-Preview,Agent与工具调用,57.3,百度官方·AutomationBench 原始61.9(0-100) @2026-11-11,AutomationBench,41
+ERNIE-5.5-Flash-Preview,Agent与工具调用,75.0,百度官方·BrowseComp 原始87.4(0-100) @2026-11-11,BrowseComp,2
+ERNIE-5.5-Flash-Preview,Agent与工具调用,88.2,百度官方·Cookbook 原始88.2(0-100) @2026-11-11,Cookbook,1
+ERNIE-5.5-Flash-Preview,Agent与工具调用,84.9,百度官方·DRACO 原始84.9(0-100) @2026-11-11,DRACO,1
+ERNIE-5.5-Flash-Preview,Agent与工具调用,75.0,百度官方·MCP-Atlas 原始84.6(0-100) @2026-11-11,MCP Atlas,2
+ERNIE-5.5-Flash-Preview,Agent与工具调用,67.9,百度官方·OfficeQA Pro V2 原始67.9(0-100) @2026-11-11,OfficeQA-Pro-V2,1
+ERNIE-5.5-Flash-Preview,Agent与工具调用,73.5,百度官方·SkillBench 1.1 (text-only) 原始73.5(0-100) @2026-11-11,SkillBench-1.1-text,1
+ERNIE-5.5-Flash-Preview,Agent与工具调用,36.4,百度官方·SpreadsheetBench V2 原始36.4(0-100) @2026-11-11,SpreadsheetBench-V2,1
+ERNIE-5.5-Flash-Preview,Agent与工具调用,64.6,百度官方·Terminal-Bench 4.0 原始46.5(0-100) @2026-11-11,TB4.0,41
+ERNIE-5.5-Flash-Preview,Agent与工具调用,55.7,百度官方·Terminal-Bench-Science 0.1 原始21(0-100) @2026-11-11,TB-Science,35
+ERNIE-5.5-Flash-Preview,Agent与工具调用,83.3,百度官方·Toolathlon-Verified 原始75(0-100) @2026-11-11,Toolathlon,3
+ERNIE-5.5-Flash-Preview,代码,79.0,百度官方·BlenderWorld (text-only) 原始79(0-100) @2026-11-11,BlenderWorld,1
+ERNIE-5.5-Flash-Preview,代码,50.0,百度官方·DeepSWE v1.1 原始71.2(0-100) @2026-11-11,DeepSWE,7
+ERNIE-5.5-Flash-Preview,代码,58.3,百度官方·NL2Repo-Bench 原始64.8(0-100) @2026-11-11,NL2Repo,6
+ERNIE-5.5-Flash-Preview,代码,78.6,百度官方·ProgramBench (Almost Solved) 原始29.5(0-100) @2026-11-11,ProgramBench,7
+ERNIE-5.5-Flash-Preview,内容创作,71.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始71.3(推理值) @2026-11-27",,
+ERNIE-5.5-Flash-Preview,可靠性与低幻觉,72.0,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始72(推理值) @2026-11-27",,
+ERNIE-5.5-Flash-Preview,图片与制图,63.7,"推理补全·M3 结构性估值(kNN兜底,余弦相似度,k=5) 原始63.7(推理值) @2026-11-27",,
+ERNIE-5.5-Flash-Preview,指令遵循,68.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始68.4(推理值) @2026-11-27",,
+ERNIE-5.5-Flash-Preview,推理与知识,58.6,百度官方·HLE w/ (no tools) 原始46.4(0-100) @2026-11-11,HLE,35
+ERNIE-5.5-Flash-Preview,长文本,16.7,百度官方·AA-LCR v1.1 原始79(0-100) @2026-11-11,AA-LCR,36
+GLM-5.1,Agent与工具调用,8.5,Artificial-Analysis·AutomationBench-AA 原始0.203084(0-1) @2026-04-07,AutomationBench,41
 GLM-5.1,Agent与工具调用,17.7,Artificial-Analysis·GDPval-AA 原始1125.15(指数) @2026-11-04,GDPval-AA,31
 GLM-5.1,Agent与工具调用,21.4,Artificial-Analysis·ITBench-SRE 原始0.402542(0-1) @2026-04-07,itbench-sre,14
-GLM-5.1,Agent与工具调用,17.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.020202(0-1) @2026-04-07,TB4.0,40
+GLM-5.1,Agent与工具调用,17.1,Artificial-Analysis·Terminal-Bench 4.0 原始0.020202(0-1) @2026-04-07,TB4.0,41
 GLM-5.1,Agent与工具调用,2.9,Artificial-Analysis·tau2-Banking 原始0.136082(0-1) @2026-04-07,tau2-banking,17
 GLM-5.1,Agent与工具调用,64.3,Artificial-Analysis·τ²-bench 原始0.976608(0-1) @2026-04-07,tau2-bench,7
 GLM-5.1,代码,7.8,Artificial-Analysis·SciCode 原始0.447917(0-1) @2026-04-07,SciCode,32
@@ -344,15 +367,15 @@ GLM-5.1,指令遵循,21.1,ArenaAI·Instruction Following 原始1462(Elo) @2026-1
 GLM-5.1,指令遵循,56.2,Artificial-Analysis·IFBench 原始0.762585(0-1) @2026-04-07,IFBench,8
 GLM-5.1,推理与知识,12.9,Artificial-Analysis·CritPt 原始0.0457143(0-1) @2026-04-07,CritPt,35
 GLM-5.1,推理与知识,18.4,Artificial-Analysis·GPQA 原始0.867677(0-1) @2026-04-07,GPQA-Diamond,19
-GLM-5.1,推理与知识,10.3,Artificial-Analysis·HLE 原始0.300741(0-1) @2026-04-07,HLE,34
-GLM-5.1,长文本,7.1,Artificial-Analysis·AA-LCR 原始0.736667(0-1) @2026-04-07,AA-LCR,35
+GLM-5.1,推理与知识,10.0,Artificial-Analysis·HLE 原始0.300741(0-1) @2026-04-07,HLE,35
+GLM-5.1,长文本,6.9,Artificial-Analysis·AA-LCR 原始0.736667(0-1) @2026-04-07,AA-LCR,36
 GLM-5.1,长文本,12.5,SuperCLUE·长上下文256K-总分 原始51.53(百分制) @2026-07,SC·长上下文256K-总分,4
-GLM-5.2,Agent与工具调用,16.7,Artificial-Analysis·APEX-Agents 原始0.337021(0-1) @2026-06-16,APEX-Agents,9
-GLM-5.2,Agent与工具调用,18.8,Artificial-Analysis·AutomationBench-AA 原始0.28399(0-1) @2026-06-16,AutomationBench,40
+GLM-5.2,Agent与工具调用,15.0,Artificial-Analysis·APEX-Agents 原始0.337021(0-1) @2026-06-16,APEX-Agents,10
+GLM-5.2,Agent与工具调用,18.3,Artificial-Analysis·AutomationBench-AA 原始0.28399(0-1) @2026-06-16,AutomationBench,41
 GLM-5.2,Agent与工具调用,59.4,Artificial-Analysis·EnterpriseOpsGym 原始0.427335(0-1) @2026-06-16,enterprise-ops-gym,16
 GLM-5.2,Agent与工具调用,24.2,Artificial-Analysis·GDPval-AA 原始1381.49(指数) @2026-11-04,GDPval-AA,31
 GLM-5.2,Agent与工具调用,32.1,Artificial-Analysis·ITBench-SRE 原始0.426554(0-1) @2026-06-16,itbench-sre,14
-GLM-5.2,Agent与工具调用,11.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-06-16,TB4.0,40
+GLM-5.2,Agent与工具调用,11.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-06-16,TB4.0,41
 GLM-5.2,Agent与工具调用,44.1,Artificial-Analysis·tau2-Banking 原始0.346392(0-1) @2026-06-16,tau2-banking,17
 GLM-5.2,Agent与工具调用,92.9,Artificial-Analysis·τ²-bench 原始0.991228(0-1) @2026-06-16,tau2-bench,7
 GLM-5.2,Agent与工具调用,40.0,SuperCLUE·Terminal总榜-总分 原始48.48(百分制) @2026-10,SC·Terminal总榜-总分,10
@@ -372,19 +395,19 @@ GLM-5.2,指令遵循,47.2,SuperCLUE·总排行榜-精确指令遵循 原始30.47
 GLM-5.2,推理与知识,8.8,ARC-Prize·ARC-AGI-2 原始77(0-100) @2026-11-04,ARC-AGI-2,17
 GLM-5.2,推理与知识,57.1,Artificial-Analysis·CritPt 原始0.208571(0-1) @2026-06-16,CritPt,35
 GLM-5.2,推理与知识,23.7,Artificial-Analysis·GPQA 原始0.894949(0-1) @2026-06-16,GPQA-Diamond,19
-GLM-5.2,推理与知识,42.6,Artificial-Analysis·HLE 原始0.411492(0-1) @2026-06-16,HLE,34
+GLM-5.2,推理与知识,41.4,Artificial-Analysis·HLE 原始0.411492(0-1) @2026-06-16,HLE,35
 GLM-5.2,推理与知识,63.9,SuperCLUE·总排行榜-数学推理 原始70.1754(百分制) @2026-07,SC·总排行榜-数学推理,18
 GLM-5.2,推理与知识,15.0,SuperCLUE·总排行榜-科学推理 原始68.42(百分制) @2026-07,SC·总排行榜-科学推理,10
-GLM-5.2,长文本,12.9,Artificial-Analysis·AA-LCR 原始0.783333(0-1) @2026-06-16,AA-LCR,35
+GLM-5.2,长文本,12.5,Artificial-Analysis·AA-LCR 原始0.783333(0-1) @2026-06-16,AA-LCR,36
 GLM-5.2,长文本,22.9,Artificial-Analysis·AA-MLCR 原始0.127778(0-1) @2026-06-16,AA-MLCR,35
 GLM-5.2,长文本,37.5,SuperCLUE·长上下文1M-总分 原始47.71(百分制) @2026-07,SC·长上下文1M-总分,4
 GLM-5.2,长文本,37.5,SuperCLUE·长上下文256K-总分 原始53.71(百分制) @2026-07,SC·长上下文256K-总分,4
-GLM-5.3,Agent与工具调用,58.8,Artificial-Analysis·AutomationBench-AA 原始0.622029(0-1) @2026-08-18,AutomationBench,40
+GLM-5.3,Agent与工具调用,59.8,Artificial-Analysis·AutomationBench-AA 原始0.622029(0-1) @2026-08-18,AutomationBench,41
 GLM-5.3,Agent与工具调用,34.4,Artificial-Analysis·EnterpriseOpsGym 原始0.364369(0-1) @2026-08-18,enterprise-ops-gym,16
 GLM-5.3,Agent与工具调用,72.6,Artificial-Analysis·GDPval-AA 原始1656.88(指数) @2026-11-04,GDPval-AA,31
 GLM-5.3,Agent与工具调用,39.3,Artificial-Analysis·ITBench-SRE 原始0.460829(0-1) @2026-08-18,itbench-sre,14
-GLM-5.3,Agent与工具调用,42.6,Artificial-Analysis·TB-Science 原始0.0952381(0-1) @2026-08-18,TB-Science,34
-GLM-5.3,Agent与工具调用,61.3,Artificial-Analysis·Terminal-Bench 4.0 原始0.419192(0-1) @2026-08-18,TB4.0,40
+GLM-5.3,Agent与工具调用,41.4,Artificial-Analysis·TB-Science 原始0.0952381(0-1) @2026-08-18,TB-Science,35
+GLM-5.3,Agent与工具调用,59.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.419192(0-1) @2026-08-18,TB4.0,41
 GLM-5.3,Agent与工具调用,97.1,Artificial-Analysis·tau2-Banking 原始0.503093(0-1) @2026-08-18,tau2-banking,17
 GLM-5.3,Agent与工具调用,61.8,LiveBench·Agentic Coding 原始60.91(0-100) @2026-06-25,LB·Agentic Coding,17
 GLM-5.3,Agent与工具调用,75.0,SuperCLUE·Terminal总榜-总分 原始56.57(百分制) @2026-09,SC·Terminal总榜-总分,10
@@ -393,18 +416,18 @@ GLM-5.3,Agent与工具调用,28.5,Z.ai官方·ALE-CLI 原始28.5(0-100) @2026-08
 GLM-5.3,Agent与工具调用,70.0,Z.ai官方·HLE w/ Tools 原始62.5(0-100) @2026-08-14,HLE-w/tools,5
 GLM-5.3,Agent与工具调用,83.3,Z.ai官方·Terminal Bench 2.1 原始88.2(0-100) @2026-08-14,TB2.1,3
 GLM-5.3,Agent与工具调用,28.3,Z.ai官方·Terminal Bench 3.0 原始28.3(0-100) @2026-08-14,TB3.0,1
-GLM-5.3,Agent与工具调用,25.0,Z.ai官方·Toolathlon Verified 原始73(0-100) @2026-08-14,Toolathlon,2
+GLM-5.3,Agent与工具调用,16.7,Z.ai官方·Toolathlon Verified 原始73(0-100) @2026-08-14,Toolathlon,3
 GLM-5.3,代码,35.4,Artificial-Analysis·FrontierCode 原始0.400752(0-1) @2026-08-18,FrontierCode,24
 GLM-5.3,代码,32.8,Artificial-Analysis·FrontierCode-2.0 原始0.215871(0-1) @2026-08-18,FrontierCode-2.0,32
 GLM-5.3,代码,73.4,Artificial-Analysis·SciCode 原始0.590278(0-1) @2026-08-18,SciCode,32
 GLM-5.3,代码,50.0,LiveBench·Coding 原始78.95(0-100) @2026-06-25,LB·Coding,17
 GLM-5.3,代码,50.0,SuperCLUE·SWE-Agent总榜-通过率 原始64(百分制) @2026-09,SC·SWE-Agent总榜-通过率,5
 GLM-5.3,代码,58.3,SuperCLUE·总排行榜-智能体编程 原始53.85(0-100) @2026-11,SC·总排行榜-智能体编程,18
-GLM-5.3,代码,41.7,Z.ai官方·DeepSWE v1.1 原始66.9(0-100) @2026-08-14,DeepSWE,6
+GLM-5.3,代码,35.7,Z.ai官方·DeepSWE v1.1 原始66.9(0-100) @2026-08-14,DeepSWE,7
 GLM-5.3,代码,78.1,Z.ai官方·FrontierSWE 原始78.1(0-100) @2026-08-14,FrontierSWE,1
-GLM-5.3,代码,30.0,Z.ai官方·NL2Repo 原始58(0-100) @2026-08-14,NL2Repo,5
+GLM-5.3,代码,25.0,Z.ai官方·NL2Repo 原始58(0-100) @2026-08-14,NL2Repo,6
 GLM-5.3,代码,83.3,Z.ai官方·PostTrainBench 原始39.8(0-100) @2026-08-14,PostTrainBench,3
-GLM-5.3,代码,41.7,Z.ai官方·ProgramBench 原始19(0-100) @2026-08-14,ProgramBench,6
+GLM-5.3,代码,35.7,Z.ai官方·ProgramBench 原始19(0-100) @2026-08-14,ProgramBench,7
 GLM-5.3,代码,50.0,Z.ai官方·SWE-Marathon v1.1 原始42.5(0-100) @2026-08-14,SWE-Marathon,3
 GLM-5.3,内容创作,69.0,AIWB·英文写作盲评 原始87.7(指数) @2026-11-04,AIWB写作盲评,21
 GLM-5.3,内容创作,55.3,ArenaAI·Creative Writing 原始1457(Elo) @2026-11-07,Arena-Creative,19
@@ -422,22 +445,22 @@ GLM-5.3,指令遵循,55.9,LiveBench·IF (Instruction Following) 原始69.3(0-100
 GLM-5.3,指令遵循,25.0,SuperCLUE·总排行榜-精确指令遵循 原始17.24(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 GLM-5.3,推理与知识,50.0,Artificial-Analysis·CritPt 原始0.191429(0-1) @2026-08-18,CritPt,35
 GLM-5.3,推理与知识,55.3,Artificial-Analysis·GPQA 原始0.917172(0-1) @2026-08-18,GPQA-Diamond,19
-GLM-5.3,推理与知识,45.6,Artificial-Analysis·HLE 原始0.422614(0-1) @2026-08-18,HLE,34
+GLM-5.3,推理与知识,44.3,Artificial-Analysis·HLE 原始0.422614(0-1) @2026-08-18,HLE,35
 GLM-5.3,推理与知识,26.9,Artificial-Analysis·HealthBench 原始0.545295(0-1) @2026-08-18,HealthBench,13
 GLM-5.3,推理与知识,26.5,LiveBench·Data Analysis 原始70.24(0-100) @2026-06-25,LB·Data Analysis,17
 GLM-5.3,推理与知识,38.2,LiveBench·Mathematics 原始87.9(0-100) @2026-06-25,LB·Mathematics,17
 GLM-5.3,推理与知识,47.1,LiveBench·Reasoning 原始85.8(0-100) @2026-06-25,LB·Reasoning,17
 GLM-5.3,推理与知识,50.0,SuperCLUE·总排行榜-数理推理 原始65.79(0-100) @2026-11,SC·总排行榜-数学推理,18
 GLM-5.3,推理与知识,70.0,SuperCLUE·总排行榜-科学推理 原始75.44(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-GLM-5.3,长文本,30.0,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-08-18,AA-LCR,35
+GLM-5.3,长文本,31.9,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-08-18,AA-LCR,36
 GLM-5.3,长文本,35.7,Artificial-Analysis·AA-MLCR 原始0.172222(0-1) @2026-08-18,AA-MLCR,35
 GLM-5.3,长文本,73.1,SuperCLUE·总排行榜-超长上下文 原始77.6(0-100) @2026-11,SC·总排行榜-超长上下文,13
-GLM-5.3 Flash,Agent与工具调用,53.8,Artificial-Analysis·AutomationBench-AA 原始0.603686(0-1) @2026-08-26,AutomationBench,40
+GLM-5.3 Flash,Agent与工具调用,52.4,Artificial-Analysis·AutomationBench-AA 原始0.603686(0-1) @2026-08-26,AutomationBench,41
 GLM-5.3 Flash,Agent与工具调用,28.1,Artificial-Analysis·EnterpriseOpsGym 原始0.33214(0-1) @2026-08-26,enterprise-ops-gym,16
 GLM-5.3 Flash,Agent与工具调用,69.4,Artificial-Analysis·GDPval-AA 原始1649.37(指数) @2026-11-04,GDPval-AA,31
 GLM-5.3 Flash,Agent与工具调用,82.1,Artificial-Analysis·ITBench-SRE 原始0.512429(0-1) @2026-08-26,itbench-sre,14
-GLM-5.3 Flash,Agent与工具调用,25.0,Artificial-Analysis·TB-Science 原始0.047619(0-1) @2026-08-26,TB-Science,34
-GLM-5.3 Flash,Agent与工具调用,46.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.328283(0-1) @2026-08-26,TB4.0,40
+GLM-5.3 Flash,Agent与工具调用,24.3,Artificial-Analysis·TB-Science 原始0.047619(0-1) @2026-08-26,TB-Science,35
+GLM-5.3 Flash,Agent与工具调用,45.1,Artificial-Analysis·Terminal-Bench 4.0 原始0.328283(0-1) @2026-08-26,TB4.0,41
 GLM-5.3 Flash,Agent与工具调用,76.5,Artificial-Analysis·tau2-Banking 原始0.472165(0-1) @2026-08-26,tau2-banking,17
 GLM-5.3 Flash,Agent与工具调用,50.0,LiveBench·Agentic Coding 原始56.77(0-100) @2026-06-25,LB·Agentic Coding,17
 GLM-5.3 Flash,Agent与工具调用,28.1,LiveBench-2.0·Browser 原始59.8(0-100) @2026-10-23,LB2·Browser,16
@@ -470,7 +493,7 @@ GLM-5.3 Flash,指令遵循,33.3,SuperCLUE·总排行榜-精确指令遵循 原�
 GLM-5.3 Flash,推理与知识,32.4,ARC-Prize·ARC-AGI-2 原始91(0-100) @2026-11-04,ARC-AGI-2,17
 GLM-5.3 Flash,推理与知识,35.7,Artificial-Analysis·CritPt 原始0.154286(0-1) @2026-08-26,CritPt,35
 GLM-5.3 Flash,推理与知识,50.0,Artificial-Analysis·GPQA 原始0.912121(0-1) @2026-08-26,GPQA-Diamond,19
-GLM-5.3 Flash,推理与知识,36.8,Artificial-Analysis·HLE 原始0.398517(0-1) @2026-08-26,HLE,34
+GLM-5.3 Flash,推理与知识,35.7,Artificial-Analysis·HLE 原始0.398517(0-1) @2026-08-26,HLE,35
 GLM-5.3 Flash,推理与知识,44.1,LiveBench·Data Analysis 原始76.4(0-100) @2026-06-25,LB·Data Analysis,17
 GLM-5.3 Flash,推理与知识,14.7,LiveBench·Mathematics 原始81.24(0-100) @2026-06-25,LB·Mathematics,17
 GLM-5.3 Flash,推理与知识,14.7,LiveBench·Reasoning 原始77.64(0-100) @2026-06-25,LB·Reasoning,17
@@ -478,13 +501,13 @@ GLM-5.3 Flash,推理与知识,40.6,LiveBench-2.0·Data Analysis 原始76.4(0-100
 GLM-5.3 Flash,推理与知识,3.1,LiveBench-2.0·Reasoning 原始77.6(0-100) @2026-10-23,LB2·Reasoning,16
 GLM-5.3 Flash,推理与知识,13.9,SuperCLUE·总排行榜-数理推理 原始57.89(0-100) @2026-11,SC·总排行榜-数学推理,18
 GLM-5.3 Flash,推理与知识,70.0,SuperCLUE·总排行榜-科学推理 原始75.44(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-GLM-5.3 Flash,长文本,35.7,Artificial-Analysis·AA-LCR 原始0.8(0-1) @2026-08-26,AA-LCR,35
+GLM-5.3 Flash,长文本,37.5,Artificial-Analysis·AA-LCR 原始0.8(0-1) @2026-08-26,AA-LCR,36
 GLM-5.3 Flash,长文本,15.7,Artificial-Analysis·AA-MLCR 原始0.116667(0-1) @2026-08-26,AA-MLCR,35
 GLM-5.3 Flash,长文本,57.7,SuperCLUE·总排行榜-超长上下文 原始57.61(0-100) @2026-11,SC·总排行榜-超长上下文,13
 GLM-5v-Turbo,Agent与工具调用,78.6,Artificial-Analysis·τ²-bench 原始0.98538(0-1) @2026-04-01,tau2-bench,7
 GLM-5v-Turbo,代码,72.2,Z.ai官方·CC-Bench-V2 Repo Exploration 原始72.2(0-100) @2026-04-29,CC-Bench-V2,1
-GLM-5v-Turbo,代码,24.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始24.3(推理值) @2026-11-18",,
-GLM-5v-Turbo,内容创作,41.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始41.5(推理值) @2026-11-18",,
+GLM-5v-Turbo,代码,33.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始33.3(推理值) @2026-11-27",,
+GLM-5v-Turbo,内容创作,39.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始39.3(推理值) @2026-11-27",,
 GLM-5v-Turbo,可靠性与低幻觉,1.2,Artificial-Analysis·AA-Omniscience Index 原始-19.2833(指数) @2026-10-17,AA-Omni指数,40
 GLM-5v-Turbo,图片与制图,2.2,Artificial-Analysis·MMMU-Pro 原始0.727746(0-1) @2026-04-01,MMMU-Pro,23
 GLM-5v-Turbo,图片与制图,10.9,Design-Arena·Website-Elo 原始1229(Elo) @2026-11-03,DesignArena-Elo,23
@@ -492,17 +515,17 @@ GLM-5v-Turbo,图片与制图,94.8,Z.ai官方·Design2Code 原始94.8(0-100) @202
 GLM-5v-Turbo,指令遵循,6.2,Artificial-Analysis·IFBench 原始0.610884(0-1) @2026-04-01,IFBench,8
 GLM-5v-Turbo,推理与知识,4.3,Artificial-Analysis·CritPt 原始0.00571429(0-1) @2026-04-01,CritPt,35
 GLM-5v-Turbo,推理与知识,2.6,Artificial-Analysis·GPQA 原始0.809091(0-1) @2026-04-01,GPQA-Diamond,19
-GLM-5v-Turbo,推理与知识,1.5,Artificial-Analysis·HLE 原始0.171455(0-1) @2026-04-01,HLE,34
-GLM-5v-Turbo,长文本,4.3,Artificial-Analysis·AA-LCR 原始0.703333(0-1) @2026-04-01,AA-LCR,35
+GLM-5v-Turbo,推理与知识,1.4,Artificial-Analysis·HLE 原始0.171455(0-1) @2026-04-01,HLE,35
+GLM-5v-Turbo,长文本,4.2,Artificial-Analysis·AA-LCR 原始0.703333(0-1) @2026-04-01,AA-LCR,36
 GPT-6-Astra,Agent与工具调用,25.0,Anthropic官方·OSWorld 2.1 原始79.5(0-100) @2026-11-09,OSWorld-2.1-Offline,6
 GPT-6-Astra,Agent与工具调用,37.5,Anthropic官方·Remote Labor Index 原始20.8(0-100) @2026-11-09,Remote-Labor-Index,4
-GPT-6-Astra,Agent与工具调用,68.8,Artificial-Analysis·AutomationBench-AA 原始0.684917(0-1) @2026-09-03,AutomationBench,40
+GPT-6-Astra,Agent与工具调用,69.5,Artificial-Analysis·AutomationBench-AA 原始0.684917(0-1) @2026-09-03,AutomationBench,41
 GPT-6-Astra,Agent与工具调用,53.2,Artificial-Analysis·GDPval-AA 原始1583.69(指数) @2026-11-04,GDPval-AA,31
 GPT-6-Astra,Agent与工具调用,60.7,Artificial-Analysis·ITBench-SRE 原始0.485876(0-1) @2026-09-03,itbench-sre,14
-GPT-6-Astra,Agent与工具调用,86.8,Artificial-Analysis·TB-Science 原始0.633333(0-1) @2026-09-03,TB-Science,34
-GPT-6-Astra,Agent与工具调用,81.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.590909(0-1) @2026-09-03,TB4.0,40
+GPT-6-Astra,Agent与工具调用,87.1,Artificial-Analysis·TB-Science 原始0.633333(0-1) @2026-09-03,TB-Science,35
+GPT-6-Astra,Agent与工具调用,81.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.590909(0-1) @2026-09-03,TB4.0,41
 GPT-6-Astra,Agent与工具调用,55.9,Artificial-Analysis·tau2-Banking 原始0.414433(0-1) @2026-09-03,tau2-banking,17
-GPT-6-Astra,Agent与工具调用,85.0,Google官方·Agents' Last Exam v1.1 原始73.1(0-100) @2026-10-28,Agents' Last Exam,10
+GPT-6-Astra,Agent与工具调用,86.4,Google官方·Agents' Last Exam v1.1 原始73.1(0-100) @2026-10-28,Agents' Last Exam,11
 GPT-6-Astra,Agent与工具调用,55.9,LiveBench·Agentic Coding 原始57.32(0-100) @2026-06-25,LB·Agentic Coding,17
 GPT-6-Astra,Agent与工具调用,96.9,LiveBench-2.0·Browser 原始91.3(0-100) @2026-10-23,LB2·Browser,16
 GPT-6-Astra,Agent与工具调用,90.6,LiveBench-2.0·Long Agentic 原始77.5(0-100) @2026-10-23,LB2·Long Agentic,16
@@ -534,7 +557,7 @@ GPT-6-Astra,指令遵循,97.1,LiveBench·IF (Instruction Following) 原始75.58(
 GPT-6-Astra,推理与知识,79.4,ARC-Prize·ARC-AGI-2 原始97.5(0-100) @2026-11-04,ARC-AGI-2,17
 GPT-6-Astra,推理与知识,92.9,Artificial-Analysis·CritPt 原始0.317143(0-1) @2026-09-03,CritPt,35
 GPT-6-Astra,推理与知识,97.4,Artificial-Analysis·GPQA 原始0.960606(0-1) @2026-09-03,GPQA-Diamond,19
-GPT-6-Astra,推理与知识,83.8,Artificial-Analysis·HLE 原始0.546803(0-1) @2026-09-03,HLE,34
+GPT-6-Astra,推理与知识,84.3,Artificial-Analysis·HLE 原始0.546803(0-1) @2026-09-03,HLE,35
 GPT-6-Astra,推理与知识,65.4,Artificial-Analysis·HealthBench 原始0.582217(0-1) @2026-09-03,HealthBench,13
 GPT-6-Astra,推理与知识,50.0,Google官方·RiemannBench 原始72(0-100) @2026-10-28,RiemannBench,5
 GPT-6-Astra,推理与知识,97.1,LiveBench·Data Analysis 原始82.97(0-100) @2026-06-25,LB·Data Analysis,17
@@ -542,13 +565,13 @@ GPT-6-Astra,推理与知识,85.3,LiveBench·Mathematics 原始96.81(0-100) @2026
 GPT-6-Astra,推理与知识,97.1,LiveBench·Reasoning 原始92.65(0-100) @2026-06-25,LB·Reasoning,17
 GPT-6-Astra,推理与知识,90.6,LiveBench-2.0·Data Analysis 原始83(0-100) @2026-10-23,LB2·Data Analysis,16
 GPT-6-Astra,推理与知识,90.6,LiveBench-2.0·Reasoning 原始92.7(0-100) @2026-10-23,LB2·Reasoning,16
-GPT-6-Astra,长文本,44.3,Artificial-Analysis·AA-LCR 原始0.806667(0-1) @2026-09-03,AA-LCR,35
+GPT-6-Astra,长文本,45.8,Artificial-Analysis·AA-LCR 原始0.806667(0-1) @2026-09-03,AA-LCR,36
 GPT-6-Astra,长文本,94.3,Artificial-Analysis·AA-MLCR 原始0.416667(0-1) @2026-09-03,AA-MLCR,35
 GPT-6-Astra,长文本,50.0,"Google官方·GraphWalks (BFS, F1) 原始71.8(0-100) @2026-10-28",GraphWalks,5
-GPT-6-Luna,Agent与工具调用,31.2,Artificial-Analysis·AutomationBench-AA 原始0.531681(0-1) @2026-09-22,AutomationBench,40
+GPT-6-Luna,Agent与工具调用,30.5,Artificial-Analysis·AutomationBench-AA 原始0.531681(0-1) @2026-09-22,AutomationBench,41
 GPT-6-Luna,Agent与工具调用,30.6,Artificial-Analysis·GDPval-AA 原始1444.46(指数) @2026-11-04,GDPval-AA,31
-GPT-6-Luna,Agent与工具调用,36.8,Artificial-Analysis·TB-Science 原始0.0857143(0-1) @2026-09-22,TB-Science,34
-GPT-6-Luna,Agent与工具调用,27.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.126263(0-1) @2026-09-22,TB4.0,40
+GPT-6-Luna,Agent与工具调用,35.7,Artificial-Analysis·TB-Science 原始0.0857143(0-1) @2026-09-22,TB-Science,35
+GPT-6-Luna,Agent与工具调用,26.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.126263(0-1) @2026-09-22,TB4.0,41
 GPT-6-Luna,Agent与工具调用,26.5,LiveBench·Agentic Coding 原始51.21(0-100) @2026-06-25,LB·Agentic Coding,17
 GPT-6-Luna,Agent与工具调用,40.6,LiveBench-2.0·Browser 原始70.3(0-100) @2026-10-23,LB2·Browser,16
 GPT-6-Luna,Agent与工具调用,46.9,LiveBench-2.0·Long Agentic 原始30.9(0-100) @2026-10-23,LB2·Long Agentic,16
@@ -570,20 +593,20 @@ GPT-6-Luna,图片与制图,71.9,LiveBench-2.0·Design 原始82.5(0-100) @2026-10
 GPT-6-Luna,指令遵循,8.8,LiveBench·IF (Instruction Following) 原始55.93(0-100) @2026-06-25,LB·IF (Instruction Following),17
 GPT-6-Luna,推理与知识,20.6,ARC-Prize·ARC-AGI-2 原始86.7(0-100) @2026-11-04,ARC-AGI-2,17
 GPT-6-Luna,推理与知识,52.9,Artificial-Analysis·CritPt 原始0.194286(0-1) @2026-09-22,CritPt,35
-GPT-6-Luna,推理与知识,27.9,Artificial-Analysis·HLE 原始0.385079(0-1) @2026-09-22,HLE,34
+GPT-6-Luna,推理与知识,27.1,Artificial-Analysis·HLE 原始0.385079(0-1) @2026-09-22,HLE,35
 GPT-6-Luna,推理与知识,34.6,Artificial-Analysis·HealthBench 原始0.545784(0-1) @2026-09-22,HealthBench,13
 GPT-6-Luna,推理与知识,32.4,LiveBench·Data Analysis 原始73.37(0-100) @2026-06-25,LB·Data Analysis,17
 GPT-6-Luna,推理与知识,50.0,LiveBench·Mathematics 原始89.12(0-100) @2026-06-25,LB·Mathematics,17
 GPT-6-Luna,推理与知识,32.4,LiveBench·Reasoning 原始81.77(0-100) @2026-06-25,LB·Reasoning,17
 GPT-6-Luna,推理与知识,34.4,LiveBench-2.0·Data Analysis 原始73.4(0-100) @2026-10-23,LB2·Data Analysis,16
 GPT-6-Luna,推理与知识,21.9,LiveBench-2.0·Reasoning 原始81.8(0-100) @2026-10-23,LB2·Reasoning,16
-GPT-6-Luna,长文本,71.4,Artificial-Analysis·AA-LCR 原始0.833333(0-1) @2026-09-22,AA-LCR,35
+GPT-6-Luna,长文本,72.2,Artificial-Analysis·AA-LCR 原始0.833333(0-1) @2026-09-22,AA-LCR,36
 GPT-6-Luna,长文本,64.3,Artificial-Analysis·AA-MLCR 原始0.261111(0-1) @2026-09-22,AA-MLCR,35
-GPT-6-Sol,Agent与工具调用,56.2,Artificial-Analysis·AutomationBench-AA 原始0.616337(0-1) @2026-09-22,AutomationBench,40
+GPT-6-Sol,Agent与工具调用,54.9,Artificial-Analysis·AutomationBench-AA 原始0.616337(0-1) @2026-09-22,AutomationBench,41
 GPT-6-Sol,Agent与工具调用,46.8,Artificial-Analysis·GDPval-AA 原始1515.88(指数) @2026-11-04,GDPval-AA,31
 GPT-6-Sol,Agent与工具调用,67.9,Artificial-Analysis·ITBench-SRE 原始0.49435(0-1) @2026-09-22,itbench-sre,14
-GPT-6-Sol,Agent与工具调用,60.3,Artificial-Analysis·TB-Science 原始0.3(0-1) @2026-09-22,TB-Science,34
-GPT-6-Sol,Agent与工具调用,63.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.439394(0-1) @2026-09-22,TB4.0,40
+GPT-6-Sol,Agent与工具调用,61.4,Artificial-Analysis·TB-Science 原始0.3(0-1) @2026-09-22,TB-Science,35
+GPT-6-Sol,Agent与工具调用,62.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.439394(0-1) @2026-09-22,TB4.0,41
 GPT-6-Sol,Agent与工具调用,32.4,LiveBench·Agentic Coding 原始52.88(0-100) @2026-06-25,LB·Agentic Coding,17
 GPT-6-Sol,代码,67.2,Artificial-Analysis·FrontierCode-2.0 原始0.355771(0-1) @2026-09-22,FrontierCode-2.0,32
 GPT-6-Sol,代码,67.2,Artificial-Analysis·SciCode 原始0.576389(0-1) @2026-09-22,SciCode,32
@@ -603,17 +626,17 @@ GPT-6-Sol,指令遵循,5.3,ArenaAI·Instruction Following 原始1449(Elo) @2026-
 GPT-6-Sol,指令遵循,50.0,LiveBench·IF (Instruction Following) 原始68.57(0-100) @2026-06-25,LB·IF (Instruction Following),17
 GPT-6-Sol,推理与知识,55.9,ARC-Prize·ARC-AGI-2 原始95.5(0-100) @2026-11-04,ARC-AGI-2,17
 GPT-6-Sol,推理与知识,84.3,Artificial-Analysis·CritPt 原始0.308571(0-1) @2026-09-22,CritPt,35
-GPT-6-Sol,推理与知识,69.1,Artificial-Analysis·HLE 原始0.479147(0-1) @2026-09-22,HLE,34
+GPT-6-Sol,推理与知识,70.0,Artificial-Analysis·HLE 原始0.479147(0-1) @2026-09-22,HLE,35
 GPT-6-Sol,推理与知识,19.2,Artificial-Analysis·HealthBench 原始0.541775(0-1) @2026-09-22,HealthBench,13
 GPT-6-Sol,推理与知识,91.2,LiveBench·Data Analysis 原始81.19(0-100) @2026-06-25,LB·Data Analysis,17
 GPT-6-Sol,推理与知识,79.4,LiveBench·Mathematics 原始96.36(0-100) @2026-06-25,LB·Mathematics,17
 GPT-6-Sol,推理与知识,67.6,LiveBench·Reasoning 原始88.65(0-100) @2026-06-25,LB·Reasoning,17
-GPT-6-Sol,长文本,75.7,Artificial-Analysis·AA-LCR 原始0.836667(0-1) @2026-09-22,AA-LCR,35
+GPT-6-Sol,长文本,76.4,Artificial-Analysis·AA-LCR 原始0.836667(0-1) @2026-09-22,AA-LCR,36
 GPT-6-Sol,长文本,78.6,Artificial-Analysis·AA-MLCR 原始0.338889(0-1) @2026-09-22,AA-MLCR,35
-GPT-6.1-Sol,Agent与工具调用,61.3,Artificial-Analysis·AutomationBench-AA 原始0.648684(0-1) @2026-09-29,AutomationBench,40
+GPT-6.1-Sol,Agent与工具调用,62.2,Artificial-Analysis·AutomationBench-AA 原始0.648684(0-1) @2026-09-29,AutomationBench,41
 GPT-6.1-Sol,Agent与工具调用,62.9,Artificial-Analysis·GDPval-AA 原始1608.89(指数) @2026-11-04,GDPval-AA,31
-GPT-6.1-Sol,Agent与工具调用,80.9,Artificial-Analysis·TB-Science 原始0.580952(0-1) @2026-09-29,TB-Science,34
-GPT-6.1-Sol,Agent与工具调用,76.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.560606(0-1) @2026-09-29,TB4.0,40
+GPT-6.1-Sol,Agent与工具调用,81.4,Artificial-Analysis·TB-Science 原始0.580952(0-1) @2026-09-29,TB-Science,35
+GPT-6.1-Sol,Agent与工具调用,76.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.560606(0-1) @2026-09-29,TB4.0,41
 GPT-6.1-Sol,代码,89.6,Artificial-Analysis·FrontierCode 原始0.491209(0-1) @2026-09-29,FrontierCode,24
 GPT-6.1-Sol,代码,75.0,Artificial-Analysis·FrontierCode-2.0 原始0.406263(0-1) @2026-09-29,FrontierCode-2.0,32
 GPT-6.1-Sol,代码,45.3,Artificial-Analysis·SciCode 原始0.541667(0-1) @2026-09-29,SciCode,32
@@ -632,17 +655,17 @@ GPT-6.1-Sol,指令遵循,65.8,ArenaAI·Instruction Following 原始1485(Elo) @20
 GPT-6.1-Sol,指令遵循,94.4,SuperCLUE·总排行榜-精确指令遵循 原始68.97(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 GPT-6.1-Sol,推理与知识,64.7,ARC-Prize·ARC-AGI-2 原始96.5(0-100) @2026-11-04,ARC-AGI-2,17
 GPT-6.1-Sol,推理与知识,92.9,Artificial-Analysis·CritPt 原始0.317143(0-1) @2026-09-29,CritPt,35
-GPT-6.1-Sol,推理与知识,80.9,Artificial-Analysis·HLE 原始0.529194(0-1) @2026-09-29,HLE,34
+GPT-6.1-Sol,推理与知识,81.4,Artificial-Analysis·HLE 原始0.529194(0-1) @2026-09-29,HLE,35
 GPT-6.1-Sol,推理与知识,73.1,Artificial-Analysis·HealthBench 原始0.585171(0-1) @2026-09-29,HealthBench,13
 GPT-6.1-Sol,推理与知识,86.1,SuperCLUE·总排行榜-数理推理 原始76.32(0-100) @2026-11,SC·总排行榜-数学推理,18
-GPT-6.1-Sol,长文本,65.7,Artificial-Analysis·AA-LCR 原始0.83(0-1) @2026-09-29,AA-LCR,35
+GPT-6.1-Sol,长文本,66.7,Artificial-Analysis·AA-LCR 原始0.83(0-1) @2026-09-29,AA-LCR,36
 GPT-6.1-Sol,长文本,85.7,Artificial-Analysis·AA-MLCR 原始0.383333(0-1) @2026-09-29,AA-MLCR,35
 GPT-6.1-Sol,长文本,88.5,SuperCLUE·总排行榜-超长上下文 原始88.14(0-100) @2026-11,SC·总排行榜-超长上下文,13
-GPT-6.1-Terra,Agent与工具调用,51.2,Artificial-Analysis·AutomationBench-AA 原始0.601676(0-1) @2026-10-26,AutomationBench,40
+GPT-6.1-Terra,Agent与工具调用,50.0,Artificial-Analysis·AutomationBench-AA 原始0.601676(0-1) @2026-10-26,AutomationBench,41
 GPT-6.1-Terra,Agent与工具调用,43.5,Artificial-Analysis·GDPval-AA 原始1475.63(指数) @2026-11-04,GDPval-AA,31
-GPT-6.1-Terra,Agent与工具调用,77.9,Artificial-Analysis·TB-Science 原始0.57619(0-1) @2026-10-26,TB-Science,34
-GPT-6.1-Terra,Agent与工具调用,73.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.555556(0-1) @2026-10-26,TB4.0,40
-GPT-6.1-Terra,Agent与工具调用,55.0,Google官方·Agents' Last Exam v1.1 原始69.8(0-100) @2026-11-12,Agents' Last Exam,10
+GPT-6.1-Terra,Agent与工具调用,78.6,Artificial-Analysis·TB-Science 原始0.57619(0-1) @2026-10-26,TB-Science,35
+GPT-6.1-Terra,Agent与工具调用,74.4,Artificial-Analysis·Terminal-Bench 4.0 原始0.555556(0-1) @2026-10-26,TB4.0,41
+GPT-6.1-Terra,Agent与工具调用,59.1,Google官方·Agents' Last Exam v1.1 原始69.8(0-100) @2026-11-12,Agents' Last Exam,11
 GPT-6.1-Terra,代码,14.6,Artificial-Analysis·FrontierCode 原始0.36025(0-1) @2026-10-26,FrontierCode,24
 GPT-6.1-Terra,代码,82.8,Artificial-Analysis·FrontierCode-2.0 原始0.423201(0-1) @2026-10-26,FrontierCode-2.0,32
 GPT-6.1-Terra,代码,51.6,Artificial-Analysis·SciCode 原始0.550926(0-1) @2026-10-26,SciCode,32
@@ -651,38 +674,38 @@ GPT-6.1-Terra,内容创作,59.5,AIWB·英文写作盲评 原始83.1(指数) @202
 GPT-6.1-Terra,可靠性与低幻觉,64.8,ArenaAI·Arena-Agent-NetImprovement 原始10.19(0-100) @2026-11-04,Arena-Agent-Signal,27
 GPT-6.1-Terra,可靠性与低幻觉,68.8,Artificial-Analysis·AA-Omniscience Index 原始29.5667(指数) @2026-10-26,AA-Omni指数,40
 GPT-6.1-Terra,图片与制图,76.1,Artificial-Analysis·MMMU-Pro 原始0.846821(0-1) @2026-10-26,MMMU-Pro,23
-GPT-6.1-Terra,指令遵循,61.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始61.5(推理值) @2026-11-18",,
+GPT-6.1-Terra,指令遵循,68.0,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始68(推理值) @2026-11-27",,
 GPT-6.1-Terra,推理与知识,78.6,Artificial-Analysis·CritPt 原始0.28(0-1) @2026-10-26,CritPt,35
-GPT-6.1-Terra,推理与知识,57.4,Artificial-Analysis·HLE 原始0.462465(0-1) @2026-10-26,HLE,34
-GPT-6.1-Terra,长文本,58.6,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-10-26,AA-LCR,35
+GPT-6.1-Terra,推理与知识,55.7,Artificial-Analysis·HLE 原始0.462465(0-1) @2026-10-26,HLE,35
+GPT-6.1-Terra,长文本,59.7,Artificial-Analysis·AA-LCR 原始0.826667(0-1) @2026-10-26,AA-LCR,36
 GPT-6.1-Terra,长文本,72.9,Artificial-Analysis·AA-MLCR 原始0.305556(0-1) @2026-10-26,AA-MLCR,35
-GPT-6.2 Astra,Agent与工具调用,93.8,Artificial-Analysis·AutomationBench-AA 原始0.772484(0-1) @2026-11-18,AutomationBench,40
+GPT-6.2 Astra,Agent与工具调用,93.9,Artificial-Analysis·AutomationBench-AA 原始0.772484(0-1) @2026-11-18,AutomationBench,41
 GPT-6.2 Astra,Agent与工具调用,15.6,Artificial-Analysis·EnterpriseOpsGym 原始0.299015(0-1) @2026-11-18,enterprise-ops-gym,16
-GPT-6.2 Astra,Agent与工具调用,98.5,Artificial-Analysis·TB-Science 原始0.780952(0-1) @2026-11-18,TB-Science,34
-GPT-6.2 Astra,Agent与工具调用,93.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.641414(0-1) @2026-11-18,TB4.0,40
+GPT-6.2 Astra,Agent与工具调用,98.6,Artificial-Analysis·TB-Science 原始0.780952(0-1) @2026-11-18,TB-Science,35
+GPT-6.2 Astra,Agent与工具调用,93.9,Artificial-Analysis·Terminal-Bench 4.0 原始0.641414(0-1) @2026-11-18,TB4.0,41
 GPT-6.2 Astra,代码,92.2,Artificial-Analysis·FrontierCode-2.0 原始0.453802(0-1) @2026-11-18,FrontierCode-2.0,32
-GPT-6.2 Astra,内容创作,73.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始73.4(推理值) @2026-11-18",,
+GPT-6.2 Astra,内容创作,70.1,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始70.1(推理值) @2026-11-27",,
 GPT-6.2 Astra,可靠性与低幻觉,93.8,Artificial-Analysis·AA-Omniscience Index 原始50(指数) @2026-11-18,AA-Omni指数,40
 GPT-6.2 Astra,图片与制图,97.8,Artificial-Analysis·MMMU-Pro 原始0.894798(0-1) @2026-11-18,MMMU-Pro,23
-GPT-6.2 Astra,指令遵循,61.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始61.7(推理值) @2026-11-18",,
-GPT-6.2 Astra,推理与知识,78.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始78.8(推理值) @2026-11-18",,
+GPT-6.2 Astra,指令遵循,59.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始59.4(推理值) @2026-11-27",,
+GPT-6.2 Astra,推理与知识,75.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始75.8(推理值) @2026-11-27",,
 GPT-6.2 Astra,长文本,90.0,Artificial-Analysis·AA-MLCR 原始0.394444(0-1) @2026-11-18,AA-MLCR,35
-GPT-6.2 Sol,Agent与工具调用,76.2,Artificial-Analysis·AutomationBench-AA 原始0.712783(0-1) @2026-11-18,AutomationBench,40
+GPT-6.2 Sol,Agent与工具调用,76.8,Artificial-Analysis·AutomationBench-AA 原始0.712783(0-1) @2026-11-18,AutomationBench,41
 GPT-6.2 Sol,Agent与工具调用,6.2,Artificial-Analysis·EnterpriseOpsGym 原始0.289167(0-1) @2026-11-18,enterprise-ops-gym,16
-GPT-6.2 Sol,Agent与工具调用,92.6,Artificial-Analysis·TB-Science 原始0.67619(0-1) @2026-11-18,TB-Science,34
-GPT-6.2 Sol,Agent与工具调用,88.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.60101(0-1) @2026-11-18,TB4.0,40
+GPT-6.2 Sol,Agent与工具调用,92.9,Artificial-Analysis·TB-Science 原始0.67619(0-1) @2026-11-18,TB-Science,35
+GPT-6.2 Sol,Agent与工具调用,89.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.60101(0-1) @2026-11-18,TB4.0,41
 GPT-6.2 Sol,代码,89.1,Artificial-Analysis·FrontierCode-2.0 原始0.443798(0-1) @2026-11-18,FrontierCode-2.0,32
-GPT-6.2 Sol,内容创作,53.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始53.7(推理值) @2026-11-18",,
+GPT-6.2 Sol,内容创作,60.0,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始60(推理值) @2026-11-27",,
 GPT-6.2 Sol,可靠性与低幻觉,76.2,Artificial-Analysis·AA-Omniscience Index 原始40.3667(指数) @2026-11-18,AA-Omni指数,40
-GPT-6.2 Sol,图片与制图,66.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始66.2(推理值) @2026-11-18",,
-GPT-6.2 Sol,指令遵循,59.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始59.2(推理值) @2026-11-18",,
-GPT-6.2 Sol,推理与知识,60.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.8(推理值) @2026-11-18",,
+GPT-6.2 Sol,图片与制图,66.6,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始66.6(推理值) @2026-11-27",,
+GPT-6.2 Sol,指令遵循,58.6,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始58.6(推理值) @2026-11-27",,
+GPT-6.2 Sol,推理与知识,70.9,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始70.9(推理值) @2026-11-27",,
 GPT-6.2 Sol,长文本,81.4,Artificial-Analysis·AA-MLCR 原始0.372222(0-1) @2026-11-18,AA-MLCR,35
-Gemini 3.5 Flash-Lite,Agent与工具调用,16.2,Artificial-Analysis·AutomationBench-AA 原始0.250113(0-1) @2026-07-21,AutomationBench,40
+Gemini 3.5 Flash-Lite,Agent与工具调用,15.9,Artificial-Analysis·AutomationBench-AA 原始0.250113(0-1) @2026-07-21,AutomationBench,41
 Gemini 3.5 Flash-Lite,Agent与工具调用,53.1,Artificial-Analysis·EnterpriseOpsGym 原始0.423456(0-1) @2026-07-21,enterprise-ops-gym,16
 Gemini 3.5 Flash-Lite,Agent与工具调用,1.6,Artificial-Analysis·GDPval-AA 原始994.52(指数) @2026-11-04,GDPval-AA,31
-Gemini 3.5 Flash-Lite,Agent与工具调用,2.9,Artificial-Analysis·TB-Science 原始0(0-1) @2026-07-21,TB-Science,34
-Gemini 3.5 Flash-Lite,Agent与工具调用,11.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-07-21,TB4.0,40
+Gemini 3.5 Flash-Lite,Agent与工具调用,2.9,Artificial-Analysis·TB-Science 原始0(0-1) @2026-07-21,TB-Science,35
+Gemini 3.5 Flash-Lite,Agent与工具调用,11.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-07-21,TB4.0,41
 Gemini 3.5 Flash-Lite,Agent与工具调用,20.6,Artificial-Analysis·tau2-Banking 原始0.175258(0-1) @2026-07-21,tau2-banking,17
 Gemini 3.5 Flash-Lite,代码,4.7,Artificial-Analysis·FrontierCode-2.0 原始0.0602982(0-1) @2026-07-21,FrontierCode-2.0,32
 Gemini 3.5 Flash-Lite,代码,4.7,Artificial-Analysis·SciCode 原始0.413194(0-1) @2026-07-21,SciCode,32
@@ -691,18 +714,18 @@ Gemini 3.5 Flash-Lite,内容创作,15.6,EQ-Bench·Creative Writing v3 原始1559
 Gemini 3.5 Flash-Lite,可靠性与低幻觉,51.2,Artificial-Analysis·AA-Omniscience Index 原始6.86667(指数) @2026-07-21,AA-Omni指数,40
 Gemini 3.5 Flash-Lite,图片与制图,50.0,ArenaAI·Vision 原始1266(Elo) @2026-11-07,Vision-Elo,15
 Gemini 3.5 Flash-Lite,图片与制图,37.0,Artificial-Analysis·MMMU-Pro 原始0.790173(0-1) @2026-07-21,MMMU-Pro,23
-Gemini 3.5 Flash-Lite,指令遵循,60.5,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.5(推理值) @2026-11-18",,
+Gemini 3.5 Flash-Lite,指令遵循,60.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始60.4(推理值) @2026-11-27",,
 Gemini 3.5 Flash-Lite,推理与知识,2.9,ARC-Prize·ARC-AGI-2 原始53.5(0-100) @2026-11-04,ARC-AGI-2,17
 Gemini 3.5 Flash-Lite,推理与知识,1.4,Artificial-Analysis·CritPt 原始0(0-1) @2026-07-21,CritPt,35
 Gemini 3.5 Flash-Lite,推理与知识,7.9,Artificial-Analysis·GPQA 原始0.838384(0-1) @2026-07-21,GPQA-Diamond,19
-Gemini 3.5 Flash-Lite,推理与知识,4.4,Artificial-Analysis·HLE 原始0.188137(0-1) @2026-07-21,HLE,34
-Gemini 3.5 Flash-Lite,长文本,10.0,Artificial-Analysis·AA-LCR 原始0.76(0-1) @2026-07-21,AA-LCR,35
+Gemini 3.5 Flash-Lite,推理与知识,4.3,Artificial-Analysis·HLE 原始0.188137(0-1) @2026-07-21,HLE,35
+Gemini 3.5 Flash-Lite,长文本,9.7,Artificial-Analysis·AA-LCR 原始0.76(0-1) @2026-07-21,AA-LCR,36
 Gemini 3.5 Flash-Lite,长文本,8.6,Artificial-Analysis·AA-MLCR 原始0.105556(0-1) @2026-07-21,AA-MLCR,35
-Gemini 3.8 Flash,Agent与工具调用,48.8,Artificial-Analysis·AutomationBench-AA 原始0.599301(0-1) @2026-09-02,AutomationBench,40
+Gemini 3.8 Flash,Agent与工具调用,47.6,Artificial-Analysis·AutomationBench-AA 原始0.599301(0-1) @2026-09-02,AutomationBench,41
 Gemini 3.8 Flash,Agent与工具调用,33.9,Artificial-Analysis·GDPval-AA 原始1445.43(指数) @2026-11-04,GDPval-AA,31
 Gemini 3.8 Flash,Agent与工具调用,89.3,Artificial-Analysis·ITBench-SRE 原始0.525424(0-1) @2026-09-02,itbench-sre,14
-Gemini 3.8 Flash,Agent与工具调用,45.6,Artificial-Analysis·TB-Science 原始0.1(0-1) @2026-09-02,TB-Science,34
-Gemini 3.8 Flash,Agent与工具调用,36.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.19697(0-1) @2026-09-02,TB4.0,40
+Gemini 3.8 Flash,Agent与工具调用,44.3,Artificial-Analysis·TB-Science 原始0.1(0-1) @2026-09-02,TB-Science,35
+Gemini 3.8 Flash,Agent与工具调用,35.4,Artificial-Analysis·Terminal-Bench 4.0 原始0.19697(0-1) @2026-09-02,TB4.0,41
 Gemini 3.8 Flash,Agent与工具调用,61.8,Artificial-Analysis·tau2-Banking 原始0.449485(0-1) @2026-09-02,tau2-banking,17
 Gemini 3.8 Flash,Agent与工具调用,15.6,LiveBench-2.0·Browser 原始45.1(0-100) @2026-10-23,LB2·Browser,16
 Gemini 3.8 Flash,Agent与工具调用,3.1,LiveBench-2.0·Long Agentic 原始16.5(0-100) @2026-10-23,LB2·Long Agentic,16
@@ -726,17 +749,17 @@ Gemini 3.8 Flash,指令遵循,76.3,ArenaAI·Instruction Following 原始1493(Elo
 Gemini 3.8 Flash,推理与知识,94.1,ARC-Prize·ARC-AGI-2 原始98.5(0-100) @2026-11-04,ARC-AGI-2,17
 Gemini 3.8 Flash,推理与知识,47.1,Artificial-Analysis·CritPt 原始0.182857(0-1) @2026-09-02,CritPt,35
 Gemini 3.8 Flash,推理与知识,92.1,Artificial-Analysis·GPQA 原始0.952525(0-1) @2026-09-02,GPQA-Diamond,19
-Gemini 3.8 Flash,推理与知识,66.2,Artificial-Analysis·HLE 原始0.478221(0-1) @2026-09-02,HLE,34
+Gemini 3.8 Flash,推理与知识,67.1,Artificial-Analysis·HLE 原始0.478221(0-1) @2026-09-02,HLE,35
 Gemini 3.8 Flash,推理与知识,3.8,Artificial-Analysis·HealthBench 原始0.483785(0-1) @2026-09-02,HealthBench,13
 Gemini 3.8 Flash,推理与知识,3.1,LiveBench-2.0·Data Analysis 原始54(0-100) @2026-10-23,LB2·Data Analysis,16
 Gemini 3.8 Flash,推理与知识,53.1,LiveBench-2.0·Reasoning 原始89.3(0-100) @2026-10-23,LB2·Reasoning,16
-Gemini 3.8 Flash,长文本,50.0,Artificial-Analysis·AA-LCR 原始0.813333(0-1) @2026-09-02,AA-LCR,35
+Gemini 3.8 Flash,长文本,51.4,Artificial-Analysis·AA-LCR 原始0.813333(0-1) @2026-09-02,AA-LCR,36
 Gemini 3.8 Flash,长文本,8.6,Artificial-Analysis·AA-MLCR 原始0.105556(0-1) @2026-09-02,AA-MLCR,35
-Gemini 4 Argon,Agent与工具调用,96.2,Artificial-Analysis·AutomationBench-AA 原始0.775135(0-1) @2026-09-30,AutomationBench,40
+Gemini 4 Argon,Agent与工具调用,96.3,Artificial-Analysis·AutomationBench-AA 原始0.775135(0-1) @2026-09-30,AutomationBench,41
 Gemini 4 Argon,Agent与工具调用,66.1,Artificial-Analysis·GDPval-AA 原始1630.66(指数) @2026-11-04,GDPval-AA,31
-Gemini 4 Argon,Agent与工具调用,72.1,Artificial-Analysis·TB-Science 原始0.528571(0-1) @2026-09-30,TB-Science,34
-Gemini 4 Argon,Agent与工具调用,78.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.570707(0-1) @2026-09-30,TB4.0,40
-Gemini 4 Argon,Agent与工具调用,45.0,Google官方·Agents' Last Exam v1.1 原始69(0-100) @2026-10-28,Agents' Last Exam,10
+Gemini 4 Argon,Agent与工具调用,72.9,Artificial-Analysis·TB-Science 原始0.528571(0-1) @2026-09-30,TB-Science,35
+Gemini 4 Argon,Agent与工具调用,79.3,Artificial-Analysis·Terminal-Bench 4.0 原始0.570707(0-1) @2026-09-30,TB4.0,41
+Gemini 4 Argon,Agent与工具调用,50.0,Google官方·Agents' Last Exam v1.1 原始69(0-100) @2026-10-28,Agents' Last Exam,11
 Gemini 4 Argon,Agent与工具调用,71.9,LiveBench-2.0·Browser 原始82.8(0-100) @2026-10-23,LB2·Browser,16
 Gemini 4 Argon,Agent与工具调用,71.9,LiveBench-2.0·Long Agentic 原始61.2(0-100) @2026-10-23,LB2·Long Agentic,16
 Gemini 4 Argon,代码,52.1,Artificial-Analysis·FrontierCode 原始0.434532(0-1) @2026-09-30,FrontierCode,24
@@ -763,21 +786,21 @@ Gemini 4 Argon,指令遵循,97.4,ArenaAI·Instruction Following 原始1528(Elo) 
 Gemini 4 Argon,指令遵循,94.4,SuperCLUE·总排行榜-精确指令遵循 原始68.97(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Gemini 4 Argon,推理与知识,94.1,ARC-Prize·ARC-AGI-2 原始98.5(0-100) @2026-11-04,ARC-AGI-2,17
 Gemini 4 Argon,推理与知识,75.7,Artificial-Analysis·CritPt 原始0.271429(0-1) @2026-09-30,CritPt,35
-Gemini 4 Argon,推理与知识,89.7,Artificial-Analysis·HLE 原始0.570899(0-1) @2026-09-30,HLE,34
+Gemini 4 Argon,推理与知识,90.0,Artificial-Analysis·HLE 原始0.570899(0-1) @2026-09-30,HLE,35
 Gemini 4 Argon,推理与知识,11.5,Artificial-Analysis·HealthBench 原始0.490545(0-1) @2026-09-30,HealthBench,13
 Gemini 4 Argon,推理与知识,70.0,Google官方·RiemannBench 原始76(0-100) @2026-10-28,RiemannBench,5
 Gemini 4 Argon,推理与知识,96.9,LiveBench-2.0·Data Analysis 原始85.2(0-100) @2026-10-23,LB2·Data Analysis,16
 Gemini 4 Argon,推理与知识,96.9,LiveBench-2.0·Reasoning 原始95.1(0-100) @2026-10-23,LB2·Reasoning,16
 Gemini 4 Argon,推理与知识,72.2,SuperCLUE·总排行榜-数理推理 原始71.05(0-100) @2026-11,SC·总排行榜-数学推理,18
-Gemini 4 Argon,长文本,30.0,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-09-30,AA-LCR,35
+Gemini 4 Argon,长文本,31.9,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-09-30,AA-LCR,36
 Gemini 4 Argon,长文本,27.1,Artificial-Analysis·AA-MLCR 原始0.138889(0-1) @2026-09-30,AA-MLCR,35
 Gemini 4 Argon,长文本,70.0,"Google官方·GraphWalks (BFS, F1) 原始84.2(0-100) @2026-10-28",GraphWalks,5
 Gemini 4 Argon,长文本,96.2,SuperCLUE·总排行榜-超长上下文 原始95.63(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Gemini 4 Carbon,Agent与工具调用,98.8,Artificial-Analysis·AutomationBench-AA 原始0.778166(0-1) @2026-10-28,AutomationBench,40
+Gemini 4 Carbon,Agent与工具调用,98.8,Artificial-Analysis·AutomationBench-AA 原始0.778166(0-1) @2026-10-28,AutomationBench,41
 Gemini 4 Carbon,Agent与工具调用,82.3,Artificial-Analysis·GDPval-AA 原始1732.68(指数) @2026-11-04,GDPval-AA,31
-Gemini 4 Carbon,Agent与工具调用,89.7,Artificial-Analysis·TB-Science 原始0.647619(0-1) @2026-10-28,TB-Science,34
-Gemini 4 Carbon,Agent与工具调用,96.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.651515(0-1) @2026-10-28,TB4.0,40
-Gemini 4 Carbon,Agent与工具调用,95.0,Google官方·Agents' Last Exam v1.1 原始77.4(0-100) @2026-10-28,Agents' Last Exam,10
+Gemini 4 Carbon,Agent与工具调用,90.0,Artificial-Analysis·TB-Science 原始0.647619(0-1) @2026-10-28,TB-Science,35
+Gemini 4 Carbon,Agent与工具调用,96.3,Artificial-Analysis·Terminal-Bench 4.0 原始0.651515(0-1) @2026-10-28,TB4.0,41
+Gemini 4 Carbon,Agent与工具调用,95.5,Google官方·Agents' Last Exam v1.1 原始77.4(0-100) @2026-10-28,Agents' Last Exam,11
 Gemini 4 Carbon,Agent与工具调用,41.7,Google官方·OSWorld-2.1 (Offline subset) 原始81.5(0-100) @2026-10-28,OSWorld-2.1-Offline,6
 Gemini 4 Carbon,代码,75.0,Artificial-Analysis·FrontierCode-2.0 原始0.405606(0-1) @2026-10-28,FrontierCode-2.0,32
 Gemini 4 Carbon,代码,41.7,Google官方·FrontierSWE 2 原始61.2(0-100) @2026-10-28,FrontierSWE-2,6
@@ -789,26 +812,26 @@ Gemini 4 Carbon,图片与制图,90.0,Google官方·Blueprint-Bench 2 原始58.6(
 Gemini 4 Carbon,图片与制图,81.2,Google官方·Chartography (no tools) 原始72.5(0-100) @2026-10-28,Chartography-no-tools,8
 Gemini 4 Carbon,指令遵循,92.1,ArenaAI·Instruction Following 原始1524(Elo) @2026-11-07,Arena-IF,19
 Gemini 4 Carbon,推理与知识,90.0,Google官方·RiemannBench 原始80(0-100) @2026-10-28,RiemannBench,5
-Gemini 4 Carbon,长文本,21.4,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-10-28,AA-LCR,35
+Gemini 4 Carbon,长文本,23.6,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-10-28,AA-LCR,36
 Gemini 4 Carbon,长文本,45.7,Artificial-Analysis·AA-MLCR 原始0.194444(0-1) @2026-10-28,AA-MLCR,35
 Gemini 4 Carbon,长文本,90.0,"Google官方·GraphWalks (BFS, F1) 原始96.2(0-100) @2026-10-28",GraphWalks,5
-Gemini 4 Hydrogen,Agent与工具调用,88.8,Artificial-Analysis·AutomationBench-AA 原始0.761442(0-1) @2026-11-12,AutomationBench,40
-Gemini 4 Hydrogen,Agent与工具调用,69.1,Artificial-Analysis·TB-Science 原始0.495238(0-1) @2026-11-12,TB-Science,34
-Gemini 4 Hydrogen,Agent与工具调用,71.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.535354(0-1) @2026-11-12,TB4.0,40
-Gemini 4 Hydrogen,Agent与工具调用,70.0,Google官方·Agents' Last Exam v1.1 原始71.6(0-100) @2026-11-12,Agents' Last Exam,10
+Gemini 4 Hydrogen,Agent与工具调用,89.0,Artificial-Analysis·AutomationBench-AA 原始0.761442(0-1) @2026-11-12,AutomationBench,41
+Gemini 4 Hydrogen,Agent与工具调用,70.0,Artificial-Analysis·TB-Science 原始0.495238(0-1) @2026-11-12,TB-Science,35
+Gemini 4 Hydrogen,Agent与工具调用,72.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.535354(0-1) @2026-11-12,TB4.0,41
+Gemini 4 Hydrogen,Agent与工具调用,72.7,Google官方·Agents' Last Exam v1.1 原始71.6(0-100) @2026-11-12,Agents' Last Exam,11
 Gemini 4 Hydrogen,Agent与工具调用,8.3,Google官方·OSWorld-2.1 Offline subset 原始77.6(0-100) @2026-11-12,OSWorld-2.1-Offline,6
 Gemini 4 Hydrogen,Agent与工具调用,25.0,Google官方·Terminal-Bench 4.1 原始57(0-100) @2026-11-12,TB4.1,2
 Gemini 4 Hydrogen,代码,70.3,Artificial-Analysis·FrontierCode-2.0 原始0.389592(0-1) @2026-11-12,FrontierCode-2.0,32
 Gemini 4 Hydrogen,代码,93.8,Google官方·SWE-sweep 原始13.5(0-100) @2026-11-12,SWE-sweep,8
-Gemini 4 Hydrogen,内容创作,82.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始82.6(推理值) @2026-11-18",,
+Gemini 4 Hydrogen,内容创作,70.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始70.3(推理值) @2026-11-27",,
 Gemini 4 Hydrogen,可靠性与低幻觉,87.5,Artificial-Analysis·AA-Omniscience Index 原始46.2667(指数) @2026-11-12,AA-Omni指数,40
 Gemini 4 Hydrogen,图片与制图,43.8,Google官方·Chartography (no tools) 原始66.6(0-100) @2026-11-12,Chartography-no-tools,8
-Gemini 4 Hydrogen,指令遵循,69.9,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始69.9(推理值) @2026-11-18",,
-Gemini 4 Hydrogen,推理与知识,79.3,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始79.3(推理值) @2026-11-18",,
+Gemini 4 Hydrogen,指令遵循,62.2,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始62.2(推理值) @2026-11-27",,
+Gemini 4 Hydrogen,推理与知识,77.7,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始77.7(推理值) @2026-11-27",,
 Gemini 4 Hydrogen,长文本,52.9,Artificial-Analysis·AA-MLCR 原始0.211111(0-1) @2026-11-12,AA-MLCR,35
-Hunyuan-Hy3,Agent与工具调用,6.2,Artificial-Analysis·AutomationBench-AA 原始0.184091(0-1) @2026-07-06,AutomationBench,40
+Hunyuan-Hy3,Agent与工具调用,6.1,Artificial-Analysis·AutomationBench-AA 原始0.184091(0-1) @2026-07-06,AutomationBench,41
 Hunyuan-Hy3,Agent与工具调用,14.5,Artificial-Analysis·GDPval-AA 原始1070.64(指数) @2026-11-04,GDPval-AA,31
-Hunyuan-Hy3,Agent与工具调用,3.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-07-06,TB4.0,40
+Hunyuan-Hy3,Agent与工具调用,3.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-07-06,TB4.0,41
 Hunyuan-Hy3,Agent与工具调用,32.4,Artificial-Analysis·tau2-Banking 原始0.228866(0-1) @2026-07-06,tau2-banking,17
 Hunyuan-Hy3,Agent与工具调用,5.0,SuperCLUE·Terminal总榜-总分 原始34.34(百分制) @2026-09,SC·Terminal总榜-总分,10
 Hunyuan-Hy3,Agent与工具调用,15.0,SuperCLUE·总排行榜-智能体任务规划 原始66.82(百分制) @2026-07(补测),SC·总排行榜-智能体任务规划,10
@@ -823,75 +846,75 @@ Hunyuan-Hy3,图片与制图,9.4,LMArena·WebDev-Elo 原始1507(Elo) @2026-10-06,
 Hunyuan-Hy3,指令遵循,58.3,SuperCLUE·总排行榜-精确指令遵循 原始35.24(百分制) @2026-07(补测),SC·总排行榜-精确指令遵循,18
 Hunyuan-Hy3,推理与知识,15.7,Artificial-Analysis·CritPt 原始0.0485714(0-1) @2026-07-06,CritPt,35
 Hunyuan-Hy3,推理与知识,34.2,Artificial-Analysis·GPQA 原始0.89697(0-1) @2026-07-06,GPQA-Diamond,19
-Hunyuan-Hy3,推理与知识,13.2,Artificial-Analysis·HLE 原始0.334569(0-1) @2026-07-06,HLE,34
+Hunyuan-Hy3,推理与知识,12.9,Artificial-Analysis·HLE 原始0.334569(0-1) @2026-07-06,HLE,35
 Hunyuan-Hy3,推理与知识,91.7,SuperCLUE·总排行榜-数学推理 原始77.19(百分制) @2026-07(补测),SC·总排行榜-数学推理,18
 Hunyuan-Hy3,推理与知识,70.0,SuperCLUE·总排行榜-科学推理 原始75.44(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-Hunyuan-Hy3,长文本,15.7,Artificial-Analysis·AA-LCR 原始0.79(0-1) @2026-07-06,AA-LCR,35
-Hunyuan-Hy4,Agent与工具调用,63.7,Artificial-Analysis·AutomationBench-AA 原始0.656102(0-1) @2026-11-07,AutomationBench,40
-Hunyuan-Hy4,Agent与工具调用,52.9,Artificial-Analysis·TB-Science 原始0.128571(0-1) @2026-11-03,TB-Science,34
-Hunyuan-Hy4,Agent与工具调用,56.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.373737(0-1) @2026-11-07,TB4.0,40
-Hunyuan-Hy4,Agent与工具调用,94.4,腾讯官方·APEX-Agents 原始75.2(0-100) @2026-11-04,APEX-Agents,9
-Hunyuan-Hy4,Agent与工具调用,25.0,腾讯官方·Agents' Last Exam 原始41(0-100) @2026-11-04,Agents' Last Exam,10
+Hunyuan-Hy3,长文本,16.7,Artificial-Analysis·AA-LCR 原始0.79(0-1) @2026-07-06,AA-LCR,36
+Hunyuan-Hy4,Agent与工具调用,64.6,Artificial-Analysis·AutomationBench-AA 原始0.656102(0-1) @2026-11-07,AutomationBench,41
+Hunyuan-Hy4,Agent与工具调用,51.4,Artificial-Analysis·TB-Science 原始0.128571(0-1) @2026-11-03,TB-Science,35
+Hunyuan-Hy4,Agent与工具调用,54.9,Artificial-Analysis·Terminal-Bench 4.0 原始0.373737(0-1) @2026-11-07,TB4.0,41
+Hunyuan-Hy4,Agent与工具调用,95.0,腾讯官方·APEX-Agents 原始75.2(0-100) @2026-11-04,APEX-Agents,10
+Hunyuan-Hy4,Agent与工具调用,31.8,腾讯官方·Agents' Last Exam 原始41(0-100) @2026-11-04,Agents' Last Exam,11
 Hunyuan-Hy4,Agent与工具调用,50.0,腾讯官方·HLE w/ Tools 原始59.1(0-100) @2026-11-04,HLE-w/tools,5
 Hunyuan-Hy4,代码,60.9,Artificial-Analysis·FrontierCode-2.0 原始0.314476(0-1) @2026-11-03,FrontierCode-2.0,32
-Hunyuan-Hy4,代码,75.0,腾讯官方·DeepSWE v1.1 原始74.9(0-100) @2026-11-04,DeepSWE,6
+Hunyuan-Hy4,代码,78.6,腾讯官方·DeepSWE v1.1 原始74.9(0-100) @2026-11-04,DeepSWE,7
 Hunyuan-Hy4,代码,16.7,腾讯官方·PostTrainBench 原始35.2(0-100) @2026-11-04,PostTrainBench,3
-Hunyuan-Hy4,代码,91.7,腾讯官方·ProgramBench 原始30(0-100) @2026-11-04,ProgramBench,6
+Hunyuan-Hy4,代码,92.9,腾讯官方·ProgramBench 原始30(0-100) @2026-11-04,ProgramBench,7
 Hunyuan-Hy4,代码,83.3,腾讯官方·SWE-Marathon 原始43.8(0-100) @2026-11-04,SWE-Marathon,3
-Hunyuan-Hy4,内容创作,63.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始63.6(推理值) @2026-11-18",,
+Hunyuan-Hy4,内容创作,59.6,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始59.6(推理值) @2026-11-27",,
 Hunyuan-Hy4,可靠性与低幻觉,50.0,ArenaAI·Arena-Agent-NetImprovement 原始5.39(0-100) @2026-11-07,Arena-Agent-Signal,27
 Hunyuan-Hy4,可靠性与低幻觉,46.2,Artificial-Analysis·AA-Omniscience Index 原始5.4(指数) @2026-11-03,AA-Omni指数,40
 Hunyuan-Hy4,图片与制图,30.4,腾讯官方·MMMU-Pro 原始78.6(0-100) @2026-11-04,MMMU-Pro,23
 Hunyuan-Hy4,图片与制图,87.5,腾讯官方·ZeroBench-main (w/tools) 原始55.4(0-100) @2026-11-04,ZeroBench,4
-Hunyuan-Hy4,指令遵循,62.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始62.7(推理值) @2026-11-18",,
-Hunyuan-Hy4,推理与知识,60.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始60.8(推理值) @2026-11-18",,
+Hunyuan-Hy4,指令遵循,66.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始66.8(推理值) @2026-11-27",,
+Hunyuan-Hy4,推理与知识,64.0,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始64(推理值) @2026-11-27",,
 Hunyuan-Hy4,长文本,75.7,Artificial-Analysis·AA-MLCR 原始0.327778(0-1) @2026-11-03,AA-MLCR,35
-Hy4 flash,Agent与工具调用,83.3,腾讯官方·APEX-Agents 原始63.1(0-100) @2026-11-16,APEX-Agents,9
-Hy4 flash,Agent与工具调用,28.7,腾讯官方·Automation-Bench v1.0.6 原始52.2(0-100) @2026-11-16,AutomationBench,40
+Hy4 flash,Agent与工具调用,75.0,腾讯官方·APEX-Agents 原始63.1(0-100) @2026-11-16,APEX-Agents,10
+Hy4 flash,Agent与工具调用,28.0,腾讯官方·Automation-Bench v1.0.6 原始52.2(0-100) @2026-11-16,AutomationBench,41
 Hy4 flash,Agent与工具调用,10.0,腾讯官方·HLE w/ Tools 原始55.2(0-100) @2026-11-16,HLE-w/tools,5
 Hy4 flash,Agent与工具调用,68.1,腾讯官方·OSWorld 2.1 原始68.1(0-100) @2026-11-16,OSWorld-2.1-Full,1
-Hy4 flash,Agent与工具调用,33.8,腾讯官方·Terminal-Bench 4.0 原始19.2(0-100) @2026-11-16,TB4.0,40
-Hy4 flash,代码,25.0,腾讯官方·DeepSWE v1.1 原始64.6(0-100) @2026-11-16,DeepSWE,6
-Hy4 flash,代码,8.3,腾讯官方·ProgramBench 原始16(0-100) @2026-11-16,ProgramBench,6
-Hy4 flash,内容创作,40.7,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始40.7(推理值) @2026-11-18",,
-Hy4 flash,可靠性与低幻觉,17.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始17.8(推理值) @2026-11-18",,
+Hy4 flash,Agent与工具调用,32.9,腾讯官方·Terminal-Bench 4.0 原始19.2(0-100) @2026-11-16,TB4.0,41
+Hy4 flash,代码,21.4,腾讯官方·DeepSWE v1.1 原始64.6(0-100) @2026-11-16,DeepSWE,7
+Hy4 flash,代码,7.1,腾讯官方·ProgramBench 原始16(0-100) @2026-11-16,ProgramBench,7
+Hy4 flash,内容创作,30.9,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始30.9(推理值) @2026-11-27",,
+Hy4 flash,可靠性与低幻觉,39.8,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始39.8(推理值) @2026-11-27",,
 Hy4 flash,图片与制图,6.5,腾讯官方·MMMU-Pro 原始75.8(0-100) @2026-11-16,MMMU-Pro,23
 Hy4 flash,图片与制图,12.5,腾讯官方·ZeroBench-main (w/tools) 原始45.8(0-100) @2026-11-16,ZeroBench,4
-Hy4 flash,指令遵循,26.8,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始26.8(推理值) @2026-11-18",,
-Hy4 flash,推理与知识,39.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始39.6(推理值) @2026-11-18",,
-Hy4 flash,长文本,27.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始27.4(推理值) @2026-11-18",,
-Hy4 preview,Agent与工具调用,27.8,腾讯官方·APEX-Agents 原始37.1(0-100) @2026-08-28,APEX-Agents,9
+Hy4 flash,指令遵循,47.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始47.4(推理值) @2026-11-27",,
+Hy4 flash,推理与知识,31.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始31.4(推理值) @2026-11-27",,
+Hy4 flash,长文本,28.5,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始28.5(推理值) @2026-11-27",,
+Hy4 preview,Agent与工具调用,25.0,腾讯官方·APEX-Agents 原始37.1(0-100) @2026-08-28,APEX-Agents,10
 Hy4 preview,Agent与工具调用,30.0,腾讯官方·HLE w/ Tools 原始55.4(0-100) @2026-08-28,HLE-w/tools,5
-Hy4 preview,Agent与工具调用,83.7,腾讯官方·MCP Atlas 原始83.7(0-100) @2026-08-28,MCP Atlas,1
+Hy4 preview,Agent与工具调用,25.0,腾讯官方·MCP Atlas 原始83.7(0-100) @2026-08-28,MCP Atlas,2
 Hy4 preview,Agent与工具调用,62.9,腾讯官方·SkillsBench 原始62.9(0-100) @2026-08-28,SkillsBench,1
 Hy4 preview,Agent与工具调用,50.0,腾讯官方·Terminal Bench 2.1 原始85.4(0-100) @2026-08-28,TB2.1,3
-Hy4 preview,Agent与工具调用,75.0,腾讯官方·Toolathlon Verified 原始74.1(0-100) @2026-08-28,Toolathlon,2
+Hy4 preview,Agent与工具调用,50.0,腾讯官方·Toolathlon Verified 原始74.1(0-100) @2026-08-28,Toolathlon,3
 Hy4 preview,Agent与工具调用,83.9,腾讯官方·WideResearch 原始83.9(0-100) @2026-08-28,WideResearch,1
 Hy4 preview,代码,25.0,SuperCLUE·总排行榜-智能体编程 原始42.31(0-100) @2026-11,SC·总排行榜-智能体编程,18
-Hy4 preview,代码,8.3,腾讯官方·DeepSWE 原始64.3(0-100) @2026-08-28,DeepSWE,6
-Hy4 preview,代码,50.0,腾讯官方·NL2Repo 原始58.9(0-100) @2026-08-28,NL2Repo,5
+Hy4 preview,代码,7.1,腾讯官方·DeepSWE 原始64.3(0-100) @2026-08-28,DeepSWE,7
+Hy4 preview,代码,41.7,腾讯官方·NL2Repo 原始58.9(0-100) @2026-08-28,NL2Repo,6
 Hy4 preview,代码,50.0,腾讯官方·PostTrainBench 原始35.6(0-100) @2026-08-28,PostTrainBench,3
-Hy4 preview,代码,25.0,腾讯官方·ProgramBench 原始17.5(0-100) @2026-08-28,ProgramBench,6
+Hy4 preview,代码,21.4,腾讯官方·ProgramBench 原始17.5(0-100) @2026-08-28,ProgramBench,7
 Hy4 preview,代码,82.9,腾讯官方·SWE-Bench Multilingual 原始82.9(0-100) @2026-08-28,SWE-bench Multilingual,1
 Hy4 preview,代码,75.0,腾讯官方·SWE-Bench Pro 原始65.7(0-100) @2026-08-28,SWE-bench Pro,2
 Hy4 preview,代码,16.7,腾讯官方·SWE-Marathon 原始31.9(0-100) @2026-08-28,SWE-Marathon,3
 Hy4 preview,内容创作,21.4,AIWB·英文写作盲评 原始68.8(指数) @2026-11-04,AIWB写作盲评,21
 Hy4 preview,可靠性与低幻觉,11.1,ArenaAI·Arena-Agent-NetImprovement 原始0.94(0-100) @2026-11-04,Arena-Agent-Signal,27
 Hy4 preview,可靠性与低幻觉,19.4,SuperCLUE·总排行榜-幻觉控制 原始33.34(0-100) @2026-11,SC·总排行榜-幻觉控制,18
-Hy4 preview,图片与制图,52.6,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始52.6(推理值) @2026-11-18",,
+Hy4 preview,图片与制图,56.2,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始56.2(推理值) @2026-11-27",,
 Hy4 preview,指令遵循,9.4,AI产品狙击手·Q1强约束指令遵循 原始5(10分制) @2026-09-14,TGG·Q1指令遵循,16
 Hy4 preview,指令遵循,52.8,SuperCLUE·总排行榜-精确指令遵循 原始31.03(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Hy4 preview,推理与知识,13.9,SuperCLUE·总排行榜-数理推理 原始57.89(0-100) @2026-11,SC·总排行榜-数学推理,18
 Hy4 preview,推理与知识,38.6,腾讯官方·CritPt 原始16.9(0-100) @2026-08-28,CritPt,35
 Hy4 preview,推理与知识,60.5,腾讯官方·GPQA Diamond 原始92.3(0-100) @2026-08-28,GPQA-Diamond,19
-Hy4 preview,推理与知识,54.4,腾讯官方·HLE w/o tools 原始43.4(0-100) @2026-08-28,HLE,34
+Hy4 preview,推理与知识,52.9,腾讯官方·HLE w/o tools 原始43.4(0-100) @2026-08-28,HLE,35
 Hy4 preview,长文本,34.6,SuperCLUE·总排行榜-超长上下文 原始47.87(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Kimi-K2.6,Agent与工具调用,5.6,Artificial-Analysis·APEX-Agents 原始0.284661(0-1) @2026-04-20,APEX-Agents,9
-Kimi-K2.6,Agent与工具调用,3.8,Artificial-Analysis·AutomationBench-AA 原始0.130208(0-1) @2026-04-20,AutomationBench,40
+Kimi-K2.6,Agent与工具调用,5.0,Artificial-Analysis·APEX-Agents 原始0.284661(0-1) @2026-04-20,APEX-Agents,10
+Kimi-K2.6,Agent与工具调用,3.7,Artificial-Analysis·AutomationBench-AA 原始0.130208(0-1) @2026-04-20,AutomationBench,41
 Kimi-K2.6,Agent与工具调用,40.6,Artificial-Analysis·EnterpriseOpsGym 原始0.385258(0-1) @2026-04-20,enterprise-ops-gym,16
 Kimi-K2.6,Agent与工具调用,9.7,Artificial-Analysis·GDPval-AA 原始1046.53(指数) @2026-11-04,GDPval-AA,31
 Kimi-K2.6,Agent与工具调用,3.6,Artificial-Analysis·ITBench-SRE 原始0.311864(0-1) @2026-04-20,itbench-sre,14
-Kimi-K2.6,Agent与工具调用,3.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-04-20,TB4.0,40
+Kimi-K2.6,Agent与工具调用,3.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-04-20,TB4.0,41
 Kimi-K2.6,Agent与工具调用,38.2,Artificial-Analysis·tau2-Banking 原始0.23299(0-1) @2026-04-20,tau2-banking,17
 Kimi-K2.6,Agent与工具调用,50.0,Artificial-Analysis·τ²-bench 原始0.959064(0-1) @2026-04-20,tau2-bench,7
 Kimi-K2.6,Agent与工具调用,20.6,LiveBench·Agentic Coding 原始46.92(0-100) @2026-06-25,LB·Agentic Coding,17
@@ -910,16 +933,16 @@ Kimi-K2.6,指令遵循,43.8,Artificial-Analysis·IFBench 原始0.759864(0-1) @20
 Kimi-K2.6,指令遵循,32.4,LiveBench·IF (Instruction Following) 原始64.36(0-100) @2026-06-25,LB·IF (Instruction Following),17
 Kimi-K2.6,推理与知识,21.4,Artificial-Analysis·CritPt 原始0.08(0-1) @2026-04-20,CritPt,35
 Kimi-K2.6,推理与知识,44.7,Artificial-Analysis·GPQA 原始0.911111(0-1) @2026-04-20,GPQA-Diamond,19
-Kimi-K2.6,推理与知识,25.0,Artificial-Analysis·HLE 原始0.374884(0-1) @2026-04-20,HLE,34
+Kimi-K2.6,推理与知识,24.3,Artificial-Analysis·HLE 原始0.374884(0-1) @2026-04-20,HLE,35
 Kimi-K2.6,推理与知识,20.6,LiveBench·Data Analysis 原始65.13(0-100) @2026-06-25,LB·Data Analysis,17
 Kimi-K2.6,推理与知识,20.6,LiveBench·Mathematics 原始84.28(0-100) @2026-06-25,LB·Mathematics,17
 Kimi-K2.6,推理与知识,20.6,LiveBench·Reasoning 原始79.38(0-100) @2026-06-25,LB·Reasoning,17
-Kimi-K2.6,长文本,47.1,Artificial-Analysis·AA-LCR 原始0.81(0-1) @2026-04-20,AA-LCR,35
+Kimi-K2.6,长文本,48.6,Artificial-Analysis·AA-LCR 原始0.81(0-1) @2026-04-20,AA-LCR,36
 Kimi-K2.6,长文本,12.9,Artificial-Analysis·AA-MLCR 原始0.111111(0-1) @2026-04-20,AA-MLCR,35
-Kimi-K2.7-Code,Agent与工具调用,13.8,Artificial-Analysis·AutomationBench-AA 原始0.244543(0-1) @2026-06-12,AutomationBench,40
+Kimi-K2.7-Code,Agent与工具调用,13.4,Artificial-Analysis·AutomationBench-AA 原始0.244543(0-1) @2026-06-12,AutomationBench,41
 Kimi-K2.7-Code,Agent与工具调用,46.9,Artificial-Analysis·EnterpriseOpsGym 原始0.402268(0-1) @2026-06-12,enterprise-ops-gym,16
 Kimi-K2.7-Code,Agent与工具调用,9.7,Artificial-Analysis·GDPval-AA 原始1046.01(指数) @2026-11-04,GDPval-AA,31
-Kimi-K2.7-Code,Agent与工具调用,11.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-06-12,TB4.0,40
+Kimi-K2.7-Code,Agent与工具调用,11.0,Artificial-Analysis·Terminal-Bench 4.0 原始0.010101(0-1) @2026-06-12,TB4.0,41
 Kimi-K2.7-Code,Agent与工具调用,26.5,Artificial-Analysis·tau2-Banking 原始0.202062(0-1) @2026-06-12,tau2-banking,17
 Kimi-K2.7-Code,Agent与工具调用,35.7,Artificial-Analysis·τ²-bench 原始0.900585(0-1) @2026-06-12,tau2-bench,7
 Kimi-K2.7-Code,Agent与工具调用,14.7,LiveBench·Agentic Coding 原始45.66(0-100) @2026-06-25,LB·Agentic Coding,17
@@ -932,19 +955,19 @@ Kimi-K2.7-Code,指令遵循,18.8,Artificial-Analysis·IFBench 原始0.631293(0-1
 Kimi-K2.7-Code,指令遵循,14.7,LiveBench·IF (Instruction Following) 原始56.29(0-100) @2026-06-25,LB·IF (Instruction Following),17
 Kimi-K2.7-Code,推理与知识,25.7,Artificial-Analysis·CritPt 原始0.1(0-1) @2026-06-12,CritPt,35
 Kimi-K2.7-Code,推理与知识,28.9,Artificial-Analysis·GPQA 原始0.89596(0-1) @2026-06-12,GPQA-Diamond,19
-Kimi-K2.7-Code,推理与知识,19.1,Artificial-Analysis·HLE 原始0.350324(0-1) @2026-06-12,HLE,34
+Kimi-K2.7-Code,推理与知识,18.6,Artificial-Analysis·HLE 原始0.350324(0-1) @2026-06-12,HLE,35
 Kimi-K2.7-Code,推理与知识,14.7,LiveBench·Data Analysis 原始62.66(0-100) @2026-06-25,LB·Data Analysis,17
 Kimi-K2.7-Code,推理与知识,8.8,LiveBench·Mathematics 原始79.6(0-100) @2026-06-25,LB·Mathematics,17
 Kimi-K2.7-Code,推理与知识,38.2,LiveBench·Reasoning 原始82.81(0-100) @2026-06-25,LB·Reasoning,17
-Kimi-K2.7-Code,长文本,21.4,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-06-12,AA-LCR,35
+Kimi-K2.7-Code,长文本,23.6,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-06-12,AA-LCR,36
 Kimi-K2.7-Code,长文本,18.6,Artificial-Analysis·AA-MLCR 原始0.122222(0-1) @2026-06-12,AA-MLCR,35
-Kimi-K3,Agent与工具调用,50.0,Artificial-Analysis·APEX-Agents 原始0.412979(0-1) @2026-07-16,APEX-Agents,9
-Kimi-K3,Agent与工具调用,41.2,Artificial-Analysis·AutomationBench-AA 原始0.58273(0-1) @2026-07-16,AutomationBench,40
+Kimi-K3,Agent与工具调用,45.0,Artificial-Analysis·APEX-Agents 原始0.412979(0-1) @2026-07-16,APEX-Agents,10
+Kimi-K3,Agent与工具调用,40.2,Artificial-Analysis·AutomationBench-AA 原始0.58273(0-1) @2026-07-16,AutomationBench,41
 Kimi-K3,Agent与工具调用,71.9,Artificial-Analysis·EnterpriseOpsGym 原始0.453298(0-1) @2026-07-16,enterprise-ops-gym,16
 Kimi-K3,Agent与工具调用,50.0,Artificial-Analysis·GDPval-AA 原始1542.76(指数) @2026-11-04,GDPval-AA,31
 Kimi-K3,Agent与工具调用,53.6,Artificial-Analysis·ITBench-SRE 原始0.47693(0-1) @2026-07-16,itbench-sre,14
-Kimi-K3,Agent与工具调用,33.8,Artificial-Analysis·TB-Science 原始0.0809524(0-1) @2026-07-16,TB-Science,34
-Kimi-K3,Agent与工具调用,27.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.126263(0-1) @2026-07-16,TB4.0,40
+Kimi-K3,Agent与工具调用,32.9,Artificial-Analysis·TB-Science 原始0.0809524(0-1) @2026-07-16,TB-Science,35
+Kimi-K3,Agent与工具调用,26.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.126263(0-1) @2026-07-16,TB4.0,41
 Kimi-K3,Agent与工具调用,67.6,Artificial-Analysis·tau2-Banking 原始0.459794(0-1) @2026-07-16,tau2-banking,17
 Kimi-K3,Agent与工具调用,73.5,LiveBench·Agentic Coding 原始62.17(0-100) @2026-06-25,LB·Agentic Coding,17
 Kimi-K3,Agent与工具调用,46.9,LiveBench-2.0·Browser 原始75.2(0-100) @2026-10-23,LB2·Browser,16
@@ -977,7 +1000,7 @@ Kimi-K3,指令遵循,69.4,SuperCLUE·总排行榜-精确指令遵循 原始40.95
 Kimi-K3,推理与知识,47.1,ARC-Prize·ARC-AGI-2 原始94.5(0-100) @2026-11-04,ARC-AGI-2,17
 Kimi-K3,推理与知识,64.3,Artificial-Analysis·CritPt 原始0.234286(0-1) @2026-07-16,CritPt,35
 Kimi-K3,推理与知识,81.6,Artificial-Analysis·GPQA 原始0.935354(0-1) @2026-07-16,GPQA-Diamond,19
-Kimi-K3,推理与知识,63.2,Artificial-Analysis·HLE 原始0.468953(0-1) @2026-07-16,HLE,34
+Kimi-K3,推理与知识,64.3,Artificial-Analysis·HLE 原始0.468953(0-1) @2026-07-16,HLE,35
 Kimi-K3,推理与知识,42.3,Artificial-Analysis·HealthBench 原始0.547242(0-1) @2026-07-16,HealthBench,13
 Kimi-K3,推理与知识,61.8,LiveBench·Data Analysis 原始78.73(0-100) @2026-06-25,LB·Data Analysis,17
 Kimi-K3,推理与知识,26.5,LiveBench·Mathematics 原始84.44(0-100) @2026-06-25,LB·Mathematics,17
@@ -986,14 +1009,14 @@ Kimi-K3,推理与知识,59.4,LiveBench-2.0·Data Analysis 原始78.7(0-100) @202
 Kimi-K3,推理与知识,59.4,LiveBench-2.0·Reasoning 原始90.7(0-100) @2026-10-23,LB2·Reasoning,16
 Kimi-K3,推理与知识,80.6,SuperCLUE·总排行榜-数学推理 原始71.93(百分制) @2026-07(补测),SC·总排行榜-数学推理,18
 Kimi-K3,推理与知识,35.0,SuperCLUE·总排行榜-科学推理 原始70.18(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-Kimi-K3,长文本,98.6,Artificial-Analysis·AA-LCR 原始0.886667(0-1) @2026-07-16,AA-LCR,35
+Kimi-K3,长文本,98.6,Artificial-Analysis·AA-LCR 原始0.886667(0-1) @2026-07-16,AA-LCR,36
 Kimi-K3,长文本,55.7,Artificial-Analysis·AA-MLCR 原始0.216667(0-1) @2026-07-16,AA-MLCR,35
 Kimi-K3,长文本,62.5,SuperCLUE·长上下文1M-总分 原始62.76(百分制) @2026-07,SC·长上下文1M-总分,4
 Kimi-K3,长文本,62.5,SuperCLUE·长上下文256K-总分 原始68.09(百分制) @2026-07,SC·长上下文256K-总分,4
-Kimi-K3.1-Pro,Agent与工具调用,86.2,Artificial-Analysis·AutomationBench-AA 原始0.732977(0-1) @2026-10-23,AutomationBench,40
+Kimi-K3.1-Pro,Agent与工具调用,86.6,Artificial-Analysis·AutomationBench-AA 原始0.732977(0-1) @2026-10-23,AutomationBench,41
 Kimi-K3.1-Pro,Agent与工具调用,95.2,Artificial-Analysis·GDPval-AA 原始1858.05(指数) @2026-11-04,GDPval-AA,31
-Kimi-K3.1-Pro,Agent与工具调用,63.2,Artificial-Analysis·TB-Science 原始0.342857(0-1) @2026-10-23,TB-Science,34
-Kimi-K3.1-Pro,Agent与工具调用,98.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.671717(0-1) @2026-10-23,TB4.0,40
+Kimi-K3.1-Pro,Agent与工具调用,64.3,Artificial-Analysis·TB-Science 原始0.342857(0-1) @2026-10-23,TB-Science,35
+Kimi-K3.1-Pro,Agent与工具调用,98.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.671717(0-1) @2026-10-23,TB4.0,41
 Kimi-K3.1-Pro,Agent与工具调用,53.1,LiveBench-2.0·Browser 原始75.9(0-100) @2026-10-23,LB2·Browser,16
 Kimi-K3.1-Pro,Agent与工具调用,59.4,LiveBench-2.0·Long Agentic 原始39.1(0-100) @2026-10-23,LB2·Long Agentic,16
 Kimi-K3.1-Pro,代码,81.2,Artificial-Analysis·FrontierCode 原始0.470664(0-1) @2026-10-23,FrontierCode,24
@@ -1012,17 +1035,17 @@ Kimi-K3.1-Pro,图片与制图,93.5,Design-Arena·Website-Elo 原始1326(Elo) @20
 Kimi-K3.1-Pro,图片与制图,46.9,LiveBench-2.0·Design 原始77.8(0-100) @2026-10-23,LB2·Design,16
 Kimi-K3.1-Pro,指令遵循,86.1,SuperCLUE·总排行榜-精确指令遵循 原始44.83(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Kimi-K3.1-Pro,推理与知识,70.0,Artificial-Analysis·CritPt 原始0.245714(0-1) @2026-10-23,CritPt,35
-Kimi-K3.1-Pro,推理与知识,77.9,Artificial-Analysis·HLE 原始0.52456(0-1) @2026-10-23,HLE,34
+Kimi-K3.1-Pro,推理与知识,78.6,Artificial-Analysis·HLE 原始0.52456(0-1) @2026-10-23,HLE,35
 Kimi-K3.1-Pro,推理与知识,65.6,LiveBench-2.0·Data Analysis 原始79.1(0-100) @2026-10-23,LB2·Data Analysis,16
 Kimi-K3.1-Pro,推理与知识,65.6,LiveBench-2.0·Reasoning 原始91.1(0-100) @2026-10-23,LB2·Reasoning,16
 Kimi-K3.1-Pro,推理与知识,33.3,SuperCLUE·总排行榜-数理推理 原始63.16(0-100) @2026-11,SC·总排行榜-数学推理,18
-Kimi-K3.1-Pro,长文本,91.4,Artificial-Analysis·AA-LCR 原始0.863333(0-1) @2026-10-23,AA-LCR,35
+Kimi-K3.1-Pro,长文本,91.7,Artificial-Analysis·AA-LCR 原始0.863333(0-1) @2026-10-23,AA-LCR,36
 Kimi-K3.1-Pro,长文本,85.7,Artificial-Analysis·AA-MLCR 原始0.383333(0-1) @2026-10-23,AA-MLCR,35
 Kimi-K3.1-Pro,长文本,80.8,SuperCLUE·总排行榜-超长上下文 原始87.25(0-100) @2026-11,SC·总排行榜-超长上下文,13
-MiMo-V2.6-Pro,Agent与工具调用,43.8,Artificial-Analysis·AutomationBench-AA 原始0.586234(0-1) @2026-09-21,AutomationBench,40
+MiMo-V2.6-Pro,Agent与工具调用,42.7,Artificial-Analysis·AutomationBench-AA 原始0.586234(0-1) @2026-09-21,AutomationBench,41
 MiMo-V2.6-Pro,Agent与工具调用,79.0,Artificial-Analysis·GDPval-AA 原始1689.4(指数) @2026-11-04,GDPval-AA,31
-MiMo-V2.6-Pro,Agent与工具调用,29.4,Artificial-Analysis·TB-Science 原始0.0571429(0-1) @2026-09-21,TB-Science,34
-MiMo-V2.6-Pro,Agent与工具调用,53.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.348485(0-1) @2026-09-21,TB4.0,40
+MiMo-V2.6-Pro,Agent与工具调用,28.6,Artificial-Analysis·TB-Science 原始0.0571429(0-1) @2026-09-21,TB-Science,35
+MiMo-V2.6-Pro,Agent与工具调用,52.4,Artificial-Analysis·Terminal-Bench 4.0 原始0.348485(0-1) @2026-09-21,TB4.0,41
 MiMo-V2.6-Pro,Agent与工具调用,59.4,LiveBench-2.0·Browser 原始77.3(0-100) @2026-10-23,LB2·Browser,16
 MiMo-V2.6-Pro,Agent与工具调用,53.1,LiveBench-2.0·Long Agentic 原始35.2(0-100) @2026-10-23,LB2·Long Agentic,16
 MiMo-V2.6-Pro,Agent与工具调用,95.0,SuperCLUE·Terminal总榜-总分 原始64.65(百分制) @2026-10,SC·Terminal总榜-总分,10
@@ -1045,18 +1068,18 @@ MiMo-V2.6-Pro,指令遵循,37.5,AI产品狙击手·Q1强约束指令遵循 原�
 MiMo-V2.6-Pro,指令遵循,34.2,ArenaAI·Instruction Following 原始1471(Elo) @2026-11-07,Arena-IF,19
 MiMo-V2.6-Pro,指令遵循,19.4,SuperCLUE·总排行榜-精确指令遵循 原始15.52(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 MiMo-V2.6-Pro,推理与知识,72.9,Artificial-Analysis·CritPt 原始0.265714(0-1) @2026-09-21,CritPt,35
-MiMo-V2.6-Pro,推理与知识,75.0,Artificial-Analysis·HLE 原始0.493513(0-1) @2026-09-21,HLE,34
+MiMo-V2.6-Pro,推理与知识,75.7,Artificial-Analysis·HLE 原始0.493513(0-1) @2026-09-21,HLE,35
 MiMo-V2.6-Pro,推理与知识,28.1,LiveBench-2.0·Data Analysis 原始72.3(0-100) @2026-10-23,LB2·Data Analysis,16
 MiMo-V2.6-Pro,推理与知识,9.4,LiveBench-2.0·Reasoning 原始79.6(0-100) @2026-10-23,LB2·Reasoning,16
 MiMo-V2.6-Pro,推理与知识,2.8,SuperCLUE·总排行榜-数理推理 原始50(0-100) @2026-11,SC·总排行榜-数学推理,18
-MiMo-V2.6-Pro,长文本,91.4,Artificial-Analysis·AA-LCR 原始0.863333(0-1) @2026-09-21,AA-LCR,35
+MiMo-V2.6-Pro,长文本,91.7,Artificial-Analysis·AA-LCR 原始0.863333(0-1) @2026-09-21,AA-LCR,36
 MiMo-V2.6-Pro,长文本,22.9,Artificial-Analysis·AA-MLCR 原始0.127778(0-1) @2026-09-21,AA-MLCR,35
 MiMo-V2.6-Pro,长文本,3.8,SuperCLUE·总排行榜-超长上下文 原始36.83(0-100) @2026-11,SC·总排行榜-超长上下文,13
-MiniMax-M3,Agent与工具调用,11.2,Artificial-Analysis·AutomationBench-AA 原始0.212513(0-1) @2026-06-01,AutomationBench,40
+MiniMax-M3,Agent与工具调用,11.0,Artificial-Analysis·AutomationBench-AA 原始0.212513(0-1) @2026-06-01,AutomationBench,41
 MiniMax-M3,Agent与工具调用,21.9,Artificial-Analysis·EnterpriseOpsGym 原始0.321098(0-1) @2026-06-01,enterprise-ops-gym,16
 MiniMax-M3,Agent与工具调用,21.0,Artificial-Analysis·GDPval-AA 原始1249.95(指数) @2026-11-04,GDPval-AA,31
-MiniMax-M3,Agent与工具调用,8.8,Artificial-Analysis·TB-Science 原始0.0047619(0-1) @2026-06-01,TB-Science,34
-MiniMax-M3,Agent与工具调用,17.5,Artificial-Analysis·Terminal-Bench 4.0 原始0.020202(0-1) @2026-06-01,TB4.0,40
+MiniMax-M3,Agent与工具调用,8.6,Artificial-Analysis·TB-Science 原始0.0047619(0-1) @2026-06-01,TB-Science,35
+MiniMax-M3,Agent与工具调用,17.1,Artificial-Analysis·Terminal-Bench 4.0 原始0.020202(0-1) @2026-06-01,TB4.0,41
 MiniMax-M3,Agent与工具调用,14.7,Artificial-Analysis·tau2-Banking 原始0.152577(0-1) @2026-06-01,tau2-banking,17
 MiniMax-M3,Agent与工具调用,21.4,Artificial-Analysis·τ²-bench 原始0.888889(0-1) @2026-06-01,tau2-bench,7
 MiniMax-M3,Agent与工具调用,8.8,LiveBench·Agentic Coding 原始40.66(0-100) @2026-06-25,LB·Agentic Coding,17
@@ -1084,20 +1107,20 @@ MiniMax-M3,指令遵循,26.5,LiveBench·IF (Instruction Following) 原始57.51(0
 MiniMax-M3,指令遵循,13.9,SuperCLUE·总排行榜-精确指令遵循 原始10.34(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 MiniMax-M3,推理与知识,10.0,Artificial-Analysis·CritPt 原始0.0371429(0-1) @2026-06-01,CritPt,35
 MiniMax-M3,推理与知识,76.3,Artificial-Analysis·GPQA 原始0.929293(0-1) @2026-06-01,GPQA-Diamond,19
-MiniMax-M3,推理与知识,30.9,Artificial-Analysis·HLE 原始0.389713(0-1) @2026-06-01,HLE,34
+MiniMax-M3,推理与知识,30.0,Artificial-Analysis·HLE 原始0.389713(0-1) @2026-06-01,HLE,35
 MiniMax-M3,推理与知识,38.2,LiveBench·Data Analysis 原始76.17(0-100) @2026-06-25,LB·Data Analysis,17
 MiniMax-M3,推理与知识,2.9,LiveBench·Mathematics 原始76.95(0-100) @2026-06-25,LB·Mathematics,17
 MiniMax-M3,推理与知识,2.9,LiveBench·Reasoning 原始74.48(0-100) @2026-06-25,LB·Reasoning,17
 MiniMax-M3,推理与知识,33.3,SuperCLUE·总排行榜-数理推理 原始63.16(0-100) @2026-11,SC·总排行榜-数学推理,18
 MiniMax-M3,推理与知识,35.0,SuperCLUE·总排行榜-科学推理 原始70.18(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-MiniMax-M3,长文本,65.7,Artificial-Analysis·AA-LCR 原始0.83(0-1) @2026-06-01,AA-LCR,35
+MiniMax-M3,长文本,66.7,Artificial-Analysis·AA-LCR 原始0.83(0-1) @2026-06-01,AA-LCR,36
 MiniMax-M3,长文本,1.4,Artificial-Analysis·AA-MLCR 原始0.0444444(0-1) @2026-06-01,AA-MLCR,35
 MiniMax-M3,长文本,19.2,SuperCLUE·总排行榜-超长上下文 原始42.88(0-100) @2026-11,SC·总排行榜-超长上下文,13
 MiniMax-M3,长文本,12.5,SuperCLUE·长上下文1M-总分 原始24.67(百分制) @2026-07,SC·长上下文1M-总分,4
-MiniMax-M3.1-Flash,Agent与工具调用,81.2,Artificial-Analysis·AutomationBench-AA 原始0.725218(0-1) @2026-10-19,AutomationBench,40
+MiniMax-M3.1-Flash,Agent与工具调用,81.7,Artificial-Analysis·AutomationBench-AA 原始0.725218(0-1) @2026-10-19,AutomationBench,41
 MiniMax-M3.1-Flash,Agent与工具调用,40.3,Artificial-Analysis·GDPval-AA 原始1465.36(指数) @2026-11-04,GDPval-AA,31
-MiniMax-M3.1-Flash,Agent与工具调用,16.2,Artificial-Analysis·TB-Science 原始0.0333333(0-1) @2026-10-19,TB-Science,34
-MiniMax-M3.1-Flash,Agent与工具调用,41.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.257576(0-1) @2026-10-19,TB4.0,40
+MiniMax-M3.1-Flash,Agent与工具调用,15.7,Artificial-Analysis·TB-Science 原始0.0333333(0-1) @2026-10-19,TB-Science,35
+MiniMax-M3.1-Flash,Agent与工具调用,40.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.257576(0-1) @2026-10-19,TB4.0,41
 MiniMax-M3.1-Flash,Agent与工具调用,65.6,LiveBench-2.0·Browser 原始80.6(0-100) @2026-10-23,LB2·Browser,16
 MiniMax-M3.1-Flash,Agent与工具调用,34.4,LiveBench-2.0·Long Agentic 原始28.8(0-100) @2026-10-23,LB2·Long Agentic,16
 MiniMax-M3.1-Flash,代码,27.1,Artificial-Analysis·FrontierCode 原始0.385759(0-1) @2026-10-19,FrontierCode,24
@@ -1114,29 +1137,29 @@ MiniMax-M3.1-Flash,图片与制图,15.6,LiveBench-2.0·Design 原始74(0-100) @2
 MiniMax-M3.1-Flash,指令遵循,25.0,AI产品狙击手·Q1强约束指令遵循 原始8(10分制) @2026-10-20,TGG·Q1指令遵循,16
 MiniMax-M3.1-Flash,指令遵循,2.8,SuperCLUE·总排行榜-精确指令遵循 原始5.17(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 MiniMax-M3.1-Flash,推理与知识,61.4,Artificial-Analysis·CritPt 原始0.222857(0-1) @2026-10-19,CritPt,35
-MiniMax-M3.1-Flash,推理与知识,72.1,Artificial-Analysis·HLE 原始0.479611(0-1) @2026-10-19,HLE,34
+MiniMax-M3.1-Flash,推理与知识,72.9,Artificial-Analysis·HLE 原始0.479611(0-1) @2026-10-19,HLE,35
 MiniMax-M3.1-Flash,推理与知识,21.9,LiveBench-2.0·Data Analysis 原始71.4(0-100) @2026-10-23,LB2·Data Analysis,16
 MiniMax-M3.1-Flash,推理与知识,28.1,LiveBench-2.0·Reasoning 原始82.9(0-100) @2026-10-23,LB2·Reasoning,16
 MiniMax-M3.1-Flash,推理与知识,50.0,SuperCLUE·总排行榜-数理推理 原始65.79(0-100) @2026-11,SC·总排行榜-数学推理,18
-MiniMax-M3.1-Flash,长文本,30.0,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-10-19,AA-LCR,35
+MiniMax-M3.1-Flash,长文本,31.9,Artificial-Analysis·AA-LCR 原始0.796667(0-1) @2026-10-19,AA-LCR,36
 MiniMax-M3.1-Flash,长文本,32.9,Artificial-Analysis·AA-MLCR 原始0.166667(0-1) @2026-10-19,AA-MLCR,35
 MiniMax-M3.1-Flash,长文本,50.0,SuperCLUE·总排行榜-超长上下文 原始51.86(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Mistral-Large-4,Agent与工具调用,38.8,Artificial-Analysis·AutomationBench-AA 原始0.578301(0-1) @2026-10-29,AutomationBench,40
-Mistral-Large-4,Agent与工具调用,22.1,Artificial-Analysis·TB-Science 原始0.0428571(0-1) @2026-10-29,TB-Science,34
-Mistral-Large-4,Agent与工具调用,38.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.247475(0-1) @2026-10-29,TB4.0,40
+Mistral-Large-4,Agent与工具调用,37.8,Artificial-Analysis·AutomationBench-AA 原始0.578301(0-1) @2026-10-29,AutomationBench,41
+Mistral-Large-4,Agent与工具调用,21.4,Artificial-Analysis·TB-Science 原始0.0428571(0-1) @2026-10-29,TB-Science,35
+Mistral-Large-4,Agent与工具调用,37.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.247475(0-1) @2026-10-29,TB4.0,41
 Mistral-Large-4,代码,14.1,Artificial-Analysis·FrontierCode-2.0 原始0.149581(0-1) @2026-10-29,FrontierCode-2.0,32
 Mistral-Large-4,内容创作,16.7,AIWB·英文写作盲评 原始59.1(指数) @2026-11-04,AIWB写作盲评,21
 Mistral-Large-4,可靠性与低幻觉,57.4,ArenaAI·Arena-Agent-NetImprovement 原始6.41(0-100) @2026-11-04,Arena-Agent-Signal,27
 Mistral-Large-4,可靠性与低幻觉,41.2,Artificial-Analysis·AA-Omniscience Index 原始5.13333(指数) @2026-10-29,AA-Omni指数,40
 Mistral-Large-4,图片与制图,21.7,Design-Arena·Website-Elo 原始1256(Elo) @2026-11-03,DesignArena-Elo,23
-Mistral-Large-4,指令遵循,59.4,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始59.4(推理值) @2026-11-18",,
+Mistral-Large-4,指令遵循,66.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始66.3(推理值) @2026-11-27",,
 Mistral-Large-4,推理与知识,25.7,Artificial-Analysis·CritPt 原始0.1(0-1) @2026-10-29,CritPt,35
 Mistral-Large-4,长文本,38.6,Artificial-Analysis·AA-MLCR 原始0.177778(0-1) @2026-10-29,AA-MLCR,35
-Nemotron-3-Ultra,Agent与工具调用,1.2,Artificial-Analysis·AutomationBench-AA 原始0.0298635(0-1) @2026-06-04,AutomationBench,40
+Nemotron-3-Ultra,Agent与工具调用,1.2,Artificial-Analysis·AutomationBench-AA 原始0.0298635(0-1) @2026-06-04,AutomationBench,41
 Nemotron-3-Ultra,Agent与工具调用,6.2,Artificial-Analysis·EnterpriseOpsGym 原始0.288869(0-1) @2026-06-04,enterprise-ops-gym,16
 Nemotron-3-Ultra,Agent与工具调用,4.8,Artificial-Analysis·GDPval-AA 原始1020.69(指数) @2026-11-04,GDPval-AA,31
-Nemotron-3-Ultra,Agent与工具调用,2.9,Artificial-Analysis·TB-Science 原始0(0-1) @2026-06-04,TB-Science,34
-Nemotron-3-Ultra,Agent与工具调用,3.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-06-04,TB4.0,40
+Nemotron-3-Ultra,Agent与工具调用,2.9,Artificial-Analysis·TB-Science 原始0(0-1) @2026-06-04,TB-Science,35
+Nemotron-3-Ultra,Agent与工具调用,3.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.00505051(0-1) @2026-06-04,TB4.0,41
 Nemotron-3-Ultra,Agent与工具调用,8.8,Artificial-Analysis·tau2-Banking 原始0.142268(0-1) @2026-06-04,tau2-banking,17
 Nemotron-3-Ultra,Agent与工具调用,7.1,Artificial-Analysis·τ²-bench 原始0.833333(0-1) @2026-06-04,tau2-bench,7
 Nemotron-3-Ultra,Agent与工具调用,2.9,LiveBench·Agentic Coding 原始38.74(0-100) @2026-06-25,LB·Agentic Coding,17
@@ -1155,17 +1178,17 @@ Nemotron-3-Ultra,指令遵循,81.2,Artificial-Analysis·IFBench 原始0.813605(0
 Nemotron-3-Ultra,指令遵循,85.3,LiveBench·IF (Instruction Following) 原始73.45(0-100) @2026-06-25,LB·IF (Instruction Following),17
 Nemotron-3-Ultra,推理与知识,7.1,Artificial-Analysis·CritPt 原始0.0314286(0-1) @2026-06-04,CritPt,35
 Nemotron-3-Ultra,推理与知识,13.2,Artificial-Analysis·GPQA 原始0.866667(0-1) @2026-06-04,GPQA-Diamond,19
-Nemotron-3-Ultra,推理与知识,7.4,Artificial-Analysis·HLE 原始0.284059(0-1) @2026-06-04,HLE,34
+Nemotron-3-Ultra,推理与知识,7.1,Artificial-Analysis·HLE 原始0.284059(0-1) @2026-06-04,HLE,35
 Nemotron-3-Ultra,推理与知识,2.9,LiveBench·Data Analysis 原始54.46(0-100) @2026-06-25,LB·Data Analysis,17
 Nemotron-3-Ultra,推理与知识,44.1,LiveBench·Mathematics 原始88.66(0-100) @2026-06-25,LB·Mathematics,17
 Nemotron-3-Ultra,推理与知识,8.8,LiveBench·Reasoning 原始74.7(0-100) @2026-06-25,LB·Reasoning,17
-Nemotron-3-Ultra,长文本,21.4,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-06-04,AA-LCR,35
+Nemotron-3-Ultra,长文本,23.6,Artificial-Analysis·AA-LCR 原始0.793333(0-1) @2026-06-04,AA-LCR,36
 Nemotron-3-Ultra,长文本,4.3,Artificial-Analysis·AA-MLCR 原始0.0555556(0-1) @2026-06-04,AA-MLCR,35
-Qwen3.8-27B,Agent与工具调用,21.2,Artificial-Analysis·AutomationBench-AA 原始0.482424(0-1) @2026-08-14,AutomationBench,40
+Qwen3.8-27B,Agent与工具调用,20.7,Artificial-Analysis·AutomationBench-AA 原始0.482424(0-1) @2026-08-14,AutomationBench,41
 Qwen3.8-27B,Agent与工具调用,65.6,Artificial-Analysis·EnterpriseOpsGym 原始0.442256(0-1) @2026-08-14,enterprise-ops-gym,16
 Qwen3.8-27B,Agent与工具调用,27.4,Artificial-Analysis·GDPval-AA 原始1426.73(指数) @2026-11-04,GDPval-AA,31
-Qwen3.8-27B,Agent与工具调用,8.8,Artificial-Analysis·TB-Science 原始0.0047619(0-1) @2026-08-14,TB-Science,34
-Qwen3.8-27B,Agent与工具调用,21.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.0555556(0-1) @2026-08-14,TB4.0,40
+Qwen3.8-27B,Agent与工具调用,8.6,Artificial-Analysis·TB-Science 原始0.0047619(0-1) @2026-08-14,TB-Science,35
+Qwen3.8-27B,Agent与工具调用,20.7,Artificial-Analysis·Terminal-Bench 4.0 原始0.0555556(0-1) @2026-08-14,TB4.0,41
 Qwen3.8-27B,Agent与工具调用,91.2,Artificial-Analysis·tau2-Banking 原始0.480412(0-1) @2026-08-14,tau2-banking,17
 Qwen3.8-27B,Agent与工具调用,67.6,LiveBench·Agentic Coding 原始61.36(0-100) @2026-06-25,LB·Agentic Coding,17
 Qwen3.8-27B,Agent与工具调用,3.1,LiveBench-2.0·Browser 原始24.2(0-100) @2026-10-23,LB2·Browser,16
@@ -1190,21 +1213,21 @@ Qwen3.8-27B,指令遵循,73.5,LiveBench·IF (Instruction Following) 原始72.66(
 Qwen3.8-27B,推理与知识,26.5,ARC-Prize·ARC-AGI-2 原始87.5(0-100) @2026-11-04,ARC-AGI-2,17
 Qwen3.8-27B,推理与知识,18.6,Artificial-Analysis·CritPt 原始0.0542857(0-1) @2026-08-14,CritPt,35
 Qwen3.8-27B,推理与知识,39.5,Artificial-Analysis·GPQA 原始0.905051(0-1) @2026-08-14,GPQA-Diamond,19
-Qwen3.8-27B,推理与知识,16.2,Artificial-Analysis·HLE 原始0.339203(0-1) @2026-08-14,HLE,34
+Qwen3.8-27B,推理与知识,15.7,Artificial-Analysis·HLE 原始0.339203(0-1) @2026-08-14,HLE,35
 Qwen3.8-27B,推理与知识,50.0,LiveBench·Data Analysis 原始76.59(0-100) @2026-06-25,LB·Data Analysis,17
 Qwen3.8-27B,推理与知识,32.4,LiveBench·Mathematics 原始86.21(0-100) @2026-06-25,LB·Mathematics,17
 Qwen3.8-27B,推理与知识,26.5,LiveBench·Reasoning 原始80.03(0-100) @2026-06-25,LB·Reasoning,17
 Qwen3.8-27B,推理与知识,46.9,LiveBench-2.0·Data Analysis 原始76.6(0-100) @2026-10-23,LB2·Data Analysis,16
 Qwen3.8-27B,推理与知识,15.6,LiveBench-2.0·Reasoning 原始80(0-100) @2026-10-23,LB2·Reasoning,16
-Qwen3.8-27B,长文本,52.9,Artificial-Analysis·AA-LCR 原始0.82(0-1) @2026-08-14,AA-LCR,35
+Qwen3.8-27B,长文本,54.2,Artificial-Analysis·AA-LCR 原始0.82(0-1) @2026-08-14,AA-LCR,36
 Qwen3.8-27B,长文本,58.6,Artificial-Analysis·AA-MLCR 原始0.227778(0-1) @2026-08-14,AA-MLCR,35
-Qwen3.8-Max,Agent与工具调用,61.1,Artificial-Analysis·APEX-Agents 原始0.424041(0-1) @2026-09-02,APEX-Agents,9
-Qwen3.8-Max,Agent与工具调用,33.8,Artificial-Analysis·AutomationBench-AA 原始0.561905(0-1) @2026-09-02,AutomationBench,40
+Qwen3.8-Max,Agent与工具调用,55.0,Artificial-Analysis·APEX-Agents 原始0.424041(0-1) @2026-09-02,APEX-Agents,10
+Qwen3.8-Max,Agent与工具调用,32.9,Artificial-Analysis·AutomationBench-AA 原始0.561905(0-1) @2026-09-02,AutomationBench,41
 Qwen3.8-Max,Agent与工具调用,84.4,Artificial-Analysis·EnterpriseOpsGym 原始0.476276(0-1) @2026-09-02,enterprise-ops-gym,16
 Qwen3.8-Max,Agent与工具调用,75.8,Artificial-Analysis·GDPval-AA 原始1673.9(指数) @2026-11-04,GDPval-AA,31
 Qwen3.8-Max,Agent与工具调用,21.4,Artificial-Analysis·ITBench-SRE 原始0.402542(0-1) @2026-09-02,itbench-sre,14
-Qwen3.8-Max,Agent与工具调用,48.5,Artificial-Analysis·TB-Science 原始0.119048(0-1) @2026-09-02,TB-Science,34
-Qwen3.8-Max,Agent与工具调用,58.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.388889(0-1) @2026-09-02,TB4.0,40
+Qwen3.8-Max,Agent与工具调用,47.1,Artificial-Analysis·TB-Science 原始0.119048(0-1) @2026-09-02,TB-Science,35
+Qwen3.8-Max,Agent与工具调用,57.3,Artificial-Analysis·Terminal-Bench 4.0 原始0.388889(0-1) @2026-09-02,TB4.0,41
 Qwen3.8-Max,Agent与工具调用,85.3,Artificial-Analysis·tau2-Banking 原始0.478351(0-1) @2026-09-02,tau2-banking,17
 Qwen3.8-Max,Agent与工具调用,79.4,LiveBench·Agentic Coding 原始64.65(0-100) @2026-06-25,LB·Agentic Coding,17
 Qwen3.8-Max,Agent与工具调用,21.9,LiveBench-2.0·Browser 原始49.4(0-100) @2026-10-23,LB2·Browser,16
@@ -1238,7 +1261,7 @@ Qwen3.8-Max,指令遵循,91.2,LiveBench·IF (Instruction Following) 原始74.08(
 Qwen3.8-Max,指令遵循,33.3,SuperCLUE·总排行榜-精确指令遵循 原始20.69(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Qwen3.8-Max,推理与知识,41.4,Artificial-Analysis·CritPt 原始0.177143(0-1) @2026-09-02,CritPt,35
 Qwen3.8-Max,推理与知识,68.4,Artificial-Analysis·GPQA 原始0.928283(0-1) @2026-09-02,GPQA-Diamond,19
-Qwen3.8-Max,推理与知识,48.5,Artificial-Analysis·HLE 原始0.430955(0-1) @2026-09-02,HLE,34
+Qwen3.8-Max,推理与知识,47.1,Artificial-Analysis·HLE 原始0.430955(0-1) @2026-09-02,HLE,35
 Qwen3.8-Max,推理与知识,55.9,LiveBench·Data Analysis 原始78.41(0-100) @2026-06-25,LB·Data Analysis,17
 Qwen3.8-Max,推理与知识,55.9,LiveBench·Mathematics 原始91.31(0-100) @2026-06-25,LB·Mathematics,17
 Qwen3.8-Max,推理与知识,61.8,LiveBench·Reasoning 原始88.21(0-100) @2026-06-25,LB·Reasoning,17
@@ -1246,28 +1269,28 @@ Qwen3.8-Max,推理与知识,53.1,LiveBench-2.0·Data Analysis 原始78.4(0-100) 
 Qwen3.8-Max,推理与知识,40.6,LiveBench-2.0·Reasoning 原始88.2(0-100) @2026-10-23,LB2·Reasoning,16
 Qwen3.8-Max,推理与知识,58.3,SuperCLUE·总排行榜-数理推理 原始68.42(0-100) @2026-11,SC·总排行榜-数学推理,18
 Qwen3.8-Max,推理与知识,70.0,SuperCLUE·总排行榜-科学推理 原始75.44(百分制) @2026-07(补测),SC·总排行榜-科学推理,10
-Qwen3.8-Max,长文本,40.0,Artificial-Analysis·AA-LCR 原始0.803333(0-1) @2026-09-02,AA-LCR,35
+Qwen3.8-Max,长文本,41.7,Artificial-Analysis·AA-LCR 原始0.803333(0-1) @2026-09-02,AA-LCR,36
 Qwen3.8-Max,长文本,50.0,Artificial-Analysis·AA-MLCR 原始0.2(0-1) @2026-09-02,AA-MLCR,35
 Qwen3.8-Max,长文本,26.9,SuperCLUE·总排行榜-超长上下文 原始44.38(0-100) @2026-11,SC·总排行榜-超长上下文,13
-Qwen4-Max,Agent与工具调用,72.2,Artificial-Analysis·APEX-Agents 原始0.591445(0-1) @2026-11-16,APEX-Agents,9
-Qwen4-Max,Agent与工具调用,83.8,Artificial-Analysis·AutomationBench-AA 原始0.725612(0-1) @2026-11-16,AutomationBench,40
+Qwen4-Max,Agent与工具调用,65.0,Artificial-Analysis·APEX-Agents 原始0.591445(0-1) @2026-11-16,APEX-Agents,10
+Qwen4-Max,Agent与工具调用,84.1,Artificial-Analysis·AutomationBench-AA 原始0.725612(0-1) @2026-11-16,AutomationBench,41
 Qwen4-Max,Agent与工具调用,90.6,Artificial-Analysis·EnterpriseOpsGym 原始0.485228(0-1) @2026-11-16,enterprise-ops-gym,16
-Qwen4-Max,Agent与工具调用,57.4,Artificial-Analysis·TB-Science 原始0.233333(0-1) @2026-11-16,TB-Science,34
-Qwen4-Max,Agent与工具调用,66.2,Artificial-Analysis·Terminal-Bench 4.0 原始0.484848(0-1) @2026-11-16,TB4.0,40
+Qwen4-Max,Agent与工具调用,58.6,Artificial-Analysis·TB-Science 原始0.233333(0-1) @2026-11-16,TB-Science,35
+Qwen4-Max,Agent与工具调用,67.1,Artificial-Analysis·Terminal-Bench 4.0 原始0.484848(0-1) @2026-11-16,TB4.0,41
 Qwen4-Max,代码,54.7,Artificial-Analysis·FrontierCode-2.0 原始0.264535(0-1) @2026-11-16,FrontierCode-2.0,32
-Qwen4-Max,内容创作,64.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始64.1(推理值) @2026-11-18",,
+Qwen4-Max,内容创作,66.6,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始66.6(推理值) @2026-11-27",,
 Qwen4-Max,可靠性与低幻觉,66.2,Artificial-Analysis·AA-Omniscience Index 原始27.7(指数) @2026-11-16,AA-Omni指数,40
-Qwen4-Max,图片与制图,62.2,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始62.2(推理值) @2026-11-18",,
-Qwen4-Max,指令遵循,69.9,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始69.9(推理值) @2026-11-18",,
-Qwen4-Max,推理与知识,66.1,"推理补全·M2 池内k近邻(余弦相似度,k=3) 原始66.1(推理值) @2026-11-18",,
+Qwen4-Max,图片与制图,58.4,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始58.4(推理值) @2026-11-27",,
+Qwen4-Max,指令遵循,72.3,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始72.3(推理值) @2026-11-27",,
+Qwen4-Max,推理与知识,65.0,"推理补全·M2 池内k近邻(余弦相似度,k=5) 原始65(推理值) @2026-11-27",,
 Qwen4-Max,长文本,45.7,Artificial-Analysis·AA-MLCR 原始0.194444(0-1) @2026-11-16,AA-MLCR,35
-Step-5-Preview,Agent与工具调用,38.9,Artificial-Analysis·APEX-Agents 原始0.379794(0-1) @2026-09-18,APEX-Agents,9
-Step-5-Preview,Agent与工具调用,26.2,Artificial-Analysis·AutomationBench-AA 原始0.509566(0-1) @2026-09-18,AutomationBench,40
+Step-5-Preview,Agent与工具调用,35.0,Artificial-Analysis·APEX-Agents 原始0.379794(0-1) @2026-09-18,APEX-Agents,10
+Step-5-Preview,Agent与工具调用,25.6,Artificial-Analysis·AutomationBench-AA 原始0.509566(0-1) @2026-09-18,AutomationBench,41
 Step-5-Preview,Agent与工具调用,78.1,Artificial-Analysis·EnterpriseOpsGym 原始0.471799(0-1) @2026-09-18,enterprise-ops-gym,16
 Step-5-Preview,Agent与工具调用,56.5,Artificial-Analysis·GDPval-AA 原始1593.99(指数) @2026-11-04,GDPval-AA,31
 Step-5-Preview,Agent与工具调用,96.4,Artificial-Analysis·ITBench-SRE 原始0.555556(0-1) @2026-09-18,itbench-sre,14
-Step-5-Preview,Agent与工具调用,13.2,Artificial-Analysis·TB-Science 原始0.0238095(0-1) @2026-09-18,TB-Science,34
-Step-5-Preview,Agent与工具调用,48.8,Artificial-Analysis·Terminal-Bench 4.0 原始0.333333(0-1) @2026-09-18,TB4.0,40
+Step-5-Preview,Agent与工具调用,12.9,Artificial-Analysis·TB-Science 原始0.0238095(0-1) @2026-09-18,TB-Science,35
+Step-5-Preview,Agent与工具调用,47.6,Artificial-Analysis·Terminal-Bench 4.0 原始0.333333(0-1) @2026-09-18,TB4.0,41
 Step-5-Preview,Agent与工具调用,9.4,LiveBench-2.0·Browser 原始24.8(0-100) @2026-10-23,LB2·Browser,16
 Step-5-Preview,Agent与工具调用,15.6,LiveBench-2.0·Long Agentic 原始19.4(0-100) @2026-10-23,LB2·Long Agentic,16
 Step-5-Preview,代码,22.9,Artificial-Analysis·FrontierCode 原始0.384271(0-1) @2026-09-18,FrontierCode,24
@@ -1287,10 +1310,10 @@ Step-5-Preview,图片与制图,28.1,LiveBench-2.0·Design 原始76.9(0-100) @202
 Step-5-Preview,指令遵循,5.3,ArenaAI·Instruction Following 原始1449(Elo) @2026-11-07,Arena-IF,19
 Step-5-Preview,指令遵循,8.3,SuperCLUE·总排行榜-精确指令遵循 原始8.62(0-100) @2026-11,SC·总排行榜-精确指令遵循,18
 Step-5-Preview,推理与知识,57.1,Artificial-Analysis·CritPt 原始0.208571(0-1) @2026-09-18,CritPt,35
-Step-5-Preview,推理与知识,60.3,Artificial-Analysis·HLE 原始0.464782(0-1) @2026-09-18,HLE,34
+Step-5-Preview,推理与知识,61.4,Artificial-Analysis·HLE 原始0.464782(0-1) @2026-09-18,HLE,35
 Step-5-Preview,推理与知识,15.6,LiveBench-2.0·Data Analysis 原始63.5(0-100) @2026-10-23,LB2·Data Analysis,16
 Step-5-Preview,推理与知识,34.4,LiveBench-2.0·Reasoning 原始83.8(0-100) @2026-10-23,LB2·Reasoning,16
 Step-5-Preview,推理与知识,13.9,SuperCLUE·总排行榜-数理推理 原始57.89(0-100) @2026-11,SC·总排行榜-数学推理,18
-Step-5-Preview,长文本,95.7,Artificial-Analysis·AA-LCR 原始0.883333(0-1) @2026-09-18,AA-LCR,35
+Step-5-Preview,长文本,95.8,Artificial-Analysis·AA-LCR 原始0.883333(0-1) @2026-09-18,AA-LCR,36
 Step-5-Preview,长文本,41.4,Artificial-Analysis·AA-MLCR 原始0.183333(0-1) @2026-09-18,AA-MLCR,35
 Step-5-Preview,长文本,42.3,SuperCLUE·总排行榜-超长上下文 原始49.39(0-100) @2026-11,SC·总排行榜-超长上下文,13
